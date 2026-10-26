@@ -1,699 +1,136 @@
 {
   "scriptVersion": 1,
-  "id": "ui-test-phone-v2",
-  "title": "捡手机",
-  "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "id": "han-ji-won-love-forecast",
+  "title": "《戀愛預告》：第一場戲",
+  "description": "架空互動故事。韓智媛是25歲、單身且內斂善良的韓國新人演員；金武烈是31歲韓國演員、她的前輩與《戀愛預告》男主角。金武烈暗戀智媛、單身專一等設定均屬虛構演繹，不代表現實生活或本人私下想法。",
+  "revision": 3,
   "phone": {
-    "owner": "机主",
-    "date": "2026-10-25",
-    "time": "09:41",
-    "battery": 94,
+    "owner": "韓智媛",
+    "date": "2026-10-26",
+    "time": "07:45",
+    "passcode": "1218",
+    "battery": 86,
     "network": "5G",
-    "wallpaper": "apple-wwdc26"
+    "wallpaper": "silver"
   },
   "installedApps": [
     "appstore",
-    {
-      "id": "wechat",
-      "name": "微信",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "douyin",
-      "name": "抖音",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    "phone",
-    "messages",
-    "contacts",
-    "photos",
-    {
-      "id": "camera",
-      "name": "相机",
-      "installed": true,
-      "visible": true,
-      "dock": true,
-      "folder": "",
-      "icon": ""
-    },
-    "safari",
-    "notes",
-    "calendar",
-    "mail",
-    "clock",
-    "reminders",
-    "files",
-    "music",
-    "maps",
-    "weather",
-    "wallet",
-    "health",
-    "find",
-    "calculator",
-    "settings",
-    "qq",
-    "weibo",
-    "redbook",
-    "bilibili",
-    "alipay",
-    "taobao",
-    "netease",
-    "delivery",
-    "forum",
-    "whatsapp",
-    "instagram",
-    "tiktok",
-    "twitter",
-    "telegram",
-    "discord",
-    "youtube",
-    "line",
-    "snapchat",
-    "facebook",
-    "messenger",
-    "reddit",
-    "spotify",
-    "netflix",
-    "pinterest",
-    "threads",
-    "kakao"
+    { "id": "wechat", "name": "微信", "installed": true, "visible": true, "dock": false, "folder": "", "icon": "" },
+    { "id": "douyin", "name": "抖音", "installed": true, "visible": true, "dock": false, "folder": "", "icon": "" },
+    "phone", "messages", "contacts", "photos",
+    { "id": "camera", "name": "相機", "installed": true, "visible": true, "dock": true, "folder": "", "icon": "" },
+    "safari", "notes", "calendar", "mail", "clock", "reminders", "files", "music", "maps", "weather", "wallet", "health", "find", "calculator", "settings", "qq", "weibo", "redbook", "bilibili", "alipay", "taobao", "netease", "delivery", "forum", "whatsapp", "instagram", "tiktok", "twitter", "telegram", "discord", "youtube", "line", "snapchat", "facebook", "messenger", "reddit", "spotify", "netflix", "pinterest", "threads", "kakao"
   ],
   "contacts": [
     {
-      "id": "test-contact",
-      "name": "测试联系人",
+      "id": "kim-mu-yeol",
+      "name": "金武烈",
       "phone": "",
-      "bio": "这是一条测试内容。"
+      "avatar": "",
+      "bio": "（架空故事設定）31歲韓國演員，智媛的前輩與《戀愛預告》男主角。單身、專一、溫柔耐心、善良體貼；慢熱，熟悉後有點嘴賤，也很會逗人笑。"
     }
   ],
   "chats": [
     {
-      "id": "test-chat-messages",
-      "app": "messages",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messages",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-wechat",
-      "app": "wechat",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-wechat",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-qq",
-      "app": "qq",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-qq",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-whatsapp",
-      "app": "whatsapp",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-whatsapp",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-telegram",
-      "app": "telegram",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-telegram",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-discord",
-      "app": "discord",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-discord",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-line",
-      "app": "line",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-line",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-messenger",
-      "app": "messenger",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messenger",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-kakao",
+      "id": "kakao-mu-yeol-chat",
       "app": "kakao",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
+      "title": "武烈前輩",
+      "participants": ["owner", "kim-mu-yeol"],
       "messages": [
-        {
-          "id": "test-message-kakao",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        },
-        {
-          "id": "test-reply-kakao",
-          "body": "这是一条测试回复。",
-          "senderId": "owner"
-        }
+        { "id": "msg-morning-greeting", "body": "智媛，早上好。我是武烈。今天是我們第一次正式搭戲吧？昨晚讀本時想到幾個節奏，等等見面再一起討論，不用有壓力。", "senderId": "kim-mu-yeol", "time": "07:45" },
+        { "id": "msg-first-reply", "body": "前輩早安，謝謝您。我有一點緊張，第一次合作就要拍感情戲……", "senderId": "owner", "time": "07:49" },
+        { "id": "msg-no-pressure", "body": "我也是第一次和妳合作。拍戲時先把我當成對手演員就好，其他的慢慢來。", "senderId": "kim-mu-yeol", "time": "07:52" },
+        { "id": "msg-joke", "body": "那我先努力做到不笑場。", "senderId": "owner", "time": "07:54" },
+        { "id": "msg-retake-joke", "body": "如果笑場，責任在我。導演說要我深情看著妳，我怕我看太久會被要求重拍。", "senderId": "kim-mu-yeol", "time": "07:56" },
+        { "id": "msg-camera", "body": "前輩不用擔心，我會記得看鏡頭。", "senderId": "owner", "time": "07:59" },
+        { "id": "msg-remind-camera", "body": "那就拜託妳也提醒我看鏡頭。今天的男主角可能需要一位可靠的女配角救場。", "senderId": "kim-mu-yeol", "time": "08:02" },
+        { "id": "msg-lunch", "body": "午餐有好好吃嗎？剛才妳一直在看台詞，休息時間也要記得吃東西。", "senderId": "kim-mu-yeol", "time": "12:16" },
+        { "id": "msg-lunch-reply", "body": "有吃，謝謝前輩提醒。剛才那場戲多虧您幫我接住台詞，我差點忘了下一句。", "senderId": "owner", "time": "12:20" },
+        { "id": "msg-kind-reply", "body": "妳接得很好。第一次合作就把角色的心情演得很細，別只記得自己緊張的地方。", "senderId": "kim-mu-yeol", "time": "12:23" },
+        { "id": "msg-wrap", "body": "今天辛苦了。第一天的拍攝比我想像中順利，謝謝前輩一直照顧我。", "senderId": "owner", "time": "18:42" },
+        { "id": "msg-invitation", "body": "我也想謝謝妳。收工後有空嗎？想請妳去附近吃點東西，順便聊聊明天的戲。今天和妳對戲很開心——這句不是劇本台詞。", "senderId": "kim-mu-yeol", "time": "18:46" },
+        { "id": "msg-invitation-reply", "body": "前輩這樣說，我反而不知道怎麼回了……我先看看明天的行程。", "senderId": "owner", "time": "18:49" },
+        { "id": "msg-goodnight", "body": "好，不用急著回答。今天已經很晚了，回家路上小心。明天片場見。", "senderId": "kim-mu-yeol", "time": "18:51" }
       ]
     }
   ],
   "content": {
-    "phone": [
-      {
-        "id": "test-item-phone",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "contacts": [
-      {
-        "id": "test-item-contacts",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "photos": [
-      {
-        "id": "test-item-photos",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "camera": [
-      {
-        "id": "test-item-camera",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "safari": [
-      {
-        "id": "test-item-safari",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
+    "calendar": [
+      { "id": "calendar-first-shoot", "title": "《戀愛預告》首次對手戲", "body": "08:30 報到，B棚。今日拍攝：男女主角與女配角的初次相遇。帶上劇本，記得午餐。", "time": "2026-10-26 08:30", "kind": "event" },
+      { "id": "calendar-next-scene", "title": "《戀愛預告》第二場戲", "body": "明早 09:00 開拍。先確認台詞，再和武烈前輩對一次情緒。", "time": "2026-10-27 09:00", "kind": "event" }
     ],
     "notes": [
-      {
-        "id": "test-item-notes",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
+      { "id": "note-scene-one", "title": "第一場戲提醒", "body": "韓智媛：25歲韓國新人演員，單身、內斂、善良，飾演女配角。\n金武烈：31歲韓國演員，智媛的前輩，飾演男主角；溫柔體貼、耐心善良、慢熱，熟悉後有點嘴賤，也很會逗人笑。\n第一次合作，先聽對方說完再接台詞。緊張時慢慢呼吸。前輩提醒：不用急，找到角色的節奏就好。", "kind": "note" },
+      { "id": "note-after-invitation", "title": "收工後的備忘", "body": "武烈前輩邀我去吃東西，說想聊明天的戲。\n他最後補了一句「今天和妳對戲很開心」，還特地說不是劇本台詞。\n先把明天的台詞看完，再想想怎麼回答。", "kind": "note", "folder": "私人筆記", "hidden": true }
     ],
-    "calendar": [
-      {
-        "id": "test-item-calendar",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "mail": [
-      {
-        "id": "test-item-mail",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "clock": [
-      {
-        "id": "test-item-clock",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reminders": [
-      {
-        "id": "test-item-reminders",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "files": [
-      {
-        "id": "test-item-files",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "music": [
-      {
-        "id": "test-item-music",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "maps": [
-      {
-        "id": "test-item-maps",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weather": [
-      {
-        "id": "test-item-weather",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "wallet": [
-      {
-        "id": "test-item-wallet",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "health": [
-      {
-        "id": "test-item-health",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "find": [
-      {
-        "id": "test-item-find",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "calculator": [
-      {
-        "id": "test-item-calculator",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "settings": [
-      {
-        "id": "test-item-settings",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weibo": [
-      {
-        "id": "test-item-weibo",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "redbook": [
-      {
-        "id": "test-item-redbook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "douyin": [
-      {
-        "id": "test-item-douyin",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "bilibili": [
-      {
-        "id": "test-item-bilibili",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "alipay": [
-      {
-        "id": "test-item-alipay",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "taobao": [
-      {
-        "id": "test-item-taobao",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netease": [
-      {
-        "id": "test-item-netease",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "delivery": [
-      {
-        "id": "test-item-delivery",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "forum": [
-      {
-        "id": "test-item-forum",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "instagram": [
-      {
-        "id": "test-item-instagram",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "tiktok": [
-      {
-        "id": "test-item-tiktok",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "twitter": [
-      {
-        "id": "test-item-twitter",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "youtube": [
-      {
-        "id": "test-item-youtube",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "snapchat": [
-      {
-        "id": "test-item-snapchat",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "facebook": [
-      {
-        "id": "test-item-facebook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reddit": [
-      {
-        "id": "test-item-reddit",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "spotify": [
-      {
-        "id": "test-item-spotify",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netflix": [
-      {
-        "id": "test-item-netflix",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "pinterest": [
-      {
-        "id": "test-item-pinterest",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "threads": [
-      {
-        "id": "test-item-threads",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      },
-      {
-        "id": "test-threads-message-1",
-        "title": "测试会话1",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人1",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-1",
-        "title": "测试动态1",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户1",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-2",
-        "title": "测试会话2",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人2",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-2",
-        "title": "测试动态2",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户2",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-3",
-        "title": "测试会话3",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人3",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-3",
-        "title": "测试动态3",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户3",
-        "meta": {
-          "activityType": "reply"
-        }
-      }
-    ],
-    "appstore": [
-      {
-        "id": "test-appstore",
-        "title": "测试内容",
-        "body": "这是一条测试内容。"
-      }
+    "photos": [
+      { "id": "photo-first-day", "title": "《戀愛預告》第一天", "body": "片場紀錄：第一次和武烈前輩排練。雨戲尚未開拍，兩人先在棚內對了幾遍台詞。", "kind": "text", "time": "2026-10-26 16:30" }
     ]
   },
   "variables": {},
-  "events": [],
-  "tests": []
+  "events": [
+    {
+      "id": "story-start",
+      "label": "第一天的通知",
+      "type": "start",
+      "actions": [
+        { "type": "notification", "key": "", "value": "KakaoTalk：武烈前輩傳來一則訊息。今天是《戀愛預告》第一次合作拍攝。" }
+      ]
+    },
+    {
+      "id": "read-invitation",
+      "label": "讀到收工邀約",
+      "event": "read",
+      "target": "msg-invitation",
+      "actions": [
+        { "type": "unlock", "key": "note-after-invitation", "value": true },
+        { "type": "notification", "key": "", "value": "備忘錄：一則私人筆記已解鎖。" }
+      ],
+      "next": ["choose-after-shoot"]
+    },
+    {
+      "id": "choose-after-shoot",
+      "label": "怎麼回答武烈前輩？",
+      "type": "choice",
+      "next": ["ending-late-supper", "ending-take-it-slow"]
+    },
+    {
+      "id": "ending-late-supper",
+      "label": "收工後的宵夜",
+      "type": "ending",
+      "actions": [
+        { "type": "ending", "key": "", "value": "收工後的宵夜：第一次單獨相處" }
+      ]
+    },
+    {
+      "id": "ending-take-it-slow",
+      "label": "慢慢靠近",
+      "type": "ending",
+      "actions": [
+        { "type": "ending", "key": "", "value": "慢慢靠近：先把下一場戲演好" }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "接受宵夜邀約並讀取備忘",
+      "steps": [
+        { "event": "read", "target": "msg-invitation" },
+        { "event": "read", "target": "note-after-invitation" },
+        { "choose": "ending-late-supper" }
+      ],
+      "ending": "收工後的宵夜：第一次單獨相處",
+      "expectUnlocked": ["note-after-invitation"]
+    },
+    {
+      "name": "先專注拍攝並保留後續",
+      "steps": [
+        { "event": "read", "target": "msg-invitation" },
+        { "event": "read", "target": "note-after-invitation" },
+        { "choose": "ending-take-it-slow" }
+      ],
+      "ending": "慢慢靠近：先把下一場戲演好",
+      "expectUnlocked": ["note-after-invitation"]
+    }
+  ]
 }
