@@ -49,17 +49,19 @@ function Bubbles({
             )}
             <div className={`catalog-message ${i.outgoing ? "outgoing" : ""}`}>
               {i.avatar && <Avatar name={i.sender || "人"} src={i.avatar} />}
-              <button onClick={() => (p.creator ? p.onItem(i) : p.onRead(i.id))}>
-                {["image", "video", "audio"].includes(i.kind) ? (
-                  <Media item={i} />
-                ) : (
-                  <span style={{ whiteSpace: "pre-line", display: "block", textAlign: "left" }}>{i.body}</span>
-                )}
-                {i.read && <CheckCheck size={10} />}
-              </button>
-              <time style={{ display: "block", fontSize: 10, opacity: 0.62, textAlign: i.outgoing ? "right" : "left", margin: "3px 8px 7px" }}>
-                {i.time.slice(-5)}
-              </time>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: i.outgoing ? "flex-end" : "flex-start", minWidth: 0, maxWidth: "calc(100% - 46px)" }}>
+                <button onClick={() => (p.creator ? p.onItem(i) : p.onRead(i.id))}>
+                  {["image", "video", "audio"].includes(i.kind) ? (
+                    <Media item={i} />
+                  ) : (
+                    <span style={{ whiteSpace: "pre-line", display: "block", textAlign: "left" }}>{i.body}</span>
+                  )}
+                  {i.read && <CheckCheck size={10} />}
+                </button>
+                <time style={{ display: "block", width: "100%", fontSize: 10, opacity: 0.62, textAlign: i.outgoing ? "right" : "left", margin: "3px 8px 7px" }}>
+                  {i.time.slice(-5)}
+                </time>
+              </div>
             </div>
           </Fragment>
         );
