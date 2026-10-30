@@ -57,7 +57,7 @@ function Actions({ p, item }: { p: Props; item: Item }) {
 function PostHeader({ item, p }: { item: Item; p: Props }) {
   return (
     <button className="social-author" onClick={() => p.onItem(item)}>
-      <Avatar name={item.sender} />
+      <Avatar name={item.sender} src={item.avatar} />
       <span>
         <strong>{item.sender}</strong>
         <small>{meta(item, "handle", item.time)}</small>
@@ -109,7 +109,7 @@ export function WeiboSkin(p: Props) {
       <div className="catalog-scroll">
         {tab === "我" ? (
           <div className="weibo-profile">
-            <Avatar name={p.owner ?? "我"} />
+            <Avatar name={p.owner ?? "我"} src={p.ownerAvatar} />
             <h2>{p.owner ?? "我"}</h2>
             <span>{items.length} 条微博</span>
           </div>
@@ -167,7 +167,7 @@ export function XSkin(p: Props) {
           .filter((i) => tab === "为你推荐" || i.folder === "正在关注")
           .map((i) => (
             <article className="x-post" key={i.id}>
-              <Avatar name={i.sender} />
+              <Avatar name={i.sender} src={i.avatar} />
               <div>
                 <button className="x-byline" onClick={() => p.onItem(i)}>
                   <strong>{i.sender}</strong>

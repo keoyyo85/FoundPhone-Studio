@@ -330,7 +330,7 @@ export function ThreadsReference(p: SkinProps) {
             {tab === "个人主页" && (
               <>
                 <div className="tr-profile">
-                  <Avatar name={p.owner || "机主"} />
+                  <Avatar name={p.owner || "机主"} src={p.ownerAvatar} />
                   <p>{p.owner}</p>
                 </div>
                 {feed

@@ -886,7 +886,7 @@ function AppContent({
       ? work.phone.kakaoName || work.phone.owner
       : app.id === "wechat"
         ? work.phone.wechatName || work.phone.owner
-        : ["instagram", "twitter", "threads"].includes(app.id)
+        : ["instagram", "twitter", "threads", "weibo"].includes(app.id)
           ? work.phone.socialName || work.phone.owner
           : work.phone.owner;
   const [detail, setDetail] = useState<Item | null>(null);
@@ -996,7 +996,7 @@ function AppContent({
             <Skin
               appId={app.id}
               owner={displayOwner}
-              ownerAvatar={app.id === "wechat" ? work.phone.wechatAvatar || work.phone.ownerAvatar : ""}
+              ownerAvatar={app.id === "wechat" ? work.phone.wechatAvatar || work.phone.ownerAvatar : ["instagram", "twitter", "threads", "weibo"].includes(app.id) ? work.phone.ownerAvatar : ""}
               virtualTime={state.time}
               ui={state.ui?.[app.id]}
               onUi={creator ? undefined : onUi}

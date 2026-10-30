@@ -485,7 +485,7 @@ export function MymyInstagram(p: SkinProps) {
           {!selected && tab === "个人主页" && (
             <>
               <div className="pf">
-                <Avatar name={p.owner || "机主"} />
+                <Avatar name={p.owner || "机主"} src={p.ownerAvatar} />
                 <div className="ps">
                   <div>
                     <b>{posts.length}</b>
