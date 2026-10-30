@@ -340,7 +340,7 @@ export function SafariSkin(p: Props) {
       q.trim()
         ? true
         : tab === "书签"
-          ? i.favorite || i.folder !== "历史记录"
+          ? Boolean(i.favorite)
           : i.folder === "历史记录",
     );
   return (
@@ -364,7 +364,8 @@ export function SafariSkin(p: Props) {
                 <Globe size={28} />
               </span>
               <strong>{i.title}</strong>
-              <small>{meta(i, "url")}</small>
+              <small>{i.time}</small>
+              <small>{i.body}</small>
             </button>
           ))}
         </div>
