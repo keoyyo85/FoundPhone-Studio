@@ -199,7 +199,9 @@ export function MymyKakao(p: SkinProps) {
             <div className="mymy-local-menu">
               <strong>{p.thread}</strong>
               <p>
-                群成员：{[...new Set(messages.map((m) => m.sender))].join("、")}
+                {((messages[0]?.meta.participants || "").split(",").filter(Boolean).length || 2) <= 2
+                  ? `好友聊天 · 好友：${[...new Set(messages.map((m) => m.sender).filter((name) => name !== p.owner))].join("、") || p.thread}`
+                  : `群成员：${[...new Set(messages.map((m) => m.sender))].join("、")}`}
               </p>
               <button onClick={() => setMenu(false)}>完成</button>
             </div>
@@ -261,6 +263,13 @@ export function MymyKakao(p: SkinProps) {
             </div>
             {list
               .filter((g) => g.title.includes(query.trim()))
+              .filter(
+                (g) =>
+                  tab !== "好友" ||
+                  (g.items[0]?.meta.participants || "")
+                    .split(",")
+                    .filter(Boolean).length <= 2,
+              )
               .map((g) => {
                 const last = g.items.at(-1)!;
                 return (
@@ -269,7 +278,7 @@ export function MymyKakao(p: SkinProps) {
                     key={g.title}
                     onClick={() => p.onThread(g.title)}
                   >
-                    <Avatar name={last.sender || g.title} src={last.avatar} />
+                    <Avatar name={last.sender || g.title} src={(g.items[0]?.meta.participants || "").split(",").filter(Boolean).length > 2 ? "https://pbs.twimg.com/media/G1sRWmzaAAYcheh.jpg" : last.avatar} />
                     <span className="kzkn">
                       <b>{g.title}</b>
                       <small>{tab === "好友" ? last.sender : last.body}</small>
@@ -476,7 +485,7 @@ export function MymyInstagram(p: SkinProps) {
           {!selected && tab === "个人主页" && (
             <>
               <div className="pf">
-                <Avatar name={p.owner || "机主"} />
+                <Avatar name={p.owner || "机主"} src={p.ownerAvatar} />
                 <div className="ps">
                   <div>
                     <b>{posts.length}</b>

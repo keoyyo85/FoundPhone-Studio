@@ -95,6 +95,11 @@ export const workSchema = z.object({
   updatedAt: z.number(),
   phone: z.object({
     owner: z.string(),
+    kakaoName: z.string().optional(),
+    wechatName: z.string().optional(),
+    socialName: z.string().optional(),
+    ownerAvatar: z.string().optional(),
+    wechatAvatar: z.string().optional(),
     date: z
       .string()
       .regex(/^\d{4}-\d{2}-\d{2}$/)
@@ -196,9 +201,19 @@ export function validateWork(input: unknown): Work {
   return workSchema.parse(input);
 }
 export function safeMedia(value: string) {
-  return /^data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+$/.test(
-    value,
-  )
-    ? value
-    : "";
+  const embedded =
+    /^data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+$/.test(
+      value,
+    );
+  const curatedPhoto =
+    /^https:\/\/(?:pbs\.twimg\.com\/media\/[A-Za-z0-9_-]+(?:\.(?:jpg|png))?(?:\?[^#]*)?|image\.static\.bstage\.in\/[^\s]+|cdn\.livedoor\.jp\/kstyle\/[^\s]+|www\.esquirekorea\.co\.kr\/resources\/online\/online_image\/[^\s]+|cdn\.kpopping\.com\/kpics\/[^\s]+|assets\.pikiran-rakyat\.com\/[^\s]+)$/.test(
+      value,
+    ) ||
+    value === "https://pbs.twimg.com/profile_images/2005188075505549312/AHkTtSLG.jpg" ||
+    value === "https://xkxqjlzvieat874751.gcdn.ntruss.com/1/2026/e992/1e9926d62de1deea6a13d404b6b49fc3e3c85c34abb59327a9b094a4eb2161382_o_st.webp";
+  const officialProfile =
+    /^https:\/\/0\.soompi\.io\/wp-content\/uploads\/2025\/10\/\d{8}\/[a-z0-9-]+\.jpeg(?:\?w=\d{2,4})?$/.test(
+      value,
+    );
+  return embedded || officialProfile || curatedPhoto ? value : "";
 }

@@ -12,7 +12,7 @@ import {
   Smile,
   Users,
 } from "lucide-react";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import type { Item } from "../schema";
 import {
   Add,
@@ -38,25 +38,34 @@ function Bubbles({
 }) {
   return (
     <div className={`catalog-bubbles ${className}`}>
-      <time className="bubble-date">{items[0]?.time.slice(0, 10)}</time>
-      {items.map((i) => (
-        <div
-          className={`catalog-message ${i.outgoing ? "outgoing" : ""}`}
-          key={i.id}
-        >
-          <button onClick={() => (p.creator ? p.onItem(i) : p.onRead(i.id))}>
-            {["image", "video", "audio"].includes(i.kind) ? (
-              <Media item={i} />
-            ) : (
-              i.body
+      {items.map((i, index) => {
+        const date = i.time.slice(0, 10);
+        const previousDate = items[index - 1]?.time.slice(0, 10);
+        const [year, month, day] = date.split("-").map(Number);
+        return (
+          <Fragment key={i.id}>
+            {(index === 0 || date !== previousDate) && (
+              <time className="bubble-date">{year}年{month}月{day}日</time>
             )}
-            <small>
-              {i.time.slice(-5)}
-              {i.read && <CheckCheck size={10} />}
-            </small>
-          </button>
-        </div>
-      ))}
+            <div className={`catalog-message ${i.outgoing ? "outgoing" : ""}`}>
+              {i.avatar && <Avatar name={i.sender || "人"} src={i.avatar} />}
+              <div style={{ display: "flex", flexDirection: "column", alignItems: i.outgoing ? "flex-end" : "flex-start", minWidth: 0, maxWidth: "calc(100% - 46px)" }}>
+                <button onClick={() => (p.creator ? p.onItem(i) : p.onRead(i.id))}>
+                  {["image", "video", "audio"].includes(i.kind) ? (
+                    <Media item={i} />
+                  ) : (
+                    <span style={{ whiteSpace: "pre-line", display: "block", textAlign: "left" }}>{i.body}</span>
+                  )}
+                  {i.read && <CheckCheck size={10} />}
+                </button>
+                <time style={{ display: "block", width: "100%", fontSize: 10, opacity: 0.62, textAlign: i.outgoing ? "right" : "left", margin: "3px 8px 7px" }}>
+                  {i.time.slice(-5)}
+                </time>
+              </div>
+            </div>
+          </Fragment>
+        );
+      })}
     </div>
   );
 }

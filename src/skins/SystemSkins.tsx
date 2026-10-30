@@ -185,12 +185,16 @@ export function ContactsSkin(p: Props) {
 export function PhotosSkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "图库");
   const [album, setAlbum] = useState("");
+  const [albumLocked, setAlbumLocked] = useState(false);
+  const [albumCode, setAlbumCode] = useState("");
+  const [albumError, setAlbumError] = useState("");
   const list =
     tab === "收藏"
-      ? items.filter((i) => i.favorite)
+      ? items.filter((i) => i.favorite && !i.password)
       : album
         ? items.filter((i) => (i.folder || "未分类") === album)
-        : items;
+        : items.filter((i) => !i.password);
+  const albumPassword = items.find((i) => (i.folder || "未分类") === album)?.password || "";
   return (
     <div className="catalog-skin native-photos">
       <Header p={p} />
@@ -199,26 +203,44 @@ export function PhotosSkin(p: Props) {
         {tab === "相簿" && !album ? (
           <div className="album-grid">
             {groupItems(items, "未分类").map((g) => (
-              <button key={g} onClick={() => setAlbum(g)}>
-                <Media
-                  item={items.find((i) => (i.folder || "未分类") === g)!}
-                />
+              <button key={g} onClick={() => {
+                setAlbum(g);
+                setAlbumCode("");
+                setAlbumError("");
+                setAlbumLocked(Boolean(items.find((i) => (i.folder || "未分类") === g)?.password));
+              }}>
+                <Media item={items.find((i) => (i.folder || "未分类") === g)!} />
                 <strong>{g}</strong>
                 <small>
                   {items.filter((i) => (i.folder || "未分类") === g).length} 项
+                  {items.some((i) => (i.folder || "未分类") === g && i.password) ? " · 已加密" : ""}
                 </small>
               </button>
             ))}
           </div>
+        ) : album && albumLocked ? (
+          <div className="photo-album-lock" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12, padding: "42px 24px", textAlign: "center" }}>
+            <button onClick={() => { setAlbum(""); setAlbumLocked(false); }} style={{ alignSelf: "flex-start" }}>‹ 相簿</button>
+            <LockKeyhole size={34} />
+            <h2>{album}</h2>
+            <p>这是一个加密相簿。输入密码以查看照片。</p>
+            <input aria-label="相簿密码" type="password" inputMode="numeric" value={albumCode} onChange={(e) => setAlbumCode(e.target.value)} placeholder="输入八位数密码" style={{ width: "100%", maxWidth: 240, padding: 12, borderRadius: 12, border: "1px solid var(--separator, #ccc)", textAlign: "center" }} />
+            {albumError && <small role="alert">{albumError}</small>}
+            <button onClick={() => {
+              if (albumCode === albumPassword) { setAlbumLocked(false); setAlbumError(""); }
+              else setAlbumError("密码不正确");
+            }} style={{ padding: "10px 24px", borderRadius: 18 }}>解锁相簿</button>
+          </div>
         ) : (
           <>
+            {album && <button onClick={() => { setAlbum(""); setAlbumLocked(false); }} style={{ marginBottom: 10 }}>‹ 返回相簿</button>}
             <SearchBox value={q} set={setQ} />
             <div className="photo-mosaic">
               {list.map((i) => (
                 <button
                   aria-label={`查看${i.title}`}
                   key={i.id}
-                  onClick={() => p.onItem(i)}
+                  onClick={() => p.onItem(album ? { ...i, password: "" } : i)}
                 >
                   <Media item={i} />
                   {i.favorite && <Heart size={12} fill="white" />}
@@ -228,7 +250,7 @@ export function PhotosSkin(p: Props) {
             <p className="media-count">{list.length} 个项目</p>
           </>
         )}
-        <Empty items={list} />
+        <Empty items={album && albumLocked ? [] : list} />
       </div>
       <Tabs
         tabs={["图库", "相簿", "收藏"]}
@@ -236,6 +258,7 @@ export function PhotosSkin(p: Props) {
         set={(t) => {
           setTab(t);
           setAlbum("");
+          setAlbumLocked(false);
         }}
         icons={[<Image />, <Folder />, <Heart />]}
       />
@@ -305,6 +328,8 @@ export function CameraSkin(p: Props) {
 export function SafariSkin(p: Props) {
   const [q, setQ] = useState(""),
     [tab, setTab] = useState("书签");
+  const [historyHintSeen, setHistoryHintSeen] = useSkinState<boolean>(p, "historyHintSeen", false);
+  const [showHistoryHint, setShowHistoryHint] = useState(false);
   const items = p.items
     .filter((i) =>
       (i.title + i.body + meta(i, "url"))
@@ -312,15 +337,26 @@ export function SafariSkin(p: Props) {
         .includes(q.toLowerCase()),
     )
     .filter((i) =>
-      tab === "书签"
-        ? i.favorite || i.folder !== "历史记录"
-        : i.folder === "历史记录",
+      q.trim()
+        ? true
+        : tab === "书签"
+          ? Boolean(i.favorite)
+          : i.folder === "历史记录",
     );
   return (
     <div className="catalog-skin native-safari">
       <Header p={p} />
       <div className="catalog-scroll">
         <h1>{tab}</h1>
+        {tab === "历史记录" && showHistoryHint && (
+          <div role="status" style={{ margin: "0 14px 12px", padding: "10px 12px", borderRadius: 12, background: "rgba(128,128,128,.10)", color: "var(--secondary-label, #777)", fontSize: 12, lineHeight: 1.5 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", gap: 8, alignItems: "center" }}>
+              <strong style={{ color: "var(--label, inherit)" }}>小提示</strong>
+              <button aria-label="关闭提示" onClick={() => setShowHistoryHint(false)}>×</button>
+            </div>
+            浏览记录较多时，可以使用搜索功能，查找以前访问过的网页。
+          </div>
+        )}
         <div className="safari-favorites">
           {items.map((i) => (
             <button key={i.id} onClick={() => p.onItem(i)}>
@@ -328,7 +364,8 @@ export function SafariSkin(p: Props) {
                 <Globe size={28} />
               </span>
               <strong>{i.title}</strong>
-              <small>{meta(i, "url")}</small>
+              <small>{i.time}</small>
+              <small>{i.body}</small>
             </button>
           ))}
         </div>
@@ -339,7 +376,7 @@ export function SafariSkin(p: Props) {
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="搜索或输入虚构网址"
+          placeholder="可以搜一搜，或输入网址"
           aria-label="地址栏"
           onKeyDown={(e) => {
             if (e.key === "Enter" && items[0]) p.onItem(items[0]);
@@ -350,7 +387,13 @@ export function SafariSkin(p: Props) {
       <Tabs
         tabs={["书签", "历史记录"]}
         value={tab}
-        set={setTab}
+        set={(next) => {
+          setTab(next);
+          if (next === "历史记录" && !historyHintSeen) {
+            setShowHistoryHint(true);
+            setHistoryHintSeen(true);
+          }
+        }}
         icons={[<Globe />, <Clock />]}
       />
     </div>

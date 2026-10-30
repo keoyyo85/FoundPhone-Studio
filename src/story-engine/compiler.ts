@@ -200,9 +200,17 @@ export function compileStory(raw: unknown): { story: Story; work: Work } {
           title: chat.title,
           sender:
             senderId === "owner"
-              ? s.phone.owner
+              ? chat.app === "kakao"
+                ? s.phone.kakaoName || s.phone.owner
+                : chat.app === "wechat"
+                  ? s.phone.wechatName || s.phone.owner
+                  : s.phone.owner
               : contacts.get(senderId || "")?.name || m.sender || s.phone.owner,
-          avatar: m.avatar || contacts.get(senderId || "")?.avatar || "",
+          avatar:
+            m.avatar ||
+            (senderId === "owner"
+              ? s.phone.ownerAvatar || ""
+              : contacts.get(senderId || "")?.avatar || ""),
           outgoing: senderId === "owner" || m.outgoing,
           meta: {
             ...m.meta,

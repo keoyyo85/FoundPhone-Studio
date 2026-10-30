@@ -1,16 +1,23 @@
 {
   "scriptVersion": 1,
   "id": "ui-test-phone-v2",
-  "title": "捡手机",
-  "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "title": "捡手机｜周安信的手机",
+  "description": "你以 CPF 的身份意外捡到周安信的手机。手机保留原版锁屏、桌面与 App。当前聊天停留在 2025 年一公前后；聊天里提到的旧视频、照片和浏览记录则指向 2024 年。所有关系线索都需要玩家自己发现。平行世界虚构设定。",
+  "revision": 21,
   "phone": {
-    "owner": "机主",
-    "date": "2026-10-25",
-    "time": "09:41",
+    "owner": "周安信",
+    "date": "2025-08-23",
+    "time": "22:48",
     "battery": 94,
     "network": "5G",
-    "wallpaper": "apple-wwdc26"
+    "wallpaper": "apple-wwdc26",
+    "passcode": "1225",
+    "notifications": true,
+    "kakaoName": "안신",
+    "wechatName": "今天也没早睡",
+    "socialName": "afterglow.zip",
+    "ownerAvatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg",
+    "wechatAvatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
   },
   "installedApps": [
     "appstore",
@@ -89,611 +96,760 @@
   ],
   "contacts": [
     {
-      "id": "test-contact",
-      "name": "测试联系人",
+      "id": "sangwon",
+      "name": "🐰",
+      "phone": "010-0000-0000",
+      "avatar": "https://i.pinimg.com/originals/56/cd/8c/56cd8c2d42fd758a7d563d3af8f0f7c0.jpg"
+    },
+    {
+      "id": "jiahao",
+      "name": "家豪哥",
       "phone": "",
-      "bio": "这是一条测试内容。"
+      "avatar": "https://makemate1ss.github.io/assets/trainees/Jiahao.png"
+    },
+    {
+      "id": "sanghyeon",
+      "name": "상현",
+      "phone": "",
+      "avatar": "https://cdn.kpopping.com/kpics/2026/04/1775997019910-uef4il-0.jpg"
+    },
+    {
+      "id": "geonwoo",
+      "name": "건우",
+      "phone": "",
+      "avatar": "https://pbs.twimg.com/media/HBK-gOYaAAAdRmS.jpg"
+    },
+    {
+      "id": "xinlong",
+      "name": "鑫隆",
+      "phone": "",
+      "avatar": "https://cdn.kpopping.com/kpics/2026/02/1771084699350-bnuf44-0.jpeg"
+    },
+    {
+      "id": "leo",
+      "name": "리오형",
+      "phone": "",
+      "avatar": "https://pbs.twimg.com/media/HFLaH5kaMAANHZj.jpg"
+    },
+    {
+      "id": "junseo",
+      "name": "준서형",
+      "phone": "",
+      "avatar": "https://image.static.bstage.in/cdn-cgi/image/metadata%3Dnone/ald1/485da96c-e34f-45e8-ab26-9eba22f41b1f/4b18b46b-a52b-496b-a22d-2e1e62c8f194/ori.jpg"
+    },
+    {
+      "id": "hanzhong",
+      "name": "한중",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "surin",
+      "name": "설수인",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "gangmin",
+      "name": "유강민",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "kevin",
+      "name": "천카이원",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "liyu",
+      "name": "최리위",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "family-father",
+      "name": "爸爸",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "family-mother",
+      "name": "妈妈",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "family-brother",
+      "name": "弟弟",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "staff-manager",
+      "name": "매니저님",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "staff-stylist",
+      "name": "스타일리스트 누나",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "staff-coordinator",
+      "name": "현장 스태프",
+      "phone": "",
+      "avatar": ""
     }
   ],
   "chats": [
     {
-      "id": "test-chat-messages",
-      "app": "messages",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messages",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-wechat",
-      "app": "wechat",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-wechat",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-qq",
-      "app": "qq",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-qq",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-whatsapp",
-      "app": "whatsapp",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-whatsapp",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-telegram",
-      "app": "telegram",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-telegram",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-discord",
-      "app": "discord",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-discord",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-line",
-      "app": "line",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-line",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-messenger",
-      "app": "messenger",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messenger",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-kakao",
+      "id": "kakao-sangwon",
       "app": "kakao",
-      "title": "测试会话",
+      "title": "🐰",
       "participants": [
         "owner",
-        "test-contact"
+        "sangwon"
       ],
       "messages": [
         {
-          "id": "test-message-kakao",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
+          "id": "ksw-25-01",
+          "title": "",
+          "body": "안신아, 이거 내 번호야. 카카오톡으로 추가해.\n安信，这是我的号码。KakaoTalk 上加我吧。",
+          "time": "2025-08-08 18:10",
+          "senderId": "sangwon",
+          "kind": "text",
+          "avatar": "https://i.pinimg.com/originals/56/cd/8c/56cd8c2d42fd758a7d563d3af8f0f7c0.jpg"
         },
         {
-          "id": "test-reply-kakao",
-          "body": "这是一条测试回复。",
-          "senderId": "owner"
+          "id": "ksw-25-02",
+          "title": "",
+          "body": "좋아요! 사실 형이랑 계속 얘기하고 싶었어요. 형을 좋아해서요ㅋㅋ\n好！其实我一直想找哥聊天，因为喜欢哥ㅋㅋ",
+          "time": "2025-08-08 18:12",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        },
+        {
+          "id": "ksw-25-03",
+          "title": "",
+          "body": "ㅋㅋ 갑자기 그렇게 말하니까 좀 놀랐네. 앞으로 자주 연락하자.\nㅋㅋ 突然这么说，我都有点意外了。以后多联系吧。",
+          "time": "2025-08-08 18:13",
+          "senderId": "sangwon",
+          "kind": "text",
+          "avatar": "https://i.pinimg.com/originals/56/cd/8c/56cd8c2d42fd758a7d563d3af8f0f7c0.jpg"
+        },
+        {
+          "id": "ksw-25-04",
+          "title": "",
+          "body": "네! 앞으로 잘 부탁드려요, 형.\n嗯！以后请多关照，哥。",
+          "time": "2025-08-08 18:15",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        },
+        {
+          "id": "ksw-25-05",
+          "title": "",
+          "body": "나도 잘 부탁해, 안신아.\n我也请多关照，安信。",
+          "time": "2025-08-08 18:17",
+          "senderId": "sangwon",
+          "kind": "text",
+          "avatar": "https://i.pinimg.com/originals/56/cd/8c/56cd8c2d42fd758a7d563d3af8f0f7c0.jpg"
+        },
+        {
+          "id": "ksw-25-06",
+          "title": "",
+          "body": "너희 훠궈집 도착했어?\n你们到海底捞了吗？",
+          "time": "2025-08-23 18:32",
+          "senderId": "sangwon",
+          "kind": "text",
+          "avatar": "https://i.pinimg.com/originals/56/cd/8c/56cd8c2d42fd758a7d563d3af8f0f7c0.jpg"
+        },
+        {
+          "id": "ksw-25-07",
+          "title": "",
+          "body": "도착했어요. 방금 앉았어요.\n到了，刚坐下。",
+          "time": "2025-08-23 18:35",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        },
+        {
+          "id": "ksw-25-08",
+          "title": "",
+          "body": "그럼 언제 와? 우리 다 왔어. 빨리 와.\n那你什么时候来？我们都到了，快来。",
+          "time": "2025-08-23 18:37",
+          "senderId": "sangwon",
+          "kind": "text",
+          "avatar": "https://i.pinimg.com/originals/56/cd/8c/56cd8c2d42fd758a7d563d3af8f0f7c0.jpg"
+        },
+        {
+          "id": "ksw-25-09",
+          "title": "",
+          "body": "안신아, 오늘도 고생했어. 조심히 들어가.\n安信啊，今天也辛苦了，回去路上小心。",
+          "time": "2025-08-23 22:46",
+          "senderId": "sangwon",
+          "kind": "text",
+          "avatar": "https://i.pinimg.com/originals/56/cd/8c/56cd8c2d42fd758a7d563d3af8f0f7c0.jpg"
+        }
+      ]
+    },
+    {
+      "id": "kakao-alpha-group",
+      "app": "kakao",
+      "title": "ALD1 🏠",
+      "participants": [
+        "owner",
+        "sangwon",
+        "jiahao",
+        "leo",
+        "junseo",
+        "sanghyeon",
+        "xinlong"
+      ],
+      "messages": [
+        {
+          "id": "kag-01",
+          "title": "",
+          "body": "내일은 전원 합동 연습이야. 모이는 시간은 그대로 오전 10시야.\n明天全员合练，集合时间还是上午十点。",
+          "time": "2026-10-23 20:12",
+          "senderId": "sanghyeon",
+          "kind": "text",
+          "avatar": "https://cdn.kpopping.com/kpics/2026/04/1775997019910-uef4il-0.jpg"
+        },
+        {
+          "id": "kag-02",
+          "title": "",
+          "body": "확인했어요!\n收到！",
+          "time": "2026-10-23 20:13",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        },
+        {
+          "id": "kag-03",
+          "title": "",
+          "body": "안신아, 내일 늦잠 자지 마ㅋㅋ\n安信，明天别睡过头ㅋㅋ",
+          "time": "2026-10-23 20:15",
+          "senderId": "jiahao",
+          "kind": "text",
+          "avatar": "https://makemate1ss.github.io/assets/trainees/Jiahao.png"
+        },
+        {
+          "id": "kag-04",
+          "title": "",
+          "body": "알았어요ㅋㅋ 일찍 갈게요.\n知道啦ㅋㅋ 我会早点到的。",
+          "time": "2026-10-23 20:16",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        },
+        {
+          "id": "kag-05",
+          "title": "",
+          "body": "내일 연습실에서 봐, 안신아.\n明天练习室见，安信。",
+          "time": "2026-10-23 20:18",
+          "senderId": "sangwon",
+          "kind": "text",
+          "avatar": "https://i.pinimg.com/originals/56/cd/8c/56cd8c2d42fd758a7d563d3af8f0f7c0.jpg"
+        },
+        {
+          "id": "kag-06",
+          "title": "",
+          "body": "네, 형!\n好，哥！",
+          "time": "2026-10-23 20:19",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        }
+      ]
+    },
+    {
+      "id": "wechat-jiahao",
+      "app": "wechat",
+      "title": "家豪哥",
+      "participants": [
+        "owner",
+        "jiahao"
+      ],
+      "messages": [
+        {
+          "id": "wjh-25-01",
+          "title": "",
+          "body": "一公练得怎么样了？你们那组最近练得挺晚吧。",
+          "time": "2025-07-22 21:06",
+          "senderId": "jiahao",
+          "kind": "text",
+          "avatar": "https://makemate1ss.github.io/assets/trainees/Jiahao.png"
+        },
+        {
+          "id": "wjh-25-02",
+          "title": "",
+          "body": "还行，今天后半段有几个地方还得再磨一下。",
+          "time": "2025-07-22 21:08",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        },
+        {
+          "id": "wjh-25-03",
+          "title": "",
+          "body": "我刚刚看见相沅，感觉他今天练习的时候不太开心。",
+          "time": "2025-07-22 21:10",
+          "senderId": "jiahao",
+          "kind": "text",
+          "avatar": "https://makemate1ss.github.io/assets/trainees/Jiahao.png"
+        },
+        {
+          "id": "wjh-25-04",
+          "title": "",
+          "body": "嗯，他今天状态不太好。我刚刚去找他聊了一会儿，算是安慰了一下。",
+          "time": "2025-07-22 21:12",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        },
+        {
+          "id": "wjh-25-05",
+          "title": "",
+          "body": "你们一组的事你倒是挺上心。",
+          "time": "2025-07-22 21:14",
+          "senderId": "jiahao",
+          "kind": "text",
+          "avatar": "https://makemate1ss.github.io/assets/trainees/Jiahao.png"
+        },
+        {
+          "id": "wjh-25-06",
+          "title": "",
+          "body": "他一个人待着，我就过去看看。",
+          "time": "2025-07-22 21:15",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        },
+        {
+          "id": "wjh-25-07",
+          "title": "",
+          "body": "说起来，你以前就挺关注他的吧。",
+          "time": "2025-07-22 21:18",
+          "senderId": "jiahao",
+          "kind": "text",
+          "avatar": "https://makemate1ss.github.io/assets/trainees/Jiahao.png"
+        },
+        {
+          "id": "wjh-25-08",
+          "title": "",
+          "body": "你说哪次？",
+          "time": "2025-07-22 21:19",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        },
+        {
+          "id": "wjh-25-09",
+          "title": "",
+          "body": "我当年给你看Trainee A他们视频那次啊，你看完还自己去搜了相沅。",
+          "time": "2025-07-22 21:21",
+          "senderId": "jiahao",
+          "kind": "text",
+          "avatar": "https://makemate1ss.github.io/assets/trainees/Jiahao.png"
+        },
+        {
+          "id": "wjh-25-10",
+          "title": "",
+          "body": "……只是觉得他的舞跳得很好。",
+          "time": "2025-07-22 21:23",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        },
+        {
+          "id": "wjh-25-11",
+          "title": "",
+          "body": "好好好，我又没说什么ㅋㅋ",
+          "time": "2025-07-22 21:24",
+          "senderId": "jiahao",
+          "kind": "text",
+          "avatar": "https://makemate1ss.github.io/assets/trainees/Jiahao.png"
+        }
+      ]
+    },
+    {
+      "id": "wechat-family-mom",
+      "app": "wechat",
+      "title": "妈妈",
+      "participants": [
+        "owner",
+        "family-mother"
+      ],
+      "messages": [
+        {
+          "id": "wfm-01",
+          "title": "",
+          "body": "安信，今天吃饭了吗？",
+          "time": "2026-10-24 19:10",
+          "senderId": "family-mother",
+          "kind": "text"
+        },
+        {
+          "id": "wfm-02",
+          "title": "",
+          "body": "吃了，刚结束练习。",
+          "time": "2026-10-24 19:18",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        },
+        {
+          "id": "wfm-03",
+          "title": "",
+          "body": "最近天气变化大，记得带外套。",
+          "time": "2026-10-24 19:20",
+          "senderId": "family-mother",
+          "kind": "text"
+        },
+        {
+          "id": "wfm-04",
+          "title": "",
+          "body": "好，知道啦。你和爸爸也早点休息。",
+          "time": "2026-10-24 19:22",
+          "senderId": "owner",
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
+        }
+      ]
+    },
+    {
+      "id": "kakao-staff-group",
+      "app": "kakao",
+      "title": "스케줄 · 현장 공지",
+      "participants": [
+        "owner",
+        "staff-manager",
+        "staff-coordinator",
+        "staff-stylist"
+      ],
+      "messages": [
+        {
+          "id": "ksg-01",
+          "title": "",
+          "body": "이번 주 연습실 일정이 업데이트됐습니다. 모두 시간을 확인해 주세요.\n本周练习室安排已更新，请大家确认时间。",
+          "time": "2026-10-24 10:02",
+          "senderId": "staff-manager",
+          "kind": "text"
+        },
+        {
+          "id": "ksg-02",
+          "title": "",
+          "body": "확인했습니다.\n收到。",
+          "time": "2026-10-24 10:05",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ksg-03",
+          "title": "",
+          "body": "내일 녹음 전에 15분 일찍 도착해 주세요.\n明天录音前请提前十五分钟到场。",
+          "time": "2026-10-24 10:06",
+          "senderId": "staff-coordinator",
+          "kind": "text"
+        },
+        {
+          "id": "ksg-04",
+          "title": "",
+          "body": "의상 사이즈 조정이 필요한 멤버는 오늘 퇴근 전까지 개인 메시지 주세요.\n服装尺寸有需要调整的成员请今天下班前私信。",
+          "time": "2026-10-24 10:08",
+          "senderId": "staff-stylist",
+          "kind": "text"
         }
       ]
     }
   ],
   "content": {
-    "phone": [
+    "notes": [
       {
-        "id": "test-item-phone",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "contacts": [
+        "id": "note-practice-2024",
+        "title": "练习室备忘",
+        "body": "今天把基础动作重新顺了一遍。家豪哥发来的旧视频还没看完，明天练习前再看一次。",
+        "time": "2024-06-17 22:10",
+        "kind": "note"
+      },
       {
-        "id": "test-item-contacts",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "note-name-search",
+        "title": "一个名字",
+        "body": "今天搜了一个名字。只是想确认一下写法，没什么特别的。",
+        "time": "2024-06-17 21:23",
+        "kind": "note",
+        "hidden": true
       }
     ],
     "photos": [
       {
-        "id": "test-item-photos",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "camera": [
+        "id": "photo-sangyuan-01",
+        "title": "桑元 · 01",
+        "body": "",
+        "time": "2024-06-17 21:30",
+        "kind": "image",
+        "media": "data:image/webp;base64,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",
+        "folder": "桑元",
+        "hidden": false,
+        "password": "20240617"
+      },
       {
-        "id": "test-item-camera",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "safari": [
+        "id": "photo-sangyuan-02",
+        "title": "桑元 · 02",
+        "body": "",
+        "time": "2024-06-17 21:31",
+        "kind": "image",
+        "media": "data:image/webp;base64,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",
+        "folder": "桑元",
+        "hidden": false,
+        "password": "20240617"
+      },
       {
-        "id": "test-item-safari",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "notes": [
+        "id": "photo-sangyuan-03",
+        "title": "桑元 · 03",
+        "body": "Trainee A 时期照片",
+        "time": "2024-06-17 21:32",
+        "kind": "image",
+        "media": "https://i.pinimg.com/originals/0a/2a/41/0a2a414136cadd45e081c6551c93a6a8.jpg",
+        "folder": "桑元"
+      },
       {
-        "id": "test-item-notes",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "photo-sangyuan-04",
+        "title": "桑元 · 04",
+        "body": "Trainee A 时期照片",
+        "time": "2024-06-17 21:33",
+        "kind": "image",
+        "media": "https://i.pinimg.com/736x/61/1b/4d/611b4d3702d6072033b5588ed3789f85.jpg",
+        "folder": "桑元"
+      },
+      {
+        "id": "photo-sangyuan-05",
+        "title": "桑元 · 05",
+        "body": "Trainee A 时期照片",
+        "time": "2024-06-17 21:34",
+        "kind": "image",
+        "media": "https://cdns.klimg.com/kapanlagi.com/g/p/o/potret_sangwon_member_trainee_a_bighit_music_yang_diharapkan_netizen_bisa_debut_visual_ganteng_curi_hati_-_jago_dance/p/sangwon_trainee_a_hybe_labels-20221113-007-non_fotografer_kly.jpg",
+        "folder": "桑元"
+      },
+      {
+        "id": "photo-sangyuan-06",
+        "title": "桑元 · 06",
+        "body": "Trainee A 时期照片",
+        "time": "2024-06-17 21:35",
+        "kind": "image",
+        "media": "https://pbs.twimg.com/media/FORHXAyVkAQtGQ6.jpg",
+        "folder": "桑元"
       }
     ],
     "calendar": [
       {
-        "id": "test-item-calendar",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "mail": [
-      {
-        "id": "test-item-mail",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "clock": [
-      {
-        "id": "test-item-clock",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reminders": [
-      {
-        "id": "test-item-reminders",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "cal-practice",
+        "title": "练习生课程",
+        "body": "舞蹈基础练习。",
+        "time": "2024-06-18 14:00",
+        "kind": "event"
       }
     ],
     "files": [
       {
-        "id": "test-item-files",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "file-trainee-a-video",
+        "title": "Trainee A 练习室视频",
+        "body": "家豪哥分享的视频。",
+        "time": "2024-06-17 21:08",
+        "kind": "video",
+        "folder": "下载"
       }
     ],
-    "music": [
+    "safari": [
       {
-        "id": "test-item-music",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
+        "id": "search-sangyuan",
+        "title": "桑元",
+        "body": "搜索记录 · 2024年6月17日 21:19",
+        "time": "2024-06-17 21:19",
         "kind": "text",
-        "meta": {}
-      }
-    ],
-    "maps": [
-      {
-        "id": "test-item-maps",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weather": [
-      {
-        "id": "test-item-weather",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "wallet": [
-      {
-        "id": "test-item-wallet",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "health": [
-      {
-        "id": "test-item-health",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "find": [
-      {
-        "id": "test-item-find",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "calculator": [
-      {
-        "id": "test-item-calculator",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "settings": [
-      {
-        "id": "test-item-settings",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weibo": [
-      {
-        "id": "test-item-weibo",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "redbook": [
-      {
-        "id": "test-item-redbook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "douyin": [
-      {
-        "id": "test-item-douyin",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "bilibili": [
-      {
-        "id": "test-item-bilibili",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "alipay": [
-      {
-        "id": "test-item-alipay",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "taobao": [
-      {
-        "id": "test-item-taobao",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netease": [
-      {
-        "id": "test-item-netease",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "delivery": [
-      {
-        "id": "test-item-delivery",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "forum": [
-      {
-        "id": "test-item-forum",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "instagram": [
-      {
-        "id": "test-item-instagram",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "tiktok": [
-      {
-        "id": "test-item-tiktok",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "twitter": [
-      {
-        "id": "test-item-twitter",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "youtube": [
-      {
-        "id": "test-item-youtube",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "snapchat": [
-      {
-        "id": "test-item-snapchat",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "facebook": [
-      {
-        "id": "test-item-facebook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reddit": [
-      {
-        "id": "test-item-reddit",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "spotify": [
-      {
-        "id": "test-item-spotify",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netflix": [
-      {
-        "id": "test-item-netflix",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "pinterest": [
-      {
-        "id": "test-item-pinterest",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "threads": [
-      {
-        "id": "test-item-threads",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "folder": "搜索索引",
+        "favorite": false
       },
       {
-        "id": "test-threads-message-1",
-        "title": "测试会话1",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人1",
-        "folder": "私信"
+        "id": "search-trainee-a",
+        "title": "Trainee A",
+        "body": "搜索记录 · 2024年6月17日 21:14",
+        "time": "2024-06-17 21:14",
+        "kind": "text",
+        "folder": "搜索索引",
+        "favorite": false
       },
       {
-        "id": "test-threads-activity-1",
-        "title": "测试动态1",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户1",
+        "id": "history-01",
+        "title": "海底捞附近门店",
+        "body": "网页访问记录",
+        "time": "2025-08-23 17:46",
+        "kind": "text",
+        "folder": "历史记录"
+      },
+      {
+        "id": "history-02",
+        "title": "练习室到宿舍路线",
+        "body": "网页访问记录",
+        "time": "2025-08-22 23:08",
+        "kind": "text",
+        "folder": "历史记录"
+      },
+      {
+        "id": "history-03",
+        "title": "首尔天气",
+        "body": "网页访问记录",
+        "time": "2025-08-22 09:14",
+        "kind": "text",
+        "folder": "历史记录"
+      },
+      {
+        "id": "history-04",
+        "title": "舞蹈练习拉伸",
+        "body": "网页访问记录",
+        "time": "2025-07-30 00:32",
+        "kind": "text",
+        "folder": "历史记录"
+      },
+      {
+        "id": "history-05",
+        "title": "KakaoTalk 帮助中心",
+        "body": "网页访问记录",
+        "time": "2025-08-08 18:20",
+        "kind": "text",
+        "folder": "历史记录"
+      },
+      {
+        "id": "bookmark-naver",
+        "title": "NAVER",
+        "body": "韩国常用门户网站",
+        "time": "2025-08-23 12:00",
+        "kind": "text",
+        "folder": "书签",
+        "favorite": true,
         "meta": {
-          "activityType": "reply"
+          "url": "https://www.naver.com/"
         }
       },
       {
-        "id": "test-threads-message-2",
-        "title": "测试会话2",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人2",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-2",
-        "title": "测试动态2",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户2",
+        "id": "bookmark-google",
+        "title": "Google",
+        "body": "搜索网页和资料",
+        "time": "2025-08-23 12:00",
+        "kind": "text",
+        "folder": "书签",
+        "favorite": true,
         "meta": {
-          "activityType": "reply"
+          "url": "https://www.google.com/"
         }
       },
       {
-        "id": "test-threads-message-3",
-        "title": "测试会话3",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人3",
-        "folder": "私信"
+        "id": "bookmark-youtube",
+        "title": "YouTube",
+        "body": "视频平台",
+        "time": "2025-08-23 12:00",
+        "kind": "text",
+        "folder": "书签",
+        "favorite": true,
+        "meta": {
+          "url": "https://www.youtube.com/"
+        }
       },
       {
-        "id": "test-threads-activity-3",
-        "title": "测试动态3",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户3",
+        "id": "bookmark-melon",
+        "title": "Melon",
+        "body": "韩国音乐平台",
+        "time": "2025-08-23 12:00",
+        "kind": "text",
+        "folder": "书签",
+        "favorite": true,
         "meta": {
-          "activityType": "reply"
+          "url": "https://www.melon.com/"
+        }
+      },
+      {
+        "id": "bookmark-kakao",
+        "title": "KakaoTalk",
+        "body": "KakaoTalk 官方帮助中心",
+        "time": "2025-08-23 12:00",
+        "kind": "text",
+        "folder": "书签",
+        "favorite": true,
+        "meta": {
+          "url": "https://cs.kakao.com/"
         }
       }
     ],
-    "appstore": [
+    "music": [],
+    "netease": [],
+    "twitter": [],
+    "instagram": [],
+    "phone": [
       {
-        "id": "test-appstore",
-        "title": "测试内容",
-        "body": "这是一条测试内容。"
+        "id": "phone-recent",
+        "title": "最近通话",
+        "body": "家豪哥（已接）\n妈妈（已接）",
+        "kind": "text"
       }
-    ]
+    ],
+    "contacts": [],
+    "messages": [],
+    "threads": [],
+    "weibo": []
   },
-  "variables": {},
-  "events": [],
-  "tests": []
+  "variables": {
+    "trust_sangwon": 0,
+    "suspicion_sangwon": 0,
+    "exposure_risk": 0,
+    "truth_complete": 0,
+    "player_told_truth": false,
+    "endingArchive": "{\"status\":\"暂存，不接入当前玩家流程\",\"note\":\"仅保留旧结局构想；当前版本只制作第一条线索，不触发任何正式结局。\",\"endings\":[{\"id\":\"A\",\"name\":\"秘密继续\",\"trigger\":\"保守秘密，不主动干预两人关系\"},{\"id\":\"B\",\"name\":\"差一点曝光\",\"trigger\":\"无意间引发外部危机，秘密接近曝光\"},{\"id\":\"C\",\"name\":\"坦诚相见\",\"trigger\":\"帮助两人面对顾虑，但不预设相沅已经知情或双向确认\"},{\"id\":\"D\",\"name\":\"无法挽回\",\"trigger\":\"秘密泄露，造成关系裂痕\"},{\"id\":\"E\",\"name\":\"未完待续\",\"trigger\":\"尚未找全真相便归还手机\"}]}"
+  },
+  "events": [
+    {
+      "id": "story-start",
+      "label": "锁屏通知｜🐰",
+      "type": "start",
+      "actions": [
+        {
+          "type": "notification",
+          "key": "story",
+          "value": "🐰: 안신아, 오늘도 고생했어. 조심히 들어가.\n安信啊，今天也辛苦了，回去路上小心。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "qa-test-only-checkpoint",
+      "label": "QA 测试占位｜不属于玩家剧情",
+      "type": "ending",
+      "event": "qaTestOnly",
+      "target": "",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "ending",
+          "value": "QA测试占位（不在玩家流程触发）"
+        }
+      ],
+      "next": []
+    }
+  ],
+  "tests": [
+    {
+      "name": "CI 流程检查（仅测试专用事件，不触发玩家结局）",
+      "steps": [
+        {
+          "event": "qaTestOnly"
+        }
+      ],
+      "ending": "QA测试占位（不在玩家流程触发）",
+      "expectUnlocked": []
+    }
+  ]
 }

@@ -330,7 +330,7 @@ export function ThreadsReference(p: SkinProps) {
             {tab === "个人主页" && (
               <>
                 <div className="tr-profile">
-                  <Avatar name={p.owner || "机主"} />
+                  <Avatar name={p.owner || "机主"} src={p.ownerAvatar} />
                   <p>{p.owner}</p>
                 </div>
                 {feed
@@ -447,7 +447,7 @@ export function ThreadsReference(p: SkinProps) {
             </button>
           </header>
           <div className="tr-compose-content">
-            <Avatar name={p.owner || "机主"} />
+            <Avatar name={p.owner || "机主"} src={p.ownerAvatar} />
             <div>
               <b>{p.owner}</b>
               <span className="tr-muted"> › 社群或话题</span>
