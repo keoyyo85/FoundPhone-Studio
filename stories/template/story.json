@@ -1149,16 +1149,12 @@
         {
           "type": "unlock",
           "key": "note-route-final",
-          "value": true
+          "value": "true"
         },
         {
           "type": "notification",
           "key": "story",
           "value": "手机里似乎有一条未读备忘录。"
-        },
-        {
-          "type": "clue",
-          "key": "first-impression"
         },
         {
           "type": "variable",
@@ -1177,7 +1173,8 @@
       "actions": [
         {
           "type": "clue",
-          "key": "relationship-confirmed"
+          "key": "relationship-confirmed",
+          "value": "true"
         },
         {
           "type": "variable",
