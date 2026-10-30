@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机｜周安信的秘密",
   "description": "你在练习室附近捡到一部手机。锁屏密码是1225。手机主人是周安信。聊天、相册、备忘录和社交动态里，似乎藏着他与备注为🐰的李相沅之间不愿公开的关系。这是K-pop娱乐产业背景下的平行世界虚构故事，与现实人物及现实关系无关。",
-  "revision": 6,
+  "revision": 7,
   "phone": {
     "owner": "周安信",
     "date": "2026-10-25",
@@ -203,6 +203,406 @@
       ],
       "messages": [
         {
+          "id": "ks-old-01",
+          "title": "",
+          "body": "今天彩排的时候，你鞋带散了。回去记得重新系一下。",
+          "time": "2025-06-18 21:14",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-02",
+          "title": "",
+          "body": "你怎么连这个都看见了ㅋㅋ 谢谢哥！",
+          "time": "2025-06-18 21:16",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-03",
+          "title": "",
+          "body": "今天那段练习我还是没做好，有点烦。",
+          "time": "2025-06-22 23:08",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-04",
+          "title": "",
+          "body": "我觉得比昨天好多了。先睡觉，明天再练。",
+          "time": "2025-06-22 23:12",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-05",
+          "title": "",
+          "body": "你上次说想看的那本书，我拍了封面。",
+          "time": "2025-07-03 19:42",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-06",
+          "title": "",
+          "body": "记得！哥怎么还真的帮我找了ㅋㅋ",
+          "time": "2025-07-03 19:45",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-07",
+          "title": "",
+          "body": "今天见面会我喊错口号的时候你是不是笑我了？",
+          "time": "2025-07-11 00:26",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-08",
+          "title": "",
+          "body": "没有。只是没忍住ㅋㅋ 你自己也笑了。",
+          "time": "2025-07-11 00:29",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-09",
+          "title": "",
+          "body": "今天舞台结束后还好吗？看你一直在找水。",
+          "time": "2025-07-19 22:03",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-10",
+          "title": "",
+          "body": "没事！就是跑太快了。哥也辛苦了。",
+          "time": "2025-07-19 22:06",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-11",
+          "title": "",
+          "body": "我把你上次推荐的歌听完了。后半段很好听。",
+          "time": "2025-08-02 20:18",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-12",
+          "title": "",
+          "body": "我就知道你会喜欢那一段。",
+          "time": "2025-08-02 20:22",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-13",
+          "title": "",
+          "body": "今天你没怎么说话。是不舒服吗？",
+          "time": "2025-08-10 23:41",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-14",
+          "title": "",
+          "body": "有点想家，过一会儿就好了。",
+          "time": "2025-08-10 23:44",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-15",
+          "title": "",
+          "body": "那要不要出来走走？不想说话也没关系。",
+          "time": "2025-08-10 23:47",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-16",
+          "title": "",
+          "body": "刚才你拉开帘子的时候吓我一跳ㅋㅋ",
+          "time": "2025-08-21 18:36",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-17",
+          "title": "",
+          "body": "明明是你先站在门口发呆。",
+          "time": "2025-08-21 18:39",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-18",
+          "title": "",
+          "body": "今天练习室空调很冷，你的外套呢？",
+          "time": "2025-09-04 22:16",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-19",
+          "title": "",
+          "body": "忘在车上了。哥不要像我妈一样ㅋㅋ",
+          "time": "2025-09-04 22:19",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-20",
+          "title": "",
+          "body": "那你至少把我的穿上。",
+          "time": "2025-09-04 22:21",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-21",
+          "title": "",
+          "body": "睡了吗？突然想起今天那件事，有点好笑。",
+          "time": "2025-09-16 00:11",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-22",
+          "title": "",
+          "body": "还没。讲给我听。",
+          "time": "2025-09-16 00:15",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-23",
+          "title": "",
+          "body": "你今天彩排结束后一直在看我。",
+          "time": "2025-10-02 20:32",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-24",
+          "title": "",
+          "body": "我是在看镜子！刚好镜子里有你ㅋㅋ",
+          "time": "2025-10-02 20:35",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-25",
+          "title": "",
+          "body": "今天公布结果前我手心全是汗。",
+          "time": "2025-10-18 23:02",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-26",
+          "title": "",
+          "body": "我看出来了。你一直在捏袖口。",
+          "time": "2025-10-18 23:05",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-27",
+          "title": "",
+          "body": "今天分组练习辛苦了。你那段动作已经很稳了。",
+          "time": "2025-11-06 21:40",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-28",
+          "title": "",
+          "body": "你每次都能找到我哪里没做好ㅋㅋ",
+          "time": "2025-11-06 21:43",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-29",
+          "title": "",
+          "body": "生日快乐，安信。今天要许一个好一点的愿望。",
+          "time": "2025-12-25 00:04",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-30",
+          "title": "",
+          "body": "谢谢哥！你是第一个发的？",
+          "time": "2025-12-25 00:08",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-31",
+          "title": "",
+          "body": "今天采访的时候差点说漏嘴，幸好忍住了。",
+          "time": "2026-01-09 23:18",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-32",
+          "title": "",
+          "body": "我听见了。你反应很快，别紧张。",
+          "time": "2026-01-09 23:21",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-33",
+          "title": "",
+          "body": "新舞台的耳返试过了吗？不舒服就跟工作人员说。",
+          "time": "2026-02-03 19:56",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-34",
+          "title": "",
+          "body": "试过了！哥今天也早点回去休息。",
+          "time": "2026-02-03 20:00",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-35",
+          "title": "",
+          "body": "今天结束得晚，你还在练习室吗？",
+          "time": "2026-03-12 00:17",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-36",
+          "title": "",
+          "body": "在。你过来的话穿厚一点。",
+          "time": "2026-03-12 00:20",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-37",
+          "title": "",
+          "body": "到宿舍告诉我一声。今天路上人很多。",
+          "time": "2026-04-06 22:48",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-38",
+          "title": "",
+          "body": "到了。你也别一个人走小路。",
+          "time": "2026-04-06 22:51",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-39",
+          "title": "",
+          "body": "刚刚差点在大家面前叫错称呼ㅋㅋ",
+          "time": "2026-05-02 01:06",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-40",
+          "title": "",
+          "body": "我听见了。还好他们没注意。",
+          "time": "2026-05-02 01:09",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-41",
+          "title": "",
+          "body": "今天拍摄的时候你一直站在我旁边。",
+          "time": "2026-06-14 23:32",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-42",
+          "title": "",
+          "body": "位置刚好在那里嘛。哥不是也没走开ㅋㅋ",
+          "time": "2026-06-14 23:35",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-43",
+          "title": "",
+          "body": "你睡着了吗？我把今天的照片发你。",
+          "time": "2026-07-08 00:24",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-44",
+          "title": "",
+          "body": "还没。只发给我看？",
+          "time": "2026-07-08 00:27",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-45",
+          "title": "",
+          "body": "今天你看起来很累。回去不要再打游戏到凌晨。",
+          "time": "2026-08-19 21:14",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-46",
+          "title": "",
+          "body": "知道啦ㅋㅋ 那你也别看书看到忘记时间。",
+          "time": "2026-08-19 21:17",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-47",
+          "title": "",
+          "body": "下次骑车我真的会跟上，不许故意骑慢。",
+          "time": "2026-09-07 23:51",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-48",
+          "title": "",
+          "body": "我什么时候故意了？是你自己骑得慢。",
+          "time": "2026-09-07 23:54",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-49",
+          "title": "",
+          "body": "今天那家店的书你喜欢吗？下次再一起去。",
+          "time": "2026-10-12 22:08",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks-old-50",
+          "title": "",
+          "body": "喜欢！下次不许只买一本，我要挑两本。",
+          "time": "2026-10-12 22:11",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
           "id": "ks1",
           "title": "",
           "body": "到宿舍了吗？外面风很大。",
@@ -338,6 +738,134 @@
       ],
       "messages": [
         {
+          "id": "ka-old-01",
+          "title": "",
+          "body": "明天第一次全员合练，大家早点到。",
+          "time": "2025-11-12 18:10",
+          "senderId": "leo",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-02",
+          "title": "",
+          "body": "收到！我会带咖啡过去。",
+          "time": "2025-11-12 18:13",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-03",
+          "title": "",
+          "body": "安信哥今天又把我的水拿走了。",
+          "time": "2025-11-16 22:02",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-04",
+          "title": "",
+          "body": "我以为是公用的ㅋㅋ",
+          "time": "2025-11-16 22:05",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-05",
+          "title": "",
+          "body": "新编舞的副歌好难，谁有空一起练？",
+          "time": "2025-12-04 19:30",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-06",
+          "title": "",
+          "body": "我可以，吃完饭去练习室。",
+          "time": "2025-12-04 19:33",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-07",
+          "title": "",
+          "body": "今天录制辛苦了，明天记得带护膝。",
+          "time": "2026-01-14 20:42",
+          "senderId": "junseo",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-08",
+          "title": "",
+          "body": "谢谢俊抒哥！我放包里了。",
+          "time": "2026-01-14 20:45",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-09",
+          "title": "",
+          "body": "最近大家的行程都不一样，群里确认一下集合时间。",
+          "time": "2026-03-05 17:26",
+          "senderId": "leo",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-10",
+          "title": "",
+          "body": "我可以提前到，帮忙确认舞台动线。",
+          "time": "2026-03-05 17:28",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-11",
+          "title": "",
+          "body": "安信哥今天怎么又提前走？",
+          "time": "2026-05-18 22:14",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-12",
+          "title": "",
+          "body": "有点私事，明天补偿你们宵夜。",
+          "time": "2026-05-18 22:17",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-13",
+          "title": "",
+          "body": "明天休息的话晚上开黑？",
+          "time": "2026-07-22 19:51",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-14",
+          "title": "",
+          "body": "可以！这次我不坑你。",
+          "time": "2026-07-22 19:54",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-15",
+          "title": "",
+          "body": "最近天气转凉，活动结束别在外面待太久。",
+          "time": "2026-09-18 21:03",
+          "senderId": "leo",
+          "kind": "text"
+        },
+        {
+          "id": "ka-old-16",
+          "title": "",
+          "body": "收到队长ㅋㅋ",
+          "time": "2026-09-18 21:06",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
           "id": "ka1",
           "title": "",
           "body": "谁把客厅的充电线拿走了ㅋㅋㅋㅋ",
@@ -461,6 +989,86 @@
       ],
       "messages": [
         {
+          "id": "kh-old-01",
+          "title": "",
+          "body": "哥，你今天是不是又忘记吃饭了？",
+          "time": "2025-08-14 20:21",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "kh-old-02",
+          "title": "",
+          "body": "没有！我刚吃完。",
+          "time": "2025-08-14 20:24",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kh-old-03",
+          "title": "",
+          "body": "今天你和相沅哥练习完一起走的？",
+          "time": "2025-10-29 22:05",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "kh-old-04",
+          "title": "",
+          "body": "刚好顺路啊ㅋㅋ",
+          "time": "2025-10-29 22:08",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kh-old-05",
+          "title": "",
+          "body": "哥最近心情不错嘛。",
+          "time": "2026-02-16 19:17",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "kh-old-06",
+          "title": "",
+          "body": "休息得比较好。你少管我ㅋㅋ",
+          "time": "2026-02-16 19:20",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kh-old-07",
+          "title": "",
+          "body": "我没问，但你今天看手机笑了好几次。",
+          "time": "2026-06-02 23:12",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "kh-old-08",
+          "title": "",
+          "body": "不可以看搞笑视频吗？",
+          "time": "2026-06-02 23:15",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kh-old-09",
+          "title": "",
+          "body": "明天练习结束一起吃饭？别又临时消失。",
+          "time": "2026-09-29 18:40",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "kh-old-10",
+          "title": "",
+          "body": "这次一定！除非有人约我ㅋㅋ",
+          "time": "2026-09-29 18:43",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
           "id": "kh1",
           "title": "",
           "body": "哥，你今天怎么一直笑？",
@@ -536,6 +1144,70 @@
       ],
       "messages": [
         {
+          "id": "kj-old-01",
+          "title": "",
+          "body": "你上次问的那本书，我找到另一个版本了。",
+          "time": "2025-09-12 21:04",
+          "senderId": "junseo",
+          "kind": "text"
+        },
+        {
+          "id": "kj-old-02",
+          "title": "",
+          "body": "发我看看！封面好漂亮。",
+          "time": "2025-09-12 21:08",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kj-old-03",
+          "title": "",
+          "body": "相沅最近也在看这本，你们可以交换读后感。",
+          "time": "2025-12-19 20:11",
+          "senderId": "junseo",
+          "kind": "text"
+        },
+        {
+          "id": "kj-old-04",
+          "title": "",
+          "body": "那我得快点看完，不然要被剧透了ㅋㅋ",
+          "time": "2025-12-19 20:14",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kj-old-05",
+          "title": "",
+          "body": "你们最近都挺忙，记得留点时间休息。",
+          "time": "2026-04-22 22:36",
+          "senderId": "junseo",
+          "kind": "text"
+        },
+        {
+          "id": "kj-old-06",
+          "title": "",
+          "body": "哥也是，别总顾着跑步和看书。",
+          "time": "2026-04-22 22:39",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kj-old-07",
+          "title": "",
+          "body": "相沅说河边那家店换了菜单，你应该会喜欢。",
+          "time": "2026-08-03 20:18",
+          "senderId": "junseo",
+          "kind": "text"
+        },
+        {
+          "id": "kj-old-08",
+          "title": "",
+          "body": "记下了！下次一起去。",
+          "time": "2026-08-03 20:21",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
           "id": "kj1",
           "title": "",
           "body": "相沅说你最近在看那部电影。看到哪了？",
@@ -602,6 +1274,126 @@
         "jiahao"
       ],
       "messages": [
+        {
+          "id": "wj-old-01",
+          "title": "",
+          "body": "最近训练怎么样？别一上来就把自己逼太紧。",
+          "time": "2025-06-27 17:18",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-02",
+          "title": "",
+          "body": "还行！有些动作不熟，正在补。",
+          "time": "2025-06-27 17:21",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-03",
+          "title": "",
+          "body": "之前发你的练习生视频看了吗？",
+          "time": "2025-07-15 22:04",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-04",
+          "title": "",
+          "body": "看了。我存起来了，之后还想再看。",
+          "time": "2025-07-15 22:08",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-05",
+          "title": "",
+          "body": "最近是不是认识了不少新朋友？",
+          "time": "2025-09-08 16:32",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-06",
+          "title": "",
+          "body": "嗯，大家都挺好的。",
+          "time": "2025-09-08 16:35",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-07",
+          "title": "",
+          "body": "生日快乐。今天别只顾着练习，给自己买点好吃的。",
+          "time": "2025-12-25 10:02",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-08",
+          "title": "",
+          "body": "谢谢家豪哥！有人已经提醒我吃蛋糕了ㅋㅋ",
+          "time": "2025-12-25 10:06",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-09",
+          "title": "",
+          "body": "出道后节奏不一样，累了就说，别硬撑。",
+          "time": "2026-03-17 21:44",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-10",
+          "title": "",
+          "body": "知道啦哥。最近还挺适应的。",
+          "time": "2026-03-17 21:47",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-11",
+          "title": "",
+          "body": "你以前存的那些旧视频还在吗？",
+          "time": "2026-07-11 18:16",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-12",
+          "title": "",
+          "body": "在啊，怎么突然问这个？",
+          "time": "2026-07-11 18:19",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-13",
+          "title": "",
+          "body": "没什么。只是觉得你现在和以前不太一样了。",
+          "time": "2026-09-02 22:03",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-14",
+          "title": "",
+          "body": "哪里不一样ㅋㅋ",
+          "time": "2026-09-02 22:07",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wj-old-15",
+          "title": "",
+          "body": "看起来更有精神。挺好的。",
+          "time": "2026-09-02 22:10",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
         {
           "id": "wj1",
           "title": "",
@@ -694,6 +1486,86 @@
       ],
       "messages": [
         {
+          "id": "wx-old-01",
+          "title": "",
+          "body": "今晚练完要不要去便利店？我饿了。",
+          "time": "2025-07-06 20:13",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "wx-old-02",
+          "title": "",
+          "body": "走！我也想吃冰的。",
+          "time": "2025-07-06 20:16",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wx-old-03",
+          "title": "",
+          "body": "今天那段副歌你记住了吗？",
+          "time": "2025-09-23 19:38",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "wx-old-04",
+          "title": "",
+          "body": "差不多了，明天再对一次。",
+          "time": "2025-09-23 19:41",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wx-old-05",
+          "title": "",
+          "body": "你最近是不是又在偷偷练游戏？",
+          "time": "2026-01-07 23:12",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "wx-old-06",
+          "title": "",
+          "body": "哪有，我只是手感还在ㅋㅋ",
+          "time": "2026-01-07 23:15",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wx-old-07",
+          "title": "",
+          "body": "今晚开黑？相炫也在。",
+          "time": "2026-05-27 20:31",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "wx-old-08",
+          "title": "",
+          "body": "来！我今天状态好得很。",
+          "time": "2026-05-27 20:34",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wx-old-09",
+          "title": "",
+          "body": "你上次说请咖啡，别忘了。",
+          "time": "2026-09-14 21:06",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "wx-old-10",
+          "title": "",
+          "body": "记得记得，明天给你买。",
+          "time": "2026-09-14 21:09",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
           "id": "wx1",
           "title": "",
           "body": "晚上打不打王者？缺一个。",
@@ -769,6 +1641,86 @@
       ],
       "messages": [
         {
+          "id": "wh-old-01",
+          "title": "",
+          "body": "最近还习惯吗？刚换环境别什么都自己扛。",
+          "time": "2025-07-28 22:18",
+          "senderId": "hanzhong",
+          "kind": "text"
+        },
+        {
+          "id": "wh-old-02",
+          "title": "",
+          "body": "还在适应，不过认识了不错的人。",
+          "time": "2025-07-28 22:22",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wh-old-03",
+          "title": "",
+          "body": "之前你说很在意的那个人，最近有消息吗？",
+          "time": "2025-10-07 21:06",
+          "senderId": "hanzhong",
+          "kind": "text"
+        },
+        {
+          "id": "wh-old-04",
+          "title": "",
+          "body": "有啊。只是现在不太方便细说。",
+          "time": "2025-10-07 21:10",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wh-old-05",
+          "title": "",
+          "body": "看了你们最近的舞台。状态不错，继续加油。",
+          "time": "2026-02-08 18:34",
+          "senderId": "hanzhong",
+          "kind": "text"
+        },
+        {
+          "id": "wh-old-06",
+          "title": "",
+          "body": "谢谢中哥！等有空回去找你。",
+          "time": "2026-02-08 18:37",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wh-old-07",
+          "title": "",
+          "body": "你上次说的事，后来顺利吗？",
+          "time": "2026-06-21 23:08",
+          "senderId": "hanzhong",
+          "kind": "text"
+        },
+        {
+          "id": "wh-old-08",
+          "title": "",
+          "body": "嗯，暂时都挺好的。",
+          "time": "2026-06-21 23:12",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wh-old-09",
+          "title": "",
+          "body": "别把自己弄得太累。有空就回来吃饭。",
+          "time": "2026-09-21 20:52",
+          "senderId": "hanzhong",
+          "kind": "text"
+        },
+        {
+          "id": "wh-old-10",
+          "title": "",
+          "body": "好，等我排出时间。",
+          "time": "2026-09-21 20:56",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
           "id": "wh1",
           "title": "",
           "body": "最近怎么样？好久没好好聊天了。",
@@ -838,6 +1790,198 @@
         "liyu"
       ],
       "messages": [
+        {
+          "id": "wo-old-01",
+          "title": "",
+          "body": "第一天集中训练就这么累？我已经不想动了。",
+          "time": "2025-06-15 18:22",
+          "senderId": "surin",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-02",
+          "title": "",
+          "body": "我刚刚差点在走廊睡着ㅋㅋ",
+          "time": "2025-06-15 18:25",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-03",
+          "title": "",
+          "body": "有人记得明天几点集合吗？我怕看错通知。",
+          "time": "2025-06-21 20:10",
+          "senderId": "gangmin",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-04",
+          "title": "",
+          "body": "七点半。别迟到，今天已经有人跑错楼了。",
+          "time": "2025-06-21 20:13",
+          "senderId": "kevin",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-05",
+          "title": "",
+          "body": "安信今天练习结束还去找吃的了吧ㅋㅋ",
+          "time": "2025-07-02 22:41",
+          "senderId": "liyu",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-06",
+          "title": "",
+          "body": "我那是在补充体力！",
+          "time": "2025-07-02 22:43",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-07",
+          "title": "",
+          "body": "今天舞台彩排看起来不错，大家都加油。",
+          "time": "2025-07-17 19:06",
+          "senderId": "surin",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-08",
+          "title": "",
+          "body": "你们也很稳！我刚刚差点走错位。",
+          "time": "2025-07-17 19:09",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-09",
+          "title": "",
+          "body": "有人知道安信去哪了吗？刚才还在休息室。",
+          "time": "2025-08-08 23:28",
+          "senderId": "kevin",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-10",
+          "title": "",
+          "body": "买水！不要找我ㅋㅋ",
+          "time": "2025-08-08 23:31",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-11",
+          "title": "",
+          "body": "最近大家都忙，等有空一起吃饭吧。",
+          "time": "2025-09-01 21:52",
+          "senderId": "gangmin",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-12",
+          "title": "",
+          "body": "等这轮录制结束！我请你们吃。",
+          "time": "2025-09-01 21:55",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-13",
+          "title": "",
+          "body": "今天公布结果的时候我真的不敢看屏幕。",
+          "time": "2025-10-18 22:14",
+          "senderId": "surin",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-14",
+          "title": "",
+          "body": "我也是，手都在抖。",
+          "time": "2025-10-18 22:17",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-15",
+          "title": "",
+          "body": "进了新阶段也别忘了老朋友啊。",
+          "time": "2025-11-03 18:44",
+          "senderId": "liyu",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-16",
+          "title": "",
+          "body": "怎么可能！等休息日约饭。",
+          "time": "2025-11-03 18:46",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-17",
+          "title": "",
+          "body": "最近行程是不是很满？看你们都在跑。",
+          "time": "2026-01-20 20:08",
+          "senderId": "kevin",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-18",
+          "title": "",
+          "body": "有一点，不过慢慢习惯了。",
+          "time": "2026-01-20 20:11",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-19",
+          "title": "",
+          "body": "看到你们舞台了，状态越来越好了。",
+          "time": "2026-03-28 22:35",
+          "senderId": "surin",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-20",
+          "title": "",
+          "body": "谢谢！下次见面当面聊。",
+          "time": "2026-03-28 22:39",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-21",
+          "title": "",
+          "body": "夏天了，什么时候出来吃冰？",
+          "time": "2026-06-06 19:12",
+          "senderId": "gangmin",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-22",
+          "title": "",
+          "body": "等我把这周行程熬过去ㅋㅋ",
+          "time": "2026-06-06 19:15",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-23",
+          "title": "",
+          "body": "你上次答应的饭还没兑现。",
+          "time": "2026-08-27 23:03",
+          "senderId": "liyu",
+          "kind": "text"
+        },
+        {
+          "id": "wo-old-24",
+          "title": "",
+          "body": "记着呢！这次真的安排。",
+          "time": "2026-08-27 23:06",
+          "senderId": "owner",
+          "kind": "text"
+        },
         {
           "id": "wo1",
           "title": "",
@@ -958,6 +2102,54 @@
       ],
       "messages": [
         {
+          "id": "wfm-old-01",
+          "title": "",
+          "body": "刚开始训练会很辛苦，记得按时吃饭。",
+          "time": "2025-06-20 12:08",
+          "senderId": "family-mother",
+          "kind": "text"
+        },
+        {
+          "id": "wfm-old-02",
+          "title": "",
+          "body": "知道啦妈妈，今天有吃午饭。",
+          "time": "2025-06-20 12:12",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wfm-old-03",
+          "title": "",
+          "body": "最近天气变化大，衣服多带一件。",
+          "time": "2025-08-30 19:23",
+          "senderId": "family-mother",
+          "kind": "text"
+        },
+        {
+          "id": "wfm-old-04",
+          "title": "",
+          "body": "好！你不要总担心我。",
+          "time": "2025-08-30 19:26",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wfm-old-05",
+          "title": "",
+          "body": "看到你们的舞台了，表现得很好。",
+          "time": "2026-02-11 09:12",
+          "senderId": "family-mother",
+          "kind": "text"
+        },
+        {
+          "id": "wfm-old-06",
+          "title": "",
+          "body": "谢谢妈妈！下次休息给你打视频。",
+          "time": "2026-02-11 09:18",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
           "id": "wfm1",
           "title": "",
           "body": "安信，今天吃饭了吗？别又忙起来就忘了。",
@@ -1001,6 +2193,54 @@
       ],
       "messages": [
         {
+          "id": "wfd-old-01",
+          "title": "",
+          "body": "新环境还适应吗？有困难就和家里说。",
+          "time": "2025-07-01 08:42",
+          "senderId": "family-father",
+          "kind": "text"
+        },
+        {
+          "id": "wfd-old-02",
+          "title": "",
+          "body": "挺好的，大家都照顾我。",
+          "time": "2025-07-01 08:49",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wfd-old-03",
+          "title": "",
+          "body": "最近看到节目了，继续努力，也别给自己太大压力。",
+          "time": "2025-11-22 20:15",
+          "senderId": "family-father",
+          "kind": "text"
+        },
+        {
+          "id": "wfd-old-04",
+          "title": "",
+          "body": "收到！我会调整好。",
+          "time": "2025-11-22 20:19",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wfd-old-05",
+          "title": "",
+          "body": "生日快乐，平安健康最重要。",
+          "time": "2026-05-09 10:02",
+          "senderId": "family-father",
+          "kind": "text"
+        },
+        {
+          "id": "wfd-old-06",
+          "title": "",
+          "body": "谢谢爸爸！今天行程结束就休息。",
+          "time": "2026-05-09 10:07",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
           "id": "wfd1",
           "title": "",
           "body": "最近工作忙不忙？身体还适应吗？",
@@ -1043,6 +2283,54 @@
         "family-brother"
       ],
       "messages": [
+        {
+          "id": "wfb-old-01",
+          "title": "",
+          "body": "哥，你什么时候回来？我游戏段位掉了。",
+          "time": "2025-08-03 17:12",
+          "senderId": "family-brother",
+          "kind": "text"
+        },
+        {
+          "id": "wfb-old-02",
+          "title": "",
+          "body": "你先自己打，等我回去带你。",
+          "time": "2025-08-03 17:15",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wfb-old-03",
+          "title": "",
+          "body": "生日礼物呢？你是不是忘了。",
+          "time": "2025-12-27 22:40",
+          "senderId": "family-brother",
+          "kind": "text"
+        },
+        {
+          "id": "wfb-old-04",
+          "title": "",
+          "body": "哪有！我记着呢，别催ㅋㅋ",
+          "time": "2025-12-27 22:43",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wfb-old-05",
+          "title": "",
+          "body": "哥你最近都不跟我双排了。",
+          "time": "2026-07-30 20:05",
+          "senderId": "family-brother",
+          "kind": "text"
+        },
+        {
+          "id": "wfb-old-06",
+          "title": "",
+          "body": "等我休息日，带你上分。",
+          "time": "2026-07-30 20:08",
+          "senderId": "owner",
+          "kind": "text"
+        },
         {
           "id": "wfb1",
           "title": "",
@@ -1095,6 +2383,54 @@
       ],
       "messages": [
         {
+          "id": "ksm-old-01",
+          "title": "",
+          "body": "接下来几周录制安排比较密集，个人时间有变化及时报备。",
+          "time": "2025-10-20 15:22",
+          "senderId": "staff-manager",
+          "kind": "text"
+        },
+        {
+          "id": "ksm-old-02",
+          "title": "",
+          "body": "收到，我会提前确认。",
+          "time": "2025-10-20 15:25",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ksm-old-03",
+          "title": "",
+          "body": "出道活动的通告单发群里了，注意核对妆发时间。",
+          "time": "2026-02-20 11:04",
+          "senderId": "staff-manager",
+          "kind": "text"
+        },
+        {
+          "id": "ksm-old-04",
+          "title": "",
+          "body": "看到了，谢谢哥。",
+          "time": "2026-02-20 11:08",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ksm-old-05",
+          "title": "",
+          "body": "明天结束后直接回宿舍，不要单独在外面逗留太晚。",
+          "time": "2026-08-10 17:42",
+          "senderId": "staff-manager",
+          "kind": "text"
+        },
+        {
+          "id": "ksm-old-06",
+          "title": "",
+          "body": "知道了，结束我就回去。",
+          "time": "2026-08-10 17:45",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
           "id": "ksm1",
           "title": "",
           "body": "明天的行程表更新了，记得看一下群公告。",
@@ -1137,6 +2473,54 @@
         "staff-stylist"
       ],
       "messages": [
+        {
+          "id": "kss-old-01",
+          "title": "",
+          "body": "今天试的舞台服装肩线需要再改一点，明天来复试。",
+          "time": "2025-11-09 13:16",
+          "senderId": "staff-stylist",
+          "kind": "text"
+        },
+        {
+          "id": "kss-old-02",
+          "title": "",
+          "body": "好！辛苦姐姐了。",
+          "time": "2025-11-09 13:20",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kss-old-03",
+          "title": "",
+          "body": "最近皮肤有点干，拍摄前记得补水。",
+          "time": "2026-03-02 18:07",
+          "senderId": "staff-stylist",
+          "kind": "text"
+        },
+        {
+          "id": "kss-old-04",
+          "title": "",
+          "body": "收到ㅋㅋ 谢谢姐姐提醒。",
+          "time": "2026-03-02 18:10",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kss-old-05",
+          "title": "",
+          "body": "你上次落下的帽子还在我这里，来拿的时候告诉我。",
+          "time": "2026-09-05 16:33",
+          "senderId": "staff-stylist",
+          "kind": "text"
+        },
+        {
+          "id": "kss-old-06",
+          "title": "",
+          "body": "我真的很容易落东西ㅋㅋ 明天去拿！",
+          "time": "2026-09-05 16:36",
+          "senderId": "owner",
+          "kind": "text"
+        },
         {
           "id": "kss1",
           "title": "",
@@ -1181,6 +2565,54 @@
         "staff-coordinator"
       ],
       "messages": [
+        {
+          "id": "ksg-old-01",
+          "title": "",
+          "body": "本周拍摄流程和集合地点已更新，请大家确认。",
+          "time": "2025-10-24 10:00",
+          "senderId": "staff-coordinator",
+          "kind": "text"
+        },
+        {
+          "id": "ksg-old-02",
+          "title": "",
+          "body": "收到，已确认。",
+          "time": "2025-10-24 10:06",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ksg-old-03",
+          "title": "",
+          "body": "下周舞台彩排时间提前，请成员留意更新后的日程。",
+          "time": "2026-01-28 14:22",
+          "senderId": "staff-manager",
+          "kind": "text"
+        },
+        {
+          "id": "ksg-old-04",
+          "title": "",
+          "body": "好的，收到。",
+          "time": "2026-01-28 14:25",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ksg-old-05",
+          "title": "",
+          "body": "明天外景拍摄可能下雨，现场会准备备用方案。",
+          "time": "2026-06-30 18:12",
+          "senderId": "staff-coordinator",
+          "kind": "text"
+        },
+        {
+          "id": "ksg-old-06",
+          "title": "",
+          "body": "了解！我会带外套。",
+          "time": "2026-06-30 18:15",
+          "senderId": "owner",
+          "kind": "text"
+        },
         {
           "id": "ksg1",
           "title": "",
