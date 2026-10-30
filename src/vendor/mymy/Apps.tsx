@@ -199,7 +199,9 @@ export function MymyKakao(p: SkinProps) {
             <div className="mymy-local-menu">
               <strong>{p.thread}</strong>
               <p>
-                群成员：{[...new Set(messages.map((m) => m.sender))].join("、")}
+                {((messages[0]?.meta.participants || "").split(",").filter(Boolean).length || 2) <= 2
+                  ? `好友聊天 · 好友：${[...new Set(messages.map((m) => m.sender).filter((name) => name !== p.owner))].join("、") || p.thread}`
+                  : `群成员：${[...new Set(messages.map((m) => m.sender))].join("、")}`}
               </p>
               <button onClick={() => setMenu(false)}>完成</button>
             </div>
