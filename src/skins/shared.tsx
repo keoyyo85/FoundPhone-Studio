@@ -95,9 +95,44 @@ export function Avatar({
 }) {
   const image = safeMedia(src);
   return (
-    <span className={`catalog-avatar ${round ? "round" : ""}`}>
+    <span
+      className={`catalog-avatar ${round ? "round" : ""}`}
+      style={{
+        position: "relative",
+        display: "inline-grid",
+        placeItems: "center",
+        width: 38,
+        height: 38,
+        minWidth: 38,
+        flexShrink: 0,
+        overflow: "hidden",
+        borderRadius: round ? "50%" : 9,
+        background: "#aab8a4",
+        color: "#fff",
+        fontSize: 15,
+        lineHeight: 1,
+      }}
+    >
       {name.slice(0, 1) || "人"}
-      {image && <img src={image} alt="" onError={(event) => event.currentTarget.remove()} />}
+      {image && (
+        <img
+          src={image}
+          alt=""
+          loading="eager"
+          referrerPolicy="no-referrer"
+          onError={(event) => event.currentTarget.remove()}
+          style={{
+            position: "absolute",
+            inset: 0,
+            display: "block",
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            borderRadius: "inherit",
+            zIndex: 1,
+          }}
+        />
+      )}
     </span>
   );
 }
