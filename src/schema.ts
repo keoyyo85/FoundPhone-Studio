@@ -98,8 +98,8 @@ export const workSchema = z.object({
     kakaoName: z.string().optional(),
     wechatName: z.string().optional(),
     socialName: z.string().optional(),
-    ownerAvatar: z.string().default(""),
-    wechatAvatar: z.string().default(""),
+    ownerAvatar: z.string().optional(),
+    wechatAvatar: z.string().optional(),
     date: z
       .string()
       .regex(/^\d{4}-\d{2}-\d{2}$/)
