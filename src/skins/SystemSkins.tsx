@@ -328,6 +328,8 @@ export function CameraSkin(p: Props) {
 export function SafariSkin(p: Props) {
   const [q, setQ] = useState(""),
     [tab, setTab] = useState("书签");
+  const [historyHintSeen, setHistoryHintSeen] = useSkinState<boolean>(p, "historyHintSeen", false);
+  const [showHistoryHint, setShowHistoryHint] = useState(false);
   const items = p.items
     .filter((i) =>
       (i.title + i.body + meta(i, "url"))
@@ -346,6 +348,15 @@ export function SafariSkin(p: Props) {
       <Header p={p} />
       <div className="catalog-scroll">
         <h1>{tab}</h1>
+        {tab === "历史记录" && showHistoryHint && (
+          <div role="status" style={{ margin: "0 14px 12px", padding: "10px 12px", borderRadius: 12, background: "rgba(128,128,128,.10)", color: "var(--secondary-label, #777)", fontSize: 12, lineHeight: 1.5 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", gap: 8, alignItems: "center" }}>
+              <strong style={{ color: "var(--label, inherit)" }}>小提示</strong>
+              <button aria-label="关闭提示" onClick={() => setShowHistoryHint(false)}>×</button>
+            </div>
+            浏览记录较多时，可以使用搜索功能，查找以前访问过的网页。
+          </div>
+        )}
         <div className="safari-favorites">
           {items.map((i) => (
             <button key={i.id} onClick={() => p.onItem(i)}>
@@ -375,7 +386,13 @@ export function SafariSkin(p: Props) {
       <Tabs
         tabs={["书签", "历史记录"]}
         value={tab}
-        set={setTab}
+        set={(next) => {
+          setTab(next);
+          if (next === "历史记录" && !historyHintSeen) {
+            setShowHistoryHint(true);
+            setHistoryHintSeen(true);
+          }
+        }}
         icons={[<Globe />, <Clock />]}
       />
     </div>
