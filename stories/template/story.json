@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机｜周安信的秘密",
   "description": "你在练习室附近捡到一部手机。锁屏密码是1225。手机主人是周安信。聊天、相册、备忘录和社交动态里，似乎藏着他与备注为🐰的李相沅之间不愿公开的关系。这是K-pop娱乐产业背景下的平行世界虚构故事，与现实人物及现实关系无关。",
-  "revision": 9,
+  "revision": 10,
   "phone": {
     "owner": "周安信",
     "date": "2026-10-25",
@@ -12,7 +12,12 @@
     "network": "5G",
     "wallpaper": "apple-wwdc26",
     "passcode": "1225",
-    "notifications": true
+    "notifications": true,
+    "kakaoName": "안신",
+    "wechatName": "今天也没早睡",
+    "socialName": "afterglow.zip",
+    "ownerAvatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021234/anxin-3.jpeg?w=540",
+    "wechatAvatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021234/anxin-3.jpeg?w=540"
   },
   "installedApps": [
     "appstore",
@@ -94,37 +99,43 @@
       "id": "sangwon",
       "name": "🐰",
       "phone": "",
-      "avatar": ""
+      "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021542/sangwon-3-1.jpeg?w=540"
     },
     {
       "id": "jiahao",
       "name": "嘉豪哥",
       "phone": "",
-      "avatar": ""
+      "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021818/arno-3.jpeg?w=540"
     },
     {
       "id": "sanghyeon",
       "name": "상현",
       "phone": "",
-      "avatar": ""
+      "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021111/sanghyeon-3.jpeg?w=540"
+    },
+    {
+      "id": "geonwoo",
+      "name": "건우",
+      "phone": "",
+      "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021706/geonwoo-3.jpeg?w=540"
     },
     {
       "id": "xinlong",
       "name": "鑫隆",
       "phone": "",
-      "avatar": ""
+      "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021353/xinlong-3.jpeg?w=540"
     },
     {
       "id": "leo",
       "name": "리오형",
       "phone": "",
-      "avatar": ""
+      "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021840/leo-3.jpeg?w=540"
     },
     {
       "id": "junseo",
       "name": "준서형",
       "phone": "",
-      "avatar": ""
+      "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021955/junseo-3.jpeg?w=540"
     },
     {
       "id": "hanzhong",
@@ -722,18 +733,47 @@
           "time": "2026-10-25 00:06",
           "senderId": "sangwon",
           "kind": "text"
+        },
+        {
+          "id": "ks-lost-01",
+          "title": "",
+          "body": "安信？刚刚给你打电话没接。",
+          "time": "2026-10-25 09:48",
+          "senderId": "sangwon",
+          "kind": "text",
+          "hidden": true
+        },
+        {
+          "id": "ks-lost-02",
+          "title": "",
+          "body": "看到消息回我一下，我有点担心。",
+          "time": "2026-10-25 09:49",
+          "senderId": "sangwon",
+          "kind": "text",
+          "hidden": true
+        },
+        {
+          "id": "ks-lost-03",
+          "title": "",
+          "body": "我现在过去找你。你先别急，看到消息告诉我你在哪。",
+          "time": "2026-10-25 10:06",
+          "senderId": "sangwon",
+          "kind": "text",
+          "hidden": true
         }
       ]
     },
     {
       "id": "kakao-alpha-group",
       "app": "kakao",
-      "title": "알파드라이브원 단체방 🏠",
+      "title": "ALD1 🏠",
       "participants": [
         "owner",
         "sangwon",
+        "jiahao",
         "leo",
         "junseo",
+        "geonwoo",
         "sanghyeon",
         "xinlong"
       ],
@@ -977,6 +1017,48 @@
           "time": "2026-10-25 00:33",
           "senderId": "leo",
           "kind": "text"
+        },
+        {
+          "id": "ka15",
+          "title": "",
+          "body": "谁把练习室的灯关了？我还在找东西ㅋㅋ",
+          "time": "2026-10-24 21:18",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "ka16",
+          "title": "",
+          "body": "刚刚不是你自己说五分钟就走吗ㅋㅋ",
+          "time": "2026-10-24 21:19",
+          "senderId": "geonwoo",
+          "kind": "text"
+        },
+        {
+          "id": "ka17",
+          "title": "",
+          "body": "你们两个怎么又开始了ㅋㅋ",
+          "time": "2026-10-24 21:20",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ka-lost-01",
+          "title": "",
+          "body": "安信，你手机是不是没带？我刚才发的消息一直没读。",
+          "time": "2026-10-25 09:56",
+          "senderId": "leo",
+          "kind": "text",
+          "hidden": true
+        },
+        {
+          "id": "ka-lost-02",
+          "title": "",
+          "body": "我去休息室找过了，桌上没手机。先确认下是不是落在车上。",
+          "time": "2026-10-25 09:57",
+          "senderId": "jiahao",
+          "kind": "text",
+          "hidden": true
         }
       ]
     },
@@ -2645,6 +2727,24 @@
           "time": "2026-10-24 19:06",
           "senderId": "owner",
           "kind": "text"
+        },
+        {
+          "id": "ksg-lost-01",
+          "title": "",
+          "body": "安信的手机是不是落在休息室了？刚才打过去一直没人接。",
+          "time": "2026-10-25 09:53",
+          "senderId": "staff-manager",
+          "kind": "text",
+          "hidden": true
+        },
+        {
+          "id": "ksg-lost-02",
+          "title": "",
+          "body": "练习室和待机室我都找过了，暂时没看到。",
+          "time": "2026-10-25 09:55",
+          "senderId": "staff-coordinator",
+          "kind": "text",
+          "hidden": true
         }
       ]
     }
@@ -2654,9 +2754,10 @@
       {
         "id": "note-route",
         "title": "如果手机不是我拿着",
-        "body": "如果你看到这条备忘录，说明手机已经不在我手上了。\n\n先别急着联系任何人。看完相册里那张凌晨的照片，再去日历确认日期。最后，读完这条备忘录再决定要不要回消息。\n\n——安信",
+        "body": "如果今天有哪件事让你觉得不对劲，先去看相册里凌晨那张河边照片。\\n\\n有些事我不想在聊天里留下太明显的记录。看完照片再回来找这条备忘录。\\n\\n——安信",
         "kind": "note",
-        "time": "2026-10-25 00:36"
+        "time": "2026-10-25 00:36",
+        "hidden": true
       },
       {
         "id": "note-bike",
@@ -2675,7 +2776,7 @@
       {
         "id": "note-route-final",
         "title": "给捡到手机的人",
-        "body": "你已经看到了不少东西。\n\n我不知道你是谁，也不知道你会不会把这些交给别人。相沅不知道手机丢了，更不知道有人可能看见我们的聊天。\n\n你可以联系他、告诉他实情，也可以把手机交给工作人员。请不要把私人内容发到网上。\n\n如果你决定联系他，请记住：他最先担心的应该是我有没有出事，而不是手机。",
+        "body": "你已经看到不少东西了。\\n\\n手机应该是落在休息室附近了。我现在还没法确认是谁捡到的。相沅只知道我一直没回消息，工作人员也刚开始找手机。\\n\\n如果你决定联系他，请记住：他最先担心的应该是我有没有出事，而不是手机。\\n\\n——安信",
         "kind": "note",
         "time": "2026-10-25 01:02",
         "hidden": true
@@ -2798,13 +2899,17 @@
         "title": "安信的动态",
         "body": "今天练习结束得比想象中早。有人说我最近心情很好？可能是睡眠充足吧ㅋㅋ",
         "kind": "post",
-        "sender": "周安信",
+        "sender": "afterglow.zip",
         "time": "2026-10-24 20:40",
         "likes": 1284,
         "comments": [
           "郑相炫：哥你自己信吗ㅋㅋ",
           "贺鑫隆：睡眠？你昨晚几点回来的"
-        ]
+        ],
+        "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021234/anxin-3.jpeg?w=540",
+        "meta": {
+          "handle": "@afterglow.zip"
+        }
       },
       {
         "id": "tw-post-2",
@@ -2826,8 +2931,14 @@
         "title": "限时动态｜深夜",
         "body": "一张模糊的夜景。画面边缘有另一只手，戴着安信常戴的戒指。没有标记地点。",
         "kind": "post",
-        "sender": "周安信",
-        "time": "2026-10-24 02:30"
+        "sender": "afterglow.zip",
+        "time": "2026-10-24 02:30",
+        "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021234/anxin-3.jpeg?w=540",
+        "meta": {
+          "handle": "@afterglow.zip",
+          "story": "true"
+        },
+        "folder": "Story"
       },
       {
         "id": "ig-story-2",
@@ -2847,13 +2958,40 @@
       }
     ],
     "contacts": [],
-    "messages": [
+    "messages": [],
+    "threads": [
       {
-        "id": "sms-staff",
-        "title": "工作人员通知",
-        "body": "如果捡到成员手机，请交到现场工作人员处。不要尝试公开手机内的私人内容。",
-        "kind": "text",
-        "sender": "现场工作人员"
+        "id": "th-post-1",
+        "title": "",
+        "body": "睡前只想看一页，结果天都快亮了。",
+        "kind": "post",
+        "sender": "afterglow.zip",
+        "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021234/anxin-3.jpeg?w=540",
+        "time": "2026-10-24 01:46",
+        "likes": 486,
+        "comments": [
+          "leo：你最好真的去睡了ㅋㅋ",
+          "今天也没早睡：明明只看了一页。"
+        ],
+        "meta": {
+          "handle": "@afterglow.zip"
+        }
+      },
+      {
+        "id": "th-post-2",
+        "title": "",
+        "body": "今天的风有点像昨天。",
+        "kind": "post",
+        "sender": "afterglow.zip",
+        "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021234/anxin-3.jpeg?w=540",
+        "time": "2026-10-24 23:58",
+        "likes": 731,
+        "comments": [
+          "🐰：外面冷，回去记得穿外套。"
+        ],
+        "meta": {
+          "handle": "@afterglow.zip"
+        }
       }
     ]
   },
@@ -2871,11 +3009,6 @@
       "type": "start",
       "actions": [
         {
-          "type": "unlock",
-          "key": "note-route-final",
-          "value": "true"
-        },
-        {
           "type": "notification",
           "key": "story",
           "value": "KakaoTalk: 🐰\n安信，你到家了吗？\n怎么还不回我ㅋㅋ"
@@ -2884,6 +3017,106 @@
           "type": "variable",
           "key": "truth_complete",
           "value": 0
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "photo-clue-unlocks-note",
+      "label": "河边照片引出一条线索",
+      "type": "event",
+      "event": "read",
+      "target": "photo-bike-night",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "note-route",
+          "value": "true"
+        },
+        {
+          "type": "unlock",
+          "key": "ks-lost-01",
+          "value": "true"
+        },
+        {
+          "type": "unlock",
+          "key": "ks-lost-02",
+          "value": "true"
+        },
+        {
+          "type": "notification",
+          "key": "story",
+          "value": "KakaoTalk: 🐰\\n安信？刚刚给你打电话没接。\\n看到消息回我一下，我有点担心。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phone-loss-discovered",
+      "label": "他们开始发现手机不见了",
+      "type": "event",
+      "event": "read",
+      "target": "note-route",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "note-route-final",
+          "value": "true"
+        },
+        {
+          "type": "unlock",
+          "key": "ksg-lost-01",
+          "value": "true"
+        },
+        {
+          "type": "unlock",
+          "key": "ksg-lost-02",
+          "value": "true"
+        },
+        {
+          "type": "unlock",
+          "key": "ka-lost-01",
+          "value": "true"
+        },
+        {
+          "type": "unlock",
+          "key": "ka-lost-02",
+          "value": "true"
+        },
+        {
+          "type": "variable",
+          "key": "phone_missing_stage",
+          "value": 1
+        },
+        {
+          "type": "notification",
+          "key": "story",
+          "value": "KakaoTalk: 매니저님\\n安信的手机是不是落在休息室了？\\n刚才打过去一直没人接。"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "sangwon-goes-looking",
+      "label": "相沅决定去找安信",
+      "type": "event",
+      "event": "read",
+      "target": "note-route-final",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ks-lost-03",
+          "value": "true"
+        },
+        {
+          "type": "variable",
+          "key": "phone_missing_stage",
+          "value": 2
+        },
+        {
+          "type": "notification",
+          "key": "story",
+          "value": "KakaoTalk: 🐰\\n我现在过去找你。\\n看到消息告诉我你在哪。"
         }
       ],
       "next": []
@@ -2989,6 +3222,14 @@
       "steps": [
         {
           "event": "read",
+          "target": "photo-bike-night"
+        },
+        {
+          "event": "read",
+          "target": "note-route"
+        },
+        {
+          "event": "read",
           "target": "note-route-final"
         },
         {
@@ -2997,12 +3238,21 @@
       ],
       "ending": "A｜秘密继续",
       "expectUnlocked": [
+        "note-route",
         "note-route-final"
       ]
     },
     {
       "name": "B结局：差一点曝光",
       "steps": [
+        {
+          "event": "read",
+          "target": "photo-bike-night"
+        },
+        {
+          "event": "read",
+          "target": "note-route"
+        },
         {
           "event": "read",
           "target": "note-route-final"
@@ -3013,12 +3263,21 @@
       ],
       "ending": "B｜差一点曝光",
       "expectUnlocked": [
+        "note-route",
         "note-route-final"
       ]
     },
     {
       "name": "C结局：坦诚相见",
       "steps": [
+        {
+          "event": "read",
+          "target": "photo-bike-night"
+        },
+        {
+          "event": "read",
+          "target": "note-route"
+        },
         {
           "event": "read",
           "target": "note-route-final"
@@ -3029,12 +3288,21 @@
       ],
       "ending": "C｜坦诚相见",
       "expectUnlocked": [
+        "note-route",
         "note-route-final"
       ]
     },
     {
       "name": "D结局：无法挽回",
       "steps": [
+        {
+          "event": "read",
+          "target": "photo-bike-night"
+        },
+        {
+          "event": "read",
+          "target": "note-route"
+        },
         {
           "event": "read",
           "target": "note-route-final"
@@ -3045,12 +3313,21 @@
       ],
       "ending": "D｜无法挽回",
       "expectUnlocked": [
+        "note-route",
         "note-route-final"
       ]
     },
     {
       "name": "E结局：未完待续",
       "steps": [
+        {
+          "event": "read",
+          "target": "photo-bike-night"
+        },
+        {
+          "event": "read",
+          "target": "note-route"
+        },
         {
           "event": "read",
           "target": "note-route-final"
@@ -3061,6 +3338,7 @@
       ],
       "ending": "E｜未完待续",
       "expectUnlocked": [
+        "note-route",
         "note-route-final"
       ]
     }
