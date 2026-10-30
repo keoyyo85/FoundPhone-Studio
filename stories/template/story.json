@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机｜周安信的秘密",
   "description": "你在练习室附近捡到一部手机。锁屏密码是1225。手机主人是周安信。聊天、相册、备忘录和社交动态里，似乎藏着他与备注为🐰的李相沅之间不愿公开的关系。这是K-pop娱乐产业背景下的平行世界虚构故事，与现实人物及现实关系无关。",
-  "revision": 8,
+  "revision": 9,
   "phone": {
     "owner": "周安信",
     "date": "2026-10-25",
@@ -98,7 +98,7 @@
     },
     {
       "id": "jiahao",
-      "name": "아르노",
+      "name": "아르노 형",
       "phone": "",
       "avatar": ""
     },
@@ -110,19 +110,19 @@
     },
     {
       "id": "xinlong",
-      "name": "씬롱",
+      "name": "씬롱 형",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "leo",
-      "name": "리오",
+      "name": "리오 형",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "junseo",
-      "name": "준서",
+      "name": "준서 형",
       "phone": "",
       "avatar": ""
     },
@@ -1138,7 +1138,7 @@
     {
       "id": "kakao-junseo",
       "app": "kakao",
-      "title": "준서",
+      "title": "준서 형",
       "participants": [
         "owner",
         "junseo"
