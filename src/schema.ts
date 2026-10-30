@@ -205,9 +205,13 @@ export function safeMedia(value: string) {
     /^data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+$/.test(
       value,
     );
+  const curatedPhoto =
+    /^https:\/\/(?:pbs\.twimg\.com\/media\/[A-Za-z0-9_-]+\.(?:jpg|png)(?:\?[^#]*)?|image\.static\.bstage\.in\/[^\s]+|cdn\.livedoor\.jp\/kstyle\/[^\s]+|www\.esquirekorea\.co\.kr\/resources\/online\/online_image\/[^\s]+|assets\.pikiran-rakyat\.com\/[^\s]+)$/.test(
+      value,
+    );
   const officialProfile =
     /^https:\/\/0\.soompi\.io\/wp-content\/uploads\/2025\/10\/\d{8}\/[a-z0-9-]+\.jpeg(?:\?w=\d{2,4})?$/.test(
       value,
     );
-  return embedded || officialProfile ? value : "";
+  return embedded || officialProfile || curatedPhoto ? value : "";
 }
