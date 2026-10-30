@@ -208,7 +208,9 @@ export function safeMedia(value: string) {
   const curatedPhoto =
     /^https:\/\/(?:pbs\.twimg\.com\/media\/[A-Za-z0-9_-]+(?:\.(?:jpg|png))?(?:\?[^#]*)?|image\.static\.bstage\.in\/[^\s]+|cdn\.livedoor\.jp\/kstyle\/[^\s]+|www\.esquirekorea\.co\.kr\/resources\/online\/online_image\/[^\s]+|cdn\.kpopping\.com\/kpics\/[^\s]+|assets\.pikiran-rakyat\.com\/[^\s]+)$/.test(
       value,
-    );
+    ) ||
+    value === "https://pbs.twimg.com/profile_images/2005188075505549312/AHkTtSLG.jpg" ||
+    value === "https://xkxqjlzvieat874751.gcdn.ntruss.com/1/2026/e992/1e9926d62de1deea6a13d404b6b49fc3e3c85c34abb59327a9b094a4eb2161382_o_st.webp";
   const officialProfile =
     /^https:\/\/0\.soompi\.io\/wp-content\/uploads\/2025\/10\/\d{8}\/[a-z0-9-]+\.jpeg(?:\?w=\d{2,4})?$/.test(
       value,
