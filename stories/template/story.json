@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机｜周安信的手机",
   "description": "你以 CPF 的身份意外捡到周安信的手机。手机保留原版锁屏、桌面与 App。当前聊天停留在 2025 年一公前后；聊天里提到的旧视频、照片和浏览记录则指向 2024 年。所有关系线索都需要玩家自己发现。平行世界虚构设定。",
-  "revision": 17,
+  "revision": 18,
   "phone": {
     "owner": "周安信",
     "date": "2025-08-23",
@@ -217,66 +217,74 @@
         {
           "id": "ksw-25-01",
           "title": "",
-          "body": "安信，这是我的号码。KakaoTalk上加我吧。",
+          "body": "안신아, 이거 내 번호야. 카카오톡으로 추가해.\n安信，这是我的号码。KakaoTalk 上加我吧。",
           "time": "2025-08-08 18:10",
           "senderId": "sangwon",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/profile_images/2005188075505549312/AHkTtSLG.jpg"
         },
         {
           "id": "ksw-25-02",
           "title": "",
-          "body": "好！其实我一直想找哥聊天，因为喜欢哥ㅋㅋ",
+          "body": "좋아요! 사실 형이랑 계속 얘기하고 싶었어요. 형을 좋아해서요ㅋㅋ\n好！其实我一直想找哥聊天，因为喜欢哥ㅋㅋ",
           "time": "2025-08-08 18:12",
           "senderId": "owner",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
         },
         {
           "id": "ksw-25-03",
           "title": "",
-          "body": "ㅋㅋ 突然这么说，我都有点意外了。以后多联系吧。",
+          "body": "ㅋㅋ 갑자기 그렇게 말하니까 좀 놀랐네. 앞으로 자주 연락하자.\nㅋㅋ 突然这么说，我都有点意外了。以后多联系吧。",
           "time": "2025-08-08 18:13",
           "senderId": "sangwon",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/profile_images/2005188075505549312/AHkTtSLG.jpg"
         },
         {
           "id": "ksw-25-04",
           "title": "",
-          "body": "嗯！以后请多关照，哥。",
+          "body": "네! 앞으로 잘 부탁드려요, 형.\n嗯！以后请多关照，哥。",
           "time": "2025-08-08 18:15",
           "senderId": "owner",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
         },
         {
           "id": "ksw-25-05",
           "title": "",
-          "body": "我也请多关照，安信。",
+          "body": "나도 잘 부탁해, 안신아.\n我也请多关照，安信。",
           "time": "2025-08-08 18:17",
           "senderId": "sangwon",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/profile_images/2005188075505549312/AHkTtSLG.jpg"
         },
         {
           "id": "ksw-25-06",
           "title": "",
-          "body": "你们到海底捞了吗？",
+          "body": "너희 훠궈집 도착했어?\n你们到海底捞了吗？",
           "time": "2025-08-23 18:32",
           "senderId": "sangwon",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/profile_images/2005188075505549312/AHkTtSLG.jpg"
         },
         {
           "id": "ksw-25-07",
           "title": "",
-          "body": "到了，刚坐下。",
+          "body": "도착했어요. 방금 앉았어요.\n到了，刚坐下。",
           "time": "2025-08-23 18:35",
           "senderId": "owner",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg"
         },
         {
           "id": "ksw-25-08",
           "title": "",
-          "body": "那你什么时候来？我们都到了，快来。",
+          "body": "그럼 언제 와? 우리 다 왔어. 빨리 와.\n那你什么时候来？我们都到了，快来。",
           "time": "2025-08-23 18:37",
           "senderId": "sangwon",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/profile_images/2005188075505549312/AHkTtSLG.jpg"
         },
         {
           "id": "ksw-25-09",
@@ -284,7 +292,8 @@
           "body": "안신아, 오늘도 고생했어. 조심히 들어가.\n安信啊，今天也辛苦了，回去路上小心。",
           "time": "2025-08-23 22:46",
           "senderId": "sangwon",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/profile_images/2005188075505549312/AHkTtSLG.jpg"
         }
       ]
     },
@@ -360,7 +369,8 @@
           "body": "一公练得怎么样了？你们那组最近练得挺晚吧。",
           "time": "2025-07-22 21:06",
           "senderId": "jiahao",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G4zi1sAbcAAH5nA.jpg"
         },
         {
           "id": "wjh-25-02",
@@ -368,7 +378,8 @@
           "body": "还行，今天后半段有几个地方还得再磨一下。",
           "time": "2025-07-22 21:08",
           "senderId": "owner",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://xkxqjlzvieat874751.gcdn.ntruss.com/1/2026/e992/1e9926d62de1deea6a13d404b6b49fc3e3c85c34abb59327a9b094a4eb2161382_o_st.webp"
         },
         {
           "id": "wjh-25-03",
@@ -376,7 +387,8 @@
           "body": "我刚刚看见相沅，感觉他今天练习的时候不太开心。",
           "time": "2025-07-22 21:10",
           "senderId": "jiahao",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G4zi1sAbcAAH5nA.jpg"
         },
         {
           "id": "wjh-25-04",
@@ -384,7 +396,8 @@
           "body": "嗯，他今天状态不太好。我刚刚去找他聊了一会儿，算是安慰了一下。",
           "time": "2025-07-22 21:12",
           "senderId": "owner",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://xkxqjlzvieat874751.gcdn.ntruss.com/1/2026/e992/1e9926d62de1deea6a13d404b6b49fc3e3c85c34abb59327a9b094a4eb2161382_o_st.webp"
         },
         {
           "id": "wjh-25-05",
@@ -392,7 +405,8 @@
           "body": "你们一组的事你倒是挺上心。",
           "time": "2025-07-22 21:14",
           "senderId": "jiahao",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G4zi1sAbcAAH5nA.jpg"
         },
         {
           "id": "wjh-25-06",
@@ -400,7 +414,8 @@
           "body": "他一个人待着，我就过去看看。",
           "time": "2025-07-22 21:15",
           "senderId": "owner",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://xkxqjlzvieat874751.gcdn.ntruss.com/1/2026/e992/1e9926d62de1deea6a13d404b6b49fc3e3c85c34abb59327a9b094a4eb2161382_o_st.webp"
         },
         {
           "id": "wjh-25-07",
@@ -408,7 +423,8 @@
           "body": "说起来，你以前就挺关注他的吧。",
           "time": "2025-07-22 21:18",
           "senderId": "jiahao",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G4zi1sAbcAAH5nA.jpg"
         },
         {
           "id": "wjh-25-08",
@@ -416,7 +432,8 @@
           "body": "你说哪次？",
           "time": "2025-07-22 21:19",
           "senderId": "owner",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://xkxqjlzvieat874751.gcdn.ntruss.com/1/2026/e992/1e9926d62de1deea6a13d404b6b49fc3e3c85c34abb59327a9b094a4eb2161382_o_st.webp"
         },
         {
           "id": "wjh-25-09",
@@ -424,7 +441,8 @@
           "body": "我当年给你看Trainee A他们视频那次啊，你看完还自己去搜了相沅。",
           "time": "2025-07-22 21:21",
           "senderId": "jiahao",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G4zi1sAbcAAH5nA.jpg"
         },
         {
           "id": "wjh-25-10",
@@ -432,7 +450,8 @@
           "body": "……只是觉得他的舞跳得很好。",
           "time": "2025-07-22 21:23",
           "senderId": "owner",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://xkxqjlzvieat874751.gcdn.ntruss.com/1/2026/e992/1e9926d62de1deea6a13d404b6b49fc3e3c85c34abb59327a9b094a4eb2161382_o_st.webp"
         },
         {
           "id": "wjh-25-11",
@@ -440,58 +459,8 @@
           "body": "好好好，我又没说什么ㅋㅋ",
           "time": "2025-07-22 21:24",
           "senderId": "jiahao",
-          "kind": "text"
-        }
-      ]
-    },
-    {
-      "id": "wechat-hanzhong",
-      "app": "wechat",
-      "title": "林韩中",
-      "participants": [
-        "owner",
-        "hanzhong"
-      ],
-      "messages": [
-        {
-          "id": "whz-01",
-          "title": "",
-          "body": "最近练习室是不是换到 B 栋了？",
-          "time": "2024-06-18 16:20",
-          "senderId": "hanzhong",
-          "kind": "text"
-        },
-        {
-          "id": "whz-02",
-          "title": "",
-          "body": "对，今天开始换过去。你找不到的话给我发消息。",
-          "time": "2024-06-18 16:22",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "whz-03",
-          "title": "",
-          "body": "收到，谢了。最近忙得连楼都快认不清了。",
-          "time": "2024-06-18 16:24",
-          "senderId": "hanzhong",
-          "kind": "text"
-        },
-        {
-          "id": "whz-04",
-          "title": "",
-          "body": "大家都差不多，记得吃饭。",
-          "time": "2024-06-18 16:25",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "whz-05",
-          "title": "",
-          "body": "你也是，别只喝咖啡。",
-          "time": "2024-06-18 16:26",
-          "senderId": "hanzhong",
-          "kind": "text"
+          "kind": "text",
+          "avatar": "https://pbs.twimg.com/media/G4zi1sAbcAAH5nA.jpg"
         }
       ]
     },
@@ -652,7 +621,8 @@
         "body": "搜索记录 · 2024年6月17日 21:19",
         "time": "2024-06-17 21:19",
         "kind": "text",
-        "folder": "搜索索引"
+        "folder": "搜索索引",
+        "favorite": false
       },
       {
         "id": "search-trainee-a",
@@ -660,7 +630,8 @@
         "body": "搜索记录 · 2024年6月17日 21:14",
         "time": "2024-06-17 21:14",
         "kind": "text",
-        "folder": "搜索索引"
+        "folder": "搜索索引",
+        "favorite": false
       },
       {
         "id": "history-01",
@@ -701,6 +672,66 @@
         "time": "2025-08-08 18:20",
         "kind": "text",
         "folder": "历史记录"
+      },
+      {
+        "id": "bookmark-naver",
+        "title": "NAVER",
+        "body": "韩国常用门户网站",
+        "time": "2025-08-23 12:00",
+        "kind": "text",
+        "folder": "书签",
+        "favorite": true,
+        "meta": {
+          "url": "https://www.naver.com/"
+        }
+      },
+      {
+        "id": "bookmark-google",
+        "title": "Google",
+        "body": "搜索网页和资料",
+        "time": "2025-08-23 12:00",
+        "kind": "text",
+        "folder": "书签",
+        "favorite": true,
+        "meta": {
+          "url": "https://www.google.com/"
+        }
+      },
+      {
+        "id": "bookmark-youtube",
+        "title": "YouTube",
+        "body": "视频平台",
+        "time": "2025-08-23 12:00",
+        "kind": "text",
+        "folder": "书签",
+        "favorite": true,
+        "meta": {
+          "url": "https://www.youtube.com/"
+        }
+      },
+      {
+        "id": "bookmark-melon",
+        "title": "Melon",
+        "body": "韩国音乐平台",
+        "time": "2025-08-23 12:00",
+        "kind": "text",
+        "folder": "书签",
+        "favorite": true,
+        "meta": {
+          "url": "https://www.melon.com/"
+        }
+      },
+      {
+        "id": "bookmark-kakao",
+        "title": "KakaoTalk",
+        "body": "KakaoTalk 官方帮助中心",
+        "time": "2025-08-23 12:00",
+        "kind": "text",
+        "folder": "书签",
+        "favorite": true,
+        "meta": {
+          "url": "https://cs.kakao.com/"
+        }
       }
     ],
     "music": [],
@@ -740,45 +771,7 @@
         }
       ],
       "next": []
-    },
-    {
-      "id": "read-sangyuan-search",
-      "label": "玩家搜到桑圆记录",
-      "type": "event",
-      "event": "read",
-      "target": "search-sangyuan",
-      "actions": [],
-      "next": [
-        "ending-first-clue"
-      ]
-    },
-    {
-      "id": "ending-first-clue",
-      "label": "第一条线索｜桑圆",
-      "type": "ending",
-      "event": "",
-      "target": "",
-      "actions": [
-        {
-          "type": "ending",
-          "key": "ending",
-          "value": "第一条线索：桑圆"
-        }
-      ],
-      "next": []
     }
   ],
-  "tests": [
-    {
-      "name": "从浏览器找到桑圆记录",
-      "steps": [
-        {
-          "event": "read",
-          "target": "search-sangyuan"
-        }
-      ],
-      "ending": "第一条线索：桑圆",
-      "expectUnlocked": []
-    }
-  ]
+  "tests": []
 }
