@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机｜周安信的秘密",
   "description": "你意外捡到周安信的手机，解锁后从聊天、相册、备忘录、日历和社交动态的细碎痕迹里，慢慢发现他与备注为🐰的李相沅之间持续半年的秘密恋爱。以自由翻看手机、拼凑两个人的日常为主；其他人的聊天只作为少量生活背景。这是K-pop娱乐产业背景下的平行世界虚构故事，与现实人物及现实关系无关。",
-  "revision": 13,
+  "revision": 14,
   "phone": {
     "owner": "周安信",
     "date": "2026-10-25",
@@ -843,22 +843,6 @@
           "kind": "text"
         },
         {
-          "id": "ka15",
-          "title": "",
-          "body": "谁把练习室的灯关了？我还在找东西ㅋㅋ",
-          "time": "2026-10-24 21:18",
-          "senderId": "jiahao",
-          "kind": "text"
-        },
-        {
-          "id": "ka17",
-          "title": "",
-          "body": "你们两个怎么又开始了ㅋㅋ",
-          "time": "2026-10-24 21:20",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
           "id": "ka-lost-01",
           "title": "",
           "body": "安信，你手机是不是没带？我刚才发的消息一直没读。",
@@ -904,30 +888,6 @@
           "kind": "text"
         },
         {
-          "id": "wj-old-09",
-          "title": "",
-          "body": "出道后节奏不一样，累了就说，别硬撑。",
-          "time": "2026-03-17 21:44",
-          "senderId": "jiahao",
-          "kind": "text"
-        },
-        {
-          "id": "wj-old-10",
-          "title": "",
-          "body": "知道啦哥。最近还挺适应的。",
-          "time": "2026-03-17 21:47",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wj-old-15",
-          "title": "",
-          "body": "看起来更有精神。挺好的。",
-          "time": "2026-09-02 22:10",
-          "senderId": "jiahao",
-          "kind": "text"
-        },
-        {
           "id": "wj1",
           "title": "",
           "body": "最近适应得怎么样？别光顾着玩，休息也要跟上。",
@@ -940,22 +900,6 @@
           "title": "",
           "body": "留着啊ㅋㅋ 有几段还在收藏夹里。",
           "time": "2026-10-22 16:25",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wj5",
-          "title": "",
-          "body": "看得出来你记性挺好。别熬夜翻旧东西。",
-          "time": "2026-10-22 16:26",
-          "senderId": "jiahao",
-          "kind": "text"
-        },
-        {
-          "id": "wj6",
-          "title": "",
-          "body": "哥怎么什么都知道……",
-          "time": "2026-10-22 16:27",
           "senderId": "owner",
           "kind": "text"
         },
@@ -1035,38 +979,6 @@
           "kind": "text"
         },
         {
-          "id": "wh-old-05",
-          "title": "",
-          "body": "我刷到你们舞台了，状态不错嘛。没白夸你。",
-          "time": "2026-02-08 18:34",
-          "senderId": "hanzhong",
-          "kind": "text"
-        },
-        {
-          "id": "wh-old-06",
-          "title": "",
-          "body": "那必须的ㅋㅋ 夸我可以多夸两句。",
-          "time": "2026-02-08 18:37",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wh-old-07",
-          "title": "",
-          "body": "少贫。上次说请我吃饭还算不算数？",
-          "time": "2026-06-21 23:08",
-          "senderId": "hanzhong",
-          "kind": "text"
-        },
-        {
-          "id": "wh-old-08",
-          "title": "",
-          "body": "算算算，回去第一顿就安排。",
-          "time": "2026-06-21 23:12",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
           "id": "wh-old-09",
           "title": "",
           "body": "你先顾好自己，别又熬到天亮。",
@@ -1079,38 +991,6 @@
           "title": "",
           "body": "知道了知道了，你也少操心我。",
           "time": "2026-09-21 20:56",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wh1",
-          "title": "",
-          "body": "喂，最近是不是忙到忘了还有我这个朋友？",
-          "time": "2026-10-20 13:11",
-          "senderId": "hanzhong",
-          "kind": "text"
-        },
-        {
-          "id": "wh2",
-          "title": "",
-          "body": "哈哈哈哈哪有，刚想起来要找你。",
-          "time": "2026-10-20 13:13",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wh3",
-          "title": "",
-          "body": "少来。你上次欠我的饭什么时候还？",
-          "time": "2026-10-20 13:15",
-          "senderId": "hanzhong",
-          "kind": "text"
-        },
-        {
-          "id": "wh4",
-          "title": "",
-          "body": "我回去就请，菜单你定，别客气。",
-          "time": "2026-10-20 13:16",
           "senderId": "owner",
           "kind": "text"
         },
@@ -1202,43 +1082,11 @@
           "kind": "text"
         },
         {
-          "id": "ksg-old-02",
-          "title": "",
-          "body": "收到，已确认。",
-          "time": "2025-10-24 10:06",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
           "id": "ksg-old-03",
           "title": "",
           "body": "下周舞台彩排时间提前，请成员留意更新后的日程。",
           "time": "2026-01-28 14:22",
           "senderId": "staff-manager",
-          "kind": "text"
-        },
-        {
-          "id": "ksg-old-04",
-          "title": "",
-          "body": "好的，收到。",
-          "time": "2026-01-28 14:25",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ksg-old-05",
-          "title": "",
-          "body": "明天外景拍摄可能下雨，现场会准备备用方案。",
-          "time": "2026-06-30 18:12",
-          "senderId": "staff-coordinator",
-          "kind": "text"
-        },
-        {
-          "id": "ksg-old-06",
-          "title": "",
-          "body": "了解！我会带外套。",
-          "time": "2026-06-30 18:15",
-          "senderId": "owner",
           "kind": "text"
         },
         {
@@ -1250,27 +1098,11 @@
           "kind": "text"
         },
         {
-          "id": "ksg2",
-          "title": "",
-          "body": "收到！",
-          "time": "2026-10-24 19:03",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
           "id": "ksg3",
           "title": "",
           "body": "拍摄现场有准备热饮，大家到场后先签到。",
           "time": "2026-10-24 19:05",
           "senderId": "staff-coordinator",
-          "kind": "text"
-        },
-        {
-          "id": "ksg4",
-          "title": "",
-          "body": "谢谢，明天见！",
-          "time": "2026-10-24 19:06",
-          "senderId": "owner",
           "kind": "text"
         },
         {
