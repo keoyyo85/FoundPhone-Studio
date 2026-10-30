@@ -53,13 +53,13 @@ function Bubbles({
                 {["image", "video", "audio"].includes(i.kind) ? (
                   <Media item={i} />
                 ) : (
-                  <span style={{ whiteSpace: "pre-line" }}>{i.body}</span>
+                  <span style={{ whiteSpace: "pre-line", display: "block", textAlign: "left" }}>{i.body}</span>
                 )}
-                <small>
-                  {i.time.slice(-5)}
-                  {i.read && <CheckCheck size={10} />}
-                </small>
+                {i.read && <CheckCheck size={10} />}
               </button>
+              <time style={{ display: "block", fontSize: 10, opacity: 0.62, textAlign: i.outgoing ? "right" : "left", margin: "3px 8px 7px" }}>
+                {i.time.slice(-5)}
+              </time>
             </div>
           </Fragment>
         );
