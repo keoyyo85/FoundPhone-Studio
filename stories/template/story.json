@@ -676,7 +676,45 @@
         }
       ],
       "next": []
+    },
+    {
+      "id": "read-sangyuan-search",
+      "label": "玩家搜到桑圆记录",
+      "type": "event",
+      "event": "read",
+      "target": "search-sangyuan",
+      "actions": [],
+      "next": [
+        "ending-first-clue"
+      ]
+    },
+    {
+      "id": "ending-first-clue",
+      "label": "第一条线索｜桑圆",
+      "type": "ending",
+      "event": "",
+      "target": "",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "ending",
+          "value": "第一条线索：桑圆"
+        }
+      ],
+      "next": []
     }
   ],
-  "tests": []
+  "tests": [
+    {
+      "name": "从浏览器找到桑圆记录",
+      "steps": [
+        {
+          "event": "read",
+          "target": "search-sangyuan"
+        }
+      ],
+      "ending": "第一条线索：桑圆",
+      "expectUnlocked": []
+    }
+  ]
 }
