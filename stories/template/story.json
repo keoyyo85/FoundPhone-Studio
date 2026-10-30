@@ -2,8 +2,8 @@
   "scriptVersion": 1,
   "id": "ui-test-phone-v2",
   "title": "捡手机｜周安信的秘密",
-  "description": "你意外捡到周安信的手机，解锁后从聊天、相册、备忘录、日历和社交动态的细碎痕迹里，慢慢发现他与备注为🐰的李相沅之间持续半年的秘密恋爱。以自由翻看手机、拼凑两个人的日常为主；其他人的聊天只作为少量生活背景。这是K-pop娱乐产业背景下的平行世界虚构故事，与现实人物及现实关系无关。",
-  "revision": 14,
+  "description": "你意外捡到周安信的手机。手机保留着原本的锁屏、桌面与 App。通过微信、浏览器和相册里的旧痕迹，逐步拼出 2024 年练习生时期的一段记忆。故事为平行世界虚构设定。",
+  "revision": 15,
   "phone": {
     "owner": "周安信",
     "date": "2026-10-25",
@@ -215,551 +215,28 @@
       ],
       "messages": [
         {
-          "id": "ks-old-01",
+          "id": "ksw-01",
           "title": "",
-          "body": "今天彩排的时候，你鞋带散了。回去记得重新系一下。",
-          "time": "2025-06-18 21:14",
+          "body": "哥，明天练习结束后有空吗？想问一下动作。",
+          "time": "2025-08-11 18:30",
           "senderId": "sangwon",
           "kind": "text"
         },
         {
-          "id": "ks-old-02",
+          "id": "ksw-02",
           "title": "",
-          "body": "你怎么连这个都看见了ㅋㅋ 谢谢哥！",
-          "time": "2025-06-18 21:16",
+          "body": "有空。结束后在练习室门口等我就好。",
+          "time": "2025-08-11 18:34",
           "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "ks-old-03",
+          "id": "ksw-03",
           "title": "",
-          "body": "今天那段练习我还是没做好，有点烦。",
-          "time": "2025-06-22 23:08",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-04",
-          "title": "",
-          "body": "我觉得比昨天好多了。先睡觉，明天再练。",
-          "time": "2025-06-22 23:12",
+          "body": "好，谢谢哥！",
+          "time": "2025-08-11 18:35",
           "senderId": "sangwon",
           "kind": "text"
-        },
-        {
-          "id": "ks-old-05",
-          "title": "",
-          "body": "你上次说想看的那本书，我拍了封面。",
-          "time": "2025-07-03 19:42",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-06",
-          "title": "",
-          "body": "记得！哥怎么还真的帮我找了ㅋㅋ",
-          "time": "2025-07-03 19:45",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-07",
-          "title": "",
-          "body": "今天见面会我喊错口号的时候你是不是笑我了？",
-          "time": "2025-07-11 00:26",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-08",
-          "title": "",
-          "body": "没有。只是没忍住ㅋㅋ 你自己也笑了。",
-          "time": "2025-07-11 00:29",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-09",
-          "title": "",
-          "body": "今天舞台结束后还好吗？看你一直在找水。",
-          "time": "2025-07-19 22:03",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-10",
-          "title": "",
-          "body": "没事！就是跑太快了。哥也辛苦了。",
-          "time": "2025-07-19 22:06",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-11",
-          "title": "",
-          "body": "我把你上次推荐的歌听完了。后半段很好听。",
-          "time": "2025-08-02 20:18",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-12",
-          "title": "",
-          "body": "我就知道你会喜欢那一段。",
-          "time": "2025-08-02 20:22",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-13",
-          "title": "",
-          "body": "今天你没怎么说话。是不舒服吗？",
-          "time": "2025-08-10 23:41",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-14",
-          "title": "",
-          "body": "有点想家，过一会儿就好了。",
-          "time": "2025-08-10 23:44",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-15",
-          "title": "",
-          "body": "那要不要出来走走？不想说话也没关系。",
-          "time": "2025-08-10 23:47",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-16",
-          "title": "",
-          "body": "刚才你拉开帘子的时候吓我一跳ㅋㅋ",
-          "time": "2025-08-21 18:36",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-17",
-          "title": "",
-          "body": "明明是你先站在门口发呆。",
-          "time": "2025-08-21 18:39",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-18",
-          "title": "",
-          "body": "今天练习室空调很冷，你的外套呢？",
-          "time": "2025-09-04 22:16",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-19",
-          "title": "",
-          "body": "忘在车上了。哥不要像我妈一样ㅋㅋ",
-          "time": "2025-09-04 22:19",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-20",
-          "title": "",
-          "body": "那你至少把我的穿上。",
-          "time": "2025-09-04 22:21",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-21",
-          "title": "",
-          "body": "睡了吗？突然想起今天那件事，有点好笑。",
-          "time": "2025-09-16 00:11",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-22",
-          "title": "",
-          "body": "还没。讲给我听。",
-          "time": "2025-09-16 00:15",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-23",
-          "title": "",
-          "body": "你今天彩排结束后一直在看我。",
-          "time": "2025-10-02 20:32",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-24",
-          "title": "",
-          "body": "我是在看镜子！刚好镜子里有你ㅋㅋ",
-          "time": "2025-10-02 20:35",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-25",
-          "title": "",
-          "body": "今天公布结果前我手心全是汗。",
-          "time": "2025-10-18 23:02",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-26",
-          "title": "",
-          "body": "我看出来了。你一直在捏袖口。",
-          "time": "2025-10-18 23:05",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-27",
-          "title": "",
-          "body": "今天分组练习辛苦了。你那段动作已经很稳了。",
-          "time": "2025-11-06 21:40",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-28",
-          "title": "",
-          "body": "你每次都能找到我哪里没做好ㅋㅋ",
-          "time": "2025-11-06 21:43",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-29",
-          "title": "",
-          "body": "生日快乐，安信。今天要许一个好一点的愿望。",
-          "time": "2025-12-25 00:04",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-30",
-          "title": "",
-          "body": "谢谢哥！你是第一个发的？",
-          "time": "2025-12-25 00:08",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-31",
-          "title": "",
-          "body": "今天采访的时候差点说漏嘴，幸好忍住了。",
-          "time": "2026-01-09 23:18",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-32",
-          "title": "",
-          "body": "我听见了。你反应很快，别紧张。",
-          "time": "2026-01-09 23:21",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-33",
-          "title": "",
-          "body": "新舞台的耳返试过了吗？不舒服就跟工作人员说。",
-          "time": "2026-02-03 19:56",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-34",
-          "title": "",
-          "body": "试过了！哥今天也早点回去休息。",
-          "time": "2026-02-03 20:00",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-35",
-          "title": "",
-          "body": "今天结束得晚，你还在练习室吗？",
-          "time": "2026-03-12 00:17",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-36",
-          "title": "",
-          "body": "在。你过来的话穿厚一点。",
-          "time": "2026-03-12 00:20",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-37",
-          "title": "",
-          "body": "到宿舍告诉我一声。今天路上人很多。",
-          "time": "2026-04-06 22:48",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-38",
-          "title": "",
-          "body": "到了。你也别一个人走小路。",
-          "time": "2026-04-06 22:51",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-39",
-          "title": "",
-          "body": "刚刚差点在大家面前叫错称呼ㅋㅋ",
-          "time": "2026-05-02 01:06",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-40",
-          "title": "",
-          "body": "我听见了。还好他们没注意。",
-          "time": "2026-05-02 01:09",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-41",
-          "title": "",
-          "body": "今天拍摄的时候你一直站在我旁边。",
-          "time": "2026-06-14 23:32",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-42",
-          "title": "",
-          "body": "位置刚好在那里嘛。哥不是也没走开ㅋㅋ",
-          "time": "2026-06-14 23:35",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-43",
-          "title": "",
-          "body": "你睡着了吗？我把今天的照片发你。",
-          "time": "2026-07-08 00:24",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-44",
-          "title": "",
-          "body": "还没。只发给我看？",
-          "time": "2026-07-08 00:27",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-45",
-          "title": "",
-          "body": "今天你看起来很累。回去不要再打游戏到凌晨。",
-          "time": "2026-08-19 21:14",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-46",
-          "title": "",
-          "body": "知道啦ㅋㅋ 那你也别看书看到忘记时间。",
-          "time": "2026-08-19 21:17",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-47",
-          "title": "",
-          "body": "下次骑车我真的会跟上，不许故意骑慢。",
-          "time": "2026-09-07 23:51",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-48",
-          "title": "",
-          "body": "我什么时候故意了？是你自己骑得慢。",
-          "time": "2026-09-07 23:54",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-49",
-          "title": "",
-          "body": "今天那家店的书你喜欢吗？下次再一起去。",
-          "time": "2026-10-12 22:08",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-old-50",
-          "title": "",
-          "body": "喜欢！下次不许只买一本，我要挑两本。",
-          "time": "2026-10-12 22:11",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks1",
-          "title": "",
-          "body": "到宿舍了吗？外面风很大。",
-          "time": "2026-10-24 23:18",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks2",
-          "title": "",
-          "body": "到了ㅋㅋ 你不是说还要去骑车？",
-          "time": "2026-10-24 23:19",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks3",
-          "title": "",
-          "body": "本来想去。现在想等你洗漱完。",
-          "time": "2026-10-24 23:20",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks4",
-          "title": "",
-          "body": "你等我干嘛，去骑呀ㅋㅋ",
-          "time": "2026-10-24 23:21",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks5",
-          "title": "",
-          "body": "一个人没意思。明天陪我？我慢一点。",
-          "time": "2026-10-24 23:22",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks6",
-          "title": "",
-          "body": "知道啦。那你先把外套穿好，别又嫌冷。",
-          "time": "2026-10-24 23:23",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks7",
-          "title": "",
-          "body": "嗯。还有，今天舞台结束以后你一直没怎么说话。累了吗？",
-          "time": "2026-10-24 23:24",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks8",
-          "title": "",
-          "body": "没有啦，就是有点困。哥哥怎么观察这么仔细。",
-          "time": "2026-10-24 23:25",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks9",
-          "title": "",
-          "body": "因为是你。困了就早点睡，晚安。",
-          "time": "2026-10-24 23:26",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks10",
-          "title": "",
-          "body": "晚安🐰 明天见。",
-          "time": "2026-10-24 23:27",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks11",
-          "title": "",
-          "body": "你今天是不是又把手套落在我这里了？",
-          "time": "2026-10-25 00:02",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks12",
-          "title": "",
-          "body": "……我就说怎么少了一只ㅋㅋ",
-          "time": "2026-10-25 00:03",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks13",
-          "title": "",
-          "body": "明天练习结束我给你。别又凌晨跑过来。",
-          "time": "2026-10-25 00:04",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks14",
-          "title": "",
-          "body": "那你出来拿嘛。",
-          "time": "2026-10-25 00:05",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "ks15",
-          "title": "",
-          "body": "……知道了。到了给我发消息。",
-          "time": "2026-10-25 00:06",
-          "senderId": "sangwon",
-          "kind": "text"
-        },
-        {
-          "id": "ks-lost-01",
-          "title": "",
-          "body": "安信？刚刚给你打电话没接。",
-          "time": "2026-10-25 09:48",
-          "senderId": "sangwon",
-          "kind": "text",
-          "hidden": true
-        },
-        {
-          "id": "ks-lost-02",
-          "title": "",
-          "body": "看到消息回我一下，我有点担心。",
-          "time": "2026-10-25 09:49",
-          "senderId": "sangwon",
-          "kind": "text",
-          "hidden": true
-        },
-        {
-          "id": "ks-lost-03",
-          "title": "",
-          "body": "我现在过去找你。你先别急，看到消息告诉我你在哪。",
-          "time": "2026-10-25 10:06",
-          "senderId": "sangwon",
-          "kind": "text",
-          "hidden": true
         }
       ]
     },
@@ -779,86 +256,44 @@
       ],
       "messages": [
         {
-          "id": "ka-old-01",
+          "id": "kag-01",
           "title": "",
-          "body": "明天第一次全员合练，大家早点到。",
-          "time": "2025-11-12 18:10",
-          "senderId": "leo",
-          "kind": "text"
-        },
-        {
-          "id": "ka-old-05",
-          "title": "",
-          "body": "新编舞的副歌好难，谁有空一起练？",
-          "time": "2025-12-04 19:30",
-          "senderId": "xinlong",
-          "kind": "text"
-        },
-        {
-          "id": "ka-old-09",
-          "title": "",
-          "body": "最近大家的行程都不一样，群里确认一下集合时间。",
-          "time": "2026-03-05 17:26",
-          "senderId": "leo",
-          "kind": "text"
-        },
-        {
-          "id": "ka-old-13",
-          "title": "",
-          "body": "明天休息的话晚上开黑？",
-          "time": "2026-07-22 19:51",
-          "senderId": "xinlong",
-          "kind": "text"
-        },
-        {
-          "id": "ka1",
-          "title": "",
-          "body": "谁把客厅的充电线拿走了ㅋㅋㅋㅋ",
-          "time": "2026-10-25 00:12",
+          "body": "明天全员合练，集合时间还是上午十点。",
+          "time": "2026-10-23 20:12",
           "senderId": "sanghyeon",
           "kind": "text"
         },
         {
-          "id": "ka5",
+          "id": "kag-02",
           "title": "",
-          "body": "我刚刚看见安信拿着一根走过去。",
-          "time": "2026-10-25 00:14",
-          "senderId": "junseo",
-          "kind": "text"
-        },
-        {
-          "id": "ka9",
-          "title": "",
-          "body": "抓到了ㅋㅋㅋㅋ",
-          "time": "2026-10-25 00:17",
-          "senderId": "sanghyeon",
-          "kind": "text"
-        },
-        {
-          "id": "ka13",
-          "title": "",
-          "body": "别问，问就是约了人ㅋㅋ",
-          "time": "2026-10-25 00:32",
+          "body": "收到！",
+          "time": "2026-10-23 20:13",
           "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "ka-lost-01",
+          "id": "kag-03",
           "title": "",
-          "body": "安信，你手机是不是没带？我刚才发的消息一直没读。",
-          "time": "2026-10-25 09:56",
-          "senderId": "leo",
-          "kind": "text",
-          "hidden": true
+          "body": "有人看到我落在练习室的水杯了吗？",
+          "time": "2026-10-23 20:16",
+          "senderId": "geonwoo",
+          "kind": "text"
         },
         {
-          "id": "ka-lost-02",
+          "id": "kag-04",
           "title": "",
-          "body": "我去休息室找过了，桌上没手机。先确认下是不是落在车上。",
-          "time": "2026-10-25 09:57",
-          "senderId": "jiahao",
-          "kind": "text",
-          "hidden": true
+          "body": "在音响旁边，我帮你放到柜子上了。",
+          "time": "2026-10-23 20:18",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kag-05",
+          "title": "",
+          "body": "谢谢ㅋㅋ 明天见。",
+          "time": "2026-10-23 20:19",
+          "senderId": "geonwoo",
+          "kind": "text"
         }
       ]
     },
@@ -872,66 +307,66 @@
       ],
       "messages": [
         {
-          "id": "wj-old-01",
+          "id": "wjh-01",
           "title": "",
-          "body": "最近训练怎么样？别一上来就把自己逼太紧。",
-          "time": "2025-06-27 17:18",
-          "senderId": "jiahao",
-          "kind": "text"
-        },
-        {
-          "id": "wj-old-02",
-          "title": "",
-          "body": "还行！有些动作不熟，正在补。",
-          "time": "2025-06-27 17:21",
+          "body": "你之前给我看的那个 Trainee A 视频，还有吗？",
+          "time": "2024-06-17 20:56",
           "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "wj1",
+          "id": "wjh-02",
           "title": "",
-          "body": "最近适应得怎么样？别光顾着玩，休息也要跟上。",
-          "time": "2026-10-22 16:20",
+          "body": "有啊，怎么突然想起来看这个？",
+          "time": "2024-06-17 20:58",
           "senderId": "jiahao",
           "kind": "text"
         },
         {
-          "id": "wj4",
+          "id": "wjh-03",
           "title": "",
-          "body": "留着啊ㅋㅋ 有几段还在收藏夹里。",
-          "time": "2026-10-22 16:25",
+          "body": "刚刚想起里面有一段练习室的编舞，想再看一遍。",
+          "time": "2024-06-17 21:00",
           "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "wj7",
+          "id": "wjh-04",
           "title": "",
-          "body": "你以前存的那些练习视频还在？",
-          "time": "2026-10-22 16:31",
+          "body": "我找找，等下发你。",
+          "time": "2024-06-17 21:01",
           "senderId": "jiahao",
           "kind": "text"
         },
         {
-          "id": "wj8",
+          "id": "wjh-05",
           "title": "",
-          "body": "在啊，怎么了。",
-          "time": "2026-10-22 16:32",
+          "body": "发你了。就是这个，画质有点糊，凑合看。",
+          "time": "2024-06-17 21:08",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wjh-06",
+          "title": "",
+          "body": "收到了，谢谢家豪哥。",
+          "time": "2024-06-17 21:10",
           "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "wj9",
+          "id": "wjh-07",
           "title": "",
-          "body": "没什么。就是觉得你现在见到本人，应该挺开心的。",
-          "time": "2026-10-22 16:34",
+          "body": "不客气。早点休息，别又练到太晚。",
+          "time": "2024-06-17 21:12",
           "senderId": "jiahao",
           "kind": "text"
         },
         {
-          "id": "wj10",
+          "id": "wjh-08",
           "title": "",
-          "body": "家豪哥！！不要讲得这么直接ㅋㅋ",
-          "time": "2026-10-22 16:35",
+          "body": "知道啦ㅋㅋ",
+          "time": "2024-06-17 21:13",
           "senderId": "owner",
           "kind": "text"
         }
@@ -947,74 +382,42 @@
       ],
       "messages": [
         {
-          "id": "wh-old-01",
+          "id": "whz-01",
           "title": "",
-          "body": "最近还活着吗？你这人忙起来就跟失踪一样。",
-          "time": "2025-07-28 22:18",
+          "body": "最近练习室是不是换到 B 栋了？",
+          "time": "2024-06-18 16:20",
           "senderId": "hanzhong",
           "kind": "text"
         },
         {
-          "id": "wh-old-02",
+          "id": "whz-02",
           "title": "",
-          "body": "活着呢ㅋㅋ 最近排得有点满，等我喘口气。",
-          "time": "2025-07-28 22:22",
+          "body": "对，今天开始换过去。你找不到的话给我发消息。",
+          "time": "2024-06-18 16:22",
           "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "wh-old-03",
+          "id": "whz-03",
           "title": "",
-          "body": "之前念叨的那个人呢？现在见着了没。",
-          "time": "2025-10-07 21:06",
+          "body": "收到，谢了。最近忙得连楼都快认不清了。",
+          "time": "2024-06-18 16:24",
           "senderId": "hanzhong",
           "kind": "text"
         },
         {
-          "id": "wh-old-04",
+          "id": "whz-04",
           "title": "",
-          "body": "见着了啊。你怎么还记得这么清楚。",
-          "time": "2025-10-07 21:10",
+          "body": "大家都差不多，记得吃饭。",
+          "time": "2024-06-18 16:25",
           "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "wh-old-09",
+          "id": "whz-05",
           "title": "",
-          "body": "你先顾好自己，别又熬到天亮。",
-          "time": "2026-09-21 20:52",
-          "senderId": "hanzhong",
-          "kind": "text"
-        },
-        {
-          "id": "wh-old-10",
-          "title": "",
-          "body": "知道了知道了，你也少操心我。",
-          "time": "2026-09-21 20:56",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wh5",
-          "title": "",
-          "body": "对了，你以前喜欢的那个人，现在怎么样了？",
-          "time": "2026-10-20 13:20",
-          "senderId": "hanzhong",
-          "kind": "text"
-        },
-        {
-          "id": "wh6",
-          "title": "",
-          "body": "挺好的。就是有些事暂时还不能跟你讲。",
-          "time": "2026-10-20 13:22",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wh7",
-          "title": "",
-          "body": "行，不问。等你哪天想说了再说，别一个人憋着。",
-          "time": "2026-10-20 13:23",
+          "body": "你也是，别只喝咖啡。",
+          "time": "2024-06-18 16:26",
           "senderId": "hanzhong",
           "kind": "text"
         }
@@ -1030,34 +433,34 @@
       ],
       "messages": [
         {
-          "id": "wfm1",
+          "id": "wfm-01",
           "title": "",
-          "body": "安信，今天吃饭了吗？别又忙起来就忘了。",
-          "time": "2026-10-24 18:12",
+          "body": "安信，今天吃饭了吗？",
+          "time": "2026-10-24 19:10",
           "senderId": "family-mother",
           "kind": "text"
         },
         {
-          "id": "wfm2",
+          "id": "wfm-02",
           "title": "",
-          "body": "吃啦！刚结束练习，等下回宿舍还会吃一点。",
-          "time": "2026-10-24 18:15",
+          "body": "吃了，刚结束练习。",
+          "time": "2026-10-24 19:18",
           "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "wfm3",
+          "id": "wfm-03",
           "title": "",
-          "body": "你每次都说吃了。天气凉了，记得穿外套。",
-          "time": "2026-10-24 18:16",
+          "body": "最近天气变化大，记得带外套。",
+          "time": "2026-10-24 19:20",
           "senderId": "family-mother",
           "kind": "text"
         },
         {
-          "id": "wfm4",
+          "id": "wfm-04",
           "title": "",
-          "body": "知道啦妈妈ㅋㅋ 你也早点休息。",
-          "time": "2026-10-24 18:18",
+          "body": "好，知道啦。你和爸爸也早点休息。",
+          "time": "2026-10-24 19:22",
           "senderId": "owner",
           "kind": "text"
         }
@@ -1074,54 +477,36 @@
       ],
       "messages": [
         {
-          "id": "ksg-old-01",
+          "id": "ksg-01",
           "title": "",
-          "body": "本周拍摄流程和集合地点已更新，请大家确认。",
-          "time": "2025-10-24 10:00",
-          "senderId": "staff-coordinator",
-          "kind": "text"
-        },
-        {
-          "id": "ksg-old-03",
-          "title": "",
-          "body": "下周舞台彩排时间提前，请成员留意更新后的日程。",
-          "time": "2026-01-28 14:22",
+          "body": "本周练习室安排已更新，请大家确认时间。",
+          "time": "2026-10-24 10:02",
           "senderId": "staff-manager",
           "kind": "text"
         },
         {
-          "id": "ksg1",
+          "id": "ksg-02",
           "title": "",
-          "body": "明天集合时间调整为 08:20，车辆从宿舍楼下出发。",
-          "time": "2026-10-24 19:02",
-          "senderId": "staff-manager",
+          "body": "收到。",
+          "time": "2026-10-24 10:05",
+          "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "ksg3",
+          "id": "ksg-03",
           "title": "",
-          "body": "拍摄现场有准备热饮，大家到场后先签到。",
-          "time": "2026-10-24 19:05",
+          "body": "明天录音前请提前十五分钟到场。",
+          "time": "2026-10-24 10:06",
           "senderId": "staff-coordinator",
           "kind": "text"
         },
         {
-          "id": "ksg-lost-01",
+          "id": "ksg-04",
           "title": "",
-          "body": "安信的手机是不是落在休息室了？刚才打过去一直没人接。",
-          "time": "2026-10-25 09:53",
-          "senderId": "staff-manager",
-          "kind": "text",
-          "hidden": true
-        },
-        {
-          "id": "ksg-lost-02",
-          "title": "",
-          "body": "练习室和待机室我都找过了，暂时没看到。",
-          "time": "2026-10-25 09:55",
-          "senderId": "staff-coordinator",
-          "kind": "text",
-          "hidden": true
+          "body": "服装尺寸有需要调整的成员请今天下班前私信。",
+          "time": "2026-10-24 10:08",
+          "senderId": "staff-stylist",
+          "kind": "text"
         }
       ]
     }
@@ -1129,395 +514,98 @@
   "content": {
     "notes": [
       {
-        "id": "note-route",
-        "title": "如果手机不是我拿着",
-        "body": "如果今天有哪件事让你觉得不对劲，先去看相册里凌晨那张河边照片。\\n\\n有些事我不想在聊天里留下太明显的记录。看完照片再回来找这条备忘录。\\n\\n——安信",
-        "kind": "note",
-        "time": "2026-10-25 00:36",
-        "hidden": true
+        "id": "note-practice-2024",
+        "title": "练习室备忘",
+        "body": "今天把基础动作重新顺了一遍。家豪哥发来的旧视频还没看完，明天练习前再看一次。",
+        "time": "2024-06-17 22:10",
+        "kind": "note"
       },
       {
-        "id": "note-bike",
-        "title": "凌晨骑车备忘",
-        "body": "相沅说今天风不大，可以骑一小段。\n\n我其实不太会骑，也不是很喜欢骑车。但他问我要不要一起的时候，我还是答应了。\n\n记得带外套。还有，不要又把手套忘在他那里。",
+        "id": "note-name-search",
+        "title": "一个名字",
+        "body": "今天搜了一个名字。只是想确认一下写法，没什么特别的。",
+        "time": "2024-06-17 21:23",
         "kind": "note",
-        "time": "2026-10-24 18:20"
-      },
-      {
-        "id": "note-film",
-        "title": "电影看到一半",
-        "body": "俊抒推荐的电影。相沅说结尾不要提前搜。\n\n他看书的时候很安静，看到喜欢的句子会拍给我。上次那本书还在他包里，封面都被翻软了。",
-        "kind": "note",
-        "time": "2026-10-23 22:10"
-      },
-      {
-        "id": "note-route-final",
-        "title": "给捡到手机的人",
-        "body": "你已经看到不少东西了。\\n\\n手机应该是落在休息室附近了。我现在还没法确认是谁捡到的。相沅只知道我一直没回消息，工作人员也刚开始找手机。\\n\\n如果你决定联系他，请记住：他最先担心的应该是我有没有出事，而不是手机。\\n\\n——安信",
-        "kind": "note",
-        "time": "2026-10-25 01:02",
         "hidden": true
       }
     ],
     "photos": [
       {
-        "id": "photo-first-stage",
-        "title": "选秀第一期｜后台抓拍",
-        "body": "舞台帷幕刚掀开，镜头扫到安信。相沅原本在整理麦克风，抬头后视线停了很久。照片边缘还有工作人员的手。",
-        "kind": "text",
-        "folder": "选秀时期",
-        "time": "2026-10-18 20:10"
+        "id": "photo-sangyuan-01",
+        "title": "桑圆 · 01",
+        "body": "",
+        "time": "2024-06-17 21:30",
+        "kind": "image",
+        "media": "data:image/webp;base64,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",
+        "folder": "桑圆",
+        "hidden": true,
+        "password": "20240617"
       },
       {
-        "id": "photo-one-stage",
-        "title": "一公结束后",
-        "body": "同组舞台结束，安信下台时凑过去亲了相沅的侧脸。后来这段被剪进了花絮。两个人当时都笑得很明显。",
-        "kind": "text",
-        "folder": "选秀时期",
-        "time": "2026-10-19 23:48"
-      },
-      {
-        "id": "photo-bike-night",
-        "title": "凌晨的河边",
-        "body": "夜骑时拍的河面。画面一角能看到两个人的影子，靠得很近。没有正脸。",
-        "kind": "text",
-        "folder": "最近",
-        "time": "2026-10-24 02:16"
-      },
-      {
-        "id": "photo-book",
-        "title": "书页上的折角",
-        "body": "一本被翻旧的书，折角旁边写着：‘下次一起看完。’字迹不是安信的。",
-        "kind": "text",
-        "folder": "收藏",
-        "time": "2026-10-23 21:52"
+        "id": "photo-sangyuan-02",
+        "title": "桑圆 · 02",
+        "body": "",
+        "time": "2024-06-17 21:31",
+        "kind": "image",
+        "media": "data:image/webp;base64,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",
+        "folder": "桑圆",
+        "hidden": true,
+        "password": "20240617"
       }
     ],
     "calendar": [
       {
         "id": "cal-practice",
-        "title": "团体练习",
-        "body": "全员练习 / 录制前走位",
-        "kind": "event",
-        "time": "2026-10-25 14:00"
-      },
-      {
-        "id": "cal-night-ride",
-        "title": "留一点时间",
-        "body": "凌晨骑车。地点只写了‘河边’，没有邀请其他人。",
-        "kind": "event",
-        "time": "2026-10-26 01:10"
-      },
-      {
-        "id": "cal-anniversary",
-        "title": "不要忘记",
-        "body": "没有标题，备注只有一枚兔子表情：🐰。日期被标记为私人。",
-        "kind": "event",
-        "time": "2026-10-08 00:00"
+        "title": "练习生课程",
+        "body": "舞蹈基础练习。",
+        "time": "2024-06-18 14:00",
+        "kind": "event"
       }
     ],
     "files": [
       {
-        "id": "file-practice-video",
-        "title": "旧练习室视频",
-        "body": "文件备注：家豪哥以前发来的练习室片段。安信在参加选秀前就保存了相沅的旧舞台和练习视频。",
-        "kind": "file",
-        "folder": "收藏"
-      },
-      {
-        "id": "file-stage-cut",
-        "title": "一公花絮片段",
-        "body": "节目组公开花絮的本地剪辑备份。文件名没有写人名，只标注了日期。",
+        "id": "file-trainee-a-video",
+        "title": "Trainee A 练习室视频",
+        "body": "家豪哥分享的视频。",
+        "time": "2024-06-17 21:08",
         "kind": "video",
-        "folder": "视频"
+        "folder": "下载"
       }
     ],
     "safari": [
       {
         "id": "search-trainee-a",
-        "title": "搜索记录：Trainee A",
-        "body": "最近搜索过旧练习室视频、出道计划变动和成员近况。搜索时间集中在选秀报名之前。",
+        "title": "Trainee A",
+        "body": "搜索时间：2024-06-17 21:14\n来源：浏览器历史记录",
+        "time": "2024-06-17 21:14",
         "kind": "text",
         "folder": "历史记录"
       },
       {
-        "id": "search-book",
-        "title": "搜索记录：电影原著",
-        "body": "搜索过相沅发来的电影原著和几家深夜营业的书店。",
+        "id": "search-sangyuan",
+        "title": "桑圆",
+        "body": "搜索时间：2024-06-17 21:19\n来源：浏览器历史记录",
+        "time": "2024-06-17 21:19",
         "kind": "text",
         "folder": "历史记录"
       }
     ],
-    "music": [
-      {
-        "id": "music-shared",
-        "title": "最近播放",
-        "body": "两个人常一起听的歌单。最近播放时间集中在凌晨，列表里混着安信常听的游戏BGM和相沅收藏的电子乐。",
-        "kind": "text"
-      },
-      {
-        "id": "music-dj",
-        "title": "相沅分享的Set",
-        "body": "相沅发来的DJ set，备注：‘这段适合骑车回去的时候听。’",
-        "kind": "text"
-      }
-    ],
-    "netease": [
-      {
-        "id": "netease-fav",
-        "title": "我喜欢的音乐",
-        "body": "歌单里既有流行歌、游戏BGM，也有相沅分享的电子乐。安信并没有把整个手机变成恋爱纪念册。",
-        "kind": "text"
-      }
-    ],
-    "twitter": [
-      {
-        "id": "tw-post-1",
-        "title": "安信的动态",
-        "body": "今天练习结束得比想象中早。有人说我最近心情很好？可能是睡眠充足吧ㅋㅋ",
-        "kind": "post",
-        "sender": "afterglow.zip",
-        "time": "2026-10-24 20:40",
-        "likes": 1284,
-        "comments": [
-          "郑相炫：哥你自己信吗ㅋㅋ",
-          "贺鑫隆：睡眠？你昨晚几点回来的"
-        ],
-        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
-        "meta": {
-          "handle": "@afterglow.zip"
-        }
-      },
-      {
-        "id": "tw-post-2",
-        "title": "相沅的动态",
-        "body": "风有一点凉。适合出去走走。",
-        "kind": "post",
-        "sender": "李相沅",
-        "time": "2026-10-24 23:50",
-        "likes": 2103,
-        "comments": [
-          "Leo：别骑太晚",
-          "金俊抒：书还在我这里，下次带给你"
-        ]
-      }
-    ],
-    "instagram": [
-      {
-        "id": "ig-story-1",
-        "title": "限时动态｜深夜",
-        "body": "一张模糊的夜景。画面边缘有另一只手，戴着安信常戴的戒指。没有标记地点。",
-        "kind": "post",
-        "sender": "afterglow.zip",
-        "time": "2026-10-24 02:30",
-        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
-        "meta": {
-          "handle": "@afterglow.zip",
-          "story": "true"
-        },
-        "folder": "Story"
-      },
-      {
-        "id": "ig-story-2",
-        "title": "限时动态｜书店",
-        "body": "书页和两杯饮料。相沅的杯子没有拍进去，但桌对面有人。",
-        "kind": "post",
-        "sender": "李相沅",
-        "time": "2026-10-23 19:20"
-      }
-    ],
+    "music": [],
+    "netease": [],
+    "twitter": [],
+    "instagram": [],
     "phone": [
       {
         "id": "phone-recent",
         "title": "最近通话",
-        "body": "家豪哥（未接）\nLeo（已接，03:12）\n🐰（已接，00:48）",
+        "body": "家豪哥（已接）\n妈妈（已接）",
         "kind": "text"
       }
     ],
     "contacts": [],
     "messages": [],
-    "threads": [
-      {
-        "id": "th-post-1",
-        "title": "",
-        "body": "睡前只想看一页，结果天都快亮了。",
-        "kind": "post",
-        "sender": "afterglow.zip",
-        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
-        "time": "2026-10-24 01:46",
-        "likes": 486,
-        "comments": [
-          "leo：你最好真的去睡了ㅋㅋ",
-          "今天也没早睡：明明只看了一页。"
-        ],
-        "meta": {
-          "handle": "@afterglow.zip"
-        }
-      },
-      {
-        "id": "th-post-2",
-        "title": "",
-        "body": "今天的风有点像昨天。",
-        "kind": "post",
-        "sender": "afterglow.zip",
-        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
-        "time": "2026-10-24 23:58",
-        "likes": 731,
-        "comments": [
-          "🐰：外面冷，回去记得穿外套。"
-        ],
-        "meta": {
-          "handle": "@afterglow.zip"
-        }
-      }
-    ],
-    "weibo": [
-      {
-        "id": "wb-profile",
-        "title": "个人主页",
-        "body": "不定时上线｜记录一点生活和喜欢的舞台。关注列表里有几个常看的站子和翻译号。",
-        "kind": "post",
-        "folder": "个人主页",
-        "sender": "afterglow.zip",
-        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
-        "time": "2026-10-24 18:20",
-        "likes": 0,
-        "comments": [],
-        "meta": {
-          "handle": "@afterglow.zip",
-          "bio": "偶尔营业 / ALD1 / 随手记录",
-          "following": "86",
-          "followers": "312"
-        }
-      },
-      {
-        "id": "wb-follow-1",
-        "title": "ALD1 GLOBAL",
-        "body": "[PHOTO] 260924｜今天的舞台直拍和高清图整理好了，辛苦各位老师拍摄与整理！记得去看原帖支持官方内容。",
-        "kind": "post",
-        "folder": "关注",
-        "sender": "ALD1 GLOBAL",
-        "avatar": "https://pbs.twimg.com/media/G1sRWmzaAAYcheh.jpg",
-        "time": "2026-10-24 19:06",
-        "likes": 3261,
-        "comments": [
-          "这组图真的好会拍……每个人都帅得很具体。",
-          "收图了谢谢站子老师！"
-        ],
-        "meta": {
-          "handle": "@ALD1_GLOBAL"
-        }
-      },
-      {
-        "id": "wb-follow-2",
-        "title": "ANXIN GLOBAL",
-        "body": "[UPDATE] 安信相关公开行程、官方物料与翻译汇总。今天也请多多关注孩子的舞台表现，辛苦大家。",
-        "kind": "post",
-        "folder": "关注",
-        "sender": "ANXIN GLOBAL",
-        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
-        "time": "2026-10-24 18:42",
-        "likes": 2187,
-        "comments": [
-          "辛苦站子！已转发收藏。",
-          "今天状态好好，舞台值得反复看。"
-        ],
-        "meta": {
-          "handle": "@AnxinGlobal"
-        }
-      },
-      {
-        "id": "wb-follow-3",
-        "title": "junseo archive",
-        "body": "俊抒今天这张抓拍是什么神图……镜头感和氛围都刚刚好，已存。",
-        "kind": "post",
-        "folder": "关注",
-        "sender": "junseo archive",
-        "avatar": "https://image.static.bstage.in/cdn-cgi/image/metadata%3Dnone/ald1/485da96c-e34f-45e8-ab26-9eba22f41b1f/4b18b46b-a52b-496b-a22d-2e1e62c8f194/ori.jpg",
-        "time": "2026-10-24 17:55",
-        "likes": 1740,
-        "comments": [
-          "这张真的很像电影截图。",
-          "老师多发！！"
-        ],
-        "meta": {
-          "handle": "@junseo_archive"
-        }
-      },
-      {
-        "id": "wb-follow-4",
-        "title": "ALD1中字组",
-        "body": "【中字】成员采访片段更新，已补时间轴和重点翻译。转载请注明出处，感谢支持。",
-        "kind": "post",
-        "folder": "关注",
-        "sender": "ALD1中字组",
-        "avatar": "https://pbs.twimg.com/media/HFLaH5kaMAANHZj.jpg",
-        "time": "2026-10-24 16:30",
-        "likes": 986,
-        "comments": [
-          "翻译老师辛苦了！",
-          "已转发，感谢整理。"
-        ],
-        "meta": {
-          "handle": "@ald1_trans"
-        }
-      },
-      {
-        "id": "wb-own-1",
-        "title": "",
-        "body": "刚刚把今天的舞台又看了一遍。到底是谁把ending拍得这么好看啊……我先存为敬。",
-        "kind": "post",
-        "folder": "微博",
-        "sender": "afterglow.zip",
-        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
-        "time": "2026-10-24 20:48",
-        "likes": 684,
-        "comments": [
-          "鑫隆：你不是刚刚就在现场吗ㅋㅋ",
-          "afterglow.zip：现场和回放是两种快乐好吗。",
-          "相炫：哥你真的很会找角度。"
-        ],
-        "meta": {
-          "handle": "@afterglow.zip"
-        }
-      },
-      {
-        "id": "wb-own-2",
-        "title": "",
-        "body": "今天的风很舒服，回去路上听了好几遍歌。明天也要顺顺利利。",
-        "kind": "post",
-        "folder": "微博",
-        "sender": "afterglow.zip",
-        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
-        "time": "2026-10-24 23:16",
-        "likes": 912,
-        "comments": [
-          "ALD1 GLOBAL：晚安，明天也一起加油！",
-          "afterglow.zip：晚安ㅋㅋ"
-        ],
-        "meta": {
-          "handle": "@afterglow.zip"
-        }
-      },
-      {
-        "id": "wb-own-3",
-        "title": "",
-        "body": "刷到站子老师拍的图了，怎么每张都像画报……感谢老师们一直认真记录，已转发收藏。",
-        "kind": "post",
-        "folder": "微博",
-        "sender": "afterglow.zip",
-        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
-        "time": "2026-10-23 21:32",
-        "likes": 1203,
-        "comments": [
-          "junseo archive：谢谢喜欢！",
-          "afterglow.zip：老师拍得真的好看！"
-        ],
-        "meta": {
-          "handle": "@afterglow.zip"
-        }
-      }
-    ]
+    "threads": [],
+    "weibo": []
   },
   "variables": {
     "trust_sangwon": 0,
@@ -1529,342 +617,17 @@
   "events": [
     {
       "id": "story-start",
-      "label": "捡到手机",
+      "label": "开始探索安信的手机",
       "type": "start",
       "actions": [
         {
           "type": "notification",
           "key": "story",
-          "value": "KakaoTalk: 🐰\n安信，你到家了吗？\n怎么还不回我ㅋㅋ"
-        },
-        {
-          "type": "variable",
-          "key": "truth_complete",
-          "value": 0
+          "value": "手机主人：安信\n屏幕已锁定。请输入密码以继续。"
         }
       ],
       "next": []
-    },
-    {
-      "id": "photo-clue-unlocks-note",
-      "label": "河边照片引出一条线索",
-      "type": "event",
-      "event": "read",
-      "target": "photo-bike-night",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "note-route",
-          "value": "true"
-        },
-        {
-          "type": "unlock",
-          "key": "ks-lost-01",
-          "value": "true"
-        },
-        {
-          "type": "unlock",
-          "key": "ks-lost-02",
-          "value": "true"
-        },
-        {
-          "type": "notification",
-          "key": "story",
-          "value": "KakaoTalk: 🐰\\n安信？刚刚给你打电话没接。\\n看到消息回我一下，我有点担心。"
-        }
-      ],
-      "next": []
-    },
-    {
-      "id": "phone-loss-discovered",
-      "label": "他们开始发现手机不见了",
-      "type": "event",
-      "event": "read",
-      "target": "note-route",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "note-route-final",
-          "value": "true"
-        },
-        {
-          "type": "unlock",
-          "key": "ksg-lost-01",
-          "value": "true"
-        },
-        {
-          "type": "unlock",
-          "key": "ksg-lost-02",
-          "value": "true"
-        },
-        {
-          "type": "unlock",
-          "key": "ka-lost-01",
-          "value": "true"
-        },
-        {
-          "type": "unlock",
-          "key": "ka-lost-02",
-          "value": "true"
-        },
-        {
-          "type": "variable",
-          "key": "phone_missing_stage",
-          "value": 1
-        },
-        {
-          "type": "notification",
-          "key": "story",
-          "value": "KakaoTalk: 매니저님\\n安信的手机是不是落在休息室了？\\n刚才打过去一直没人接。"
-        }
-      ],
-      "next": []
-    },
-    {
-      "id": "sangwon-goes-looking",
-      "label": "相沅决定去找安信",
-      "type": "event",
-      "event": "read",
-      "target": "note-route-final",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "ks-lost-03",
-          "value": "true"
-        },
-        {
-          "type": "variable",
-          "key": "phone_missing_stage",
-          "value": 2
-        },
-        {
-          "type": "notification",
-          "key": "story",
-          "value": "KakaoTalk: 🐰\\n我现在过去找你。\\n看到消息告诉我你在哪。"
-        }
-      ],
-      "next": []
-    },
-    {
-      "id": "route-read",
-      "label": "读完最后一条备忘录",
-      "type": "event",
-      "event": "read",
-      "target": "note-route-final",
-      "actions": [
-        {
-          "type": "clue",
-          "key": "relationship-confirmed",
-          "value": "true"
-        },
-        {
-          "type": "variable",
-          "key": "truth_complete",
-          "value": 1
-        }
-      ],
-      "next": [
-        "final-choice"
-      ]
-    },
-    {
-      "id": "final-choice",
-      "label": "你准备怎么处理这部手机？",
-      "type": "choice",
-      "next": [
-        "ending-secret",
-        "ending-exposure",
-        "ending-honest",
-        "ending-lost",
-        "ending-open"
-      ]
-    },
-    {
-      "id": "ending-secret",
-      "label": "A｜秘密继续",
-      "type": "ending",
-      "actions": [
-        {
-          "type": "ending",
-          "key": "ending",
-          "value": "A｜秘密继续"
-        }
-      ]
-    },
-    {
-      "id": "ending-exposure",
-      "label": "B｜差一点曝光",
-      "type": "ending",
-      "actions": [
-        {
-          "type": "ending",
-          "key": "ending",
-          "value": "B｜差一点曝光"
-        }
-      ]
-    },
-    {
-      "id": "ending-honest",
-      "label": "C｜坦诚相见",
-      "type": "ending",
-      "actions": [
-        {
-          "type": "ending",
-          "key": "ending",
-          "value": "C｜坦诚相见"
-        }
-      ]
-    },
-    {
-      "id": "ending-lost",
-      "label": "D｜无法挽回",
-      "type": "ending",
-      "actions": [
-        {
-          "type": "ending",
-          "key": "ending",
-          "value": "D｜无法挽回"
-        }
-      ]
-    },
-    {
-      "id": "ending-open",
-      "label": "E｜未完待续",
-      "type": "ending",
-      "actions": [
-        {
-          "type": "ending",
-          "key": "ending",
-          "value": "E｜未完待续"
-        }
-      ]
     }
   ],
-  "tests": [
-    {
-      "name": "A结局：秘密继续",
-      "steps": [
-        {
-          "event": "read",
-          "target": "photo-bike-night"
-        },
-        {
-          "event": "read",
-          "target": "note-route"
-        },
-        {
-          "event": "read",
-          "target": "note-route-final"
-        },
-        {
-          "choose": "ending-secret"
-        }
-      ],
-      "ending": "A｜秘密继续",
-      "expectUnlocked": [
-        "note-route",
-        "note-route-final"
-      ]
-    },
-    {
-      "name": "B结局：差一点曝光",
-      "steps": [
-        {
-          "event": "read",
-          "target": "photo-bike-night"
-        },
-        {
-          "event": "read",
-          "target": "note-route"
-        },
-        {
-          "event": "read",
-          "target": "note-route-final"
-        },
-        {
-          "choose": "ending-exposure"
-        }
-      ],
-      "ending": "B｜差一点曝光",
-      "expectUnlocked": [
-        "note-route",
-        "note-route-final"
-      ]
-    },
-    {
-      "name": "C结局：坦诚相见",
-      "steps": [
-        {
-          "event": "read",
-          "target": "photo-bike-night"
-        },
-        {
-          "event": "read",
-          "target": "note-route"
-        },
-        {
-          "event": "read",
-          "target": "note-route-final"
-        },
-        {
-          "choose": "ending-honest"
-        }
-      ],
-      "ending": "C｜坦诚相见",
-      "expectUnlocked": [
-        "note-route",
-        "note-route-final"
-      ]
-    },
-    {
-      "name": "D结局：无法挽回",
-      "steps": [
-        {
-          "event": "read",
-          "target": "photo-bike-night"
-        },
-        {
-          "event": "read",
-          "target": "note-route"
-        },
-        {
-          "event": "read",
-          "target": "note-route-final"
-        },
-        {
-          "choose": "ending-lost"
-        }
-      ],
-      "ending": "D｜无法挽回",
-      "expectUnlocked": [
-        "note-route",
-        "note-route-final"
-      ]
-    },
-    {
-      "name": "E结局：未完待续",
-      "steps": [
-        {
-          "event": "read",
-          "target": "photo-bike-night"
-        },
-        {
-          "event": "read",
-          "target": "note-route"
-        },
-        {
-          "event": "read",
-          "target": "note-route-final"
-        },
-        {
-          "choose": "ending-open"
-        }
-      ],
-      "ending": "E｜未完待续",
-      "expectUnlocked": [
-        "note-route",
-        "note-route-final"
-      ]
-    }
-  ]
+  "tests": []
 }
