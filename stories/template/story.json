@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机｜周安信的手机",
   "description": "你以 CPF 的身份意外捡到周安信的手机。手机保留原版锁屏、桌面与 App。当前聊天停留在 2025 年一公前后；聊天里提到的旧视频、照片和浏览记录则指向 2024 年。所有关系线索都需要玩家自己发现。平行世界虚构设定。",
-  "revision": 19,
+  "revision": 20,
   "phone": {
     "owner": "周安信",
     "date": "2025-08-23",
@@ -756,7 +756,8 @@
     "suspicion_sangwon": 0,
     "exposure_risk": 0,
     "truth_complete": 0,
-    "player_told_truth": false
+    "player_told_truth": false,
+    "endingArchive": "{\"status\":\"暂存，不接入当前玩家流程\",\"note\":\"仅保留旧结局构想；当前版本只制作第一条线索，不触发任何正式结局。\",\"endings\":[{\"id\":\"A\",\"name\":\"秘密继续\",\"trigger\":\"保守秘密，不主动干预两人关系\"},{\"id\":\"B\",\"name\":\"差一点曝光\",\"trigger\":\"无意间引发外部危机，秘密接近曝光\"},{\"id\":\"C\",\"name\":\"坦诚相见\",\"trigger\":\"帮助两人面对顾虑，但不预设相沅已经知情或双向确认\"},{\"id\":\"D\",\"name\":\"无法挽回\",\"trigger\":\"秘密泄露，造成关系裂痕\"},{\"id\":\"E\",\"name\":\"未完待续\",\"trigger\":\"尚未找全真相便归还手机\"}]}"
   },
   "events": [
     {
@@ -771,7 +772,33 @@
         }
       ],
       "next": []
+    },
+    {
+      "id": "qa-test-only-checkpoint",
+      "label": "QA 测试占位｜不属于玩家剧情",
+      "type": "ending",
+      "event": "qaTestOnly",
+      "target": "",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "ending",
+          "value": "QA测试占位（不在玩家流程触发）"
+        }
+      ],
+      "next": []
     }
   ],
-  "tests": []
+  "tests": [
+    {
+      "name": "CI 流程检查（仅测试专用事件，不触发玩家结局）",
+      "steps": [
+        {
+          "event": "qaTestOnly"
+        }
+      ],
+      "ending": "QA测试占位（不在玩家流程触发）",
+      "expectUnlocked": []
+    }
+  ]
 }
