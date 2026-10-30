@@ -1,7 +1,7 @@
 name: Validate and deploy Pages
 on:
   push:
-    branches: [main]
+    branches: [main, story/zhou-anxin-phone]
   workflow_dispatch:
 permissions:
   contents: read
