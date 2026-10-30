@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机｜周安信的秘密",
   "description": "你在练习室附近捡到一部手机。锁屏密码是1225。手机主人是周安信。聊天、相册、备忘录和社交动态里，似乎藏着他与备注为🐰的李相沅之间不愿公开的关系。这是K-pop娱乐产业背景下的平行世界虚构故事，与现实人物及现实关系无关。",
-  "revision": 5,
+  "revision": 6,
   "phone": {
     "owner": "周安信",
     "date": "2026-10-25",
@@ -93,78 +93,103 @@
       "id": "sangwon",
       "name": "李相沅",
       "phone": "",
-      "avatar": "",
-      "bio": "同团成员。安信的恋人，备注🐰。"
+      "avatar": ""
     },
     {
       "id": "jiahao",
       "name": "张家豪",
       "phone": "",
-      "avatar": "",
-      "bio": "安信以前同公司的哥哥，知道安信过去的一些事。"
+      "avatar": ""
     },
     {
       "id": "sanghyeon",
       "name": "郑相炫",
       "phone": "",
-      "avatar": "",
-      "bio": "忙内Line，爱开玩笑，观察力很强。"
+      "avatar": ""
     },
     {
       "id": "xinlong",
       "name": "贺鑫隆",
       "phone": "",
-      "avatar": "",
-      "bio": "同团中国成员，和安信聊得来。"
+      "avatar": ""
     },
     {
       "id": "leo",
       "name": "Leo",
       "phone": "",
-      "avatar": "",
-      "bio": "队长；和相沅以前同公司练习认识。"
+      "avatar": ""
     },
     {
       "id": "junseo",
       "name": "金俊抒",
       "phone": "",
-      "avatar": "",
-      "bio": "和相沅很合拍，常一起读书、跑步。"
+      "avatar": ""
     },
     {
       "id": "hanzhong",
       "name": "林韩中",
       "phone": "",
-      "avatar": "",
-      "bio": "安信以前同公司的好友。"
+      "avatar": ""
     },
     {
       "id": "surin",
       "name": "薛苏仁",
       "phone": "",
-      "avatar": "",
-      "bio": "选秀时期认识的朋友。"
+      "avatar": ""
     },
     {
       "id": "gangmin",
       "name": "柳冈旻",
       "phone": "",
-      "avatar": "",
-      "bio": "选秀时期认识的朋友。"
+      "avatar": ""
     },
     {
       "id": "kevin",
       "name": "陈凯文",
       "phone": "",
-      "avatar": "",
-      "bio": "选秀时期认识的朋友。"
+      "avatar": ""
     },
     {
       "id": "liyu",
       "name": "崔立于",
       "phone": "",
-      "avatar": "",
-      "bio": "选秀时期认识的朋友。"
+      "avatar": ""
+    },
+    {
+      "id": "family-father",
+      "name": "爸爸",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "family-mother",
+      "name": "妈妈",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "family-brother",
+      "name": "弟弟",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "staff-manager",
+      "name": "经纪人",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "staff-stylist",
+      "name": "造型师",
+      "phone": "",
+      "avatar": ""
+    },
+    {
+      "id": "staff-coordinator",
+      "name": "现场工作人员",
+      "phone": "",
+      "avatar": ""
     }
   ],
   "chats": [
@@ -918,6 +943,273 @@
           "title": "",
           "body": "不许翻旧账，今晚证明自己。",
           "time": "2026-10-24 19:13",
+          "senderId": "owner",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "wechat-family-mom",
+      "app": "wechat",
+      "title": "妈妈",
+      "participants": [
+        "owner",
+        "family-mother"
+      ],
+      "messages": [
+        {
+          "id": "wfm1",
+          "title": "",
+          "body": "安信，今天吃饭了吗？别又忙起来就忘了。",
+          "time": "2026-10-24 18:12",
+          "senderId": "family-mother",
+          "kind": "text"
+        },
+        {
+          "id": "wfm2",
+          "title": "",
+          "body": "吃啦！刚结束练习，等下回宿舍还会吃一点。",
+          "time": "2026-10-24 18:15",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wfm3",
+          "title": "",
+          "body": "你每次都说吃了。天气凉了，记得穿外套。",
+          "time": "2026-10-24 18:16",
+          "senderId": "family-mother",
+          "kind": "text"
+        },
+        {
+          "id": "wfm4",
+          "title": "",
+          "body": "知道啦妈妈ㅋㅋ 你也早点休息。",
+          "time": "2026-10-24 18:18",
+          "senderId": "owner",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "wechat-family-dad",
+      "app": "wechat",
+      "title": "爸爸",
+      "participants": [
+        "owner",
+        "family-father"
+      ],
+      "messages": [
+        {
+          "id": "wfd1",
+          "title": "",
+          "body": "最近工作忙不忙？身体还适应吗？",
+          "time": "2026-10-21 09:06",
+          "senderId": "family-father",
+          "kind": "text"
+        },
+        {
+          "id": "wfd2",
+          "title": "",
+          "body": "还好，最近行程和练习排得比较满，不过都适应了。",
+          "time": "2026-10-21 09:14",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wfd3",
+          "title": "",
+          "body": "忙的时候也要按时休息。有空给家里打个电话。",
+          "time": "2026-10-21 09:18",
+          "senderId": "family-father",
+          "kind": "text"
+        },
+        {
+          "id": "wfd4",
+          "title": "",
+          "body": "好，周末找时间打给你们。",
+          "time": "2026-10-21 09:20",
+          "senderId": "owner",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "wechat-family-brother",
+      "app": "wechat",
+      "title": "弟弟",
+      "participants": [
+        "owner",
+        "family-brother"
+      ],
+      "messages": [
+        {
+          "id": "wfb1",
+          "title": "",
+          "body": "哥 你上次说给我买的东西呢",
+          "time": "2026-10-23 20:31",
+          "senderId": "family-brother",
+          "kind": "text"
+        },
+        {
+          "id": "wfb2",
+          "title": "",
+          "body": "ㅋㅋㅋㅋ记着呢，别催。",
+          "time": "2026-10-23 20:33",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wfb3",
+          "title": "",
+          "body": "那你回来的时候带。还有你上次那个游戏我打上去了。",
+          "time": "2026-10-23 20:34",
+          "senderId": "family-brother",
+          "kind": "text"
+        },
+        {
+          "id": "wfb4",
+          "title": "",
+          "body": "真的假的？截图发我，我不信。",
+          "time": "2026-10-23 20:35",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wfb5",
+          "title": "",
+          "body": "发了。哥你这段时间是不是都没上线，菜了吧。",
+          "time": "2026-10-23 20:37",
+          "senderId": "family-brother",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "kakao-staff-manager",
+      "app": "kakao",
+      "title": "经纪人",
+      "participants": [
+        "owner",
+        "staff-manager"
+      ],
+      "messages": [
+        {
+          "id": "ksm1",
+          "title": "",
+          "body": "明天的行程表更新了，记得看一下群公告。",
+          "time": "2026-10-24 17:42",
+          "senderId": "staff-manager",
+          "kind": "text"
+        },
+        {
+          "id": "ksm2",
+          "title": "",
+          "body": "看到了！早上是电台，下午直接去练习室对吗？",
+          "time": "2026-10-24 17:44",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ksm3",
+          "title": "",
+          "body": "对。车会提前十分钟到，别自己跑出去买咖啡了。",
+          "time": "2026-10-24 17:45",
+          "senderId": "staff-manager",
+          "kind": "text"
+        },
+        {
+          "id": "ksm4",
+          "title": "",
+          "body": "ㅋㅋ知道了，我会准时下楼。",
+          "time": "2026-10-24 17:46",
+          "senderId": "owner",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "kakao-staff-stylist",
+      "app": "kakao",
+      "title": "造型师姐姐",
+      "participants": [
+        "owner",
+        "staff-stylist"
+      ],
+      "messages": [
+        {
+          "id": "kss1",
+          "title": "",
+          "body": "安信，明天拍摄的衣服尺寸我再确认一下。最近有调整吗？",
+          "time": "2026-10-23 16:08",
+          "senderId": "staff-stylist",
+          "kind": "text"
+        },
+        {
+          "id": "kss2",
+          "title": "",
+          "body": "没有，和平时一样！谢谢姐姐。",
+          "time": "2026-10-23 16:10",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kss3",
+          "title": "",
+          "body": "好，那明天早点来试衣服。还有上次落在化妆间的帽子我帮你收好了。",
+          "time": "2026-10-23 16:12",
+          "senderId": "staff-stylist",
+          "kind": "text"
+        },
+        {
+          "id": "kss4",
+          "title": "",
+          "body": "啊！我还在找ㅋㅋ明天去拿！",
+          "time": "2026-10-23 16:13",
+          "senderId": "owner",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "kakao-staff-group",
+      "app": "kakao",
+      "title": "ALPHA｜行程与现场",
+      "participants": [
+        "owner",
+        "staff-manager",
+        "staff-coordinator"
+      ],
+      "messages": [
+        {
+          "id": "ksg1",
+          "title": "",
+          "body": "明天集合时间调整为 08:20，车辆从宿舍楼下出发。",
+          "time": "2026-10-24 19:02",
+          "senderId": "staff-manager",
+          "kind": "text"
+        },
+        {
+          "id": "ksg2",
+          "title": "",
+          "body": "收到！",
+          "time": "2026-10-24 19:03",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ksg3",
+          "title": "",
+          "body": "拍摄现场有准备热饮，大家到场后先签到。",
+          "time": "2026-10-24 19:05",
+          "senderId": "staff-coordinator",
+          "kind": "text"
+        },
+        {
+          "id": "ksg4",
+          "title": "",
+          "body": "谢谢，明天见！",
+          "time": "2026-10-24 19:06",
           "senderId": "owner",
           "kind": "text"
         }
