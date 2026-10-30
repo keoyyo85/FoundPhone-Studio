@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机｜周安信的秘密",
   "description": "你在练习室附近捡到一部手机。锁屏密码是1225。手机主人是周安信。聊天、相册、备忘录和社交动态里，似乎藏着他与备注为🐰的李相沅之间不愿公开的关系。这是K-pop娱乐产业背景下的平行世界虚构故事，与现实人物及现实关系无关。",
-  "revision": 10,
+  "revision": 11,
   "phone": {
     "owner": "周安信",
     "date": "2026-10-25",
@@ -16,8 +16,8 @@
     "kakaoName": "안신",
     "wechatName": "今天也没早睡",
     "socialName": "afterglow.zip",
-    "ownerAvatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021234/anxin-3.jpeg?w=540",
-    "wechatAvatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021234/anxin-3.jpeg?w=540"
+    "ownerAvatar": "https://pbs.twimg.com/media/HISeWUZbYAErEbH.jpg",
+    "wechatAvatar": "https://pbs.twimg.com/media/HISeWUZbYAErEbH.jpg"
   },
   "installedApps": [
     "appstore",
