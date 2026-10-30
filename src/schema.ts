@@ -206,7 +206,7 @@ export function safeMedia(value: string) {
       value,
     );
   const curatedPhoto =
-    /^https:\/\/(?:pbs\.twimg\.com\/media\/[A-Za-z0-9_-]+\.(?:jpg|png)(?:\?[^#]*)?|image\.static\.bstage\.in\/[^\s]+|cdn\.livedoor\.jp\/kstyle\/[^\s]+|www\.esquirekorea\.co\.kr\/resources\/online\/online_image\/[^\s]+|assets\.pikiran-rakyat\.com\/[^\s]+)$/.test(
+    /^https:\/\/(?:pbs\.twimg\.com\/media\/[A-Za-z0-9_-]+(?:\.(?:jpg|png))?(?:\?[^#]*)?|image\.static\.bstage\.in\/[^\s]+|cdn\.livedoor\.jp\/kstyle\/[^\s]+|www\.esquirekorea\.co\.kr\/resources\/online\/online_image\/[^\s]+|assets\.pikiran-rakyat\.com\/[^\s]+)$/.test(
       value,
     );
   const officialProfile =
