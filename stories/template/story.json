@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机｜周安信的手机",
   "description": "你以 CPF 的身份意外捡到周安信的手机。手机保留原版锁屏、桌面与 App。当前聊天停留在 2025 年一公前后；聊天里提到的旧视频、照片和浏览记录则指向 2024 年。所有关系线索都需要玩家自己发现。平行世界虚构设定。",
-  "revision": 16,
+  "revision": 17,
   "phone": {
     "owner": "周安信",
     "date": "2025-08-23",
@@ -16,8 +16,8 @@
     "kakaoName": "안신",
     "wechatName": "今天也没早睡",
     "socialName": "afterglow.zip",
-    "ownerAvatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
-    "wechatAvatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg"
+    "ownerAvatar": "https://pbs.twimg.com/media/G3Cgqf_agAAw9de.jpg",
+    "wechatAvatar": "https://xkxqjlzvieat874751.gcdn.ntruss.com/1/2026/e992/1e9926d62de1deea6a13d404b6b49fc3e3c85c34abb59327a9b094a4eb2161382_o_st.webp"
   },
   "installedApps": [
     "appstore",
@@ -99,13 +99,13 @@
       "id": "sangwon",
       "name": "🐰",
       "phone": "010-0000-0000",
-      "avatar": "https://pbs.twimg.com/media/HFm-ukJakAMFJzm.jpg"
+      "avatar": "https://pbs.twimg.com/profile_images/2005188075505549312/AHkTtSLG.jpg"
     },
     {
       "id": "jiahao",
-      "name": "嘉豪哥",
+      "name": "家豪哥",
       "phone": "",
-      "avatar": "https://pbs.twimg.com/media/G4zi1sAbcAAH5nA.jpg"
+      "avatar": "https://static.asiachan.com/Arno.full.480152.jpg"
     },
     {
       "id": "sanghyeon",
@@ -217,29 +217,45 @@
         {
           "id": "ksw-25-01",
           "title": "",
-          "body": "这是我的号码，存一下吧。",
-          "time": "2025-08-20 19:12",
+          "body": "安信，这是我的号码。KakaoTalk上加我吧。",
+          "time": "2025-08-08 18:10",
           "senderId": "sangwon",
           "kind": "text"
         },
         {
           "id": "ksw-25-02",
           "title": "",
-          "body": "好，我加你了。",
-          "time": "2025-08-20 19:16",
+          "body": "好！其实我一直想找哥聊天，因为喜欢哥ㅋㅋ",
+          "time": "2025-08-08 18:12",
           "senderId": "owner",
           "kind": "text"
         },
         {
           "id": "ksw-25-03",
           "title": "",
-          "body": "看到了ㅋㅋ",
-          "time": "2025-08-20 19:17",
+          "body": "ㅋㅋ 突然这么说，我都有点意外了。以后多联系吧。",
+          "time": "2025-08-08 18:13",
           "senderId": "sangwon",
           "kind": "text"
         },
         {
           "id": "ksw-25-04",
+          "title": "",
+          "body": "嗯！以后请多关照，哥。",
+          "time": "2025-08-08 18:15",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ksw-25-05",
+          "title": "",
+          "body": "我也请多关照，安信。",
+          "time": "2025-08-08 18:17",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ksw-25-06",
           "title": "",
           "body": "你们到海底捞了吗？",
           "time": "2025-08-23 18:32",
@@ -247,7 +263,7 @@
           "kind": "text"
         },
         {
-          "id": "ksw-25-05",
+          "id": "ksw-25-07",
           "title": "",
           "body": "到了，刚坐下。",
           "time": "2025-08-23 18:35",
@@ -255,7 +271,7 @@
           "kind": "text"
         },
         {
-          "id": "ksw-25-06",
+          "id": "ksw-25-08",
           "title": "",
           "body": "那你什么时候来？我们都到了，快来。",
           "time": "2025-08-23 18:37",
@@ -263,9 +279,9 @@
           "kind": "text"
         },
         {
-          "id": "ksw-25-07",
+          "id": "ksw-25-09",
           "title": "",
-          "body": "你到宿舍了吗？今天辛苦了，早点休息。",
+          "body": "안신아, 오늘도 고생했어. 조심히 들어가.\n安信啊，今天也辛苦了，回去路上小心。",
           "time": "2025-08-23 22:46",
           "senderId": "sangwon",
           "kind": "text"
@@ -332,7 +348,7 @@
     {
       "id": "wechat-jiahao",
       "app": "wechat",
-      "title": "张家豪",
+      "title": "家豪哥",
       "participants": [
         "owner",
         "jiahao"
@@ -341,80 +357,88 @@
         {
           "id": "wjh-25-01",
           "title": "",
-          "body": "SW今天一公练习的时候怎么了？感觉他状态不太好。",
-          "time": "2025-08-18 20:41",
-          "senderId": "owner",
+          "body": "一公练得怎么样了？你们那组最近练得挺晚吧。",
+          "time": "2025-07-22 21:06",
+          "senderId": "jiahao",
           "kind": "text"
         },
         {
           "id": "wjh-25-02",
           "title": "",
-          "body": "练习中间就不太开心，后来一个人躲起来了。",
-          "time": "2025-08-18 20:43",
-          "senderId": "jiahao",
+          "body": "还行，今天后半段有几个地方还得再磨一下。",
+          "time": "2025-07-22 21:08",
+          "senderId": "owner",
           "kind": "text"
         },
         {
           "id": "wjh-25-03",
           "title": "",
-          "body": "我刚刚去找他说了会儿话。",
-          "time": "2025-08-18 20:44",
-          "senderId": "owner",
+          "body": "我刚刚看见相沅，感觉他今天练习的时候不太开心。",
+          "time": "2025-07-22 21:10",
+          "senderId": "jiahao",
           "kind": "text"
         },
         {
           "id": "wjh-25-04",
           "title": "",
-          "body": "你还冲他做鬼脸了？我看见了ㅋㅋ",
-          "time": "2025-08-18 20:45",
-          "senderId": "jiahao",
+          "body": "嗯，他今天状态不太好。我刚刚去找他聊了一会儿，算是安慰了一下。",
+          "time": "2025-07-22 21:12",
+          "senderId": "owner",
           "kind": "text"
         },
         {
           "id": "wjh-25-05",
           "title": "",
-          "body": "他后来有笑一下，应该好一点了。",
-          "time": "2025-08-18 20:46",
-          "senderId": "owner",
+          "body": "你们一组的事你倒是挺上心。",
+          "time": "2025-07-22 21:14",
+          "senderId": "jiahao",
           "kind": "text"
         },
         {
           "id": "wjh-25-06",
           "title": "",
-          "body": "说起来，你去年不是还找我要过那个视频？",
-          "time": "2025-08-18 20:49",
-          "senderId": "jiahao",
+          "body": "他一个人待着，我就过去看看。",
+          "time": "2025-07-22 21:15",
+          "senderId": "owner",
           "kind": "text"
         },
         {
           "id": "wjh-25-07",
           "title": "",
-          "body": "Trainee A那个？",
-          "time": "2025-08-18 20:50",
-          "senderId": "owner",
+          "body": "说起来，你以前就挺关注他的吧。",
+          "time": "2025-07-22 21:18",
+          "senderId": "jiahao",
           "kind": "text"
         },
         {
           "id": "wjh-25-08",
           "title": "",
-          "body": "对啊，我发给你之后你还自己去搜了。",
-          "time": "2025-08-18 20:51",
-          "senderId": "jiahao",
+          "body": "你说哪次？",
+          "time": "2025-07-22 21:19",
+          "senderId": "owner",
           "kind": "text"
         },
         {
           "id": "wjh-25-09",
           "title": "",
-          "body": "嗯，想再看一下里面的练习片段。",
-          "time": "2025-08-18 20:52",
-          "senderId": "owner",
+          "body": "我当年给你看Trainee A他们视频那次啊，你看完还自己去搜了相沅。",
+          "time": "2025-07-22 21:21",
+          "senderId": "jiahao",
           "kind": "text"
         },
         {
           "id": "wjh-25-10",
           "title": "",
-          "body": "记性这么好ㅋㅋ",
-          "time": "2025-08-18 20:53",
+          "body": "……只是觉得他的舞跳得很好。",
+          "time": "2025-07-22 21:23",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wjh-25-11",
+          "title": "",
+          "body": "好好好，我又没说什么ㅋㅋ",
+          "time": "2025-07-22 21:24",
           "senderId": "jiahao",
           "kind": "text"
         }
@@ -623,18 +647,58 @@
     ],
     "safari": [
       {
+        "id": "search-sangyuan",
+        "title": "桑圆",
+        "body": "搜索记录 · 2024年6月17日 21:19",
+        "time": "2024-06-17 21:19",
+        "kind": "text",
+        "folder": "搜索索引"
+      },
+      {
         "id": "search-trainee-a",
         "title": "Trainee A",
-        "body": "搜索时间：2024-06-17 21:14\n来源：浏览器历史记录",
+        "body": "搜索记录 · 2024年6月17日 21:14",
         "time": "2024-06-17 21:14",
+        "kind": "text",
+        "folder": "搜索索引"
+      },
+      {
+        "id": "history-01",
+        "title": "海底捞附近门店",
+        "body": "网页访问记录",
+        "time": "2025-08-23 17:46",
         "kind": "text",
         "folder": "历史记录"
       },
       {
-        "id": "search-sangyuan",
-        "title": "桑圆",
-        "body": "搜索时间：2024-06-17 21:19\n来源：浏览器历史记录",
-        "time": "2024-06-17 21:19",
+        "id": "history-02",
+        "title": "练习室到宿舍路线",
+        "body": "网页访问记录",
+        "time": "2025-08-22 23:08",
+        "kind": "text",
+        "folder": "历史记录"
+      },
+      {
+        "id": "history-03",
+        "title": "首尔天气",
+        "body": "网页访问记录",
+        "time": "2025-08-22 09:14",
+        "kind": "text",
+        "folder": "历史记录"
+      },
+      {
+        "id": "history-04",
+        "title": "舞蹈练习拉伸",
+        "body": "网页访问记录",
+        "time": "2025-07-30 00:32",
+        "kind": "text",
+        "folder": "历史记录"
+      },
+      {
+        "id": "history-05",
+        "title": "KakaoTalk 帮助中心",
+        "body": "网页访问记录",
+        "time": "2025-08-08 18:20",
         "kind": "text",
         "folder": "历史记录"
       }
@@ -672,7 +736,7 @@
         {
           "type": "notification",
           "key": "story",
-          "value": "🐰：你到宿舍了吗？今天辛苦了，早点休息。"
+          "value": "🐰: 안신아, 오늘도 고생했어. 조심히 들어가.\n安信啊，今天也辛苦了，回去路上小心。"
         }
       ],
       "next": []
