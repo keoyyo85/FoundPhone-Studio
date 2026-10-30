@@ -185,12 +185,16 @@ export function ContactsSkin(p: Props) {
 export function PhotosSkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "图库");
   const [album, setAlbum] = useState("");
+  const [albumLocked, setAlbumLocked] = useState(false);
+  const [albumCode, setAlbumCode] = useState("");
+  const [albumError, setAlbumError] = useState("");
   const list =
     tab === "收藏"
-      ? items.filter((i) => i.favorite)
+      ? items.filter((i) => i.favorite && !i.password)
       : album
         ? items.filter((i) => (i.folder || "未分类") === album)
-        : items;
+        : items.filter((i) => !i.password);
+  const albumPassword = items.find((i) => (i.folder || "未分类") === album)?.password || "";
   return (
     <div className="catalog-skin native-photos">
       <Header p={p} />
@@ -199,26 +203,44 @@ export function PhotosSkin(p: Props) {
         {tab === "相簿" && !album ? (
           <div className="album-grid">
             {groupItems(items, "未分类").map((g) => (
-              <button key={g} onClick={() => setAlbum(g)}>
-                <Media
-                  item={items.find((i) => (i.folder || "未分类") === g)!}
-                />
+              <button key={g} onClick={() => {
+                setAlbum(g);
+                setAlbumCode("");
+                setAlbumError("");
+                setAlbumLocked(Boolean(items.find((i) => (i.folder || "未分类") === g)?.password));
+              }}>
+                <Media item={items.find((i) => (i.folder || "未分类") === g)!} />
                 <strong>{g}</strong>
                 <small>
                   {items.filter((i) => (i.folder || "未分类") === g).length} 项
+                  {items.some((i) => (i.folder || "未分类") === g && i.password) ? " · 已加密" : ""}
                 </small>
               </button>
             ))}
           </div>
+        ) : album && albumLocked ? (
+          <div className="photo-album-lock" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12, padding: "42px 24px", textAlign: "center" }}>
+            <button onClick={() => { setAlbum(""); setAlbumLocked(false); }} style={{ alignSelf: "flex-start" }}>‹ 相簿</button>
+            <LockKeyhole size={34} />
+            <h2>{album}</h2>
+            <p>这是一个加密相簿。输入密码以查看照片。</p>
+            <input aria-label="相簿密码" type="password" inputMode="numeric" value={albumCode} onChange={(e) => setAlbumCode(e.target.value)} placeholder="输入八位数密码" style={{ width: "100%", maxWidth: 240, padding: 12, borderRadius: 12, border: "1px solid var(--separator, #ccc)", textAlign: "center" }} />
+            {albumError && <small role="alert">{albumError}</small>}
+            <button onClick={() => {
+              if (albumCode === albumPassword) { setAlbumLocked(false); setAlbumError(""); }
+              else setAlbumError("密码不正确");
+            }} style={{ padding: "10px 24px", borderRadius: 18 }}>解锁相簿</button>
+          </div>
         ) : (
           <>
+            {album && <button onClick={() => { setAlbum(""); setAlbumLocked(false); }} style={{ marginBottom: 10 }}>‹ 返回相簿</button>}
             <SearchBox value={q} set={setQ} />
             <div className="photo-mosaic">
               {list.map((i) => (
                 <button
                   aria-label={`查看${i.title}`}
                   key={i.id}
-                  onClick={() => p.onItem(i)}
+                  onClick={() => p.onItem(album ? { ...i, password: "" } : i)}
                 >
                   <Media item={i} />
                   {i.favorite && <Heart size={12} fill="white" />}
@@ -228,7 +250,7 @@ export function PhotosSkin(p: Props) {
             <p className="media-count">{list.length} 个项目</p>
           </>
         )}
-        <Empty items={list} />
+        <Empty items={album && albumLocked ? [] : list} />
       </div>
       <Tabs
         tabs={["图库", "相簿", "收藏"]}
@@ -236,6 +258,7 @@ export function PhotosSkin(p: Props) {
         set={(t) => {
           setTab(t);
           setAlbum("");
+          setAlbumLocked(false);
         }}
         icons={[<Image />, <Folder />, <Heart />]}
       />
