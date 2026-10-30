@@ -1,13 +1,13 @@
 {
   "scriptVersion": 1,
   "id": "ui-test-phone-v2",
-  "title": "捡手机｜周安信的秘密",
-  "description": "你意外捡到周安信的手机。手机保留着原本的锁屏、桌面与 App。通过微信、浏览器和相册里的旧痕迹，逐步拼出 2024 年练习生时期的一段记忆。故事为平行世界虚构设定。",
-  "revision": 15,
+  "title": "捡手机｜周安信的手机",
+  "description": "你以 CPF 的身份意外捡到周安信的手机。手机保留原版锁屏、桌面与 App。当前聊天停留在 2025 年一公前后；聊天里提到的旧视频、照片和浏览记录则指向 2024 年。所有关系线索都需要玩家自己发现。平行世界虚构设定。",
+  "revision": 16,
   "phone": {
     "owner": "周安信",
-    "date": "2026-10-25",
-    "time": "09:41",
+    "date": "2025-08-23",
+    "time": "22:48",
     "battery": 94,
     "network": "5G",
     "wallpaper": "apple-wwdc26",
@@ -98,7 +98,7 @@
     {
       "id": "sangwon",
       "name": "🐰",
-      "phone": "",
+      "phone": "010-0000-0000",
       "avatar": "https://pbs.twimg.com/media/HFm-ukJakAMFJzm.jpg"
     },
     {
@@ -215,26 +215,58 @@
       ],
       "messages": [
         {
-          "id": "ksw-01",
+          "id": "ksw-25-01",
           "title": "",
-          "body": "哥，明天练习结束后有空吗？想问一下动作。",
-          "time": "2025-08-11 18:30",
+          "body": "这是我的号码，存一下吧。",
+          "time": "2025-08-20 19:12",
           "senderId": "sangwon",
           "kind": "text"
         },
         {
-          "id": "ksw-02",
+          "id": "ksw-25-02",
           "title": "",
-          "body": "有空。结束后在练习室门口等我就好。",
-          "time": "2025-08-11 18:34",
+          "body": "好，我加你了。",
+          "time": "2025-08-20 19:16",
           "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "ksw-03",
+          "id": "ksw-25-03",
           "title": "",
-          "body": "好，谢谢哥！",
-          "time": "2025-08-11 18:35",
+          "body": "看到了ㅋㅋ",
+          "time": "2025-08-20 19:17",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ksw-25-04",
+          "title": "",
+          "body": "你们到海底捞了吗？",
+          "time": "2025-08-23 18:32",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ksw-25-05",
+          "title": "",
+          "body": "到了，刚坐下。",
+          "time": "2025-08-23 18:35",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ksw-25-06",
+          "title": "",
+          "body": "那你什么时候来？我们都到了，快来。",
+          "time": "2025-08-23 18:37",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ksw-25-07",
+          "title": "",
+          "body": "你到宿舍了吗？今天辛苦了，早点休息。",
+          "time": "2025-08-23 22:46",
           "senderId": "sangwon",
           "kind": "text"
         }
@@ -307,67 +339,83 @@
       ],
       "messages": [
         {
-          "id": "wjh-01",
+          "id": "wjh-25-01",
           "title": "",
-          "body": "你之前给我看的那个 Trainee A 视频，还有吗？",
-          "time": "2024-06-17 20:56",
+          "body": "SW今天一公练习的时候怎么了？感觉他状态不太好。",
+          "time": "2025-08-18 20:41",
           "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "wjh-02",
+          "id": "wjh-25-02",
           "title": "",
-          "body": "有啊，怎么突然想起来看这个？",
-          "time": "2024-06-17 20:58",
+          "body": "练习中间就不太开心，后来一个人躲起来了。",
+          "time": "2025-08-18 20:43",
           "senderId": "jiahao",
           "kind": "text"
         },
         {
-          "id": "wjh-03",
+          "id": "wjh-25-03",
           "title": "",
-          "body": "刚刚想起里面有一段练习室的编舞，想再看一遍。",
-          "time": "2024-06-17 21:00",
+          "body": "我刚刚去找他说了会儿话。",
+          "time": "2025-08-18 20:44",
           "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "wjh-04",
+          "id": "wjh-25-04",
           "title": "",
-          "body": "我找找，等下发你。",
-          "time": "2024-06-17 21:01",
+          "body": "你还冲他做鬼脸了？我看见了ㅋㅋ",
+          "time": "2025-08-18 20:45",
           "senderId": "jiahao",
           "kind": "text"
         },
         {
-          "id": "wjh-05",
+          "id": "wjh-25-05",
           "title": "",
-          "body": "发你了。就是这个，画质有点糊，凑合看。",
-          "time": "2024-06-17 21:08",
-          "senderId": "jiahao",
-          "kind": "text"
-        },
-        {
-          "id": "wjh-06",
-          "title": "",
-          "body": "收到了，谢谢家豪哥。",
-          "time": "2024-06-17 21:10",
+          "body": "他后来有笑一下，应该好一点了。",
+          "time": "2025-08-18 20:46",
           "senderId": "owner",
           "kind": "text"
         },
         {
-          "id": "wjh-07",
+          "id": "wjh-25-06",
           "title": "",
-          "body": "不客气。早点休息，别又练到太晚。",
-          "time": "2024-06-17 21:12",
+          "body": "说起来，你去年不是还找我要过那个视频？",
+          "time": "2025-08-18 20:49",
           "senderId": "jiahao",
           "kind": "text"
         },
         {
-          "id": "wjh-08",
+          "id": "wjh-25-07",
           "title": "",
-          "body": "知道啦ㅋㅋ",
-          "time": "2024-06-17 21:13",
+          "body": "Trainee A那个？",
+          "time": "2025-08-18 20:50",
           "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wjh-25-08",
+          "title": "",
+          "body": "对啊，我发给你之后你还自己去搜了。",
+          "time": "2025-08-18 20:51",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wjh-25-09",
+          "title": "",
+          "body": "嗯，想再看一下里面的练习片段。",
+          "time": "2025-08-18 20:52",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wjh-25-10",
+          "title": "",
+          "body": "记性这么好ㅋㅋ",
+          "time": "2025-08-18 20:53",
+          "senderId": "jiahao",
           "kind": "text"
         }
       ]
@@ -539,7 +587,7 @@
         "kind": "image",
         "media": "data:image/webp;base64,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",
         "folder": "桑圆",
-        "hidden": true,
+        "hidden": false,
         "password": "20240617"
       },
       {
@@ -550,7 +598,7 @@
         "kind": "image",
         "media": "data:image/webp;base64,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",
         "folder": "桑圆",
-        "hidden": true,
+        "hidden": false,
         "password": "20240617"
       }
     ],
@@ -618,51 +666,17 @@
   "events": [
     {
       "id": "story-start",
-      "label": "开始探索安信的手机",
+      "label": "锁屏通知｜🐰",
       "type": "start",
       "actions": [
         {
           "type": "notification",
           "key": "story",
-          "value": "手机主人：安信\n屏幕已锁定。请输入密码以继续。"
+          "value": "🐰：你到宿舍了吗？今天辛苦了，早点休息。"
         }
       ],
       "next": []
-    },
-    {
-      "id": "read-sangyuan-search",
-      "label": "找到桑圆搜索记录",
-      "type": "event",
-      "event": "read",
-      "target": "search-sangyuan",
-      "next": [
-        "ending-first-clue"
-      ]
-    },
-    {
-      "id": "ending-first-clue",
-      "label": "第一条线索｜桑圆",
-      "type": "ending",
-      "actions": [
-        {
-          "type": "ending",
-          "key": "ending",
-          "value": "第一条线索：桑圆"
-        }
-      ]
     }
   ],
-  "tests": [
-    {
-      "name": "找到 2024 年的桑圆搜索记录",
-      "steps": [
-        {
-          "event": "read",
-          "target": "search-sangyuan"
-        }
-      ],
-      "ending": "第一条线索：桑圆",
-      "expectUnlocked": []
-    }
-  ]
+  "tests": []
 }
