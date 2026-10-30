@@ -12,7 +12,7 @@ import {
   Smile,
   Users,
 } from "lucide-react";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import type { Item } from "../schema";
 import {
   Add,
@@ -38,25 +38,31 @@ function Bubbles({
 }) {
   return (
     <div className={`catalog-bubbles ${className}`}>
-      <time className="bubble-date">{items[0]?.time.slice(0, 10)}</time>
-      {items.map((i) => (
-        <div
-          className={`catalog-message ${i.outgoing ? "outgoing" : ""}`}
-          key={i.id}
-        >
-          <button onClick={() => (p.creator ? p.onItem(i) : p.onRead(i.id))}>
-            {["image", "video", "audio"].includes(i.kind) ? (
-              <Media item={i} />
-            ) : (
-              i.body
+      {items.map((i, index) => {
+        const date = i.time.slice(0, 10);
+        const previousDate = items[index - 1]?.time.slice(0, 10);
+        const [year, month, day] = date.split("-").map(Number);
+        return (
+          <Fragment key={i.id}>
+            {(index === 0 || date !== previousDate) && (
+              <time className="bubble-date">{year}年{month}月{day}日</time>
             )}
-            <small>
-              {i.time.slice(-5)}
-              {i.read && <CheckCheck size={10} />}
-            </small>
-          </button>
-        </div>
-      ))}
+            <div className={`catalog-message ${i.outgoing ? "outgoing" : ""}`}>
+              <button onClick={() => (p.creator ? p.onItem(i) : p.onRead(i.id))}>
+                {["image", "video", "audio"].includes(i.kind) ? (
+                  <Media item={i} />
+                ) : (
+                  i.body
+                )}
+                <small>
+                  {i.time.slice(-5)}
+                  {i.read && <CheckCheck size={10} />}
+                </small>
+              </button>
+            </div>
+          </Fragment>
+        );
+      })}
     </div>
   );
 }
