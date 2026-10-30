@@ -1147,6 +1147,11 @@
       "type": "start",
       "actions": [
         {
+          "type": "unlock",
+          "key": "note-route-final",
+          "value": true
+        },
+        {
           "type": "notification",
           "key": "story",
           "value": "手机里似乎有一条未读备忘录。"
