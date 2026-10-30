@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机｜周安信的秘密",
   "description": "你在练习室附近捡到一部手机。锁屏密码是1225。手机主人是周安信。聊天、相册、备忘录和社交动态里，似乎藏着他与备注为🐰的李相沅之间不愿公开的关系。这是K-pop娱乐产业背景下的平行世界虚构故事，与现实人物及现实关系无关。",
-  "revision": 7,
+  "revision": 8,
   "phone": {
     "owner": "周安信",
     "date": "2026-10-25",
@@ -11,7 +11,8 @@
     "battery": 94,
     "network": "5G",
     "wallpaper": "apple-wwdc26",
-    "passcode": "1225"
+    "passcode": "1225",
+    "notifications": true
   },
   "installedApps": [
     "appstore",
@@ -91,67 +92,67 @@
   "contacts": [
     {
       "id": "sangwon",
-      "name": "李相沅",
+      "name": "상원",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "jiahao",
-      "name": "张家豪",
+      "name": "아르노",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "sanghyeon",
-      "name": "郑相炫",
+      "name": "상현",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "xinlong",
-      "name": "贺鑫隆",
+      "name": "씬롱",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "leo",
-      "name": "Leo",
+      "name": "리오",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "junseo",
-      "name": "金俊抒",
+      "name": "준서",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "hanzhong",
-      "name": "林韩中",
+      "name": "한중",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "surin",
-      "name": "薛苏仁",
+      "name": "설수인",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "gangmin",
-      "name": "柳冈旻",
+      "name": "유강민",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "kevin",
-      "name": "陈凯文",
+      "name": "천카이원",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "liyu",
-      "name": "崔立于",
+      "name": "최리위",
       "phone": "",
       "avatar": ""
     },
@@ -175,19 +176,19 @@
     },
     {
       "id": "staff-manager",
-      "name": "经纪人",
+      "name": "매니저님",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "staff-stylist",
-      "name": "造型师",
+      "name": "스타일리스트 누나",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "staff-coordinator",
-      "name": "现场工作人员",
+      "name": "현장 스태프",
       "phone": "",
       "avatar": ""
     }
@@ -727,7 +728,7 @@
     {
       "id": "kakao-alpha-group",
       "app": "kakao",
-      "title": "ALPHA DRIVE ONE 🏠",
+      "title": "알파드라이브원 단체방 🏠",
       "participants": [
         "owner",
         "sangwon",
@@ -982,7 +983,7 @@
     {
       "id": "kakao-sanghyeon",
       "app": "kakao",
-      "title": "郑相炫",
+      "title": "상현",
       "participants": [
         "owner",
         "sanghyeon"
@@ -1137,7 +1138,7 @@
     {
       "id": "kakao-junseo",
       "app": "kakao",
-      "title": "金俊抒",
+      "title": "준서",
       "participants": [
         "owner",
         "junseo"
@@ -2376,7 +2377,7 @@
     {
       "id": "kakao-staff-manager",
       "app": "kakao",
-      "title": "经纪人",
+      "title": "매니저님",
       "participants": [
         "owner",
         "staff-manager"
@@ -2467,7 +2468,7 @@
     {
       "id": "kakao-staff-stylist",
       "app": "kakao",
-      "title": "造型师姐姐",
+      "title": "스타일리스트 누나",
       "participants": [
         "owner",
         "staff-stylist"
@@ -2558,7 +2559,7 @@
     {
       "id": "kakao-staff-group",
       "app": "kakao",
-      "title": "ALPHA｜行程与现场",
+      "title": "스케줄 · 현장 공지",
       "participants": [
         "owner",
         "staff-manager",
@@ -2877,7 +2878,7 @@
         {
           "type": "notification",
           "key": "story",
-          "value": "手机里似乎有一条未读备忘录。"
+          "value": "KakaoTalk: 🐰\n安信，你到家了吗？\n怎么还不回我ㅋㅋ"
         },
         {
           "type": "variable",
