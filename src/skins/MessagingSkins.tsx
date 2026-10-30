@@ -48,11 +48,12 @@ function Bubbles({
               <time className="bubble-date">{year}年{month}月{day}日</time>
             )}
             <div className={`catalog-message ${i.outgoing ? "outgoing" : ""}`}>
+              {i.avatar && <Avatar name={i.sender || "人"} src={i.avatar} />}
               <button onClick={() => (p.creator ? p.onItem(i) : p.onRead(i.id))}>
                 {["image", "video", "audio"].includes(i.kind) ? (
                   <Media item={i} />
                 ) : (
-                  i.body
+                  <span style={{ whiteSpace: "pre-line" }}>{i.body}</span>
                 )}
                 <small>
                   {i.time.slice(-5)}
