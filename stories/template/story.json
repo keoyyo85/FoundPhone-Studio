@@ -3,14 +3,15 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "revision": 3,
   "phone": {
-    "owner": "机主",
+    "owner": "周安信",
     "date": "2026-10-25",
     "time": "09:41",
     "battery": 94,
     "network": "5G",
-    "wallpaper": "apple-wwdc26"
+    "wallpaper": "apple-wwdc26",
+    "passcode": "1225"
   },
   "installedApps": [
     "appstore",
