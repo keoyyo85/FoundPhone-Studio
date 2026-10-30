@@ -92,13 +92,13 @@
   "contacts": [
     {
       "id": "sangwon",
-      "name": "상원",
+      "name": "🐰",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "jiahao",
-      "name": "아르노 형",
+      "name": "嘉豪哥",
       "phone": "",
       "avatar": ""
     },
@@ -110,19 +110,19 @@
     },
     {
       "id": "xinlong",
-      "name": "씬롱 형",
+      "name": "鑫隆",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "leo",
-      "name": "리오 형",
+      "name": "리오형",
       "phone": "",
       "avatar": ""
     },
     {
       "id": "junseo",
-      "name": "준서 형",
+      "name": "준서형",
       "phone": "",
       "avatar": ""
     },
@@ -1138,7 +1138,7 @@
     {
       "id": "kakao-junseo",
       "app": "kakao",
-      "title": "준서 형",
+      "title": "준서형",
       "participants": [
         "owner",
         "junseo"
