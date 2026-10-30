@@ -1,9 +1,9 @@
 {
   "scriptVersion": 1,
   "id": "ui-test-phone-v2",
-  "title": "捡手机",
-  "description": "仅用于界面测试，不含剧情",
-  "revision": 4,
+  "title": "捡手机｜周安信的秘密",
+  "description": "你在练习室附近捡到一部手机。锁屏密码是1225。手机主人是周安信。聊天、相册、备忘录和社交动态里，似乎藏着他与备注为🐰的李相沅之间不愿公开的关系。这是K-pop娱乐产业背景下的平行世界虚构故事，与现实人物及现实关系无关。",
+  "revision": 5,
   "phone": {
     "owner": "周安信",
     "date": "2026-10-25",
@@ -86,7 +86,8 @@
     "netflix",
     "pinterest",
     "threads",
-    "kakao"
+    "kakao",
+    "wechat"
   ],
   "contacts": [
     {
@@ -256,6 +257,46 @@
           "time": "2026-10-24 23:27",
           "senderId": "owner",
           "kind": "text"
+        },
+        {
+          "id": "ks11",
+          "title": "",
+          "body": "你今天是不是又把手套落在我这里了？",
+          "time": "2026-10-25 00:02",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks12",
+          "title": "",
+          "body": "……我就说怎么少了一只ㅋㅋ",
+          "time": "2026-10-25 00:03",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks13",
+          "title": "",
+          "body": "明天练习结束我给你。别又凌晨跑过来。",
+          "time": "2026-10-25 00:04",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks14",
+          "title": "",
+          "body": "那你出来拿嘛。",
+          "time": "2026-10-25 00:05",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks15",
+          "title": "",
+          "body": "……知道了。到了给我发消息。",
+          "time": "2026-10-25 00:06",
+          "senderId": "sangwon",
+          "kind": "text"
         }
       ]
     },
@@ -343,6 +384,46 @@
           "time": "2026-10-25 00:17",
           "senderId": "sanghyeon",
           "kind": "text"
+        },
+        {
+          "id": "ka10",
+          "title": "",
+          "body": "明天练习结束要不要一起吃饭？",
+          "time": "2026-10-25 00:30",
+          "senderId": "leo",
+          "kind": "text"
+        },
+        {
+          "id": "ka11",
+          "title": "",
+          "body": "我可能要晚一点。",
+          "time": "2026-10-25 00:31",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ka12",
+          "title": "",
+          "body": "又有事？",
+          "time": "2026-10-25 00:31",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "ka13",
+          "title": "",
+          "body": "别问，问就是约了人ㅋㅋ",
+          "time": "2026-10-25 00:32",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ka14",
+          "title": "",
+          "body": "行，那给你留饭。别饿着。",
+          "time": "2026-10-25 00:33",
+          "senderId": "leo",
+          "kind": "text"
         }
       ]
     },
@@ -394,6 +475,30 @@
           "time": "2026-10-24 18:45",
           "senderId": "sanghyeon",
           "kind": "text"
+        },
+        {
+          "id": "kh6",
+          "title": "",
+          "body": "哥，你刚刚是不是看见相沅哥就笑了？",
+          "time": "2026-10-24 18:45",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "kh7",
+          "title": "",
+          "body": "你观察力能不能用在练习上ㅋㅋ",
+          "time": "2026-10-24 18:46",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kh8",
+          "title": "",
+          "body": "我练习的时候也看见了啊。你们两个都很明显。",
+          "time": "2026-10-24 18:47",
+          "senderId": "sanghyeon",
+          "kind": "text"
         }
       ]
     },
@@ -436,6 +541,30 @@
           "body": "好啊ㅋㅋ 他看完肯定又要讲一堆。",
           "time": "2026-10-23 21:09",
           "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kj5",
+          "title": "",
+          "body": "相沅今天又问我那本书的结尾了。",
+          "time": "2026-10-23 21:15",
+          "senderId": "junseo",
+          "kind": "text"
+        },
+        {
+          "id": "kj6",
+          "title": "",
+          "body": "他不是已经看完了吗ㅋㅋ",
+          "time": "2026-10-23 21:16",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kj7",
+          "title": "",
+          "body": "可能只是想找人聊。你有空陪他聊聊。",
+          "time": "2026-10-23 21:17",
+          "senderId": "junseo",
           "kind": "text"
         }
       ]
@@ -496,6 +625,38 @@
           "time": "2026-10-22 16:27",
           "senderId": "owner",
           "kind": "text"
+        },
+        {
+          "id": "wj7",
+          "title": "",
+          "body": "你以前存的那些练习视频还在？",
+          "time": "2026-10-22 16:31",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wj8",
+          "title": "",
+          "body": "在啊，怎么了。",
+          "time": "2026-10-22 16:32",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wj9",
+          "title": "",
+          "body": "没什么。就是觉得你现在见到本人，应该挺开心的。",
+          "time": "2026-10-22 16:34",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wj10",
+          "title": "",
+          "body": "家豪哥！！不要讲得这么直接ㅋㅋ",
+          "time": "2026-10-22 16:35",
+          "senderId": "owner",
+          "kind": "text"
         }
       ]
     },
@@ -547,6 +708,30 @@
           "time": "2026-10-24 20:06",
           "senderId": "xinlong",
           "kind": "text"
+        },
+        {
+          "id": "wx6",
+          "title": "",
+          "body": "你今天怎么又提前走？",
+          "time": "2026-10-24 20:20",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "wx7",
+          "title": "",
+          "body": "有点事，明天请你喝咖啡。",
+          "time": "2026-10-24 20:21",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wx8",
+          "title": "",
+          "body": "行，记住了。下次排位别放我鸽子。",
+          "time": "2026-10-24 20:22",
+          "senderId": "xinlong",
+          "kind": "text"
         }
       ]
     },
@@ -589,6 +774,30 @@
           "body": "肯定啊，欠你的饭还没请呢。",
           "time": "2026-10-20 13:16",
           "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wh5",
+          "title": "",
+          "body": "你以前喜欢的那个人，现在见到了吗？",
+          "time": "2026-10-20 13:20",
+          "senderId": "hanzhong",
+          "kind": "text"
+        },
+        {
+          "id": "wh6",
+          "title": "",
+          "body": "见到了。",
+          "time": "2026-10-20 13:22",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wh7",
+          "title": "",
+          "body": "那就好。别的等你想说的时候再说。",
+          "time": "2026-10-20 13:23",
+          "senderId": "hanzhong",
           "kind": "text"
         }
       ]
@@ -644,6 +853,30 @@
           "time": "2026-10-19 22:35",
           "senderId": "liyu",
           "kind": "text"
+        },
+        {
+          "id": "wo6",
+          "title": "",
+          "body": "上岩那次见面会我到现在还记得ㅋㅋ",
+          "time": "2026-10-19 22:36",
+          "senderId": "surin",
+          "kind": "text"
+        },
+        {
+          "id": "wo7",
+          "title": "",
+          "body": "安信把口号喊错，台下有人笑得特别大声。",
+          "time": "2026-10-19 22:37",
+          "senderId": "kevin",
+          "kind": "text"
+        },
+        {
+          "id": "wo8",
+          "title": "",
+          "body": "你们怎么什么都记得！！",
+          "time": "2026-10-19 22:38",
+          "senderId": "owner",
+          "kind": "text"
         }
       ]
     },
@@ -693,453 +926,417 @@
     }
   ],
   "content": {
-    "phone": [
+    "notes": [
       {
-        "id": "test-item-phone",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "contacts": [
+        "id": "note-route",
+        "title": "如果手机不是我拿着",
+        "body": "如果你看到这条备忘录，说明手机已经不在我手上了。\n\n先别急着联系任何人。看完相册里那张凌晨的照片，再去日历确认日期。最后，读完这条备忘录再决定要不要回消息。\n\n——安信",
+        "kind": "note",
+        "time": "2026-10-25 00:36"
+      },
       {
-        "id": "test-item-contacts",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "note-bike",
+        "title": "凌晨骑车备忘",
+        "body": "相沅说今天风不大，可以骑一小段。\n\n我其实不太会骑，也不是很喜欢骑车。但他问我要不要一起的时候，我还是答应了。\n\n记得带外套。还有，不要又把手套忘在他那里。",
+        "kind": "note",
+        "time": "2026-10-24 18:20"
+      },
+      {
+        "id": "note-film",
+        "title": "电影看到一半",
+        "body": "俊抒推荐的电影。相沅说结尾不要提前搜。\n\n他看书的时候很安静，看到喜欢的句子会拍给我。上次那本书还在他包里，封面都被翻软了。",
+        "kind": "note",
+        "time": "2026-10-23 22:10"
+      },
+      {
+        "id": "note-route-final",
+        "title": "给捡到手机的人",
+        "body": "你已经看到了不少东西。\n\n我不知道你是谁，也不知道你会不会把这些交给别人。相沅不知道手机丢了，更不知道有人可能看见我们的聊天。\n\n你可以联系他、告诉他实情，也可以把手机交给工作人员。请不要把私人内容发到网上。\n\n如果你决定联系他，请记住：他最先担心的应该是我有没有出事，而不是手机。",
+        "kind": "note",
+        "time": "2026-10-25 01:02",
+        "hidden": true
       }
     ],
     "photos": [
       {
-        "id": "test-item-photos",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
+        "id": "photo-first-stage",
+        "title": "选秀第一期｜后台抓拍",
+        "body": "舞台帷幕刚掀开，镜头扫到安信。相沅原本在整理麦克风，抬头后视线停了很久。照片边缘还有工作人员的手。",
         "kind": "text",
-        "meta": {}
-      }
-    ],
-    "camera": [
+        "folder": "选秀时期",
+        "time": "2026-10-18 20:10"
+      },
       {
-        "id": "test-item-camera",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
+        "id": "photo-one-stage",
+        "title": "一公结束后",
+        "body": "同组舞台结束，安信下台时凑过去亲了相沅的侧脸。后来这段被剪进了花絮。两个人当时都笑得很明显。",
         "kind": "text",
-        "meta": {}
-      }
-    ],
-    "safari": [
+        "folder": "选秀时期",
+        "time": "2026-10-19 23:48"
+      },
       {
-        "id": "test-item-safari",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
+        "id": "photo-bike-night",
+        "title": "凌晨的河边",
+        "body": "夜骑时拍的河面。画面一角能看到两个人的影子，靠得很近。没有正脸。",
         "kind": "text",
-        "meta": {}
-      }
-    ],
-    "notes": [
+        "folder": "最近",
+        "time": "2026-10-24 02:16"
+      },
       {
-        "id": "test-item-notes",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
+        "id": "photo-book",
+        "title": "书页上的折角",
+        "body": "一本被翻旧的书，折角旁边写着：‘下次一起看完。’字迹不是安信的。",
         "kind": "text",
-        "meta": {}
+        "folder": "收藏",
+        "time": "2026-10-23 21:52"
       }
     ],
     "calendar": [
       {
-        "id": "test-item-calendar",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "mail": [
+        "id": "cal-practice",
+        "title": "团体练习",
+        "body": "全员练习 / 录制前走位",
+        "kind": "event",
+        "time": "2026-10-25 14:00"
+      },
       {
-        "id": "test-item-mail",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "clock": [
+        "id": "cal-night-ride",
+        "title": "留一点时间",
+        "body": "凌晨骑车。地点只写了‘河边’，没有邀请其他人。",
+        "kind": "event",
+        "time": "2026-10-26 01:10"
+      },
       {
-        "id": "test-item-clock",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reminders": [
-      {
-        "id": "test-item-reminders",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "cal-anniversary",
+        "title": "不要忘记",
+        "body": "没有标题，备注只有一枚兔子表情：🐰。日期被标记为私人。",
+        "kind": "event",
+        "time": "2026-10-08 00:00"
       }
     ],
     "files": [
       {
-        "id": "test-item-files",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
+        "id": "file-practice-video",
+        "title": "旧练习室视频",
+        "body": "文件备注：家豪哥以前发来的练习室片段。安信在参加选秀前就保存了相沅的旧舞台和练习视频。",
+        "kind": "file",
+        "folder": "收藏"
+      },
+      {
+        "id": "file-stage-cut",
+        "title": "一公花絮片段",
+        "body": "节目组公开花絮的本地剪辑备份。文件名没有写人名，只标注了日期。",
+        "kind": "video",
+        "folder": "视频"
+      }
+    ],
+    "safari": [
+      {
+        "id": "search-trainee-a",
+        "title": "搜索记录：Trainee A",
+        "body": "最近搜索过旧练习室视频、出道计划变动和成员近况。搜索时间集中在选秀报名之前。",
         "kind": "text",
-        "meta": {}
+        "folder": "历史记录"
+      },
+      {
+        "id": "search-book",
+        "title": "搜索记录：电影原著",
+        "body": "搜索过相沅发来的电影原著和几家深夜营业的书店。",
+        "kind": "text",
+        "folder": "历史记录"
       }
     ],
     "music": [
       {
-        "id": "test-item-music",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "maps": [
+        "id": "music-shared",
+        "title": "最近播放",
+        "body": "两个人常一起听的歌单。最近播放时间集中在凌晨，列表里混着安信常听的游戏BGM和相沅收藏的电子乐。",
+        "kind": "text"
+      },
       {
-        "id": "test-item-maps",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weather": [
-      {
-        "id": "test-item-weather",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "wallet": [
-      {
-        "id": "test-item-wallet",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "health": [
-      {
-        "id": "test-item-health",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "find": [
-      {
-        "id": "test-item-find",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "calculator": [
-      {
-        "id": "test-item-calculator",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "settings": [
-      {
-        "id": "test-item-settings",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weibo": [
-      {
-        "id": "test-item-weibo",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "redbook": [
-      {
-        "id": "test-item-redbook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "douyin": [
-      {
-        "id": "test-item-douyin",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "bilibili": [
-      {
-        "id": "test-item-bilibili",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "alipay": [
-      {
-        "id": "test-item-alipay",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "taobao": [
-      {
-        "id": "test-item-taobao",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "music-dj",
+        "title": "相沅分享的Set",
+        "body": "相沅发来的DJ set，备注：‘这段适合骑车回去的时候听。’",
+        "kind": "text"
       }
     ],
     "netease": [
       {
-        "id": "test-item-netease",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "delivery": [
-      {
-        "id": "test-item-delivery",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "forum": [
-      {
-        "id": "test-item-forum",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "instagram": [
-      {
-        "id": "test-item-instagram",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "tiktok": [
-      {
-        "id": "test-item-tiktok",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "netease-fav",
+        "title": "我喜欢的音乐",
+        "body": "歌单里既有流行歌、游戏BGM，也有相沅分享的电子乐。安信并没有把整个手机变成恋爱纪念册。",
+        "kind": "text"
       }
     ],
     "twitter": [
       {
-        "id": "test-item-twitter",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "youtube": [
-      {
-        "id": "test-item-youtube",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "snapchat": [
-      {
-        "id": "test-item-snapchat",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "facebook": [
-      {
-        "id": "test-item-facebook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reddit": [
-      {
-        "id": "test-item-reddit",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "spotify": [
-      {
-        "id": "test-item-spotify",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netflix": [
-      {
-        "id": "test-item-netflix",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "pinterest": [
-      {
-        "id": "test-item-pinterest",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "threads": [
-      {
-        "id": "test-item-threads",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "tw-post-1",
+        "title": "安信的动态",
+        "body": "今天练习结束得比想象中早。有人说我最近心情很好？可能是睡眠充足吧ㅋㅋ",
+        "kind": "post",
+        "sender": "周安信",
+        "time": "2026-10-24 20:40",
+        "likes": 1284,
+        "comments": [
+          "郑相炫：哥你自己信吗ㅋㅋ",
+          "贺鑫隆：睡眠？你昨晚几点回来的"
+        ]
       },
       {
-        "id": "test-threads-message-1",
-        "title": "测试会话1",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人1",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-1",
-        "title": "测试动态1",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户1",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-2",
-        "title": "测试会话2",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人2",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-2",
-        "title": "测试动态2",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户2",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-3",
-        "title": "测试会话3",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人3",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-3",
-        "title": "测试动态3",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户3",
-        "meta": {
-          "activityType": "reply"
-        }
+        "id": "tw-post-2",
+        "title": "相沅的动态",
+        "body": "风有一点凉。适合出去走走。",
+        "kind": "post",
+        "sender": "李相沅",
+        "time": "2026-10-24 23:50",
+        "likes": 2103,
+        "comments": [
+          "Leo：别骑太晚",
+          "金俊抒：书还在我这里，下次带给你"
+        ]
       }
     ],
-    "appstore": [
+    "instagram": [
       {
-        "id": "test-appstore",
-        "title": "测试内容",
-        "body": "这是一条测试内容。"
+        "id": "ig-story-1",
+        "title": "限时动态｜深夜",
+        "body": "一张模糊的夜景。画面边缘有另一只手，戴着安信常戴的戒指。没有标记地点。",
+        "kind": "post",
+        "sender": "周安信",
+        "time": "2026-10-24 02:30"
+      },
+      {
+        "id": "ig-story-2",
+        "title": "限时动态｜书店",
+        "body": "书页和两杯饮料。相沅的杯子没有拍进去，但桌对面有人。",
+        "kind": "post",
+        "sender": "李相沅",
+        "time": "2026-10-23 19:20"
+      }
+    ],
+    "phone": [
+      {
+        "id": "phone-recent",
+        "title": "最近通话",
+        "body": "家豪哥（未接）\nLeo（已接，03:12）\n🐰（已接，00:48）",
+        "kind": "text"
+      }
+    ],
+    "contacts": [],
+    "messages": [
+      {
+        "id": "sms-staff",
+        "title": "工作人员通知",
+        "body": "如果捡到成员手机，请交到现场工作人员处。不要尝试公开手机内的私人内容。",
+        "kind": "text",
+        "sender": "现场工作人员"
       }
     ]
   },
-  "variables": {},
-  "events": [],
-  "tests": []
+  "variables": {
+    "trust_sangwon": 0,
+    "suspicion_sangwon": 0,
+    "exposure_risk": 0,
+    "truth_complete": 0,
+    "player_told_truth": false
+  },
+  "events": [
+    {
+      "id": "story-start",
+      "label": "捡到手机",
+      "type": "start",
+      "actions": [
+        {
+          "type": "notification",
+          "key": "story",
+          "value": "手机里似乎有一条未读备忘录。"
+        },
+        {
+          "type": "clue",
+          "key": "first-impression"
+        },
+        {
+          "type": "variable",
+          "key": "truth_complete",
+          "value": 0
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "route-read",
+      "label": "读完最后一条备忘录",
+      "type": "event",
+      "event": "read",
+      "target": "note-route-final",
+      "actions": [
+        {
+          "type": "clue",
+          "key": "relationship-confirmed"
+        },
+        {
+          "type": "variable",
+          "key": "truth_complete",
+          "value": 1
+        }
+      ],
+      "next": [
+        "final-choice"
+      ]
+    },
+    {
+      "id": "final-choice",
+      "label": "你准备怎么处理这部手机？",
+      "type": "choice",
+      "next": [
+        "ending-secret",
+        "ending-exposure",
+        "ending-honest",
+        "ending-lost",
+        "ending-open"
+      ]
+    },
+    {
+      "id": "ending-secret",
+      "label": "A｜秘密继续",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "ending",
+          "value": "A｜秘密继续"
+        }
+      ]
+    },
+    {
+      "id": "ending-exposure",
+      "label": "B｜差一点曝光",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "ending",
+          "value": "B｜差一点曝光"
+        }
+      ]
+    },
+    {
+      "id": "ending-honest",
+      "label": "C｜坦诚相见",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "ending",
+          "value": "C｜坦诚相见"
+        }
+      ]
+    },
+    {
+      "id": "ending-lost",
+      "label": "D｜无法挽回",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "ending",
+          "value": "D｜无法挽回"
+        }
+      ]
+    },
+    {
+      "id": "ending-open",
+      "label": "E｜未完待续",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "ending",
+          "value": "E｜未完待续"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "A结局：秘密继续",
+      "steps": [
+        {
+          "event": "read",
+          "target": "note-route-final"
+        },
+        {
+          "choose": "ending-secret"
+        }
+      ],
+      "ending": "A｜秘密继续",
+      "expectUnlocked": [
+        "note-route-final"
+      ]
+    },
+    {
+      "name": "B结局：差一点曝光",
+      "steps": [
+        {
+          "event": "read",
+          "target": "note-route-final"
+        },
+        {
+          "choose": "ending-exposure"
+        }
+      ],
+      "ending": "B｜差一点曝光",
+      "expectUnlocked": [
+        "note-route-final"
+      ]
+    },
+    {
+      "name": "C结局：坦诚相见",
+      "steps": [
+        {
+          "event": "read",
+          "target": "note-route-final"
+        },
+        {
+          "choose": "ending-honest"
+        }
+      ],
+      "ending": "C｜坦诚相见",
+      "expectUnlocked": [
+        "note-route-final"
+      ]
+    },
+    {
+      "name": "D结局：无法挽回",
+      "steps": [
+        {
+          "event": "read",
+          "target": "note-route-final"
+        },
+        {
+          "choose": "ending-lost"
+        }
+      ],
+      "ending": "D｜无法挽回",
+      "expectUnlocked": [
+        "note-route-final"
+      ]
+    },
+    {
+      "name": "E结局：未完待续",
+      "steps": [
+        {
+          "event": "read",
+          "target": "note-route-final"
+        },
+        {
+          "choose": "ending-open"
+        }
+      ],
+      "ending": "E｜未完待续",
+      "expectUnlocked": [
+        "note-route-final"
+      ]
+    }
+  ]
 }
