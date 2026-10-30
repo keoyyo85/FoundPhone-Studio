@@ -881,6 +881,14 @@ function AppContent({
   onUi?: (key: string, value: UiValue) => void;
   work: Work;
 }) {
+  const displayOwner =
+    app.id === "kakao"
+      ? work.phone.kakaoName || work.phone.owner
+      : app.id === "wechat"
+        ? work.phone.wechatName || work.phone.owner
+        : ["instagram", "twitter", "threads"].includes(app.id)
+          ? work.phone.socialName || work.phone.owner
+          : work.phone.owner;
   const [detail, setDetail] = useState<Item | null>(null);
   const [thread, setThread] = useState("");
   const [tab, setTab] = useState(app.tabs[0]);
@@ -987,7 +995,8 @@ function AppContent({
           <Suspense fallback={<div className="catalog-loading">正在打开…</div>}>
             <Skin
               appId={app.id}
-              owner={work.phone.owner}
+              owner={displayOwner}
+              ownerAvatar={app.id === "wechat" ? work.phone.wechatAvatar || work.phone.ownerAvatar : ""}
               virtualTime={state.time}
               ui={state.ui?.[app.id]}
               onUi={creator ? undefined : onUi}
