@@ -312,9 +312,11 @@ export function SafariSkin(p: Props) {
         .includes(q.toLowerCase()),
     )
     .filter((i) =>
-      tab === "书签"
-        ? i.favorite || i.folder !== "历史记录"
-        : i.folder === "历史记录",
+      q.trim()
+        ? true
+        : tab === "书签"
+          ? i.favorite || i.folder !== "历史记录"
+          : i.folder === "历史记录",
     );
   return (
     <div className="catalog-skin native-safari">
@@ -339,7 +341,7 @@ export function SafariSkin(p: Props) {
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="搜索或输入虚构网址"
+          placeholder="可以搜一搜，或输入网址"
           aria-label="地址栏"
           onKeyDown={(e) => {
             if (e.key === "Enter" && items[0]) p.onItem(items[0]);
