@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机｜周安信的秘密",
   "description": "你在练习室附近捡到一部手机。锁屏密码是1225。手机主人是周安信。聊天、相册、备忘录和社交动态里，似乎藏着他与备注为🐰的李相沅之间不愿公开的关系。这是K-pop娱乐产业背景下的平行世界虚构故事，与现实人物及现实关系无关。",
-  "revision": 11,
+  "revision": 12,
   "phone": {
     "owner": "周安信",
     "date": "2026-10-25",
@@ -16,8 +16,8 @@
     "kakaoName": "안신",
     "wechatName": "今天也没早睡",
     "socialName": "afterglow.zip",
-    "ownerAvatar": "https://pbs.twimg.com/media/HISeWUZbYAErEbH.jpg",
-    "wechatAvatar": "https://pbs.twimg.com/media/HISeWUZbYAErEbH.jpg"
+    "ownerAvatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
+    "wechatAvatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg"
   },
   "installedApps": [
     "appstore",
@@ -99,37 +99,37 @@
       "id": "sangwon",
       "name": "🐰",
       "phone": "",
-      "avatar": "https://pbs.twimg.com/media/G_vKiyqbAAA0n5U?format=jpg&name=large"
+      "avatar": "https://pbs.twimg.com/media/HFm-ukJakAMFJzm.jpg"
     },
     {
       "id": "jiahao",
       "name": "嘉豪哥",
       "phone": "",
-      "avatar": "https://pbs.twimg.com/media/HCitzB0aMAA7CJT.jpg"
+      "avatar": "https://pbs.twimg.com/media/G4zi1sAbcAAH5nA.jpg"
     },
     {
       "id": "sanghyeon",
       "name": "상현",
       "phone": "",
-      "avatar": "https://pbs.twimg.com/media/HCitgVIawAQNiH3.jpg"
+      "avatar": "https://cdn.kpopping.com/kpics/2026/04/1775997019910-uef4il-0.jpg"
     },
     {
       "id": "geonwoo",
       "name": "건우",
       "phone": "",
-      "avatar": "https://image.static.bstage.in/cdn-cgi/image/metadata%3Dnone%2Cdpr%3D2%2Cwidth%3D640/ald1/79acc5d5-e5e0-4810-b4ad-fdb2c2ae3143/a05e4e0d-f850-4dd6-998b-bf9bcb7b4ad8/ori.jpg"
+      "avatar": "https://pbs.twimg.com/media/HBK-gOYaAAAdRmS.jpg"
     },
     {
       "id": "xinlong",
       "name": "鑫隆",
       "phone": "",
-      "avatar": "https://assets.pikiran-rakyat.com/crop/0x0%3A0x0/720x0/webp/photo/2026/01/26/3468610008.jpg"
+      "avatar": "https://cdn.kpopping.com/kpics/2026/02/1771084699350-bnuf44-0.jpeg"
     },
     {
       "id": "leo",
       "name": "리오형",
       "phone": "",
-      "avatar": "https://pbs.twimg.com/media/G9LxTFXagAA4jvd.jpg"
+      "avatar": "https://pbs.twimg.com/media/HFLaH5kaMAANHZj.jpg"
     },
     {
       "id": "junseo",
@@ -1726,7 +1726,7 @@
         {
           "id": "wh-old-01",
           "title": "",
-          "body": "最近还习惯吗？刚换环境别什么都自己扛。",
+          "body": "最近还活着吗？你这人忙起来就跟失踪一样。",
           "time": "2025-07-28 22:18",
           "senderId": "hanzhong",
           "kind": "text"
@@ -1734,7 +1734,7 @@
         {
           "id": "wh-old-02",
           "title": "",
-          "body": "还在适应，不过认识了不错的人。",
+          "body": "活着呢ㅋㅋ 最近排得有点满，等我喘口气。",
           "time": "2025-07-28 22:22",
           "senderId": "owner",
           "kind": "text"
@@ -1742,7 +1742,7 @@
         {
           "id": "wh-old-03",
           "title": "",
-          "body": "之前你说很在意的那个人，最近有消息吗？",
+          "body": "之前念叨的那个人呢？现在见着了没。",
           "time": "2025-10-07 21:06",
           "senderId": "hanzhong",
           "kind": "text"
@@ -1750,7 +1750,7 @@
         {
           "id": "wh-old-04",
           "title": "",
-          "body": "有啊。只是现在不太方便细说。",
+          "body": "见着了啊。你怎么还记得这么清楚。",
           "time": "2025-10-07 21:10",
           "senderId": "owner",
           "kind": "text"
@@ -1758,7 +1758,7 @@
         {
           "id": "wh-old-05",
           "title": "",
-          "body": "看了你们最近的舞台。状态不错，继续加油。",
+          "body": "我刷到你们舞台了，状态不错嘛。没白夸你。",
           "time": "2026-02-08 18:34",
           "senderId": "hanzhong",
           "kind": "text"
@@ -1766,7 +1766,7 @@
         {
           "id": "wh-old-06",
           "title": "",
-          "body": "谢谢中哥！等有空回去找你。",
+          "body": "那必须的ㅋㅋ 夸我可以多夸两句。",
           "time": "2026-02-08 18:37",
           "senderId": "owner",
           "kind": "text"
@@ -1774,7 +1774,7 @@
         {
           "id": "wh-old-07",
           "title": "",
-          "body": "你上次说的事，后来顺利吗？",
+          "body": "少贫。上次说请我吃饭还算不算数？",
           "time": "2026-06-21 23:08",
           "senderId": "hanzhong",
           "kind": "text"
@@ -1782,7 +1782,7 @@
         {
           "id": "wh-old-08",
           "title": "",
-          "body": "嗯，暂时都挺好的。",
+          "body": "算算算，回去第一顿就安排。",
           "time": "2026-06-21 23:12",
           "senderId": "owner",
           "kind": "text"
@@ -1790,7 +1790,7 @@
         {
           "id": "wh-old-09",
           "title": "",
-          "body": "别把自己弄得太累。有空就回来吃饭。",
+          "body": "你先顾好自己，别又熬到天亮。",
           "time": "2026-09-21 20:52",
           "senderId": "hanzhong",
           "kind": "text"
@@ -1798,7 +1798,7 @@
         {
           "id": "wh-old-10",
           "title": "",
-          "body": "好，等我排出时间。",
+          "body": "知道了知道了，你也少操心我。",
           "time": "2026-09-21 20:56",
           "senderId": "owner",
           "kind": "text"
@@ -1806,7 +1806,7 @@
         {
           "id": "wh1",
           "title": "",
-          "body": "最近怎么样？好久没好好聊天了。",
+          "body": "喂，最近是不是忙到忘了还有我这个朋友？",
           "time": "2026-10-20 13:11",
           "senderId": "hanzhong",
           "kind": "text"
@@ -1814,7 +1814,7 @@
         {
           "id": "wh2",
           "title": "",
-          "body": "忙归忙，还是活着的ㅋㅋ 你呢？",
+          "body": "哈哈哈哈哪有，刚想起来要找你。",
           "time": "2026-10-20 13:13",
           "senderId": "owner",
           "kind": "text"
@@ -1822,7 +1822,7 @@
         {
           "id": "wh3",
           "title": "",
-          "body": "老样子。等你有空回来再见。",
+          "body": "少来。你上次欠我的饭什么时候还？",
           "time": "2026-10-20 13:15",
           "senderId": "hanzhong",
           "kind": "text"
@@ -1830,7 +1830,7 @@
         {
           "id": "wh4",
           "title": "",
-          "body": "肯定啊，欠你的饭还没请呢。",
+          "body": "我回去就请，菜单你定，别客气。",
           "time": "2026-10-20 13:16",
           "senderId": "owner",
           "kind": "text"
@@ -1838,7 +1838,7 @@
         {
           "id": "wh5",
           "title": "",
-          "body": "你以前喜欢的那个人，现在见到了吗？",
+          "body": "对了，你以前喜欢的那个人，现在怎么样了？",
           "time": "2026-10-20 13:20",
           "senderId": "hanzhong",
           "kind": "text"
@@ -1846,7 +1846,7 @@
         {
           "id": "wh6",
           "title": "",
-          "body": "见到了。",
+          "body": "挺好的。就是有些事暂时还不能跟你讲。",
           "time": "2026-10-20 13:22",
           "senderId": "owner",
           "kind": "text"
@@ -1854,7 +1854,7 @@
         {
           "id": "wh7",
           "title": "",
-          "body": "那就好。别的等你想说的时候再说。",
+          "body": "行，不问。等你哪天想说了再说，别一个人憋着。",
           "time": "2026-10-20 13:23",
           "senderId": "hanzhong",
           "kind": "text"
@@ -1862,283 +1862,17 @@
       ]
     },
     {
-      "id": "wechat-old-friends",
+      "id": "wechat-game-group",
       "app": "wechat",
-      "title": "选秀老友局",
+      "title": "排位开黑车队",
       "participants": [
         "owner",
+        "xinlong",
+        "sanghyeon",
         "surin",
         "gangmin",
         "kevin",
         "liyu"
-      ],
-      "messages": [
-        {
-          "id": "wo-old-01",
-          "title": "",
-          "body": "第一天集中训练就这么累？我已经不想动了。",
-          "time": "2025-06-15 18:22",
-          "senderId": "surin",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-02",
-          "title": "",
-          "body": "我刚刚差点在走廊睡着ㅋㅋ",
-          "time": "2025-06-15 18:25",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-03",
-          "title": "",
-          "body": "有人记得明天几点集合吗？我怕看错通知。",
-          "time": "2025-06-21 20:10",
-          "senderId": "gangmin",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-04",
-          "title": "",
-          "body": "七点半。别迟到，今天已经有人跑错楼了。",
-          "time": "2025-06-21 20:13",
-          "senderId": "kevin",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-05",
-          "title": "",
-          "body": "安信今天练习结束还去找吃的了吧ㅋㅋ",
-          "time": "2025-07-02 22:41",
-          "senderId": "liyu",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-06",
-          "title": "",
-          "body": "我那是在补充体力！",
-          "time": "2025-07-02 22:43",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-07",
-          "title": "",
-          "body": "今天舞台彩排看起来不错，大家都加油。",
-          "time": "2025-07-17 19:06",
-          "senderId": "surin",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-08",
-          "title": "",
-          "body": "你们也很稳！我刚刚差点走错位。",
-          "time": "2025-07-17 19:09",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-09",
-          "title": "",
-          "body": "有人知道安信去哪了吗？刚才还在休息室。",
-          "time": "2025-08-08 23:28",
-          "senderId": "kevin",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-10",
-          "title": "",
-          "body": "买水！不要找我ㅋㅋ",
-          "time": "2025-08-08 23:31",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-11",
-          "title": "",
-          "body": "最近大家都忙，等有空一起吃饭吧。",
-          "time": "2025-09-01 21:52",
-          "senderId": "gangmin",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-12",
-          "title": "",
-          "body": "等这轮录制结束！我请你们吃。",
-          "time": "2025-09-01 21:55",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-13",
-          "title": "",
-          "body": "今天公布结果的时候我真的不敢看屏幕。",
-          "time": "2025-10-18 22:14",
-          "senderId": "surin",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-14",
-          "title": "",
-          "body": "我也是，手都在抖。",
-          "time": "2025-10-18 22:17",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-15",
-          "title": "",
-          "body": "进了新阶段也别忘了老朋友啊。",
-          "time": "2025-11-03 18:44",
-          "senderId": "liyu",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-16",
-          "title": "",
-          "body": "怎么可能！等休息日约饭。",
-          "time": "2025-11-03 18:46",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-17",
-          "title": "",
-          "body": "最近行程是不是很满？看你们都在跑。",
-          "time": "2026-01-20 20:08",
-          "senderId": "kevin",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-18",
-          "title": "",
-          "body": "有一点，不过慢慢习惯了。",
-          "time": "2026-01-20 20:11",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-19",
-          "title": "",
-          "body": "看到你们舞台了，状态越来越好了。",
-          "time": "2026-03-28 22:35",
-          "senderId": "surin",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-20",
-          "title": "",
-          "body": "谢谢！下次见面当面聊。",
-          "time": "2026-03-28 22:39",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-21",
-          "title": "",
-          "body": "夏天了，什么时候出来吃冰？",
-          "time": "2026-06-06 19:12",
-          "senderId": "gangmin",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-22",
-          "title": "",
-          "body": "等我把这周行程熬过去ㅋㅋ",
-          "time": "2026-06-06 19:15",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-23",
-          "title": "",
-          "body": "你上次答应的饭还没兑现。",
-          "time": "2026-08-27 23:03",
-          "senderId": "liyu",
-          "kind": "text"
-        },
-        {
-          "id": "wo-old-24",
-          "title": "",
-          "body": "记着呢！这次真的安排。",
-          "time": "2026-08-27 23:06",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wo1",
-          "title": "",
-          "body": "有人还记得当时那次集体练习吗ㅋㅋ",
-          "time": "2026-10-19 22:31",
-          "senderId": "surin",
-          "kind": "text"
-        },
-        {
-          "id": "wo2",
-          "title": "",
-          "body": "记得，累到回去直接睡着。",
-          "time": "2026-10-19 22:32",
-          "senderId": "gangmin",
-          "kind": "text"
-        },
-        {
-          "id": "wo3",
-          "title": "",
-          "body": "安信当时还在找吃的。",
-          "time": "2026-10-19 22:33",
-          "senderId": "kevin",
-          "kind": "text"
-        },
-        {
-          "id": "wo4",
-          "title": "",
-          "body": "我那叫补充体力！你们不懂。",
-          "time": "2026-10-19 22:34",
-          "senderId": "owner",
-          "kind": "text"
-        },
-        {
-          "id": "wo5",
-          "title": "",
-          "body": "下次见面先吃饭，别练习了ㅋㅋ",
-          "time": "2026-10-19 22:35",
-          "senderId": "liyu",
-          "kind": "text"
-        },
-        {
-          "id": "wo6",
-          "title": "",
-          "body": "上岩那次见面会我到现在还记得ㅋㅋ",
-          "time": "2026-10-19 22:36",
-          "senderId": "surin",
-          "kind": "text"
-        },
-        {
-          "id": "wo7",
-          "title": "",
-          "body": "安信把口号喊错，台下有人笑得特别大声。",
-          "time": "2026-10-19 22:37",
-          "senderId": "kevin",
-          "kind": "text"
-        },
-        {
-          "id": "wo8",
-          "title": "",
-          "body": "你们怎么什么都记得！！",
-          "time": "2026-10-19 22:38",
-          "senderId": "owner",
-          "kind": "text"
-        }
-      ]
-    },
-    {
-      "id": "wechat-game-group",
-      "app": "wechat",
-      "title": "今晚谁来开黑",
-      "participants": [
-        "owner",
-        "xinlong",
-        "sanghyeon"
       ],
       "messages": [
         {
@@ -2170,6 +1904,62 @@
           "title": "",
           "body": "不许翻旧账，今晚证明自己。",
           "time": "2026-10-24 19:13",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wg5",
+          "title": "",
+          "body": "@所有人 今晚缺一个，来不来？我先开房了。",
+          "time": "2026-10-24 20:31",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wg6",
+          "title": "",
+          "body": "我来，今天不许再说网络卡。",
+          "time": "2026-10-24 20:32",
+          "senderId": "surin",
+          "kind": "text"
+        },
+        {
+          "id": "wg7",
+          "title": "",
+          "body": "上次到底是谁最后一秒掉线ㅋㅋ",
+          "time": "2026-10-24 20:33",
+          "senderId": "gangmin",
+          "kind": "text"
+        },
+        {
+          "id": "wg8",
+          "title": "",
+          "body": "先说好，输了的人请夜宵。",
+          "time": "2026-10-24 20:34",
+          "senderId": "kevin",
+          "kind": "text"
+        },
+        {
+          "id": "wg9",
+          "title": "",
+          "body": "那你们最好祈祷我今天手感在线。",
+          "time": "2026-10-24 20:35",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wg10",
+          "title": "",
+          "body": "安信你先把上次的战绩解释一下再说ㅋㅋ",
+          "time": "2026-10-24 20:36",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "wg11",
+          "title": "",
+          "body": "你们真的很烦……开了没？我进。",
+          "time": "2026-10-24 20:37",
           "senderId": "owner",
           "kind": "text"
         }
@@ -2906,7 +2696,7 @@
           "郑相炫：哥你自己信吗ㅋㅋ",
           "贺鑫隆：睡眠？你昨晚几点回来的"
         ],
-        "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021234/anxin-3.jpeg?w=540",
+        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
         "meta": {
           "handle": "@afterglow.zip"
         }
@@ -2933,7 +2723,7 @@
         "kind": "post",
         "sender": "afterglow.zip",
         "time": "2026-10-24 02:30",
-        "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021234/anxin-3.jpeg?w=540",
+        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
         "meta": {
           "handle": "@afterglow.zip",
           "story": "true"
@@ -2966,7 +2756,7 @@
         "body": "睡前只想看一页，结果天都快亮了。",
         "kind": "post",
         "sender": "afterglow.zip",
-        "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021234/anxin-3.jpeg?w=540",
+        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
         "time": "2026-10-24 01:46",
         "likes": 486,
         "comments": [
@@ -2983,11 +2773,158 @@
         "body": "今天的风有点像昨天。",
         "kind": "post",
         "sender": "afterglow.zip",
-        "avatar": "https://0.soompi.io/wp-content/uploads/2025/10/12021234/anxin-3.jpeg?w=540",
+        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
         "time": "2026-10-24 23:58",
         "likes": 731,
         "comments": [
           "🐰：外面冷，回去记得穿外套。"
+        ],
+        "meta": {
+          "handle": "@afterglow.zip"
+        }
+      }
+    ],
+    "weibo": [
+      {
+        "id": "wb-profile",
+        "title": "个人主页",
+        "body": "不定时上线｜记录一点生活和喜欢的舞台。关注列表里有几个常看的站子和翻译号。",
+        "kind": "post",
+        "folder": "个人主页",
+        "sender": "afterglow.zip",
+        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
+        "time": "2026-10-24 18:20",
+        "likes": 0,
+        "comments": [],
+        "meta": {
+          "handle": "@afterglow.zip",
+          "bio": "偶尔营业 / ALD1 / 随手记录",
+          "following": "86",
+          "followers": "312"
+        }
+      },
+      {
+        "id": "wb-follow-1",
+        "title": "ALD1 GLOBAL",
+        "body": "[PHOTO] 260924｜今天的舞台直拍和高清图整理好了，辛苦各位老师拍摄与整理！记得去看原帖支持官方内容。",
+        "kind": "post",
+        "folder": "关注",
+        "sender": "ALD1 GLOBAL",
+        "avatar": "https://pbs.twimg.com/media/G1sRWmzaAAYcheh.jpg",
+        "time": "2026-10-24 19:06",
+        "likes": 3261,
+        "comments": [
+          "这组图真的好会拍……每个人都帅得很具体。",
+          "收图了谢谢站子老师！"
+        ],
+        "meta": {
+          "handle": "@ALD1_GLOBAL"
+        }
+      },
+      {
+        "id": "wb-follow-2",
+        "title": "ANXIN GLOBAL",
+        "body": "[UPDATE] 安信相关公开行程、官方物料与翻译汇总。今天也请多多关注孩子的舞台表现，辛苦大家。",
+        "kind": "post",
+        "folder": "关注",
+        "sender": "ANXIN GLOBAL",
+        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
+        "time": "2026-10-24 18:42",
+        "likes": 2187,
+        "comments": [
+          "辛苦站子！已转发收藏。",
+          "今天状态好好，舞台值得反复看。"
+        ],
+        "meta": {
+          "handle": "@AnxinGlobal"
+        }
+      },
+      {
+        "id": "wb-follow-3",
+        "title": "junseo archive",
+        "body": "俊抒今天这张抓拍是什么神图……镜头感和氛围都刚刚好，已存。",
+        "kind": "post",
+        "folder": "关注",
+        "sender": "junseo archive",
+        "avatar": "https://image.static.bstage.in/cdn-cgi/image/metadata%3Dnone/ald1/485da96c-e34f-45e8-ab26-9eba22f41b1f/4b18b46b-a52b-496b-a22d-2e1e62c8f194/ori.jpg",
+        "time": "2026-10-24 17:55",
+        "likes": 1740,
+        "comments": [
+          "这张真的很像电影截图。",
+          "老师多发！！"
+        ],
+        "meta": {
+          "handle": "@junseo_archive"
+        }
+      },
+      {
+        "id": "wb-follow-4",
+        "title": "ALD1中字组",
+        "body": "【中字】成员采访片段更新，已补时间轴和重点翻译。转载请注明出处，感谢支持。",
+        "kind": "post",
+        "folder": "关注",
+        "sender": "ALD1中字组",
+        "avatar": "https://pbs.twimg.com/media/HFLaH5kaMAANHZj.jpg",
+        "time": "2026-10-24 16:30",
+        "likes": 986,
+        "comments": [
+          "翻译老师辛苦了！",
+          "已转发，感谢整理。"
+        ],
+        "meta": {
+          "handle": "@ald1_trans"
+        }
+      },
+      {
+        "id": "wb-own-1",
+        "title": "",
+        "body": "刚刚把今天的舞台又看了一遍。到底是谁把ending拍得这么好看啊……我先存为敬。",
+        "kind": "post",
+        "folder": "微博",
+        "sender": "afterglow.zip",
+        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
+        "time": "2026-10-24 20:48",
+        "likes": 684,
+        "comments": [
+          "鑫隆：你不是刚刚就在现场吗ㅋㅋ",
+          "afterglow.zip：现场和回放是两种快乐好吗。",
+          "相炫：哥你真的很会找角度。"
+        ],
+        "meta": {
+          "handle": "@afterglow.zip"
+        }
+      },
+      {
+        "id": "wb-own-2",
+        "title": "",
+        "body": "今天的风很舒服，回去路上听了好几遍歌。明天也要顺顺利利。",
+        "kind": "post",
+        "folder": "微博",
+        "sender": "afterglow.zip",
+        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
+        "time": "2026-10-24 23:16",
+        "likes": 912,
+        "comments": [
+          "ALD1 GLOBAL：晚安，明天也一起加油！",
+          "afterglow.zip：晚安ㅋㅋ"
+        ],
+        "meta": {
+          "handle": "@afterglow.zip"
+        }
+      },
+      {
+        "id": "wb-own-3",
+        "title": "",
+        "body": "刷到站子老师拍的图了，怎么每张都像画报……感谢老师们一直认真记录，已转发收藏。",
+        "kind": "post",
+        "folder": "微博",
+        "sender": "afterglow.zip",
+        "avatar": "https://pbs.twimg.com/media/HGzsY7NacAAZWvi.jpg",
+        "time": "2026-10-23 21:32",
+        "likes": 1203,
+        "comments": [
+          "junseo archive：谢谢喜欢！",
+          "afterglow.zip：老师拍得真的好看！"
         ],
         "meta": {
           "handle": "@afterglow.zip"
