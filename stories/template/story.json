@@ -3,7 +3,7 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 3,
+  "revision": 4,
   "phone": {
     "owner": "周安信",
     "date": "2026-10-25",
@@ -90,159 +90,604 @@
   ],
   "contacts": [
     {
-      "id": "test-contact",
-      "name": "测试联系人",
+      "id": "sangwon",
+      "name": "李相沅",
       "phone": "",
-      "bio": "这是一条测试内容。"
+      "avatar": "",
+      "bio": "同团成员。安信的恋人，备注🐰。"
+    },
+    {
+      "id": "jiahao",
+      "name": "张家豪",
+      "phone": "",
+      "avatar": "",
+      "bio": "安信以前同公司的哥哥，知道安信过去的一些事。"
+    },
+    {
+      "id": "sanghyeon",
+      "name": "郑相炫",
+      "phone": "",
+      "avatar": "",
+      "bio": "忙内Line，爱开玩笑，观察力很强。"
+    },
+    {
+      "id": "xinlong",
+      "name": "贺鑫隆",
+      "phone": "",
+      "avatar": "",
+      "bio": "同团中国成员，和安信聊得来。"
+    },
+    {
+      "id": "leo",
+      "name": "Leo",
+      "phone": "",
+      "avatar": "",
+      "bio": "队长；和相沅以前同公司练习认识。"
+    },
+    {
+      "id": "junseo",
+      "name": "金俊抒",
+      "phone": "",
+      "avatar": "",
+      "bio": "和相沅很合拍，常一起读书、跑步。"
+    },
+    {
+      "id": "hanzhong",
+      "name": "林韩中",
+      "phone": "",
+      "avatar": "",
+      "bio": "安信以前同公司的好友。"
+    },
+    {
+      "id": "surin",
+      "name": "薛苏仁",
+      "phone": "",
+      "avatar": "",
+      "bio": "选秀时期认识的朋友。"
+    },
+    {
+      "id": "gangmin",
+      "name": "柳冈旻",
+      "phone": "",
+      "avatar": "",
+      "bio": "选秀时期认识的朋友。"
+    },
+    {
+      "id": "kevin",
+      "name": "陈凯文",
+      "phone": "",
+      "avatar": "",
+      "bio": "选秀时期认识的朋友。"
+    },
+    {
+      "id": "立于",
+      "name": "崔立于",
+      "phone": "",
+      "avatar": "",
+      "bio": "选秀时期认识的朋友。"
     }
   ],
   "chats": [
     {
-      "id": "test-chat-messages",
-      "app": "messages",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messages",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-wechat",
-      "app": "wechat",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-wechat",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-qq",
-      "app": "qq",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-qq",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-whatsapp",
-      "app": "whatsapp",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-whatsapp",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-telegram",
-      "app": "telegram",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-telegram",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-discord",
-      "app": "discord",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-discord",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-line",
-      "app": "line",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-line",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-messenger",
-      "app": "messenger",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messenger",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-kakao",
+      "id": "kakao-sangwon",
       "app": "kakao",
-      "title": "测试会话",
+      "title": "🐰",
       "participants": [
         "owner",
-        "test-contact"
+        "sangwon"
       ],
       "messages": [
         {
-          "id": "test-message-kakao",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
+          "id": "ks1",
+          "title": "",
+          "body": "到宿舍了吗？外面风很大。",
+          "time": "2026-10-24 23:18",
+          "senderId": "sangwon",
+          "kind": "text"
         },
         {
-          "id": "test-reply-kakao",
-          "body": "这是一条测试回复。",
-          "senderId": "owner"
+          "id": "ks2",
+          "title": "",
+          "body": "到了ㅋㅋ 你不是说还要去骑车？",
+          "time": "2026-10-24 23:19",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks3",
+          "title": "",
+          "body": "本来想去。现在想等你洗漱完。",
+          "time": "2026-10-24 23:20",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks4",
+          "title": "",
+          "body": "你等我干嘛，去骑呀ㅋㅋ",
+          "time": "2026-10-24 23:21",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks5",
+          "title": "",
+          "body": "一个人没意思。明天陪我？我慢一点。",
+          "time": "2026-10-24 23:22",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks6",
+          "title": "",
+          "body": "知道啦。那你先把外套穿好，别又嫌冷。",
+          "time": "2026-10-24 23:23",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks7",
+          "title": "",
+          "body": "嗯。还有，今天舞台结束以后你一直没怎么说话。累了吗？",
+          "time": "2026-10-24 23:24",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks8",
+          "title": "",
+          "body": "没有啦，就是有点困。哥哥怎么观察这么仔细。",
+          "time": "2026-10-24 23:25",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ks9",
+          "title": "",
+          "body": "因为是你。困了就早点睡，晚安。",
+          "time": "2026-10-24 23:26",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ks10",
+          "title": "",
+          "body": "晚安🐰 明天见。",
+          "time": "2026-10-24 23:27",
+          "senderId": "owner",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "kakao-alpha-group",
+      "app": "kakao",
+      "title": "ALPHA DRIVE ONE 🏠",
+      "participants": [
+        "owner",
+        "sangwon",
+        "leo",
+        "junseo",
+        "sanghyeon",
+        "xinlong"
+      ],
+      "messages": [
+        {
+          "id": "ka1",
+          "title": "",
+          "body": "谁把客厅的充电线拿走了ㅋㅋㅋㅋ",
+          "time": "2026-10-25 00:12",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "ka2",
+          "title": "",
+          "body": "不是我！！我有自己的！！",
+          "time": "2026-10-25 00:13",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "ka3",
+          "title": "",
+          "body": "先声明，我的线也不见了。建议全员自查。",
+          "time": "2026-10-25 00:13",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ka4",
+          "title": "",
+          "body": "桌子下面有两根。先找找再开会。",
+          "time": "2026-10-25 00:14",
+          "senderId": "leo",
+          "kind": "text"
+        },
+        {
+          "id": "ka5",
+          "title": "",
+          "body": "我刚刚看见安信拿着一根走过去。",
+          "time": "2026-10-25 00:14",
+          "senderId": "junseo",
+          "kind": "text"
+        },
+        {
+          "id": "ka6",
+          "title": "",
+          "body": "金俊抒你不要凭空捏造ㅋㅋㅋㅋ",
+          "time": "2026-10-25 00:15",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ka7",
+          "title": "",
+          "body": "我这里有一根白色的，谁的？",
+          "time": "2026-10-25 00:16",
+          "senderId": "sangwon",
+          "kind": "text"
+        },
+        {
+          "id": "ka8",
+          "title": "",
+          "body": "……白色那根可能是我的。",
+          "time": "2026-10-25 00:16",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "ka9",
+          "title": "",
+          "body": "抓到了ㅋㅋㅋㅋ",
+          "time": "2026-10-25 00:17",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "kakao-sanghyeon",
+      "app": "kakao",
+      "title": "郑相炫",
+      "participants": [
+        "owner",
+        "sanghyeon"
+      ],
+      "messages": [
+        {
+          "id": "kh1",
+          "title": "",
+          "body": "哥，你今天怎么一直笑？",
+          "time": "2026-10-24 18:42",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "kh2",
+          "title": "",
+          "body": "我不能笑吗ㅋㅋ",
+          "time": "2026-10-24 18:43",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kh3",
+          "title": "",
+          "body": "能啊。就是感觉你手机今天特别忙。",
+          "time": "2026-10-24 18:43",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "kh4",
+          "title": "",
+          "body": "你先管好你自己的练习ㅋㅋ",
+          "time": "2026-10-24 18:44",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kh5",
+          "title": "",
+          "body": "好好好，我什么都没问。",
+          "time": "2026-10-24 18:45",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "kakao-junseo",
+      "app": "kakao",
+      "title": "金俊抒",
+      "participants": [
+        "owner",
+        "junseo"
+      ],
+      "messages": [
+        {
+          "id": "kj1",
+          "title": "",
+          "body": "相沅说你最近在看那部电影。看到哪了？",
+          "time": "2026-10-23 21:06",
+          "senderId": "junseo",
+          "kind": "text"
+        },
+        {
+          "id": "kj2",
+          "title": "",
+          "body": "刚看完一半！先不剧透。",
+          "time": "2026-10-23 21:07",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "kj3",
+          "title": "",
+          "body": "那周末可以一起聊。相沅应该也会来。",
+          "time": "2026-10-23 21:08",
+          "senderId": "junseo",
+          "kind": "text"
+        },
+        {
+          "id": "kj4",
+          "title": "",
+          "body": "好啊ㅋㅋ 他看完肯定又要讲一堆。",
+          "time": "2026-10-23 21:09",
+          "senderId": "owner",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "wechat-jiahao",
+      "app": "wechat",
+      "title": "张家豪",
+      "participants": [
+        "owner",
+        "jiahao"
+      ],
+      "messages": [
+        {
+          "id": "wj1",
+          "title": "",
+          "body": "最近适应得怎么样？别光顾着玩，休息也要跟上。",
+          "time": "2026-10-22 16:20",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wj2",
+          "title": "",
+          "body": "知道啦家豪哥！我有好好吃饭。",
+          "time": "2026-10-22 16:22",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wj3",
+          "title": "",
+          "body": "你以前就这么说。对了，之前给你看的那些练习生视频，你还留着？",
+          "time": "2026-10-22 16:24",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wj4",
+          "title": "",
+          "body": "留着啊ㅋㅋ 有几段还在收藏夹里。",
+          "time": "2026-10-22 16:25",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wj5",
+          "title": "",
+          "body": "看得出来你记性挺好。别熬夜翻旧东西。",
+          "time": "2026-10-22 16:26",
+          "senderId": "jiahao",
+          "kind": "text"
+        },
+        {
+          "id": "wj6",
+          "title": "",
+          "body": "哥怎么什么都知道……",
+          "time": "2026-10-22 16:27",
+          "senderId": "owner",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "wechat-xinlong",
+      "app": "wechat",
+      "title": "贺鑫隆",
+      "participants": [
+        "owner",
+        "xinlong"
+      ],
+      "messages": [
+        {
+          "id": "wx1",
+          "title": "",
+          "body": "晚上打不打王者？缺一个。",
+          "time": "2026-10-24 20:03",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "wx2",
+          "title": "",
+          "body": "打！等我十分钟。",
+          "time": "2026-10-24 20:04",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wx3",
+          "title": "",
+          "body": "你上次说十分钟，结果半小时ㅋㅋ",
+          "time": "2026-10-24 20:04",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "wx4",
+          "title": "",
+          "body": "这次真的！！我去拿耳机。",
+          "time": "2026-10-24 20:05",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wx5",
+          "title": "",
+          "body": "行，房间我开好了。",
+          "time": "2026-10-24 20:06",
+          "senderId": "xinlong",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "wechat-hanzhong",
+      "app": "wechat",
+      "title": "林韩中",
+      "participants": [
+        "owner",
+        "hanzhong"
+      ],
+      "messages": [
+        {
+          "id": "wh1",
+          "title": "",
+          "body": "最近怎么样？好久没好好聊天了。",
+          "time": "2026-10-20 13:11",
+          "senderId": "hanzhong",
+          "kind": "text"
+        },
+        {
+          "id": "wh2",
+          "title": "",
+          "body": "忙归忙，还是活着的ㅋㅋ 你呢？",
+          "time": "2026-10-20 13:13",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wh3",
+          "title": "",
+          "body": "老样子。等你有空回来再见。",
+          "time": "2026-10-20 13:15",
+          "senderId": "hanzhong",
+          "kind": "text"
+        },
+        {
+          "id": "wh4",
+          "title": "",
+          "body": "肯定啊，欠你的饭还没请呢。",
+          "time": "2026-10-20 13:16",
+          "senderId": "owner",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "wechat-old-friends",
+      "app": "wechat",
+      "title": "选秀老友局",
+      "participants": [
+        "owner",
+        "surin",
+        "gangmin",
+        "kevin",
+        "立于"
+      ],
+      "messages": [
+        {
+          "id": "wo1",
+          "title": "",
+          "body": "有人还记得当时那次集体练习吗ㅋㅋ",
+          "time": "2026-10-19 22:31",
+          "senderId": "surin",
+          "kind": "text"
+        },
+        {
+          "id": "wo2",
+          "title": "",
+          "body": "记得，累到回去直接睡着。",
+          "time": "2026-10-19 22:32",
+          "senderId": "gangmin",
+          "kind": "text"
+        },
+        {
+          "id": "wo3",
+          "title": "",
+          "body": "安信当时还在找吃的。",
+          "time": "2026-10-19 22:33",
+          "senderId": "kevin",
+          "kind": "text"
+        },
+        {
+          "id": "wo4",
+          "title": "",
+          "body": "我那叫补充体力！你们不懂。",
+          "time": "2026-10-19 22:34",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wo5",
+          "title": "",
+          "body": "下次见面先吃饭，别练习了ㅋㅋ",
+          "time": "2026-10-19 22:35",
+          "senderId": "立于",
+          "kind": "text"
+        }
+      ]
+    },
+    {
+      "id": "wechat-game-group",
+      "app": "wechat",
+      "title": "今晚谁来开黑",
+      "participants": [
+        "owner",
+        "xinlong",
+        "sanghyeon"
+      ],
+      "messages": [
+        {
+          "id": "wg1",
+          "title": "",
+          "body": "今晚王者还是金铲铲？",
+          "time": "2026-10-24 19:10",
+          "senderId": "owner",
+          "kind": "text"
+        },
+        {
+          "id": "wg2",
+          "title": "",
+          "body": "王者！我今天状态很好。",
+          "time": "2026-10-24 19:11",
+          "senderId": "sanghyeon",
+          "kind": "text"
+        },
+        {
+          "id": "wg3",
+          "title": "",
+          "body": "你上次也这么说，战绩我还留着ㅋㅋ",
+          "time": "2026-10-24 19:12",
+          "senderId": "xinlong",
+          "kind": "text"
+        },
+        {
+          "id": "wg4",
+          "title": "",
+          "body": "不许翻旧账，今晚证明自己。",
+          "time": "2026-10-24 19:13",
+          "senderId": "owner",
+          "kind": "text"
         }
       ]
     }
