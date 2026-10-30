@@ -107,6 +107,9 @@ export function DeviceLock({
       animate={{ opacity: 1 }}
       exit={{ y: -852, opacity: 0 }}
       transition={{ duration: 0.48, ease: [0.32, 0.72, 0, 1] }}
+      onClick={(e) => {
+        if (!pinOpen && !(e.target as HTMLElement).closest("button")) open();
+      }}
     >
       {!pinOpen ? (
         <>
