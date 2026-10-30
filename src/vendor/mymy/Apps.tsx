@@ -263,6 +263,13 @@ export function MymyKakao(p: SkinProps) {
             </div>
             {list
               .filter((g) => g.title.includes(query.trim()))
+              .filter(
+                (g) =>
+                  tab !== "好友" ||
+                  (g.items[0]?.meta.participants || "")
+                    .split(",")
+                    .filter(Boolean).length <= 2,
+              )
               .map((g) => {
                 const last = g.items.at(-1)!;
                 return (
