@@ -96,7 +96,8 @@ export function Avatar({
   const image = safeMedia(src);
   return (
     <span className={`catalog-avatar ${round ? "round" : ""}`}>
-      {image ? <img src={image} alt="" /> : name.slice(0, 1) || "人"}
+      {name.slice(0, 1) || "人"}
+      {image && <img src={image} alt="" onError={(event) => event.currentTarget.remove()} />}
     </span>
   );
 }
