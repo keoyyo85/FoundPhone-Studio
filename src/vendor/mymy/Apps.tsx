@@ -402,7 +402,10 @@ export function MymyInstagram(p: SkinProps) {
       <div
         className="carw"
         onDoubleClick={() => {
-          if (!liked.includes(i.id)) setLiked([...liked, i.id]);
+          if (!liked.includes(i.id)) {
+            setLiked([...liked, i.id]);
+            p.onLike?.(i.id);
+          }
           setPop(i.id);
         }}
       >
@@ -419,7 +422,11 @@ export function MymyInstagram(p: SkinProps) {
         <button
           aria-label={"点赞" + i.title}
           aria-pressed={liked.includes(i.id)}
-          onClick={() => toggle(i.id, liked, setLiked)}
+          onClick={() => {
+            const wasLiked = liked.includes(i.id);
+            toggle(i.id, liked, setLiked);
+            if (!wasLiked) p.onLike?.(i.id);
+          }}
         >
           <Heart
             fill={liked.includes(i.id) ? "#ff3040" : "none"}
@@ -620,6 +627,7 @@ export function MymyInstagram(p: SkinProps) {
                 e.preventDefault();
                 if (draft.trim()) {
                   setReplies([...replies, sheet.id + "\t" + draft.trim()]);
+                  p.onInteract?.("comment", sheet.id);
                   setDraft("");
                 }
               }}
