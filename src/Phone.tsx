@@ -999,7 +999,8 @@ function AppContent({
               items={shown}
               creator={creator}
               onRead={onRead}
-              onLike={(id) => onRead(id)}
+              onLike={(id) => event("like", id)}
+              onInteract={(eventName, target) => event(eventName, target)}
               onItem={read}
               onAdd={onAdd}
               onBack={onBack}
