@@ -248,10 +248,11 @@
       "id": "kakao-manager",
       "app": "kakao",
       "title": "매니저님",
-      "participants": "owner",
-      "messages": [
+      "participants": [
+        "owner",
         "manager"
-      ]
+      ],
+      "messages": []
     },
     {
       "id": "kakao-family",
