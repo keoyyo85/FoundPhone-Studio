@@ -61,7 +61,7 @@ function Back({ onClick }: { onClick: () => void }) {
     </button>
   );
 }
-function kakaoCharacterReply(thread: string, message: string, turn: number) {
+export function kakaoCharacterReply(thread: string, message: string, turn: number) {
   const text = message.toLowerCase();
   const has = (...words: string[]) => words.some((word) => text.includes(word));
   if (thread === "윤아언니") {
