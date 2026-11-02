@@ -159,7 +159,7 @@ export function MymyKakao(p: SkinProps) {
           </div>
           <form
             className="kzinp"
-            onSubmit={(e) => {
+            onSubmit={async (e) => {
               e.preventDefault();
               if (draft.trim() && !sending) {
                 const text = draft.trim();
