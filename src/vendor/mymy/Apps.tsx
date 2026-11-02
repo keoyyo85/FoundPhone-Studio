@@ -106,13 +106,6 @@ export function MymyKakao(p: SkinProps) {
           const entry: unknown = JSON.parse(raw);
           if (
             !Array.isArray(entry) ||
-            entry.length !== 3 ||
-            !entry.every((v) => typeof v === "string") ||
-            entry[0] !== p.thread
-          )
-            return [];
-          if (
-            !Array.isArray(entry) ||
             (entry.length !== 3 && entry.length !== 6) ||
             !entry.every((v) => typeof v === "string" || typeof v === "boolean") ||
             entry[0] !== p.thread
