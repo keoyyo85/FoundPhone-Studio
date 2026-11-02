@@ -3,7 +3,7 @@
   "id": "jiwoo-yuna-romance",
   "title": "언니, 지금 뭐 해?",
   "description": "金智佑的手機裡，藏著和薛侖娥從一則 KakaoTalk 到一通電話的心動日常。",
-  "revision": 7,
+  "revision": 8,
   "phone": {
     "owner": "金智佑",
     "date": "2026-11-02",
@@ -18,7 +18,6 @@
     "appstore",
     "phone",
     "messages",
-    "douyin",
     "contacts",
     "photos",
     "camera",
@@ -37,32 +36,12 @@
     "find",
     "calculator",
     "settings",
-    "wechat",
-    "qq",
-    "weibo",
-    "redbook",
-    "bilibili",
-    "alipay",
-    "taobao",
-    "netease",
-    "delivery",
-    "forum",
-    "whatsapp",
     "instagram",
     "tiktok",
     "twitter",
-    "telegram",
-    "discord",
     "youtube",
-    "line",
-    "snapchat",
-    "facebook",
-    "messenger",
-    "reddit",
     "spotify",
     "netflix",
-    "pinterest",
-    "threads",
     "kakao"
   ],
   "contacts": [
@@ -174,6 +153,204 @@
           "body": "對了，備忘錄裡有我留給你的東西。提示是 0413。",
           "time": "2026-11-02 14:31",
           "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-08",
+          "body": "剛剛在群組被她們鬧得好慘ㅋㅋ",
+          "time": "2026-11-02 14:34",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-09",
+          "body": "我有看到。妳剛剛是不是很害羞？",
+          "time": "2026-11-02 14:36",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-10",
+          "body": "才沒有……只是海嫄姐姐連這種事都要管ㅋㅋ",
+          "time": "2026-11-02 14:38",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-11",
+          "body": "她是擔心我們被發現吧。妳會不會覺得困擾？",
+          "time": "2026-11-02 14:41",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-12",
+          "body": "不會呀。我只是想好好珍惜和妳相處的時間，也不想讓妳有壓力。",
+          "time": "2026-11-02 14:44",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-13",
+          "body": "我也是。今天大家都在練習室，我一直忍住不去看妳ㅋㅋ",
+          "time": "2026-11-02 14:47",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-14",
+          "body": "我有發現喔。每次我一轉頭，妳就假裝在喝水。",
+          "time": "2026-11-02 14:50",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-15",
+          "body": "因為妳看過來的時候，我會忘記自己下一個動作。",
+          "time": "2026-11-02 14:53",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-16",
+          "body": "ㅋㅋㅋ 這麼嚴重？那我下次要負責盯著妳練習了。",
+          "time": "2026-11-02 14:56",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-17",
+          "body": "說真的，今天有點累。剛剛差點在休息室睡著。",
+          "time": "2026-11-02 15:02",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-18",
+          "body": "那晚餐前先休息一下。不要又只喝咖啡，記得吃點東西。",
+          "time": "2026-11-02 15:05",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-19",
+          "body": "妳也是。妳今天的排練比我還晚結束吧？",
+          "time": "2026-11-02 15:08",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-20",
+          "body": "嗯，還有一段要確認。不過想到晚上能見到妳，就覺得沒那麼累了。",
+          "time": "2026-11-02 15:11",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-21",
+          "body": "那我先幫妳留一個靠窗的位置。想坐在可以慢慢聊天的地方。",
+          "time": "2026-11-02 15:18",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-22",
+          "body": "好呀。今天不要趕時間，我想聽妳把最近的事情都說給我聽。",
+          "time": "2026-11-02 15:21",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-23",
+          "body": "包括我最近一直在想妳這件事嗎？",
+          "time": "2026-11-02 15:24",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-24",
+          "body": "尤其是這件事。其實我也一樣，只是平常不太敢說。",
+          "time": "2026-11-02 15:27",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-25",
+          "body": "那我們今晚都不要躲了，好不好？",
+          "time": "2026-11-02 15:30",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-26",
+          "body": "好。見面時我有一件小事想親口告訴妳。先保密，不能偷猜。🤍",
+          "time": "2026-11-02 15:33",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-27",
+          "body": "現在更好奇了ㅋㅋ 我會準時到的。妳也要記得吃飯。",
+          "time": "2026-11-02 15:36",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-28",
+          "body": "知道了。還有，今天練習時妳綁的髮帶很好看。",
+          "time": "2026-11-02 16:02",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-29",
+          "body": "妳居然注意到了？我還以為妳都在看鏡子。",
+          "time": "2026-11-02 16:05",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-30",
+          "body": "我是在看鏡子沒錯呀，只是鏡子裡剛好有妳ㅋㅋ",
+          "time": "2026-11-02 16:08",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-31",
+          "body": "這句話太犯規了，我要截圖收藏。",
+          "time": "2026-11-02 16:11",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-32",
+          "body": "不可以！等見面我再說一次，妳要看著我聽。",
+          "time": "2026-11-02 16:14",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-33",
+          "body": "排練還順利嗎？我剛整理好東西，準備出發了。",
+          "time": "2026-11-02 18:12",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-34",
+          "body": "剛結束！我先回休息室拿外套。外面有點冷，妳多穿一件。",
+          "time": "2026-11-02 18:16",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-35",
+          "body": "我帶了圍巾。等一下見面就借妳，別說不用。",
+          "time": "2026-11-02 18:20",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-36",
+          "body": "那我就不客氣了。今天想和妳走一小段路再去吃飯，可以嗎？",
+          "time": "2026-11-02 18:24",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-37",
+          "body": "當然可以。慢慢走，不用急著趕到餐廳。",
+          "time": "2026-11-02 18:27",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-38",
+          "body": "我快到了。看到妳的時候，可以先抱一下嗎？今天真的很想妳。",
+          "time": "2026-11-02 18:35",
+          "senderId": "yuna"
+        },
+        {
+          "id": "kakao-yuna-39",
+          "body": "可以。今天的第一個擁抱留給妳。",
+          "time": "2026-11-02 18:38",
+          "senderId": "owner"
+        },
+        {
+          "id": "kakao-yuna-40",
+          "body": "那我現在開始倒數。三分鐘後見，智佑。❤️",
+          "time": "2026-11-02 18:41",
+          "senderId": "yuna"
         }
       ]
     },
@@ -192,49 +369,49 @@
       "messages": [
         {
           "id": "group-haewon-01",
-          "body": "오늘 연습 끝나고 다들 바로 들어가? 윤아는 지우랑 저녁 먹는다며 ㅋㅋ",
+          "body": "今天練習結束後大家都直接回去嗎？聽說侖娥要和智佑一起吃晚餐了呢ㅋㅋ",
           "time": "2026-11-02 14:42",
           "senderId": "haewon"
         },
         {
           "id": "group-bae-01",
-          "body": "헐 진짜? 윤아 언니 요즘 지우 얘기만 하면 웃던데~",
+          "body": "真的假的？侖娥姐姐最近只要一提到智佑，嘴角就會忍不住上揚～",
           "time": "2026-11-02 14:43",
           "senderId": "bae"
         },
         {
           "id": "group-lily-01",
-          "body": "I knew it!! You two are so cute 🥹",
+          "body": "我早就知道了！！你們兩個也太可愛了吧 🥹",
           "time": "2026-11-02 14:44",
           "senderId": "lily"
         },
         {
           "id": "group-kyujin-01",
-          "body": "언니들 저도 떡볶이 먹고 싶어요ㅋㅋ 저도 끼워 주세요!",
+          "body": "姐姐們！我也想吃辣炒年糕ㅋㅋ 可以把我也算進去嗎？",
           "time": "2026-11-02 14:45",
           "senderId": "kyujin"
         },
         {
           "id": "group-yuna-01",
-          "body": "아니야ㅋㅋ 그냥 같이 밥 먹는 거야. 다들 그만 놀려!",
+          "body": "不是啦ㅋㅋ 就只是一起吃飯而已。大家不要再鬧我了！",
           "time": "2026-11-02 14:46",
           "senderId": "yuna"
         },
         {
           "id": "group-haewon-02",
-          "body": "윤아야, 마음은 알겠는데 지우가 불편하지 않게 조심해. 스케줄 중에는 특히 티 내지 말고.",
+          "body": "侖娥呀，我知道你的心意，但也要注意別讓智佑感到不自在。尤其行程期間，記得低調一點。",
           "time": "2026-11-02 14:47",
           "senderId": "haewon"
         },
         {
           "id": "group-owner-01",
-          "body": "ㅋㅋㅋ 언니들 저 아직 여기 있어요… 다 보여요!",
+          "body": "ㅋㅋㅋ 姐姐們，我還在群組裡喔……你們說的我全都看到了！",
           "time": "2026-11-02 14:48",
           "senderId": "owner"
         },
         {
           "id": "group-yuna-02",
-          "body": "지우야 미안 ㅋㅋ 이따 따로 연락할게 ❤️",
+          "body": "智佑呀，抱歉ㅋㅋ 等一下我再單獨聯絡你 ❤️",
           "time": "2026-11-02 14:49",
           "senderId": "yuna"
         }
