@@ -3,7 +3,7 @@
   "id": "jiwoo-yuna-romance",
   "title": "언니, 지금 뭐 해?",
   "description": "金智佑的手機裡，藏著和薛侖娥從一則 KakaoTalk 到一通電話的心動日常。",
-  "revision": 11,
+  "revision": 12,
   "phone": {
     "owner": "金智佑",
     "date": "2026-11-02",
@@ -843,7 +843,7 @@
           "daily": "[{\"label\":\"週二 11/3\",\"low\":\"4\",\"high\":\"16\"},{\"label\":\"週三 11/4\",\"low\":\"11\",\"high\":\"16\"},{\"label\":\"週四 11/5\",\"low\":\"5\",\"high\":\"15\"},{\"label\":\"週五 11/6\",\"low\":\"0\",\"high\":\"9\"},{\"label\":\"週六 11/7\",\"low\":\"1\",\"high\":\"7\"}]",
           "source": "Open-Meteo forecast（透過 OrbisViews 顯示）",
           "sourceUpdated": "2026-11-03",
-          "dailySource": "Met Office forecast"
+          "dailySource": "Open-Meteo（11/3）＋Met Office（11/4–11/7）"
         }
       }
     ]
