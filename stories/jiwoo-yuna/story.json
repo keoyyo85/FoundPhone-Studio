@@ -3,7 +3,7 @@
   "id": "jiwoo-yuna-romance",
   "title": "언니, 지금 뭐 해?",
   "description": "金智佑的手機裡，藏著和薛侖娥從一則 KakaoTalk 到一通電話的心動日常。",
-  "revision": 9,
+  "revision": 10,
   "phone": {
     "owner": "金智佑",
     "date": "2026-11-02",
@@ -823,42 +823,26 @@
     ],
     "weather": [
       {
-        "id": "weather-seoul-2026-11-03",
-        "title": "首爾・11月3日（星期二）",
-        "body": "晴朗。最高氣溫 15°C，最低氣溫 8°C。日出約 07:01，日落約 17:34。早晚偏涼，建議外出帶薄外套。資料類型：當日預報。",
+        "id": "weather-seoul",
+        "title": "首爾",
+        "body": "2026年11月3日 05:00（韓國標準時間）天氣：陰天，氣溫約 6°C。今日預報最高 16°C、最低 4°C，降雨機率約 10%，南風約 11 km/h。日出 06:58，日落 17:31。早晚寒涼，建議穿外套。資料來源：Open-Meteo 天氣預報頁面。",
         "time": "2026-11-03 05:00",
         "sender": "首爾天氣",
         "kind": "text",
-        "folder": "今日預報",
+        "folder": "首爾",
         "meta": {
-          "location": "Seoul, South Korea",
-          "source": "Met Office forecast"
-        }
-      },
-      {
-        "id": "weather-seoul-2026-11-04",
-        "title": "首爾・11月4日（星期三）",
-        "body": "晴朗，傍晚逐漸轉多雲。最高氣溫 16°C，最低氣溫 11°C。",
-        "time": "2026-11-03 05:00",
-        "sender": "首爾天氣",
-        "kind": "text",
-        "folder": "未來預報",
-        "meta": {
-          "location": "Seoul, South Korea",
-          "source": "Met Office forecast"
-        }
-      },
-      {
-        "id": "weather-seoul-2026-11-05",
-        "title": "首爾・11月5日（星期四）",
-        "body": "上午有小雨，午餐前後逐漸轉為晴間多雲。最高氣溫 15°C，最低氣溫 5°C。出門建議帶傘。",
-        "time": "2026-11-03 05:00",
-        "sender": "首爾天氣",
-        "kind": "text",
-        "folder": "未來預報",
-        "meta": {
-          "location": "Seoul, South Korea",
-          "source": "Met Office forecast"
+          "locationLabel": "首爾・韓國",
+          "temperature": "6",
+          "high": "16",
+          "low": "4",
+          "condition": "陰天",
+          "sunrise": "06:58",
+          "rain": "10%",
+          "wind": "南風 11 km/h",
+          "hourly": "[{\"time\":\"05時\",\"temperature\":\"6\"},{\"time\":\"06時\",\"temperature\":\"5\"},{\"time\":\"07時\",\"temperature\":\"4\"},{\"time\":\"08時\",\"temperature\":\"5\"},{\"time\":\"09時\",\"temperature\":\"7\"},{\"time\":\"10時\",\"temperature\":\"10\"}]",
+          "daily": "[{\"label\":\"週二 11/3\",\"low\":\"4\",\"high\":\"16\"},{\"label\":\"週三 11/4\",\"low\":\"8\",\"high\":\"16\"},{\"label\":\"週四 11/5\",\"low\":\"10\",\"high\":\"15\"},{\"label\":\"週五 11/6\",\"low\":\"0\",\"high\":\"9\"},{\"label\":\"週六 11/7\",\"low\":\"1\",\"high\":\"7\"}]",
+          "source": "Open-Meteo forecast",
+          "sourceUpdated": "2026-11-03"
         }
       }
     ]
