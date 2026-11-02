@@ -21,3 +21,5 @@ public/blank-work.json
 *.key
 *.bundle
 
+
+.local-data/
