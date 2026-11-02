@@ -1,4 +1,5 @@
 import { localIconPlugin } from "./scripts/local-icon-plugin";
+import { kakaoAiPlugin } from "./scripts/kakao-ai-plugin";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
@@ -7,6 +8,7 @@ export default defineConfig(({ command }) => ({
   optimizeDeps: { entries: ["index.html"] },
   plugins: [
     localIconPlugin(command),
+    kakaoAiPlugin(),
     react(),
     VitePWA({
       registerType: "autoUpdate",
