@@ -304,7 +304,7 @@ export function CameraSkin(p: Props) {
 }
 export function SafariSkin(p: Props) {
   const [q, setQ] = useState(""),
-    [tab, setTab] = useState("书签");
+    [tab, setTab] = useState("歷史紀錄");
   const items = p.items
     .filter((i) =>
       (i.title + i.body + meta(i, "url"))
@@ -312,9 +312,9 @@ export function SafariSkin(p: Props) {
         .includes(q.toLowerCase()),
     )
     .filter((i) =>
-      tab === "书签"
-        ? i.favorite || i.folder !== "历史记录"
-        : i.folder === "历史记录",
+      tab === "書籤"
+        ? i.favorite || i.folder !== "歷史紀錄"
+        : i.folder === "歷史紀錄",
     );
   return (
     <div className="catalog-skin native-safari">
@@ -332,15 +332,15 @@ export function SafariSkin(p: Props) {
             </button>
           ))}
         </div>
-        <Empty items={items} label="没有匹配的虚构网页" />
+        <Empty items={items} label="沒有符合的虛構網頁" />
       </div>
       <label className="safari-address">
         <LockKeyhole size={13} />
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="搜索或输入虚构网址"
-          aria-label="地址栏"
+          placeholder="搜尋或輸入虛構網址"
+          aria-label="網址列"
           onKeyDown={(e) => {
             if (e.key === "Enter" && items[0]) p.onItem(items[0]);
           }}
@@ -348,7 +348,7 @@ export function SafariSkin(p: Props) {
         <Search size={16} />
       </label>
       <Tabs
-        tabs={["书签", "历史记录"]}
+        tabs={["書籤", "歷史紀錄"]}
         value={tab}
         set={setTab}
         icons={[<Globe />, <Clock />]}
