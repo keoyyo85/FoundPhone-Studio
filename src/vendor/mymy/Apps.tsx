@@ -82,11 +82,11 @@ export function kakaoCharacterReply(thread: string, message: string, turn: numbe
   if (thread === "매니저님") return { sender: "매니저님", body: ["지우 씨, 내일 10:30 헤어·메이크업, 12:00 녹음, 16:00 촬영 일정입니다. 이동 시간 확인해 주세요.", "오늘 연습 종료 후 차량은 20:10에 정문 앞에서 대기하겠습니다.", "이번 주 스케줄 전달드립니다. 변경 사항이 있으면 단체방에 공지하겠습니다."][turn % 3] };
   if (thread === "NMIXX 단톡방") {
     const replies = [
-      { sender: "규진", body: "ㅋㅋㅋㅋ 언니들 또 시작이네. 지우 언니 반응 어때요?" },
-      { sender: "솔언니", body: "윤아 언니 지금 웃고 있는 거 다 보여요~" },
-      { sender: "릴리언니", body: "This is so sweet 😂 다 같이 떡볶이 먹으러 가자!" },
-      { sender: "해원언니", body: "놀리는 건 여기까지! 둘 다 내일 스케줄 있으니까 일찍 자. 특히 윤아, 지우 잘 챙겨." },
-      { sender: "윤아언니", body: "아 진짜 그만 놀려 ㅋㅋ 지우야, 신경 쓰지 마. 언니가 데리고 도망갈게 ❤️" },
+      { sender: "규진", body: "ㅋㅋㅋㅋ 姐姐們又開始了！智佑姐姐會怎麼反應呀？" },
+      { sender: "솔언니", body: "侖娥姐姐現在的笑容，我們全都看得一清二楚～" },
+      { sender: "릴리언니", body: "這也太甜了吧 😂 大家一起去吃辣炒年糕！" },
+      { sender: "해원언니", body: "好了，先別鬧她們了！明天大家都有行程，今晚早點休息。尤其是侖娥，記得照顧好智佑。" },
+      { sender: "윤아언니", body: "啊，真的別再鬧我了啦ㅋㅋ 智佑呀，別在意她們。姐姐帶妳偷偷逃走 ❤️" },
     ];
     return replies[turn % replies.length];
   }
