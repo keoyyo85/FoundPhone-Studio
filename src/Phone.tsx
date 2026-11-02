@@ -318,7 +318,8 @@ function PhoneRuntime({
     >
       <KeyboardContext.Provider value={setKeyboard}>
         <div
-          className={`phone-screen wallpaper-${work.phone.wallpaper} ${locked ? "is-locked" : ""} ${app ? "in-app" : ""} ${keyboard ? "keyboard-open" : ""}`}
+          className={`phone-screen ${safeMedia(work.phone.wallpaper) ? "wallpaper-custom" : `wallpaper-${work.phone.wallpaper}`} ${locked ? "is-locked" : ""} ${app ? "in-app" : ""} ${keyboard ? "keyboard-open" : ""}`}
+          style={safeMedia(work.phone.wallpaper) ? { backgroundImage: `url("${safeMedia(work.phone.wallpaper)}")`, backgroundSize: "cover", backgroundPosition: "center" } : undefined}
           data-app={app}
           onDragStart={(e) => e.preventDefault()}
           onPointerDown={(e) => {
@@ -906,7 +907,10 @@ function AppContent({
       return;
     }
     setDetail(i);
-    if (!i.password || unlocks.includes(i.id)) onRead(i.id);
+    if (!i.password || unlocks.includes(i.id)) {
+      // Instagram Story reads are intentionally not treated as likes; the heart action dispatches the story event.
+      if (!(app.id === "instagram" && i.folder === "Story")) onRead(i.id);
+    }
   };
   const chats = [...new Set(shown.map((i) => i.title))];
   const back = () => {
@@ -995,6 +999,7 @@ function AppContent({
               items={shown}
               creator={creator}
               onRead={onRead}
+              onLike={(id) => onRead(id)}
               onItem={read}
               onAdd={onAdd}
               onBack={onBack}
