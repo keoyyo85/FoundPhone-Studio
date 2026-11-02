@@ -42,6 +42,7 @@ export type SkinProps = {
   items: Item[];
   creator: boolean;
   onRead: (id: string) => void;
+  onLike?: (id: string) => void;
   onItem: (i: Item) => void;
   onAdd: () => void;
   onBack: () => void;
@@ -834,13 +835,15 @@ export function InstagramSkin(p: SkinProps) {
                 <div className="ig-post-controls">
                   <button
                     aria-label={`喜欢${i.title}`}
-                    onClick={() =>
+                    onClick={() => {
+                      const alreadyLiked = likes.includes(i.id);
                       setLikes(
-                        likes.includes(i.id)
+                        alreadyLiked
                           ? likes.filter((x) => x !== i.id)
                           : [...likes, i.id],
-                      )
-                    }
+                      );
+                      if (!alreadyLiked && i.folder === "Story") p.onLike?.(i.id);
+                    }}
                   >
                     <Heart
                       size={23}
