@@ -454,6 +454,7 @@ function PhoneRuntime({
                   creator={creator}
                   state={s}
                   onRead={(id) => event("read", id)}
+                  onInteract={(eventName, target) => event(eventName, target)}
                   onEdit={(item) => onEdit?.(app, item)}
                   onAdd={() => onAdd?.(app)}
                   onBack={() => setApp("")}
@@ -867,6 +868,7 @@ function AppContent({
   onBack,
   onSettings,
   onUi,
+  onInteract,
   work,
 }: {
   app: AppPlugin;
@@ -880,6 +882,7 @@ function AppContent({
   onBack: () => void;
   onSettings?: () => void;
   onUi?: (key: string, value: UiValue) => void;
+  onInteract: (event: string, target: string) => void;
   work: Work;
 }) {
   const [detail, setDetail] = useState<Item | null>(null);
@@ -999,8 +1002,8 @@ function AppContent({
               items={shown}
               creator={creator}
               onRead={onRead}
-              onLike={(id) => event("like", id)}
-              onInteract={(eventName, target) => event(eventName, target)}
+              onLike={(id) => onInteract("like", id)}
+              onInteract={onInteract}
               onItem={read}
               onAdd={onAdd}
               onBack={onBack}
