@@ -66,7 +66,9 @@ export function MymyKakao(p: SkinProps) {
     [sent, setSent] = useSkinState<string[]>(p, "mymyKktSent", []),
     [draft, setDraft] = useState(""),
     [query, setQuery] = useState(""),
-    [menu, setMenu] = useState(false);
+    [menu, setMenu] = useState(false),
+    [sending, setSending] = useState(false),
+    [chatError, setChatError] = useState("");
   const list = grouped(p.items),
     messages = [
       ...p.items.filter((i) => i.title === p.thread),
@@ -75,7 +77,7 @@ export function MymyKakao(p: SkinProps) {
           const entry: unknown = JSON.parse(raw);
           if (
             !Array.isArray(entry) ||
-            entry.length !== 3 ||
+            (entry.length !== 3 && entry.length !== 5) ||
             !entry.every((v) => typeof v === "string") ||
             entry[0] !== p.thread
           )
@@ -86,8 +88,8 @@ export function MymyKakao(p: SkinProps) {
               title: entry[0],
               body: entry[1],
               time: entry[2],
-              sender: p.owner || "机主",
-              outgoing: true,
+              sender: entry.length === 5 ? entry[3] : p.owner || "机主",
+              outgoing: entry.length === 5 ? entry[4] === "true" : true,
               meta: { local: "true" },
             }),
           ];
@@ -159,16 +161,29 @@ export function MymyKakao(p: SkinProps) {
             className="kzinp"
             onSubmit={(e) => {
               e.preventDefault();
-              if (draft.trim()) {
-                setSent([
-                  ...sent,
-                  JSON.stringify([
-                    p.thread,
-                    draft.trim(),
-                    p.virtualTime || "09:41",
-                  ]),
-                ]);
+              if (draft.trim() && !sending) {
+                const text = draft.trim();
+                const time = p.virtualTime || "09:41";
+                setSent([...sent, JSON.stringify([p.thread, text, time, p.owner || "지우", "true"])]);
                 setDraft("");
+                setChatError("");
+                setSending(true);
+                try {
+                  const participants = [...new Set(messages.filter(m => !m.outgoing).map(m => m.sender))];
+                  const response = await fetch("/api/kakao-chat", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ storyId: "jiwoo-yuna", thread: p.thread, owner: p.owner || "지우", participants: participants.length ? participants : [p.thread], text })
+                  });
+                  const payload = await response.json();
+                  if (!response.ok) throw new Error(payload.error || "AI 回覆失敗");
+                  const replies = Array.isArray(payload.replies) ? payload.replies : [];
+                  setSent(current => [...current, ...replies.map((reply: {speaker:string;text:string}) => JSON.stringify([p.thread, reply.text, time, reply.speaker, "false"]))]);
+                } catch (error) {
+                  setChatError(error instanceof Error ? error.message : "聊天服務暫時無法使用");
+                } finally {
+                  setSending(false);
+                }
               }
             }}
           >
@@ -190,11 +205,12 @@ export function MymyKakao(p: SkinProps) {
             <button
               className={draft.trim() ? "go" : ""}
               aria-label="发送KKT消息"
-              disabled={!draft.trim()}
+              disabled={!draft.trim() || sending}
             >
-              ↑
+              {sending ? "…" : "↑"}
             </button>
           </form>
+          {chatError && <div className="mymy-local-menu" role="alert"><p>{chatError}</p><button type="button" onClick={() => setChatError("")}>知道了</button></div>}
           {menu && (
             <div className="mymy-local-menu">
               <strong>{p.thread}</strong>
