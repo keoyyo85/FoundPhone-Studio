@@ -3,7 +3,7 @@
   "id": "jiwoo-yuna-romance",
   "title": "언니, 지금 뭐 해?",
   "description": "金智佑的手機裡，藏著和薛侖娥從一則 KakaoTalk 到一通電話的心動日常。",
-  "revision": 8,
+  "revision": 9,
   "phone": {
     "owner": "金智佑",
     "date": "2026-11-02",
@@ -585,6 +585,66 @@
           "이거 맛있겠다!",
           "지우가 좋아하겠네 ㅋㅋ"
         ]
+      },
+      {
+        "id": "ig-jiwoo-profile-post",
+        "title": "練習結束後的一張照片",
+        "body": "今天也順利完成練習了。謝謝一直陪著我、替我加油的人。回家的路上記得注意安全 🤍",
+        "time": "2026-11-02 16:40",
+        "sender": "金智佑",
+        "kind": "post",
+        "folder": "貼文",
+        "likes": 28640,
+        "comments": [
+          "지우 오늘도 수고했어!",
+          "今天也辛苦了，智佑！",
+          "侖娥姐姐是不是又幫妳拍照了ㅋㅋ",
+          "兩個人最近常常出現在彼此的限動裡耶 👀"
+        ],
+        "meta": {
+          "handle": "jiwoo_official",
+          "location": "Seoul, South Korea"
+        }
+      },
+      {
+        "id": "ig-cp-fan-reaction-1",
+        "title": "最近只有我覺得她們很有默契嗎？",
+        "body": "整理了一下最近的公開互動：限時動態的時間、互相按讚的速度，還有練習室花絮裡的眼神……我不會替她們定義關係，但這種自然的照顧感真的很可愛。",
+        "time": "2026-11-02 17:05",
+        "sender": "nmixx_daily_archive",
+        "kind": "post",
+        "folder": "粉絲觀察",
+        "likes": 1832,
+        "comments": [
+          "我也注意到了！",
+          "拜託不要過度解讀，讓她們保有私人空間吧。",
+          "不管是不是 CP，都希望她們開心。"
+        ],
+        "hidden": true,
+        "meta": {
+          "handle": "nmixx_archive",
+          "location": "Fan community"
+        }
+      },
+      {
+        "id": "ig-cp-fan-reaction-2",
+        "title": "留言區是不是有點熱鬧？",
+        "body": "剛剛看到有人在侖娥的貼文下面留言，粉絲開始討論智佑和侖娥的互動了。有人嗑得很開心，也有人提醒大家不要把玩笑變成壓力。希望大家都能保持分寸。",
+        "time": "2026-11-02 17:22",
+        "sender": "mixx_fan_note",
+        "kind": "post",
+        "folder": "粉絲觀察",
+        "likes": 974,
+        "comments": [
+          "支持喜歡她們，但不要去私訊或追行程。",
+          "她們是隊友也是朋友，別替本人下結論。",
+          "溫柔嗑 CP，尊重本人最重要。"
+        ],
+        "hidden": true,
+        "meta": {
+          "handle": "mixx_fan_note",
+          "location": "Fan community"
+        }
       }
     ],
     "notes": [
@@ -622,6 +682,71 @@
         "body": "搜尋紀錄：想找一家辣度剛好、可以慢慢聊天的辣炒年糕店。",
         "kind": "text",
         "time": "2026-11-02 13:48"
+      },
+      {
+        "id": "safari-nmixx-schedule",
+        "title": "NMIXX 11月行程整理",
+        "body": "搜尋紀錄：NMIXX 官方公開行程與粉絲公告。提醒：公開行程以官方發布為準，不追蹤私人行程。",
+        "time": "2026-11-02 13:40",
+        "sender": "Safari",
+        "kind": "text",
+        "folder": "歷史紀錄"
+      },
+      {
+        "id": "safari-seoul-weather",
+        "title": "首爾 11月初天氣",
+        "body": "搜尋紀錄：首爾天氣預報、日夜溫差與外出穿搭。",
+        "time": "2026-11-02 13:52",
+        "sender": "Safari",
+        "kind": "text",
+        "folder": "歷史紀錄"
+      },
+      {
+        "id": "safari-seongsu-cafe",
+        "title": "聖水洞安靜咖啡廳推薦",
+        "body": "搜尋紀錄：想找一間適合晚餐後散步、可以安靜聊天的咖啡廳。",
+        "time": "2026-11-02 14:02",
+        "sender": "Safari",
+        "kind": "text",
+        "folder": "歷史紀錄"
+      },
+      {
+        "id": "safari-tteokbokki-review",
+        "title": "聖水洞辣炒年糕評價",
+        "body": "搜尋紀錄：辣度、營業時間、兩人座位與步行路線。",
+        "time": "2026-11-02 14:12",
+        "sender": "Safari",
+        "kind": "text",
+        "folder": "歷史紀錄"
+      },
+      {
+        "id": "safari-jiwoo-interview",
+        "title": "金智佑近期訪談整理",
+        "body": "搜尋紀錄：金智佑談練習、舞台準備與出道後的生活。",
+        "time": "2026-11-02 15:26",
+        "sender": "Safari",
+        "kind": "text",
+        "folder": "歷史紀錄"
+      },
+      {
+        "id": "safari-cp-search-1",
+        "title": "NMIXX 侖娥 智佑 互動討論",
+        "body": "搜尋紀錄：粉絲整理兩人的公開舞台互動與社群留言。部分內容屬粉絲猜測，並非本人證實。",
+        "time": "2026-11-02 17:50",
+        "sender": "Safari",
+        "kind": "text",
+        "folder": "歷史紀錄",
+        "hidden": true
+      },
+      {
+        "id": "safari-cp-search-2",
+        "title": "如何理性支持喜歡的偶像",
+        "body": "搜尋紀錄：粉絲社群討論界線、隱私與尊重偶像私人生活。",
+        "time": "2026-11-02 17:55",
+        "sender": "Safari",
+        "kind": "text",
+        "folder": "歷史紀錄",
+        "hidden": true
       }
     ],
     "music": [
@@ -642,6 +767,98 @@
         "time": "2026-11-02 13:40",
         "meta": {
           "phone": "010-0413-2026"
+        }
+      }
+    ],
+    "twitter": [
+      {
+        "id": "x-fan-thread-01",
+        "title": "NMIXX 今天的互動",
+        "body": "今天的練習室花絮好可愛。智佑和侖娥又在同一個鏡頭裡笑了。是我想太多嗎？不管怎樣，看到成員們感情好就很開心。",
+        "time": "2026-11-02 17:30",
+        "sender": "믹스팝콘",
+        "kind": "post",
+        "likes": 1260,
+        "comments": [
+          "我也看到那個對視了ㅋㅋ",
+          "不要太過度猜測，支持她們的作品就好。"
+        ],
+        "meta": {
+          "handle": "mixxpopcorn"
+        }
+      },
+      {
+        "id": "x-fan-thread-02",
+        "title": "關於 CP 討論的一點想法",
+        "body": "喜歡她們的互動沒有問題，但不要把粉絲猜測當成事實，更不要追問本人或侵犯私人時間。支持偶像也要記得尊重界線。",
+        "time": "2026-11-02 17:36",
+        "sender": "blue_mixx",
+        "kind": "post",
+        "likes": 842,
+        "comments": [
+          "完全同意。喜歡就好好支持，不要造成壓力。",
+          "希望大家把注意力也放回音樂和舞台。"
+        ],
+        "meta": {
+          "handle": "blue_mixx"
+        }
+      },
+      {
+        "id": "x-fan-thread-03",
+        "title": "剛剛那個留言被大家看到了嗎",
+        "body": "有人在侖娥的貼文底下留言後，粉絲圈開始討論她們的互動。有人覺得甜，也有人覺得應該留給她們空間。這種討論還是要有分寸。",
+        "time": "2026-11-02 17:48",
+        "sender": "mixx_timeline",
+        "kind": "post",
+        "likes": 0,
+        "comments": [
+          "希望不要去騷擾她們。",
+          "尊重隱私，支持舞台。"
+        ],
+        "hidden": true,
+        "meta": {
+          "handle": "mixx_timeline"
+        }
+      }
+    ],
+    "weather": [
+      {
+        "id": "weather-seoul-2026-11-03",
+        "title": "首爾・11月3日（星期二）",
+        "body": "晴朗。最高氣溫 15°C，最低氣溫 8°C。日出約 07:01，日落約 17:34。早晚偏涼，建議外出帶薄外套。資料類型：當日預報。",
+        "time": "2026-11-03 05:00",
+        "sender": "首爾天氣",
+        "kind": "text",
+        "folder": "今日預報",
+        "meta": {
+          "location": "Seoul, South Korea",
+          "source": "Met Office forecast"
+        }
+      },
+      {
+        "id": "weather-seoul-2026-11-04",
+        "title": "首爾・11月4日（星期三）",
+        "body": "晴朗，傍晚逐漸轉多雲。最高氣溫 16°C，最低氣溫 11°C。",
+        "time": "2026-11-03 05:00",
+        "sender": "首爾天氣",
+        "kind": "text",
+        "folder": "未來預報",
+        "meta": {
+          "location": "Seoul, South Korea",
+          "source": "Met Office forecast"
+        }
+      },
+      {
+        "id": "weather-seoul-2026-11-05",
+        "title": "首爾・11月5日（星期四）",
+        "body": "上午有小雨，午餐前後逐漸轉為晴間多雲。最高氣溫 15°C，最低氣溫 5°C。出門建議帶傘。",
+        "time": "2026-11-03 05:00",
+        "sender": "首爾天氣",
+        "kind": "text",
+        "folder": "未來預報",
+        "meta": {
+          "location": "Seoul, South Korea",
+          "source": "Met Office forecast"
         }
       }
     ]
@@ -680,8 +897,8 @@
     },
     {
       "id": "instagram-story-liked",
-      "label": "喜歡 윤아언니 的限時動態",
-      "event": "read",
+      "label": "玩家為侖娥的貼文按讚後觸發來電",
+      "event": "like",
       "target": "ig-yuna-story",
       "actions": [
         {
@@ -767,6 +984,57 @@
           "value": "隱藏驚喜：智佑讀到了侖娥偷偷準備的晚餐預約和告白。原來這份心意早已被細心安排。"
         }
       ]
+    },
+    {
+      "id": "unlock-fan-reaction-after-like",
+      "label": "按讚後解鎖粉絲觀察貼文",
+      "event": "like",
+      "target": "ig-yuna-story",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ig-cp-fan-reaction-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "Instagram：新的粉絲討論貼文"
+        }
+      ]
+    },
+    {
+      "id": "unlock-fan-discussion-after-comment",
+      "label": "留言後解鎖粉絲討論與瀏覽紀錄",
+      "event": "comment",
+      "target": "ig-yuna-story",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "ig-cp-fan-reaction-2",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "x-fan-thread-03",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "safari-cp-search-1",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "safari-cp-search-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "Instagram：你的留言引起了粉絲圈討論"
+        }
+      ]
     }
   ],
   "tests": [
@@ -774,7 +1042,11 @@
       "name": "ending-dinner-confession",
       "steps": [
         {
-          "event": "read",
+          "event": "like",
+          "target": "ig-yuna-story"
+        },
+        {
+          "event": "comment",
           "target": "ig-yuna-story"
         },
         {
@@ -787,13 +1059,19 @@
         }
       ],
       "ending": "晚餐告白：智佑答應了邀約。辣炒年糕的熱氣裡，侖娥終於說出了藏在心裡很久的話。",
-      "expectUnlocked": []
+      "expectUnlocked": [
+        "ig-cp-fan-reaction-1",
+        "ig-cp-fan-reaction-2",
+        "x-fan-thread-03",
+        "safari-cp-search-1",
+        "safari-cp-search-2"
+      ]
     },
     {
       "name": "ending-missed-chance",
       "steps": [
         {
-          "event": "read",
+          "event": "like",
           "target": "ig-yuna-story"
         },
         {
