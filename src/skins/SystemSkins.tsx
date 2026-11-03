@@ -225,7 +225,7 @@ export function PhotosSkin(p: Props) {
                 </button>
               ))}
             </div>
-            <p className="media-count">{list.length} 个개目</p>
+            <p className="media-count">{list.length} 개 항목</p>
           </>
         )}
         <Empty items={list} />
@@ -433,7 +433,7 @@ export function CalendarSkin(p: Props) {
             <ChevronLeft />
           </button>
           <h2>
-            {year} 년 {month + 1} 月
+            {year} 년 {month + 1} 월
           </h2>
           <button aria-label="다음 달" onClick={() => move(1)}>
             <ChevronRight />
@@ -636,7 +636,7 @@ export function RemindersSkin(p: Props) {
         {list.map((i) => (
           <div className="reminder-row" key={i.id}>
             <button
-              aria-label={`完成${i.title}`}
+              aria-label={`완료: ${i.title}`}
               role="checkbox"
               aria-checked={checked.includes(i.id)}
               onClick={() =>
@@ -696,7 +696,7 @@ export function FilesSkin(p: Props) {
                   </small>
                 </button>
                 <button
-                  aria-label={`다운로드${i.title}文本`}
+                  aria-label={`${i.title} 텍스트 다운로드`}
                   onClick={() =>
                     download(
                       new Blob([i.body], { type: "text/plain" }),
@@ -778,7 +778,7 @@ export function MusicSkin(p: Props) {
           {song.kind === "audio" && safeMedia(song.media) ? (
             <AudioPlayer p={p} item={song} />
           ) : (
-            <button onClick={() => p.onItem(song)}>보기歌曲内容</button>
+            <button onClick={() => p.onItem(song)}>노래 정보 보기</button>
           )}
           <button
             aria-label="다음 곡"
@@ -835,7 +835,7 @@ function LocationMap({
       {items.map((i, n) => (
         <button
           key={i.id}
-          aria-label={`地图位置${i.title}`}
+          aria-label={`지도 위치: ${i.title}`}
           className="map-pin"
           style={{
             left: `${Math.max(5, Math.min(90, Number(meta(i, "x", String(20 + ((n * 17) % 65))))))}%`,
