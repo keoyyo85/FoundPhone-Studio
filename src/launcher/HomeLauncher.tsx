@@ -40,9 +40,9 @@ type Props = {
   clearApp: (id: string) => void;
 };
 const widgetLabels = {
-  calendar: "日历",
+  calendar: "캘린더",
   clock: "시계",
-  weather: "天气",
+  weather: "날씨",
   notes: "메모",
   battery: "배터리",
 };
@@ -482,7 +482,7 @@ export function HomeLauncher(p: Props) {
   );
   const addWidget = () => {
     if (p.layout.widgets.length >= 24) {
-      setError("最多추가24个위젯");
+      setError("위젯은 최대 24개까지 추가할 수 있습니다");
       return;
     }
     p.change((l) => {
@@ -593,7 +593,7 @@ export function HomeLauncher(p: Props) {
             {pages.map((_, i) => (
               <button
                 key={i}
-                aria-label={"前往홈 화면 " + (i + 1) + "페이지"}
+                aria-label={"홈 화면 " + (i + 1) + "페이지"}
                 aria-current={page === i ? "page" : undefined}
                 onClick={() =>
                   pager.current?.scrollTo({
@@ -652,7 +652,7 @@ export function HomeLauncher(p: Props) {
                 : sheet === "widgets"
                   ? "위젯"
                   : sheet === "layout"
-                    ? "保存레이아웃"
+                    ? "레이아웃 저장"
                     : active?.name || "위젯"}
             </strong>
           </header>
@@ -720,7 +720,7 @@ export function HomeLauncher(p: Props) {
                           {category(a.id)} ·{" "}
                           {a.installed
                             ? a.visible
-                              ? "已在홈 화면"
+                              ? "홈 화면에 있음"
                               : "앱 보관함에만 있음"
                             : "설치되지 않음"}
                         </small>
@@ -747,7 +747,7 @@ export function HomeLauncher(p: Props) {
                         {a.installed
                           ? a.visible
                             ? "열기"
-                            : "추가到홈 화면"
+                            : "홈 화면에 추가"
                           : "받기"}
                       </button>
                     </div>
@@ -799,7 +799,7 @@ export function HomeLauncher(p: Props) {
                   <Upload />
                   导入레이아웃JSON
                   <input
-                    aria-label="导入홈 화면레이아웃"
+                    aria-label="홈 화면 레이아웃 가져오기"
                     type="file"
                     accept=".json"
                     onChange={async (e) => {
@@ -807,7 +807,7 @@ export function HomeLauncher(p: Props) {
                       if (!f) return;
                       try {
                         if (f.size > 4 * 1024 * 1024)
-                          throw Error("레이아웃文件过대");
+                          throw Error("레이아웃 파일이 너무 큽니다");
                         p.importLayout(JSON.parse(await f.text()));
                         setSheet("");
                       } catch (err) {
@@ -876,9 +876,9 @@ export function HomeLauncher(p: Props) {
                     <label className="launcher-field">
                       폴더
                       <input
-                        aria-label="폴더名称"
+                        aria-label="폴더 이름"
                         maxLength={80}
-                        placeholder="留空移出폴더"
+                        placeholder="비워 두면 폴더에서 이동"
                         value={active.folder}
                         onChange={(e) =>
                           patch(active.id, (a) => {
@@ -904,7 +904,7 @@ export function HomeLauncher(p: Props) {
                     <label className="launcher-action">
                       아이콘 업로드
                       <input
-                        aria-label="上传App图标"
+                        aria-label="앱 아이콘 업로드"
                         type="file"
                         accept="image/png,image/jpeg,image/webp,image/gif"
                         onChange={async (e) => {
@@ -999,7 +999,7 @@ export function HomeLauncher(p: Props) {
                     </button>
                   </>
                 ) : (
-                  <div role="dialog" aria-label="确认앱 삭제">
+                  <div role="dialog" aria-label="앱 삭제 확인">
                     <h2>삭제{active.name}？</h2>
                     <label className="launcher-checkbox">
                       <input
