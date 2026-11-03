@@ -266,7 +266,7 @@ export function ControlCenter({
         <span>
           <Airplay size={13} />
         </span>
-        控制中心 <ChevronRight size={16} />
+        제어 센터 <ChevronRight size={16} />
       </div>
       <div className="cc-status" aria-label={"셀룰러 " + network}>
         <div>
