@@ -94,7 +94,7 @@ export function NativeSettings({
           <div className="settings-group">
             {row("이름", work.phone.owner + "의 iPhone")}
             {row("iOS 버전", "18.0")}
-            {row("机型이름", "iPhone 15 Pro")}
+            {row("모델명", "iPhone 15 Pro")}
             {row("사진", String(work.data.photos?.length || 0))}
             {row(
               "앱",
@@ -132,7 +132,7 @@ export function NativeSettings({
               {toggle("블루투스", bluetooth, setBluetooth)}
             </div>
             <p className="settings-page-caption">
-              {bluetooth ? "나의 기기" : "블루투스已끔"}
+              {bluetooth ? "나의 기기" : "블루투스가 꺼져 있음"}
             </p>
           </>
         );
@@ -140,7 +140,7 @@ export function NativeSettings({
         return (
           <>
             <div className="settings-group">
-              {row("배터리电量", work.phone.battery + "%")}
+              {row("배터리 잔량", work.phone.battery + "%")}
               {toggle("저전력 모드", lowPower, setLowPower)}
             </div>
             <p className="settings-page-caption">
@@ -153,7 +153,7 @@ export function NativeSettings({
           <div className="settings-group">
             {row("날짜", work.phone.date || "2026-09-01")}
             {row("시간", work.phone.time)}
-            {row("시간대", "中国标准시간")}
+            {row("시간대", "한국 표준시")}
           </div>
         );
       case "iPhone 저장 공간":
