@@ -27,6 +27,9 @@ describe("KakaoTalk character replies", () => {
   it("lets the leader remind the group to respect Jiwoo's comfort", () => {
     expect(kakaoCharacterReply("해원언니", "윤아 언니랑 지우 데이트", 0).sender).toBe("해원언니");
   });
+  it("lets Lily mix enthusiastic English into her replies", () => {
+    expect(kakaoCharacterReply("릴리언니", "지우 언니 보고 싶어", 0).body).toContain("Jiwoo");
+  });
   it("keeps manager replies focused on schedules", () => {
     expect(kakaoCharacterReply("매니저님", "내일 일정 알려주세요", 0).body).toContain("10:30");
   });
