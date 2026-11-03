@@ -38,18 +38,18 @@ export function NativeDetail({
   const media = safeMedia(item.media),
     name =
       app === "notes"
-        ? "备忘录"
+        ? "메모"
         : app === "contacts"
-          ? "通讯录"
+          ? "연락처"
           : app === "photos"
-            ? "所有照片"
+            ? "모든 사진"
             : app === "phone"
-              ? "最近通话"
+              ? "최근 통화"
               : app === "calendar"
-                ? "日历"
+                ? "캘린더"
                 : app === "files"
-                  ? "浏览"
-                  : "书签";
+                  ? "둘러보기"
+                  : "책갈피";
   const copy = async () => {
     try {
       await navigator.clipboard.writeText(item.body);
@@ -61,12 +61,12 @@ export function NativeDetail({
   return (
     <div className={"native-detail native-detail-" + app}>
       <header className="app-nav">
-        <button aria-label="返回" onClick={back}>
+        <button aria-label="뒤로" onClick={back}>
           <ChevronLeft size={24} />
           {name}
         </button>
         <strong>{app === "photos" ? item.time.slice(0, 10) : ""}</strong>
-        <button aria-label="更多操作" onClick={() => setCopied(!copied)}>
+        <button aria-label="추가 작업" onClick={() => setCopied(!copied)}>
           <MoreHorizontal size={23} />
         </button>
       </header>
@@ -74,9 +74,9 @@ export function NativeDetail({
         <div className="native-action-sheet">
           <button onClick={copy}>
             <Copy size={18} />
-            复制文字
+            텍스트 복사
           </button>
-          <button onClick={() => setCopied(false)}>取消</button>
+          <button onClick={() => setCopied(false)}>취소</button>
         </div>
       )}
       {app === "photos" ? (
@@ -92,16 +92,16 @@ export function NativeDetail({
             )}
           </div>
           <footer className="native-detail-toolbar">
-            <button aria-label="分享照片说明" onClick={copy}>
+            <button aria-label="사진 설명 공유" onClick={copy}>
               <Share />
             </button>
             <button
-              aria-label="收藏照片"
+              aria-label="사진 즐겨찾기"
               onClick={() => setFavorite(!favorite)}
             >
               <Heart fill={favorite ? "#007aff" : "none"} />
             </button>
-            <span>{copied ? "已复制" : item.title}</span>
+            <span>{copied ? "복사됨" : item.title}</span>
           </footer>
         </>
       ) : app === "contacts" || app === "phone" ? (
@@ -112,9 +112,9 @@ export function NativeDetail({
           </div>
           <div className="native-contact-actions">
             {[
-              [MessageCircle, "信息"],
-              [Phone, "呼叫"],
-              [Video, "视频"],
+              [MessageCircle, "메시지"],
+              [Phone, "전화"],
+              [Video, "영상 통화"],
             ].map(([Icon, label]) => {
               const Glyph = Icon as typeof Phone;
               return (
@@ -126,17 +126,17 @@ export function NativeDetail({
             })}
           </div>
           <div className="native-detail-group">
-            <small>手机</small>
-            <p className="native-blue">{item.meta.phone || "未设置号码"}</p>
+            <small>휴대전화</small>
+            <p className="native-blue">{item.meta.phone || "번호가 설정되지 않음"}</p>
           </div>
           <div className="native-detail-group">
-            <small>备注</small>
+            <small>메모</small>
             <p>{item.body}</p>
           </div>
           {call && (
             <div className="native-detail-group">
-              <p>作品内模拟 · {item.title}</p>
-              <button onClick={() => setCall(false)}>结束</button>
+              <p>가상 시뮬레이션 · {item.title}</p>
+              <button onClick={() => setCall(false)}>종료</button>
             </div>
           )}
         </div>
@@ -148,11 +148,11 @@ export function NativeDetail({
             <RichText value={item.richText} fallback={item.body} />
           </div>
           <footer className="native-detail-toolbar">
-            <button aria-label="返回文件夹" onClick={back}>
+            <button aria-label="뒤로文件夹" onClick={back}>
               <Folder />
             </button>
             <span />
-            <button aria-label="复制备忘录" onClick={copy}>
+            <button aria-label="复制메모" onClick={copy}>
               {copied ? <Check /> : <Share />}
             </button>
           </footer>
@@ -162,7 +162,7 @@ export function NativeDetail({
           <h1>{item.title}</h1>
           <p>{item.time}</p>
           <div className="native-detail-group">
-            <small>日程</small>
+            <small>일정</small>
             <p>{item.body}</p>
           </div>
           {Object.entries(item.meta).map(([k, v]) => (
@@ -190,7 +190,7 @@ export function NativeDetail({
           <h2>{item.title}</h2>
           <p>{item.body}</p>
           <small>{item.time}</small>
-          <button onClick={copy}>复制内容</button>
+          <button onClick={copy}>콘텐츠 복사</button>
         </div>
       )}
     </div>
