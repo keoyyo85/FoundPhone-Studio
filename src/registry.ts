@@ -59,7 +59,7 @@ const definitions: [
     "messaging",
     "#34c759",
     MessageCircle,
-    ["메시지", "联系人"],
+    ["메시지", "연락처"],
   ],
   ["contacts", "연락처", "records", "#818c98", Users, ["모든 연락처", "그룹"]],
   ["photos", "사진", "media", "#d18769", Image, ["라이브러리", "앨범", "즐겨찾기"]],
@@ -92,9 +92,9 @@ const definitions: [
     "messaging",
     "#36ac67",
     MessageCircle,
-    ["위챗", "연락처", "朋友圈", "프로필"],
+    ["위챗", "연락처", "모멘트", "프로필"],
   ],
-  ["qq", "QQ", "messaging", "#529fd3", Users, ["메시지", "联系人", "공간"]],
+  ["qq", "QQ", "messaging", "#529fd3", Users, ["메시지", "연락처", "공간"]],
   ["weibo", "웨이보", "social", "#db7652", Radio, ["팔로잉", "탐색", "프로필"]],
   [
     "redbook",
@@ -105,7 +105,7 @@ const definitions: [
     ["탐색", "팔로잉", "즐겨찾기"],
   ],
   ["douyin", "더우인", "media", "#292c33", Video, ["추천", "팔로잉", "기록"]],
-  ["bilibili", "哔哩哔哩", "media", "#d785a1", Tv, ["홈", "피드", "기록"]],
+  ["bilibili", "빌리빌리", "media", "#d785a1", Tv, ["홈", "피드", "기록"]],
   ["alipay", "알리페이", "records", "#368dcc", Wallet, ["결제 내역", "카드 지갑"]],
   [
     "taobao",
@@ -124,7 +124,7 @@ const definitions: [
     "messaging",
     "#4daa7b",
     Phone,
-    ["채팅", "피드", "通话", "커뮤니티", "설정"],
+    ["채팅", "피드", "통화", "커뮤니티", "설정"],
   ],
   [
     "instagram",
@@ -162,7 +162,7 @@ const definitions: [
     "messaging",
     "#7380c9",
     MessageCircle,
-    ["채팅", "联系人"],
+    ["채팅", "연락처"],
   ],
   ["reddit", "Reddit", "social", "#d17b57", Radio, ["커뮤니티", "게시물"]],
   ["spotify", "Spotify", "media", "#4ca977", Music, ["음악", "플레이리스트"]],
@@ -170,13 +170,13 @@ const definitions: [
   ["pinterest", "Pinterest", "social", "#b96d70", Pin, ["탐색", "저장"]],
   [
     "kakao",
-    "KakaoTalk",
+    "카카오톡",
     "messaging",
     "#fee500",
     MessageCircle,
     ["친구", "채팅"],
   ],
-  ["appstore", "App Store", "system", "#087cff", ShoppingBag, ["搜索"]],
+  ["appstore", "App Store", "system", "#087cff", ShoppingBag, ["검색"]],
   ["threads", "Threads", "social", "#4d5150", AtSign, ["피드", "답글"]],
 ];
 export const registry: AppPlugin[] = definitions.map(
