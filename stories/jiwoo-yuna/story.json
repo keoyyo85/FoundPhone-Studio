@@ -488,7 +488,7 @@
           "body": "언니들 저 아직 단톡방에 있어요… 다 읽고 있거든요 ㅋㅋ"
         },
         {
-          "id": "kakao-practice-group-ko-08",
+          "id": "group-yuna-02",
           "senderId": "yuna",
           "time": "2026-11-03 14:49",
           "body": "지우야 미안 ㅎㅎ 이따가 내가 따로 연락할게 🤍"
@@ -954,8 +954,8 @@
         "hidden": true,
         "likes": 18,
         "comments": [
-          "有些溫柔真的會記很久。",
-          "希望妳今晚也能好好休息。"
+          "어떤 다정함은 오래 기억에 남아.",
+          "오늘 밤은 푹 쉬었으면 좋겠어."
         ],
         "meta": {
           "handle": "yuna_private",
@@ -989,6 +989,15 @@
         "folder": "비밀",
         "hidden": true,
         "time": "2026-11-02 19:10"
+      },
+      {
+        "id": "note-group-secret",
+        "title": "단체방에서 발견한 짧은 메모",
+        "body": "윤아가 지우에게 보내려다 단체방에 잘못 올릴 뻔한 메시지.\n\n'오늘 지우랑 같이 있으면 좋겠다. 괜히 자꾸 웃게 돼.'\n\n곧바로 삭제했지만, 누군가 이미 읽은 것 같다.",
+        "kind": "note",
+        "folder": "비밀",
+        "hidden": true,
+        "time": "2026-11-03 15:05"
       }
     ],
     "calendar": [
@@ -1118,8 +1127,8 @@
         "kind": "post",
         "likes": 1260,
         "comments": [
-          "我也看到那個對視了哈哈",
-          "不要太過度猜測，支持她們的作品就好。"
+          "나도 그 눈빛 봤어 ㅋㅋ",
+          "너무 추측하지 말고 두 사람의 활동을 응원하자."
         ],
         "meta": {
           "handle": "mixxpopcorn"
@@ -1135,8 +1144,8 @@
         "kind": "post",
         "likes": 842,
         "comments": [
-          "完全同意。喜歡就好好支持，不要造成壓力。",
-          "希望大家把注意力也放回音樂和舞台。"
+          "완전 동의해. 좋아하는 마음은 응원으로 전하고 부담은 주지 말자.",
+          "음악과 무대에도 관심을 많이 보내 줬으면!"
         ],
         "meta": {
           "handle": "blue_mixx"
@@ -1170,8 +1179,8 @@
         "time": "2026-11-02 19:20",
         "likes": 241,
         "comments": [
-          "說得好，喜歡她們就要尊重她們。",
-          "粉絲圈也需要這種提醒。"
+          "맞는 말이야. 좋아한다면 존중해야지.",
+          "팬덤에도 이런 말이 필요해."
         ],
         "meta": {
           "handle": "softmixx"
@@ -1234,7 +1243,7 @@
         {
           "type": "notification",
           "key": "",
-          "value": "備忘錄：一則隱藏內容已解鎖"
+          "value": "메모 · 숨겨진 콘텐츠가 잠금 해제되었습니다."
         }
       ]
     },
@@ -1281,7 +1290,8 @@
       "next": [
         "ending-dinner-confession",
         "ending-rainy-walk",
-        "ending-missed-chance"
+        "ending-missed-chance",
+        "ending-quiet-promise"
       ]
     },
     {
@@ -1445,6 +1455,36 @@
           "value": "천천히 함께 걷는 밤: 지우는 당장 답을 정하지 않고 윤아의 손을 잡는다. 성수동의 가로등 아래 두 사람은 서두르지 않고 서로의 마음을 확인한다."
         }
       ]
+    },
+    {
+      "id": "unlock-group-secret",
+      "label": "단체방에서 윤아의 메시지를 읽고 비밀 메모 발견",
+      "event": "read",
+      "target": "group-yuna-02",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "note-group-secret",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "메모 · 단체방에서 숨겨진 메모를 발견했습니다."
+        }
+      ]
+    },
+    {
+      "id": "ending-quiet-promise",
+      "label": "서로의 속도로 시작하는 비밀 약속",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "",
+          "value": "서로의 속도로 시작하는 비밀 약속: 지우는 오늘 당장 모든 답을 정하지 않는다. 대신 윤아의 손을 꼭 잡고, 다음 연습이 끝난 뒤 둘만의 시간을 다시 만들자고 약속한다. 윤아는 안도한 듯 웃으며 지우의 손등에 조용히 입을 맞춘다."
+        }
+      ]
     }
   ],
   "tests": [
@@ -1531,6 +1571,25 @@
         "note-yuna-draft",
         "photo-cafe-polaroid"
       ]
+    },
+    {
+      "name": "ending-quiet-promise",
+      "steps": [
+        {
+          "event": "like",
+          "target": "ig-yuna-story"
+        },
+        {
+          "event": "callAnswered",
+          "target": "call-yuna"
+        },
+        {
+          "choose": "ending-quiet-promise",
+          "target": ""
+        }
+      ],
+      "ending": "서로의 속도로 시작하는 비밀 약속: 지우는 오늘 당장 모든 답을 정하지 않는다. 대신 윤아의 손을 꼭 잡고, 다음 연습이 끝난 뒤 둘만의 시간을 다시 만들자고 약속한다. 윤아는 안도한 듯 웃으며 지우의 손등에 조용히 입을 맞춘다.",
+      "expectUnlocked": []
     }
   ]
 }
