@@ -157,8 +157,8 @@ export function ContactsSkin(p: Props) {
         >
           <Avatar name={p.owner ?? "나"} />
           <span>
-            <strong>{p.owner ?? "나的名片"}</strong>
-            <small>나的名片</small>
+            <strong>{p.owner ?? "내 명함"}</strong>
+            <small>내 명함</small>
           </span>
         </button>
         {groupItems(items, "모든 연락처").map((g) => (
@@ -370,7 +370,7 @@ export function NotesSkin(p: Props) {
           <Folder size={17} />
           파일夹
         </button>
-        <h1>{folder || "所有메모"}</h1>
+        <h1>{folder || "모든 메모"}</h1>
         <SearchBox value={q} set={setQ} />
         {!folder && (
           <div className="note-folders">
@@ -393,7 +393,7 @@ export function NotesSkin(p: Props) {
               </strong>
               <p>
                 <time>{i.time.slice(5, 10)}</time>{" "}
-                {i.password ? "已锁定的메모" : i.body.split("\n")[0]}
+                {i.password ? "잠긴 메모" : i.body.split("\n")[0]}
               </p>
               <small>{i.folder}</small>
             </button>
@@ -403,7 +403,7 @@ export function NotesSkin(p: Props) {
       </div>
       <div className="notes-footer">
         <span>{list.length} 则메모</span>
-        <Add p={p} label="新建메모" />
+        <Add p={p} label="새 메모" />
       </div>
     </div>
   );
@@ -440,7 +440,7 @@ export function CalendarSkin(p: Props) {
           </button>
         </div>
         <div className="calendar-grid">
-          {["日", "一", "二", "三", "四", "五", "六"].map((t) => (
+          {["일", "월", "화", "수", "목", "금", "토"].map((t) => (
             <small key={t}>{t}</small>
           ))}
           {Array.from({ length: first }, (_, i) => (
@@ -462,7 +462,7 @@ export function CalendarSkin(p: Props) {
           ))}
         </div>
         <h4 className="native-section">
-          {month + 1} 月 {day} 日
+          {month + 1} 月 {day} 일
         </h4>
         {list.map((i) => (
           <button
@@ -666,7 +666,7 @@ export function FilesSkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "최근 항목");
   const [folder, setFolder] = useState("");
   const list = folder
-    ? items.filter((i) => (i.folder || "나的iPhone") === folder)
+    ? items.filter((i) => (i.folder || "나의 iPhone") === folder)
     : items;
   return (
     <div className="catalog-skin native-files">
@@ -676,7 +676,7 @@ export function FilesSkin(p: Props) {
         <SearchBox value={q} set={setQ} />
         {tab === "둘러보기" && !folder ? (
           <div className="file-folders">
-            {groupItems(items, "나的iPhone").map((g) => (
+            {groupItems(items, "나의 iPhone").map((g) => (
               <button key={g} onClick={() => setFolder(g)}>
                 <Folder size={45} />
                 <strong>{g}</strong>
@@ -734,11 +734,11 @@ export function MusicSkin(p: Props) {
         <h1>{tab}</h1>
         {tab === "플레이리스트" ? (
           <div className="music-albums">
-            {groupItems(items, "나的音乐").map((g) => (
+            {groupItems(items, "내 음악").map((g) => (
               <button
                 key={g}
                 onClick={() => {
-                  const i = items.find((i) => (i.folder || "나的音乐") === g);
+                  const i = items.find((i) => (i.folder || "내 음악") === g);
                   if (i) setSong(i);
                 }}
               >
@@ -856,7 +856,7 @@ export function MapsSkin(p: Props) {
       <Header p={p} />
       <LocationMap items={items} onItem={p.onItem} />
       <div className="map-sheet">
-        <SearchBox value={q} set={setQ} placeholder="搜索虚构장소" />
+        <SearchBox value={q} set={setQ} placeholder="가상 장소 검색" />
         <div className="map-places">
           {items.map((i) => (
             <Row key={i.id} item={i} onItem={p.onItem} leading={<MapPin />} />
