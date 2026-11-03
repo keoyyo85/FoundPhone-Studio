@@ -51,10 +51,10 @@ export function NativeComposer({
   return (
     <button
       className="native-compose-field"
-      aria-label={creator ? "添加消息" : "메시지 입력"}
+      aria-label={creator ? "메시지 추가" : "메시지 입력"}
       onClick={() => (creator ? onAdd() : open(true))}
     >
-      {creator ? "添加消息" : ""}
+      {creator ? "메시지 추가" : ""}
     </button>
   );
 }
@@ -184,7 +184,7 @@ export function DeviceLock({
                 n ? (
                   <button
                     key={i}
-                    aria-label={"密码键" + n}
+                    aria-label={"암호 키" + n}
                     onClick={() => digit(n)}
                   >
                     <b>{n}</b>
@@ -219,7 +219,7 @@ export function DeviceLock({
           <div className="pin-footer">
             <button onClick={() => setPinOpen(false)}>취소</button>
             <button
-              aria-label="삭제一자리"
+              aria-label="한 자리 삭제"
               onClick={() => (code ? digit("⌫") : setPinOpen(false))}
             >
               {code ? "삭제" : "취소"}
@@ -252,13 +252,13 @@ export function ControlCenter({
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: -100, opacity: 0 }}
     >
-      <button className="cc-close" aria-label="关闭控制中心" onClick={close}>
+      <button className="cc-close" aria-label="제어 센터 닫기" onClick={close}>
         <Power />
       </button>
       <button
         className="cc-edit"
-        aria-label="控制中心编辑"
-        onClick={() => setTool("编辑控制")}
+        aria-label="제어 센터 편집"
+        onClick={() => setTool("제어 편집")}
       >
         <Plus />
       </button>
@@ -361,17 +361,17 @@ export function ControlCenter({
           <span>집중 모드</span>
           <ChevronDown size={14} />
         </button>
-        <button className="cc-home" onClick={() => setTool("家庭")}>
+        <button className="cc-home" onClick={() => setTool("홈")}>
           <House size={38} />
           <span>홈이 설정되지 않음</span>
         </button>
         {[Flashlight, Timer, Calculator, Camera].map((Icon, i) => (
           <button
             className={"cc-square cc-tool-" + i}
-            aria-label={["손전등", "타이머", "计算器", "카메라"][i]}
+            aria-label={["손전등", "타이머", "계산기", "카메라"][i]}
             key={i}
             onClick={() =>
-              setTool(tool ? "" : ["손전등", "타이머", "计算器", "카메라"][i])
+              setTool(tool ? "" : ["손전등", "타이머", "계산기", "카메라"][i])
             }
           >
             <Icon />
@@ -418,7 +418,7 @@ export function DeviceKeyboard({ close }: { close: () => void }) {
           onChange={(e) => setValue(e.target.value)}
           placeholder="메시지 입력"
         />
-        <button aria-label="收起键盘" onClick={close}>
+        <button aria-label="키보드 닫기" onClick={close}>
           <ChevronDown />
         </button>
       </div>
@@ -439,7 +439,7 @@ export function DeviceKeyboard({ close }: { close: () => void }) {
           {i === 2 && (
             <button
               className="key-special"
-              aria-label="切换大小写"
+              aria-label="대소문자 전환"
               onClick={() => setShift(!shift)}
             >
               <ArrowUp size={19} />
@@ -456,7 +456,7 @@ export function DeviceKeyboard({ close }: { close: () => void }) {
           {i === 2 && (
             <button
               className="key-special"
-              aria-label="退格"
+              aria-label="지우기"
               onClick={() => setValue(value.slice(0, -1))}
             >
               <Delete size={20} />
