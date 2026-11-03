@@ -144,7 +144,7 @@ export function NativeSettings({
               {toggle("저전력 모드", lowPower, setLowPower)}
             </div>
             <p className="settings-page-caption">
-              저전력 모드仅改变虚拟设备状态。
+              저전력 모드는 가상 기기의 상태만 변경합니다.
             </p>
           </>
         );
