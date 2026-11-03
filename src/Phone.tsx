@@ -86,7 +86,7 @@ export function AppIcon({
       <span className="app-icon" style={{ background: a.color }}>
         {custom ? (
           safeMedia(custom) ? (
-            <img src={safeMedia(custom)} alt="自定义图标" />
+            <img src={safeMedia(custom)} alt="사용자 지정 아이콘" />
           ) : (
             <span>{custom.slice(0, 2)}</span>
           )
@@ -402,7 +402,7 @@ function PhoneRuntime({
             <button
               className="signals"
               onClick={() => setPanel(panel === "control" ? "" : "control")}
-              aria-label="控制中心"
+              aria-label="제어 센터"
             >
               <StatusGlyph kind="cellular" />
               <StatusGlyph kind="wifi" />
@@ -777,7 +777,7 @@ function PhoneRuntime({
           )}
           <button
             className="home-indicator"
-            aria-label="返回桌面"
+            aria-label="홈 화면으로 돌아가기"
             onClick={() => {
               if (gestureConsumed.current) return;
               if (locked) {
@@ -812,7 +812,7 @@ function AppSearch({
       <input
         autoFocus
         value={q}
-        placeholder="App 名称"
+        placeholder="앱 이름"
         onChange={(e) => set(e.target.value)}
       />
       {apps
@@ -845,12 +845,12 @@ function Media({ item }: { item: Item }) {
       className={`original-art art-${item.id.includes("ticket") ? "ticket" : "rain"}`}
     >
       <span>
-        {item.id.includes("ticket") ? "城南 / SOUTHBOUND" : "after the rain"}
+        {item.id.includes("ticket") ? "성수 / SOUTHBOUND" : "after the rain"}
       </span>
-      <strong>{item.id.includes("ticket") ? "09 · 01" : "雨 后"}</strong>
+      <strong>{item.id.includes("ticket") ? "09 · 01" : "비 온 뒤"}</strong>
       <small>
         {item.id.includes("ticket")
-          ? "16:30 · 一张未완료的约定"
+          ? "16:30 · 아직 끝나지 않은 약속"
           : "a little moment of quiet"}
       </small>
     </div>
@@ -899,7 +899,7 @@ function AppContent({
       (i.title + i.body + i.sender).toLowerCase().includes(q.toLowerCase()),
     );
   const filtered =
-    tab === "收藏"
+    tab === "즐겨찾기"
       ? shown.filter((i) => i.favorite)
       : tab === app.tabs[0]
         ? shown
@@ -935,7 +935,7 @@ function AppContent({
           <h3>这条콘텐츠已锁定</h3>
           <input
             type="password"
-            placeholder="콘텐츠密码"
+            placeholder="콘텐츠 암호"
             value={pw}
             onChange={(e) => setPw(e.target.value)}
           />
@@ -1029,7 +1029,7 @@ function AppContent({
           ) : (
             <>
               <div className="app-nav">
-                <button aria-label="返回" onClick={back}>
+                <button aria-label="뒤로" onClick={back}>
                   <ChevronLeft size={23} />
                 </button>
                 <strong>{detail.title}</strong>
@@ -1043,9 +1043,9 @@ function AppContent({
   return (
     <>
       <div className="app-nav">
-        <button onClick={back} aria-label="返回">
+        <button onClick={back} aria-label="뒤로">
           <ChevronLeft size={23} />
-          {detail || thread ? "返回" : ""}
+          {detail || thread ? "뒤로" : ""}
         </button>
         <strong>{thread || name}</strong>
         <button
@@ -1133,7 +1133,7 @@ function AppContent({
             <div className="phone-search">
               <Search size={15} />
               <input
-                placeholder={`搜索${name}`}
+                placeholder={`검색${name}`}
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
               />
@@ -1174,7 +1174,7 @@ function AppContent({
                   <button key={i.id} onClick={() => read(i)}>
                     <Media item={i} />
                     <span>
-                      {i.title} {creator && i.hidden ? "· 隐藏" : ""}
+                      {i.title} {creator && i.hidden ? "· 숨김" : ""}
                     </span>
                   </button>
                 ))}
@@ -1191,7 +1191,7 @@ function AppContent({
                     <strong>{i.sender}</strong>
                     <small>{i.time}</small>
                   </div>
-                  <button aria-label="查看게시물详情" onClick={() => read(i)}>
+                  <button aria-label="게시물 상세 보기" onClick={() => read(i)}>
                     <MoreHorizontal size={20} />
                   </button>
                 </div>
@@ -1200,7 +1200,7 @@ function AppContent({
                 </button>
                 <div className="post-actions">
                   <button
-                    aria-label="虚构点赞"
+                    aria-label="가상 좋아요"
                     onClick={() =>
                       setLikes(
                         likes.includes(i.id)
@@ -1214,7 +1214,7 @@ function AppContent({
                       fill={likes.includes(i.id) ? "#d67670" : "none"}
                     />
                   </button>
-                  <button aria-label="查看评论" onClick={() => read(i)}>
+                  <button aria-label="댓글 보기" onClick={() => read(i)}>
                     <MessageCircle size={22} />
                   </button>
                   <small>
