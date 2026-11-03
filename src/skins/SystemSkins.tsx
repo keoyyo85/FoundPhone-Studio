@@ -43,18 +43,18 @@ import {
   type Props,
 } from "./shared";
 export function PhoneSkin(p: Props) {
-  const { tab, setTab, q, setQ, items } = useContent(p, "最近通话");
+  const { tab, setTab, q, setQ, items } = useContent(p, "최근 통화");
   const [digits, setDigits] = useState(""),
     [call, setCall] = useState("");
-  const list = tab === "收藏" ? items.filter((i) => i.favorite) : items;
+  const list = tab === "즐겨찾기" ? items.filter((i) => i.favorite) : items;
   return (
     <div className="catalog-skin native-phone">
       <Header p={p} />
       <div className="catalog-scroll">
         <h1>{tab}</h1>
-        {tab === "拨号键盘" ? (
+        {tab === "키패드" ? (
           <div className="dialer">
-            <output>{digits || "输入号码"}</output>
+            <output>{digits || "번호 입력"}</output>
             <div>
               {["1", "2", "3", "4", "5", "6", "7", "8", "9", "*", "0", "#"].map(
                 (k) => (
@@ -83,7 +83,7 @@ export function PhoneSkin(p: Props) {
             <button
               className="dial-call"
               disabled={!digits}
-              aria-label="模拟拨号"
+              aria-label="가상 전화 걸기"
               onClick={() => {
                 setCall(digits);
                 const i = items.find((i) => meta(i, "number") === digits);
@@ -101,7 +101,7 @@ export function PhoneSkin(p: Props) {
             <SearchBox value={q} set={setQ} />
             {list.map((i) => (
               <button
-                className={`call-row ${meta(i, "status") === "未接" ? "missed" : ""}`}
+                className={`call-row ${meta(i, "status") === "부재중" ? "missed" : ""}`}
                 key={i.id}
                 onClick={() => p.onItem(i)}
               >
@@ -110,7 +110,7 @@ export function PhoneSkin(p: Props) {
                   <strong>{i.title}</strong>
                   <small>
                     {meta(i, "number", i.sender)} ·{" "}
-                    {meta(i, "status", "通话记录")}
+                    {meta(i, "status", "통화 기록")}
                   </small>
                 </span>
                 <time>{i.time.slice(5, 10)}</time>
@@ -121,7 +121,7 @@ export function PhoneSkin(p: Props) {
         )}
       </div>
       <Tabs
-        tabs={["收藏", "最近通话", "通讯录", "拨号键盘"]}
+        tabs={["즐겨찾기", "최근 통화", "연락처", "키패드"]}
         value={tab}
         set={setTab}
         icons={[<Star />, <Clock />, <Users />, <Grid />]}
@@ -132,7 +132,7 @@ export function PhoneSkin(p: Props) {
           <Avatar name={call} />
           <h2>{call}</h2>
           <p>这是作品内的通话模拟</p>
-          <button aria-label="挂断" onClick={() => setCall("")}>
+          <button aria-label="끊기" onClick={() => setCall("")}>
             <Phone />
           </button>
         </div>
@@ -141,12 +141,12 @@ export function PhoneSkin(p: Props) {
   );
 }
 export function ContactsSkin(p: Props) {
-  const { q, setQ, items } = useContent(p, "所有联系人");
+  const { q, setQ, items } = useContent(p, "모든 연락처");
   return (
     <div className="catalog-skin native-contacts">
       <Header p={p} />
       <div className="catalog-scroll">
-        <h1>通讯录</h1>
+        <h1>연락처</h1>
         <SearchBox value={q} set={setQ} />
         <button
           className="contact-self"
@@ -155,17 +155,17 @@ export function ContactsSkin(p: Props) {
             else if (p.creator) p.onAdd();
           }}
         >
-          <Avatar name={p.owner ?? "我"} />
+          <Avatar name={p.owner ?? "나"} />
           <span>
-            <strong>{p.owner ?? "我的名片"}</strong>
-            <small>我的名片</small>
+            <strong>{p.owner ?? "나的名片"}</strong>
+            <small>나的名片</small>
           </span>
         </button>
-        {groupItems(items, "所有联系人").map((g) => (
+        {groupItems(items, "모든 연락처").map((g) => (
           <section key={g}>
             <h4 className="native-section">{g}</h4>
             {items
-              .filter((i) => (i.folder || "所有联系人") === g)
+              .filter((i) => (i.folder || "모든 연락처") === g)
               .sort((a, b) => a.title.localeCompare(b.title, "zh-CN"))
               .map((i) => (
                 <Row
@@ -183,29 +183,29 @@ export function ContactsSkin(p: Props) {
   );
 }
 export function PhotosSkin(p: Props) {
-  const { tab, setTab, q, setQ, items } = useContent(p, "图库");
+  const { tab, setTab, q, setQ, items } = useContent(p, "라이브러리");
   const [album, setAlbum] = useState("");
   const list =
-    tab === "收藏"
+    tab === "즐겨찾기"
       ? items.filter((i) => i.favorite)
       : album
-        ? items.filter((i) => (i.folder || "未分类") === album)
+        ? items.filter((i) => (i.folder || "분류되지 않음") === album)
         : items;
   return (
     <div className="catalog-skin native-photos">
       <Header p={p} />
       <div className="catalog-scroll">
         <h1>{album || tab}</h1>
-        {tab === "相簿" && !album ? (
+        {tab === "앨범" && !album ? (
           <div className="album-grid">
-            {groupItems(items, "未分类").map((g) => (
+            {groupItems(items, "분류되지 않음").map((g) => (
               <button key={g} onClick={() => setAlbum(g)}>
                 <Media
-                  item={items.find((i) => (i.folder || "未分类") === g)!}
+                  item={items.find((i) => (i.folder || "분류되지 않음") === g)!}
                 />
                 <strong>{g}</strong>
                 <small>
-                  {items.filter((i) => (i.folder || "未分类") === g).length} 项
+                  {items.filter((i) => (i.folder || "분류되지 않음") === g).length} 项
                 </small>
               </button>
             ))}
@@ -231,7 +231,7 @@ export function PhotosSkin(p: Props) {
         <Empty items={list} />
       </div>
       <Tabs
-        tabs={["图库", "相簿", "收藏"]}
+        tabs={["라이브러리", "앨범", "즐겨찾기"]}
         value={tab}
         set={(t) => {
           setTab(t);
@@ -243,10 +243,10 @@ export function PhotosSkin(p: Props) {
   );
 }
 export function CameraSkin(p: Props) {
-  const [mode, setMode] = useState("照片"),
+  const [mode, setMode] = useState("사진"),
     [index, setIndex] = useState(0);
   const frames = p.items.filter((i) =>
-    mode === "视频" ? i.kind === "video" : i.kind !== "video",
+    mode === "비디오" ? i.kind === "video" : i.kind !== "video",
   );
   const frame = frames[index % Math.max(frames.length, 1)];
   return (
@@ -254,14 +254,14 @@ export function CameraSkin(p: Props) {
       <Header p={p} />
       <div className="camera-top">
         <span>闪光灯关闭</span>
-        <span>{mode === "视频" ? "HD · 30" : "4:3"}</span>
+        <span>{mode === "비디오" ? "HD · 30" : "4:3"}</span>
       </div>
       <div className="camera-view">
         {frame ? <Media item={frame} /> : <p>未设置取景画面</p>}
         <div className="camera-grid" />
       </div>
       <div className="camera-mode">
-        {["视频", "照片"].map((m) => (
+        {["비디오", "사진"].map((m) => (
           <button
             className={mode === m ? "selected" : ""}
             key={m}
@@ -276,7 +276,7 @@ export function CameraSkin(p: Props) {
       </div>
       <div className="camera-controls">
         <button
-          aria-label="查看上一画面"
+          aria-label="이전 화면 보기"
           disabled={!frames.length}
           onClick={() => setIndex((i) => (i + 1) % frames.length)}
         >
@@ -284,14 +284,14 @@ export function CameraSkin(p: Props) {
         </button>
         <button
           className="camera-shutter"
-          aria-label={p.creator ? "编辑拍摄画面" : "查看拍摄内容"}
+          aria-label={p.creator ? "촬영 화면 편집" : "촬영 콘텐츠 보기"}
           disabled={!p.creator && !frame}
           onClick={() => (p.creator ? p.onAdd() : frame && p.onItem(frame))}
         >
           <span />
         </button>
         <button
-          aria-label="切换取景画面"
+          aria-label="카메라 화면 전환"
           disabled={frames.length < 2}
           onClick={() => setIndex((i) => i + 1)}
         >
@@ -304,7 +304,7 @@ export function CameraSkin(p: Props) {
 }
 export function SafariSkin(p: Props) {
   const [q, setQ] = useState(""),
-    [tab, setTab] = useState("歷史紀錄");
+    [tab, setTab] = useState("방문 기록");
   const items = p.items
     .filter((i) =>
       (i.title + i.body + meta(i, "url"))
@@ -312,9 +312,9 @@ export function SafariSkin(p: Props) {
         .includes(q.toLowerCase()),
     )
     .filter((i) =>
-      tab === "書籤"
-        ? i.favorite || i.folder !== "歷史紀錄"
-        : i.folder === "歷史紀錄",
+      tab === "책갈피"
+        ? i.favorite || i.folder !== "방문 기록"
+        : i.folder === "방문 기록",
     );
   return (
     <div className="catalog-skin native-safari">
@@ -332,15 +332,15 @@ export function SafariSkin(p: Props) {
             </button>
           ))}
         </div>
-        <Empty items={items} label="沒有符合的虛構網頁" />
+        <Empty items={items} label="일치하는 가상 웹페이지가 없습니다" />
       </div>
       <label className="safari-address">
         <LockKeyhole size={13} />
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="搜尋或輸入虛構網址"
-          aria-label="網址列"
+          placeholder="검색어 또는 웹 주소 입력"
+          aria-label="주소 표시줄"
           onKeyDown={(e) => {
             if (e.key === "Enter" && items[0]) p.onItem(items[0]);
           }}
@@ -348,7 +348,7 @@ export function SafariSkin(p: Props) {
         <Search size={16} />
       </label>
       <Tabs
-        tabs={["書籤", "歷史紀錄"]}
+        tabs={["책갈피", "방문 기록"]}
         value={tab}
         set={setTab}
         icons={[<Globe />, <Clock />]}
@@ -357,10 +357,10 @@ export function SafariSkin(p: Props) {
   );
 }
 export function NotesSkin(p: Props) {
-  const { q, setQ, items } = useContent(p, "备忘录");
+  const { q, setQ, items } = useContent(p, "메모");
   const [folder, setFolder] = useState<string | null>(null);
   const list = folder
-    ? items.filter((i) => (i.folder || "备忘录") === folder)
+    ? items.filter((i) => (i.folder || "메모") === folder)
     : items;
   return (
     <div className="catalog-skin native-notes">
@@ -368,18 +368,18 @@ export function NotesSkin(p: Props) {
       <div className="catalog-scroll">
         <button className="notes-back" onClick={() => setFolder(null)}>
           <Folder size={17} />
-          文件夹
+          파일夹
         </button>
-        <h1>{folder || "所有备忘录"}</h1>
+        <h1>{folder || "所有메모"}</h1>
         <SearchBox value={q} set={setQ} />
         {!folder && (
           <div className="note-folders">
-            {groupItems(items, "备忘录").map((g) => (
+            {groupItems(items, "메모").map((g) => (
               <button key={g} onClick={() => setFolder(g)}>
                 <Folder size={17} />
                 {g}
                 <small>
-                  {items.filter((i) => (i.folder || "备忘录") === g).length}
+                  {items.filter((i) => (i.folder || "메모") === g).length}
                 </small>
               </button>
             ))}
@@ -393,7 +393,7 @@ export function NotesSkin(p: Props) {
               </strong>
               <p>
                 <time>{i.time.slice(5, 10)}</time>{" "}
-                {i.password ? "已锁定的备忘录" : i.body.split("\n")[0]}
+                {i.password ? "已锁定的메모" : i.body.split("\n")[0]}
               </p>
               <small>{i.folder}</small>
             </button>
@@ -402,8 +402,8 @@ export function NotesSkin(p: Props) {
         <Empty items={list} />
       </div>
       <div className="notes-footer">
-        <span>{list.length} 则备忘录</span>
-        <Add p={p} label="新建备忘录" />
+        <span>{list.length} 则메모</span>
+        <Add p={p} label="新建메모" />
       </div>
     </div>
   );
@@ -429,13 +429,13 @@ export function CalendarSkin(p: Props) {
       <Header p={p} />
       <div className="catalog-scroll">
         <div className="month-title">
-          <button aria-label="上个月" onClick={() => move(-1)}>
+          <button aria-label="지난달" onClick={() => move(-1)}>
             <ChevronLeft />
           </button>
           <h2>
             {year} 年 {month + 1} 月
           </h2>
-          <button aria-label="下个月" onClick={() => move(1)}>
+          <button aria-label="다음 달" onClick={() => move(1)}>
             <ChevronRight />
           </button>
         </div>
@@ -477,26 +477,26 @@ export function CalendarSkin(p: Props) {
             </div>
           </button>
         ))}
-        <Empty items={list} label="当天没有日程" />
-        <Add p={p} label="添加日程" />
+        <Empty items={list} label="오늘 일정이 없습니다" />
+        <Add p={p} label="일정 추가" />
       </div>
     </div>
   );
 }
 export function MailSkin(p: Props) {
-  const { tab, setTab, q, setQ, items } = useContent(p, "收件箱");
+  const { tab, setTab, q, setQ, items } = useContent(p, "받은 편지함");
   const list = items.filter(
     (i) =>
-      tab === "全部邮件" ||
+      tab === "모든 메일" ||
       i.folder === tab ||
-      (tab === "收件箱" &&
-        (!i.folder || !["草稿", "已发送"].includes(i.folder))),
+      (tab === "받은 편지함" &&
+        (!i.folder || !["임시 보관함", "보낸 편지함"].includes(i.folder))),
   );
   return (
     <div className="catalog-skin native-mail">
       <Header p={p} />
       <div className="mail-folders">
-        {["收件箱", "草稿", "已发送", "全部邮件"].map((t) => (
+        {["받은 편지함", "임시 보관함", "보낸 편지함", "모든 메일"].map((t) => (
           <button
             key={t}
             className={tab === t ? "selected" : ""}
@@ -528,13 +528,13 @@ export function MailSkin(p: Props) {
       </div>
       <footer className="mail-footer">
         <span>{list.length} 封邮件</span>
-        <Add p={p} label="写邮件" />
+        <Add p={p} label="메일 작성" />
       </footer>
     </div>
   );
 }
 export function ClockSkin(p: Props) {
-  const { tab, setTab, items } = useContent(p, "闹钟");
+  const { tab, setTab, items } = useContent(p, "알람");
   const [enabled, setEnabled] = useSkinState<string[]>(p, "alarms", []),
     [seconds, setSeconds] = useState(0),
     [running, setRunning] = useState(false);
@@ -548,7 +548,7 @@ export function ClockSkin(p: Props) {
       <Header p={p} />
       <div className="catalog-scroll">
         <h1>{tab}</h1>
-        {tab === "秒表" ? (
+        {tab === "스톱워치" ? (
           <div className="stopwatch">
             <output>
               {String(Math.floor(seconds / 60)).padStart(2, "0")}:
@@ -564,7 +564,7 @@ export function ClockSkin(p: Props) {
                 复位
               </button>
               <button onClick={() => setRunning(!running)}>
-                {running ? "暂停" : "开始"}
+                {running ? "일시 정지" : "시작"}
               </button>
             </div>
           </div>
@@ -574,13 +574,13 @@ export function ClockSkin(p: Props) {
               <button onClick={() => p.onItem(i)}>
                 <time>{meta(i, "clock", i.time.slice(-5))}</time>
                 <small>
-                  {tab === "世界时钟" ? meta(i, "city", i.title) : i.title}
+                  {tab === "세계 시계" ? meta(i, "city", i.title) : i.title}
                 </small>
               </button>
-              {tab === "闹钟" ? (
+              {tab === "알람" ? (
                 <button
                   role="switch"
-                  aria-label={`闹钟${i.title}`}
+                  aria-label={`알람${i.title}`}
                   aria-checked={enabled.includes(i.id)}
                   className={`native-switch ${enabled.includes(i.id) ? "on" : ""}`}
                   onClick={() =>
@@ -601,7 +601,7 @@ export function ClockSkin(p: Props) {
         )}
       </div>
       <Tabs
-        tabs={["世界时钟", "闹钟", "秒表"]}
+        tabs={["세계 시계", "알람", "스톱워치"]}
         value={tab}
         set={setTab}
         icons={[<Globe />, <Clock />, <Clock />]}
@@ -610,10 +610,10 @@ export function ClockSkin(p: Props) {
   );
 }
 export function RemindersSkin(p: Props) {
-  const { tab, setTab, q, setQ, items } = useContent(p, "全部");
+  const { tab, setTab, q, setQ, items } = useContent(p, "전체");
   const [checked, setChecked] = useSkinState<string[]>(p, "checked", []);
   const list =
-    tab === "已完成"
+    tab === "완료됨"
       ? items.filter((i) => checked.includes(i.id))
       : items.filter((i) => !checked.includes(i.id));
   return (
@@ -622,11 +622,11 @@ export function RemindersSkin(p: Props) {
       <div className="catalog-scroll">
         <SearchBox value={q} set={setQ} />
         <div className="reminder-categories">
-          {["全部", "已完成"].map((t) => (
+          {["전체", "완료됨"].map((t) => (
             <button key={t} onClick={() => setTab(t)}>
               <Calendar size={22} />
               <strong>
-                {t === "全部" ? items.length - checked.length : checked.length}
+                {t === "전체" ? items.length - checked.length : checked.length}
               </strong>
               <span>{t}</span>
             </button>
@@ -657,16 +657,16 @@ export function RemindersSkin(p: Props) {
             </button>
           </div>
         ))}
-        <Add p={p} label="新提醒事项" />
+        <Add p={p} label="새 미리 알림" />
       </div>
     </div>
   );
 }
 export function FilesSkin(p: Props) {
-  const { tab, setTab, q, setQ, items } = useContent(p, "最近项目");
+  const { tab, setTab, q, setQ, items } = useContent(p, "최근 항목");
   const [folder, setFolder] = useState("");
   const list = folder
-    ? items.filter((i) => (i.folder || "我的iPhone") === folder)
+    ? items.filter((i) => (i.folder || "나的iPhone") === folder)
     : items;
   return (
     <div className="catalog-skin native-files">
@@ -674,9 +674,9 @@ export function FilesSkin(p: Props) {
       <div className="catalog-scroll">
         <h1>{folder || tab}</h1>
         <SearchBox value={q} set={setQ} />
-        {tab === "浏览" && !folder ? (
+        {tab === "둘러보기" && !folder ? (
           <div className="file-folders">
-            {groupItems(items, "我的iPhone").map((g) => (
+            {groupItems(items, "나的iPhone").map((g) => (
               <button key={g} onClick={() => setFolder(g)}>
                 <Folder size={45} />
                 <strong>{g}</strong>
@@ -691,7 +691,7 @@ export function FilesSkin(p: Props) {
                   {i.media ? <Media item={i} /> : <FileText size={49} />}
                   <strong>{i.title}</strong>
                   <small>
-                    {meta(i, "extension", "文件")} ·{" "}
+                    {meta(i, "extension", "파일")} ·{" "}
                     {meta(i, "size", i.time.slice(0, 10))}
                   </small>
                 </button>
@@ -713,7 +713,7 @@ export function FilesSkin(p: Props) {
         <Empty items={list} />
       </div>
       <Tabs
-        tabs={["最近项目", "浏览"]}
+        tabs={["최근 항목", "둘러보기"]}
         value={tab}
         set={(t) => {
           setTab(t);
@@ -725,20 +725,20 @@ export function FilesSkin(p: Props) {
   );
 }
 export function MusicSkin(p: Props) {
-  const { tab, setTab, items } = useContent(p, "资料库");
+  const { tab, setTab, items } = useContent(p, "보관함");
   const [song, setSong] = useTrack(p, items);
   return (
     <div className="catalog-skin native-music">
       <Header p={p} />
       <div className="catalog-scroll">
         <h1>{tab}</h1>
-        {tab === "歌单" ? (
+        {tab === "플레이리스트" ? (
           <div className="music-albums">
-            {groupItems(items, "我的音乐").map((g) => (
+            {groupItems(items, "나的音乐").map((g) => (
               <button
                 key={g}
                 onClick={() => {
-                  const i = items.find((i) => (i.folder || "我的音乐") === g);
+                  const i = items.find((i) => (i.folder || "나的音乐") === g);
                   if (i) setSong(i);
                 }}
               >
@@ -781,7 +781,7 @@ export function MusicSkin(p: Props) {
             <button onClick={() => p.onItem(song)}>查看歌曲内容</button>
           )}
           <button
-            aria-label="下一首"
+            aria-label="다음 곡"
             onClick={() =>
               setSong(
                 items[
@@ -795,7 +795,7 @@ export function MusicSkin(p: Props) {
         </div>
       )}
       <Tabs
-        tabs={["资料库", "歌单"]}
+        tabs={["보관함", "플레이리스트"]}
         value={tab}
         set={setTab}
         icons={[<Music />, <Folder />]}
@@ -814,7 +814,7 @@ function LocationMap({
 }) {
   return (
     <div className={`fiction-map ${find ? "find-map" : ""}`}>
-      <svg viewBox="0 0 300 300" aria-label="原创虚构地图">
+      <svg viewBox="0 0 300 300" aria-label="가상 지도">
         <rect width="300" height="300" fill="#e4e5d8" />
         {[35, 100, 190, 260].map((n) => (
           <path
@@ -850,13 +850,13 @@ function LocationMap({
   );
 }
 export function MapsSkin(p: Props) {
-  const { q, setQ, items } = useContent(p, "地点");
+  const { q, setQ, items } = useContent(p, "장소");
   return (
     <div className="catalog-skin native-maps">
       <Header p={p} />
       <LocationMap items={items} onItem={p.onItem} />
       <div className="map-sheet">
-        <SearchBox value={q} set={setQ} placeholder="搜索虚构地点" />
+        <SearchBox value={q} set={setQ} placeholder="搜索虚构장소" />
         <div className="map-places">
           {items.map((i) => (
             <Row key={i.id} item={i} onItem={p.onItem} leading={<MapPin />} />
@@ -868,8 +868,8 @@ export function MapsSkin(p: Props) {
 }
 export function WalletSkin(p: Props) {
   const [selected, setSelected] = useState("");
-  const cards = p.items.filter((i) => i.folder !== "交易"),
-    transactions = p.items.filter((i) => i.folder === "交易");
+  const cards = p.items.filter((i) => i.folder !== "거래"),
+    transactions = p.items.filter((i) => i.folder === "거래");
   return (
     <div className="catalog-skin native-wallet">
       <Header p={p} />
@@ -894,7 +894,7 @@ export function WalletSkin(p: Props) {
             </button>
           ))}
         </div>
-        <h4 className="native-section">交易记录</h4>
+        <h4 className="native-section">거래记录</h4>
         {transactions.map((i) => (
           <Row key={i.id} item={i} onItem={p.onItem} leading={<Wallet />}>
             <strong>{meta(i, "amount")}</strong>
@@ -906,9 +906,9 @@ export function WalletSkin(p: Props) {
   );
 }
 export function FindSkin(p: Props) {
-  const { tab, setTab, items } = useContent(p, "设备");
+  const { tab, setTab, items } = useContent(p, "기기");
   const list = items.filter((i) =>
-    tab === "设备" ? i.folder !== "人物" : i.folder === "人物",
+    tab === "기기" ? i.folder !== "사람" : i.folder === "사람",
   );
   return (
     <div className="catalog-skin native-find">
@@ -923,13 +923,13 @@ export function FindSkin(p: Props) {
             onItem={p.onItem}
             leading={<Avatar name={i.title} />}
           >
-            {meta(i, "status", "位置记录")}
+            {meta(i, "status", "위치 기록")}
           </Row>
         ))}
         <Empty items={list} />
       </div>
       <Tabs
-        tabs={["人物", "设备"]}
+        tabs={["사람", "기기"]}
         value={tab}
         set={setTab}
         icons={[<Users />, <MapPin />]}
