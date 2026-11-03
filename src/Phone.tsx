@@ -628,7 +628,7 @@ function PhoneRuntime({
                   return record?.kind === "audio" && safeMedia(record.media) ? (
                     <audio controls src={safeMedia(record.media)} />
                   ) : (
-                    <p>这是一通虚构수신 전화。</p>
+                    <p>가상의 수신 전화입니다.</p>
                   );
                 })()}
               <div className="incoming-actions">
@@ -932,7 +932,7 @@ function AppContent({
       {detail.password && !creator && !unlocks.includes(detail.id) ? (
         <div className="locked-note">
           <LockKeyhole size={36} />
-          <h3>这条콘텐츠已锁定</h3>
+          <h3>이 콘텐츠는 잠겨 있습니다</h3>
           <input
             type="password"
             placeholder="콘텐츠 암호"
@@ -948,7 +948,7 @@ function AppContent({
               } else setPwError("암호가 올바르지 않습니다.");
             }}
           >
-            解锁콘텐츠
+            콘텐츠 잠금 해제
           </button>
           <small>{pwError}</small>
         </div>
@@ -991,7 +991,7 @@ function AppContent({
     return (
       <>
         <div className="catalog-slot" hidden={!!detail}>
-          <Suspense fallback={<div className="catalog-loading">正在打开…</div>}>
+          <Suspense fallback={<div className="catalog-loading">여는 중…</div>}>
             <Skin
               appId={app.id}
               owner={work.phone.owner}
@@ -1083,7 +1083,7 @@ function AppContent({
         detailView
       ) : app.engine === "messaging" && thread ? (
         <div className="chat-content">
-          <div className="chat-time">2026 年 9 月 1 日</div>
+          <div className="chat-time">2026년 11월 3일</div>
           {shown
             .filter((i) => i.title === thread)
             .map((i) => (
@@ -1117,7 +1117,7 @@ function AppContent({
             ))}
           {creator ? (
             <button className="chat-compose" onClick={onAdd}>
-              ＋ 추가一条消息
+              ＋ 메시지 추가
             </button>
           ) : (
             <div className="chat-compose muted">
@@ -1218,7 +1218,7 @@ function AppContent({
                     <MessageCircle size={22} />
                   </button>
                   <small>
-                    {i.likes + (likes.includes(i.id) ? 1 : 0)} 次虚构喜欢
+                    {i.likes + (likes.includes(i.id) ? 1 : 0)} 회 가상 좋아요
                   </small>
                 </div>
                 <button className="post-text" onClick={() => read(i)}>
