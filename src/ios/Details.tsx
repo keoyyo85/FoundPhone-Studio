@@ -148,11 +148,11 @@ export function NativeDetail({
             <RichText value={item.richText} fallback={item.body} />
           </div>
           <footer className="native-detail-toolbar">
-            <button aria-label="뒤로文件夹" onClick={back}>
+            <button aria-label="폴더로 돌아가기" onClick={back}>
               <Folder />
             </button>
             <span />
-            <button aria-label="复制메모" onClick={copy}>
+            <button aria-label="메모 복사" onClick={copy}>
               {copied ? <Check /> : <Share />}
             </button>
           </footer>
