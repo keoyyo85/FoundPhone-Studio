@@ -5,7 +5,7 @@ import { AppArtwork } from "./AppArtwork";
 import type { Work } from "./schema";
 export function notificationContent(text: string, apps: Work["apps"]) {
   const separator = text.search(/[:：]/);
-  const sender = separator > 0 ? text.slice(0, separator) : "信息";
+  const sender = separator > 0 ? text.slice(0, separator) : "메시지";
   const app = apps.find((a) => a.name === sender);
   return {
     title: sender,
@@ -61,7 +61,7 @@ export function SystemNotifications({
                   <strong>{n.title}</strong>
                   <span>{n.body}</span>
                 </span>
-                <time>现在</time>
+                <time>방금</time>
               </button>
               {!compact && (
                 <button
