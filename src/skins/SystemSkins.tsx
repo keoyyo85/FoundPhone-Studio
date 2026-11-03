@@ -93,7 +93,7 @@ export function PhoneSkin(p: Props) {
               <Phone size={24} />
             </button>
             <button onClick={() => setDigits((s) => s.slice(0, -1))}>
-              删除
+              삭제
             </button>
           </div>
         ) : (
@@ -128,10 +128,10 @@ export function PhoneSkin(p: Props) {
       />
       {call && (
         <div className="virtual-call">
-          <small>虚拟通话</small>
+          <small>가상 통화</small>
           <Avatar name={call} />
           <h2>{call}</h2>
-          <p>这是作品内的通话模拟</p>
+          <p>스토리 안에서 진행되는 가상 통화입니다</p>
           <button aria-label="끊기" onClick={() => setCall("")}>
             <Phone />
           </button>
@@ -205,7 +205,7 @@ export function PhotosSkin(p: Props) {
                 />
                 <strong>{g}</strong>
                 <small>
-                  {items.filter((i) => (i.folder || "분류되지 않음") === g).length} 项
+                  {items.filter((i) => (i.folder || "분류되지 않음") === g).length} 개
                 </small>
               </button>
             ))}
@@ -216,7 +216,7 @@ export function PhotosSkin(p: Props) {
             <div className="photo-mosaic">
               {list.map((i) => (
                 <button
-                  aria-label={`查看${i.title}`}
+                  aria-label={`보기${i.title}`}
                   key={i.id}
                   onClick={() => p.onItem(i)}
                 >
@@ -225,7 +225,7 @@ export function PhotosSkin(p: Props) {
                 </button>
               ))}
             </div>
-            <p className="media-count">{list.length} 个项目</p>
+            <p className="media-count">{list.length} 个개目</p>
           </>
         )}
         <Empty items={list} />
@@ -253,11 +253,11 @@ export function CameraSkin(p: Props) {
     <div className="catalog-skin native-camera">
       <Header p={p} />
       <div className="camera-top">
-        <span>闪光灯关闭</span>
+        <span>플래시 꺼짐</span>
         <span>{mode === "비디오" ? "HD · 30" : "4:3"}</span>
       </div>
       <div className="camera-view">
-        {frame ? <Media item={frame} /> : <p>未设置取景画面</p>}
+        {frame ? <Media item={frame} /> : <p>카메라 화면이 설정되지 않았습니다</p>}
         <div className="camera-grid" />
       </div>
       <div className="camera-mode">
@@ -298,7 +298,7 @@ export function CameraSkin(p: Props) {
           <Camera size={24} />
         </button>
       </div>
-      <small className="camera-caption">作者设置的虚构取景内容</small>
+      <small className="camera-caption">제작자가 설정한 가상 카메라 화면</small>
     </div>
   );
 }
@@ -368,7 +368,7 @@ export function NotesSkin(p: Props) {
       <div className="catalog-scroll">
         <button className="notes-back" onClick={() => setFolder(null)}>
           <Folder size={17} />
-          파일夹
+          폴더
         </button>
         <h1>{folder || "모든 메모"}</h1>
         <SearchBox value={q} set={setQ} />
@@ -402,7 +402,7 @@ export function NotesSkin(p: Props) {
         <Empty items={list} />
       </div>
       <div className="notes-footer">
-        <span>{list.length} 则메모</span>
+        <span>{list.length} 개 메모</span>
         <Add p={p} label="새 메모" />
       </div>
     </div>
@@ -433,7 +433,7 @@ export function CalendarSkin(p: Props) {
             <ChevronLeft />
           </button>
           <h2>
-            {year} 年 {month + 1} 月
+            {year} 년 {month + 1} 月
           </h2>
           <button aria-label="다음 달" onClick={() => move(1)}>
             <ChevronRight />
@@ -462,7 +462,7 @@ export function CalendarSkin(p: Props) {
           ))}
         </div>
         <h4 className="native-section">
-          {month + 1} 月 {day} 일
+          {month + 1} 월 {day} 일
         </h4>
         {list.map((i) => (
           <button
@@ -527,7 +527,7 @@ export function MailSkin(p: Props) {
         <Empty items={list} />
       </div>
       <footer className="mail-footer">
-        <span>{list.length} 封邮件</span>
+        <span>{list.length} 개 메일</span>
         <Add p={p} label="메일 작성" />
       </footer>
     </div>
@@ -561,7 +561,7 @@ export function ClockSkin(p: Props) {
                   setRunning(false);
                 }}
               >
-                复位
+                재설정
               </button>
               <button onClick={() => setRunning(!running)}>
                 {running ? "일시 정지" : "시작"}
@@ -696,7 +696,7 @@ export function FilesSkin(p: Props) {
                   </small>
                 </button>
                 <button
-                  aria-label={`下载${i.title}文本`}
+                  aria-label={`다운로드${i.title}文本`}
                   onClick={() =>
                     download(
                       new Blob([i.body], { type: "text/plain" }),
@@ -778,7 +778,7 @@ export function MusicSkin(p: Props) {
           {song.kind === "audio" && safeMedia(song.media) ? (
             <AudioPlayer p={p} item={song} />
           ) : (
-            <button onClick={() => p.onItem(song)}>查看歌曲内容</button>
+            <button onClick={() => p.onItem(song)}>보기歌曲内容</button>
           )}
           <button
             aria-label="다음 곡"
@@ -874,7 +874,7 @@ export function WalletSkin(p: Props) {
     <div className="catalog-skin native-wallet">
       <Header p={p} />
       <div className="catalog-scroll">
-        <h1>钱包</h1>
+        <h1>지갑</h1>
         <div className="wallet-stack">
           {cards.map((i, n) => (
             <button
@@ -894,7 +894,7 @@ export function WalletSkin(p: Props) {
             </button>
           ))}
         </div>
-        <h4 className="native-section">거래记录</h4>
+        <h4 className="native-section">거래 기록</h4>
         {transactions.map((i) => (
           <Row key={i.id} item={i} onItem={p.onItem} leading={<Wallet />}>
             <strong>{meta(i, "amount")}</strong>
