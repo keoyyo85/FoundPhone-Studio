@@ -56,7 +56,7 @@ function Blank() {
 }
 function Back({ onClick }: { onClick: () => void }) {
   return (
-    <button aria-label="返回" onClick={onClick}>
+    <button aria-label="뒤로" onClick={onClick}>
       <ArrowLeft size={22} />
     </button>
   );
@@ -64,36 +64,36 @@ function Back({ onClick }: { onClick: () => void }) {
 export function kakaoCharacterReply(thread: string, message: string, turn: number) {
   const text = message.toLowerCase();
   const has = (...words: string[]) => words.some((word) => text.includes(word));
-  if (thread === "薛侖娥姐姐") {
-    if (has("보고싶", "想你", "想見", "miss you", "보고 싶")) return { sender: "薛侖娥姐姐", body: ["我也想智佑了。今天要不要再多待一會兒？🥺", "妳這樣說，我現在就想跑去見妳了哈哈", "我也是。練習結束後打給我，我等妳。"][turn % 3] };
-    if (has("좋아해", "사랑", "love", "喜歡你", "愛你")) return { sender: "薛侖娥姐姐", body: ["智佑呀……這種話不能等見面時再說嗎？我現在心跳好快。", "我也很喜歡妳，比妳想像的還要多。", "突然這麼坦率，姐姐的心臟要怎麼辦哈哈 ❤️"][turn % 3] };
-    if (has("밥", "吃飯", "吃了", "餓", "배고")) return { sender: "薛侖娥姐姐", body: ["還沒吃的話就跟我一起吃吧，今天我請客！", "智佑要先好好吃飯，不要又因為練習而跳過正餐。", "去吃辣炒年糕吧？挑妳最喜歡的那一家。"][turn % 3] };
-    if (has("힘들", "累", "피곤", "속상", "難過", "괜찮")) return { sender: "薛侖娥姐姐", body: ["今天很辛苦吧？在我面前不用假裝沒事，我會聽妳說。", "我們智佑辛苦了。先休息一下，我陪著妳。", "發生什麼事了？慢慢說，不用急著回答。"][turn % 3] };
-    if (has("電話", "通話", "call", "打給")) return { sender: "薛侖娥姐姐", body: ["好呀，現在打給妳？我想聽妳的聲音。", "等我一下，我去安靜一點的地方。智佑的電話一定要接。", "嗯！結束後馬上打給我，我會等妳。"][turn % 3] };
-    if (has("安", "你好", "hi", "hello", "晚安")) return { sender: "薛侖娥姐姐", body: ["智佑呀，嗨 ❤️ 今天過得怎麼樣？", "妳來啦？我剛好正在想妳哈哈", "我們智佑今天也辛苦了，剛剛在做什麼？"][turn % 3] };
-    return { sender: "薛侖娥姐姐", body: ["嗯嗯，再多跟我說一點。我現在只專心聽妳說話。", "哈哈哈 真的嗎？後來怎麼樣了？姐姐很好奇。", "智佑呀，妳的大小事我都想聽。再跟我分享今天發生的事吧。", "原來如此。如果是我，一定會先站在智佑這邊。❤️"][turn % 4] };
+  if (thread === "윤아언니") {
+    if (has("보고싶", "보고 싶어", "보고 싶어", "miss you", "보고 싶")) return { sender: "윤아언니", body: ["나도 지우 보고 싶었어. 오늘 조금 더 같이 있을까? 🥺", "그렇게 말하면 지금 당장 보러 가고 싶잖아 ㅎㅎ", "나도 그래. 연습 끝나면 전화해. 기다릴게."][turn % 3] };
+    if (has("좋아해", "사랑", "love", "좋아해", "사랑해")) return { sender: "윤아언니", body: ["지우야… 그런 말은 만나서 해 주면 안 돼? 지금 심장이 너무 빨리 뛰어.", "나도 너 많이 좋아해. 네가 생각하는 것보다 더.", "갑자기 이렇게 솔직하면 언니 심장은 어떡해 ㅎㅎ ❤️"][turn % 3] };
+    if (has("밥", "밥 먹", "먹었", "배고", "배고")) return { sender: "윤아언니", body: ["아직 안 먹었으면 나랑 같이 먹자. 오늘은 내가 살게!", "지우要先好好밥 먹，不要又因為練習而跳過正餐。", "떡볶이 먹으러 갈까? 네가 제일 좋아하는 곳으로 가자."][turn % 3] };
+    if (has("힘들", "피곤", "피곤", "속상", "속상", "괜찮")) return { sender: "윤아언니", body: ["오늘 많이 힘들었지? 내 앞에서는 괜찮은 척 안 해도 돼. 내가 들어 줄게.", "우리 지우 고생했어. 잠깐 쉬어. 내가 옆에 있을게.", "무슨 일 있었어? 천천히 말해. 급하게 대답하지 않아도 돼."][turn % 3] };
+    if (has("전화", "통화", "call", "전화해")) return { sender: "윤아언니", body: ["好呀，現在전화해妳？我想聽妳的聲音。", "等我一下，我去안녕靜一點的地方。지우的전화一定要接。", "嗯！結束後馬上전화해我，我會等妳。"][turn % 3] };
+    if (has("안녕", "안녕", "hi", "hello", "晚안녕")) return { sender: "윤아언니", body: ["지우야 안녕 ❤️ 오늘 하루 어땠어?", "왔어? 마침 너 생각하고 있었는데 ㅎㅎ", "우리 지우 오늘도 수고했어. 아까 뭐 하고 있었어?"][turn % 3] };
+    return { sender: "윤아언니", body: ["응응, 조금만 더 얘기해 줘. 지금은 네 말만 듣고 있어.", "ㅋㅋㅋ 정말? 그래서 어떻게 됐어? 언니 궁금해.", "지우야, 네 사소한 일까지 다 듣고 싶어. 오늘 있었던 일 더 얘기해 줘.", "그랬구나. 나라면 무조건 먼저 지우 편이 되어 줄 거야. ❤️"][turn % 4] };
   }
-  if (thread === "海嫄姐姐") return { sender: "海嫄姐姐", body: has("윤아", "侖娥", "智佑", "約會", "데이트") ? ["妳們最近是不是太明顯了？哈哈 不過也要注意別讓智佑有壓力。", "我知道妳的心意，但工作期間還是低調一點，也要替智佑著想。", "以為我不知道嗎？兩個人都很重要，慢慢來就好。"][turn % 3] : ["以隊長的身分提醒妳：今天先照顧好身體，練習不要太勉強。", "大家確認明天的行程了嗎？不要遲到，今晚早點休息。"][turn % 2] };
-  if (thread === "Lily姐姐") return { sender: "Lily姐姐", body: has("윤아", "侖娥", "智佑", "cute", "귀여") ? ["Awww you two are so cute!! Jiwoo, Yuna talks about you ALL the time 🥹", "I knew it!! Her smile gives everything away 😂", "If you two are happy, I'm happy! But don't forget to invite me for tteokbokki!!"][turn % 3] : ["Jiwoo!! You did amazing today. I'm so proud of you 💗", "Let's all get something delicious after practice. I need food and a little gossip 😂", "You can always talk to me, okay? I'm cheering for you!!"][turn % 3] };
-  if (thread === "Bae姐姐") return { sender: "Bae姐姐", body: has("윤아", "侖娥", "智佑", "約會", "데이트") ? ["侖娥姐姐最近只要看手機就會笑哈哈 我大概知道是誰的功勞。", "聽說妳們要去吃辣炒年糕？也帶我去嘛～", "智佑呀，逗侖娥姐姐變得好有趣，妳要負責哈哈"][turn % 3] : ["今天有吃點心嗎？練習結束後一起去吃吧！", "哈哈哈 好啦，這位姐姐會一直替妳加油！"][turn % 2] };
-  if (thread === "圭真") return { sender: "圭真", body: has("윤아", "侖娥", "智佑") ? ["姐姐們怎麼回事哈哈 我全部都看到了喔 👀", "侖娥姐姐今天已經第三次提到智佑姐姐了哈哈", "如果妳們真的在一起，最先要告訴忙內才行！！"][turn % 3] : ["智佑姐姐在做什麼？我好無聊哈哈", "姐姐明天練習見！今天好好休息喔 💗"][turn % 2] };
-  if (thread === "姐姐") return { sender: "姐姐", body: has("밥", "吃飯", "吃了", "餓", "배고") ? ["吃飯了嗎？不要又只顧著練習，忘記吃東西。", "冰箱裡幫妳放了小菜，回家記得吃。"][turn % 2] : ["我們家忙內今天還好嗎？有煩惱就跟姐姐說。", "如果很晚才結束一定要聯絡我，我可以去接妳。", "最近再忙也要睡飽，知道嗎？"][turn % 3] };
-  if (thread === "媽媽") return { sender: "媽媽", body: has("밥", "吃飯", "吃了", "餓", "배고") ? ["女兒吃飯了嗎？記得吃點熱的。", "要不要媽媽寄一些小菜過去？不要漏掉正餐。"][turn % 2] : ["智佑呀，今天也辛苦了。媽媽永遠站在妳這邊。", "不要把身體累壞了，好好休息，不舒服要馬上說。", "有空打電話給媽媽吧，想聽聽妳的聲音。"][turn % 3] };
-  if (thread === "經紀人") return { sender: "經紀人", body: ["智佑，明天行程：10:30 妝髮、12:00 錄音、16:00 拍攝。請確認移動時間。", "今天練習結束後，車輛會在 20:10 停在正門前等候。", "本週行程已更新，如有異動會在群組公告。"][turn % 3] };
-  if (thread === "NMIXX 群組") {
+  if (thread === "해원언니") return { sender: "해원언니", body: has("윤아", "윤아", "지우", "데이트", "데이트") ? ["妳們最近是不是太明顯了？哈哈 不過也要注意別讓지우有壓力。", "我知道妳的心意，但工作期間還是低調一點，也要替지우著想。", "내가 모를 줄 알았어? 둘 다 소중하니까 천천히 해도 돼."][turn % 3] : ["리더로서 한마디 할게. 오늘은 몸부터 챙기고 연습 너무 무리하지 마.", "다들 내일 일정 확인했지? 늦지 말고 오늘은 일찍 쉬자."][turn % 2] };
+  if (thread === "릴리언니") return { sender: "릴리언니", body: has("윤아", "윤아", "지우", "cute", "귀여") ? ["Awww you two are so cute!! Jiwoo, Yuna talks about you ALL the time 🥹", "I knew it!! Her smile gives everything away 😂", "If you two are happy, I'm happy! But don't forget to invite me for tteokbokki!!"][turn % 3] : ["Jiwoo!! You did amazing today. I'm so proud of you 💗", "Let's all get something delicious after practice. I need food and a little gossip 😂", "You can always talk to me, okay? I'm cheering for you!!"][turn % 3] };
+  if (thread === "배언니") return { sender: "배언니", body: has("윤아", "윤아", "지우", "데이트", "데이트") ? ["윤아언니最近只要看手機就會笑哈哈 我大概知道是誰的功勞。", "떡볶이 먹으러 간다며? 나도 데려가 줘~", "지우呀，逗윤아언니變得好有趣，妳要負責哈哈"][turn % 3] : ["오늘 간식 먹었어? 연습 끝나고 같이 먹으러 가자!", "ㅋㅋㅋ 알겠어. 이 언니가 계속 응원할게!"][turn % 2] };
+  if (thread === "규진") return { sender: "규진", body: has("윤아", "윤아", "지우") ? ["언니들 뭐예요 ㅋㅋ 저 다 봤어요 👀", "윤아언니今天已經第三次提到지우언니了哈哈", "두 사람 진짜 사귀게 되면 막내한테 제일 먼저 알려 줘야 해요!!"][turn % 3] : ["지우언니在做什麼？我好無聊哈哈", "언니 내일 연습 때 봐요! 오늘 푹 쉬어요 💗"][turn % 2] };
+  if (thread === "언니") return { sender: "언니", body: has("밥", "밥 먹", "먹었", "배고", "배고") ? ["밥 먹了嗎？不要又只顧著練習，忘記吃東西。", "냉장고에 반찬 넣어 뒀어. 집에 가서 꼭 먹어."][turn % 2] : ["我們家忙內今天還好嗎？有煩惱就跟언니說。", "늦게 끝나면 꼭 연락해. 내가 데리러 갈게.", "아무리 바빠도 잠은 충분히 자야 해. 알겠지?"][turn % 3] };
+  if (thread === "엄마") return { sender: "엄마", body: has("밥", "밥 먹", "먹었", "배고", "배고") ? ["女兒밥 먹了嗎？記得吃點熱的。", "要不要엄마寄一些小菜過去？不要漏掉正餐。"][turn % 2] : ["지우呀，今天也辛苦了。엄마永遠站在妳這邊。", "不要把身體피곤壞了，好好休息，不舒服要馬上說。", "有空打전화給엄마吧，想聽聽妳的聲音。"][turn % 3] };
+  if (thread === "매니저님") return { sender: "매니저님", body: ["지우，明天行程：10:30 妝髮、12:00 錄音、16:00 拍攝。請確認移動時間。", "오늘 연습 종료 후 차량은 20:10 정문 앞에서 대기하겠습니다.", "이번 주 일정이 업데이트되었습니다. 변경 사항은 단체방에 공지하겠습니다."][turn % 3] };
+  if (thread === "엔믹스 단체방") {
     const replies = [
-      { sender: "圭真", body: "哈哈哈ㅋ 姐姐們又開始了！智佑姐姐會怎麼反應呀？" },
-      { sender: "Bae姐姐", body: "侖娥姐姐現在的笑容，我們全都看得一清二楚～" },
-      { sender: "Lily姐姐", body: "THIS IS TOO CUTE 😂 大家一起去吃辣炒年糕吧！" },
-      { sender: "海嫄姐姐", body: "好了，先別鬧她們了！明天大家都有行程，今晚早點休息。尤其是侖娥，記得照顧好智佑。" },
-      { sender: "薛侖娥姐姐", body: "啊，真的別再鬧我了啦哈哈 智佑呀，別在意她們。姐姐帶妳偷偷逃走 ❤️" },
+      { sender: "규진", body: "哈哈哈ㅋ 언니們又開始了！지우언니會怎麼反應呀？" },
+      { sender: "배언니", body: "윤아언니現在的笑容，我們全都看得一清二楚～" },
+      { sender: "릴리언니", body: "THIS IS TOO CUTE 😂 우리 다 같이 떡볶이 먹으러 가요!" },
+      { sender: "해원언니", body: "好了，先別鬧她們了！明天大家都有行程，今晚早點休息。尤其是윤아，記得照顧好지우。" },
+      { sender: "윤아언니", body: "啊，真的別再鬧我了啦哈哈 지우呀，別在意她們。언니帶妳偷偷逃走 ❤️" },
     ];
     return replies[turn % replies.length];
   }
-  return { sender: "薛侖娥姐姐", body: "我看到訊息了！智佑呀，可以再跟我說詳細一點嗎？❤️" };
+  return { sender: "윤아언니", body: "我看到訊息了！지우呀，可以再跟我說詳細一點嗎？❤️" };
 }
 export function MymyKakao(p: SkinProps) {
-  const [tab, setTab] = useSkinState<string>(p, "mymyTab", "聊天"),
+  const [tab, setTab] = useSkinState<string>(p, "mymyTab", "채팅"),
     [sent, setSent] = useSkinState<string[]>(p, "mymyKktSent", []),
     [draft, setDraft] = useState(""),
     [query, setQuery] = useState(""),
@@ -116,7 +116,7 @@ export function MymyKakao(p: SkinProps) {
               title: String(entry[0]),
               body: String(entry[1]),
               time: String(entry[2]),
-              sender: typeof entry[3] === "string" ? entry[3] : p.owner || "机主",
+              sender: typeof entry[3] === "string" ? entry[3] : p.owner || "휴대폰 주인",
               avatar: typeof entry[5] === "string" ? entry[5] : "",
               outgoing: entry.length === 3 ? true : entry[4] === true,
               meta: { local: "true" },
@@ -140,7 +140,7 @@ export function MymyKakao(p: SkinProps) {
             <Back onClick={() => p.onThread("")} />
             <span className="kzname">{p.thread}</span>
             <span className="kzpill">
-              <button aria-label="聊天菜单" onClick={() => setMenu(!menu)}>
+              <button aria-label="채팅菜单" onClick={() => setMenu(!menu)}>
                 <Menu size={21} />
               </button>
             </span>
@@ -197,7 +197,7 @@ export function MymyKakao(p: SkinProps) {
                 const avatar = p.items.find((item) => item.sender === reply.sender)?.avatar || "";
                 setSent([
                   ...sent,
-                  JSON.stringify([p.thread, body, time, p.owner || "金智佑", true, ""]),
+                  JSON.stringify([p.thread, body, time, p.owner || "金지우", true, ""]),
                   JSON.stringify([p.thread, reply.body, time, reply.sender, false, avatar]),
                 ]);
                 setDraft("");
@@ -206,14 +206,14 @@ export function MymyKakao(p: SkinProps) {
           >
             <button
               type="button"
-              aria-label="添加聊天内容"
+              aria-label="添加채팅内容"
               onClick={() => (p.creator ? p.onAdd() : setMenu(!menu))}
             >
               <Plus size={21} />
             </button>
             <input
-              aria-label="KKT消息"
-              placeholder="输入消息"
+              aria-label="카카오톡 메시지"
+              placeholder="메시지 입력"
               value={draft}
               maxLength={2000}
               onChange={(e) => setDraft(e.target.value)}
@@ -221,7 +221,7 @@ export function MymyKakao(p: SkinProps) {
             <Smile size={22} />
             <button
               className={draft.trim() ? "go" : ""}
-              aria-label="发送KKT消息"
+              aria-label="发送카카오톡 메시지"
               disabled={!draft.trim()}
             >
               ↑
@@ -242,32 +242,32 @@ export function MymyKakao(p: SkinProps) {
           <div className="kzhd">
             <header className="kzkh">
               <b className="kzti">
-                {tab === "好友" ? p.owner || "好友" : "聊天"}
+                {tab === "친구" ? p.owner || "친구" : "채팅"}
               </b>
               <span className="kzic">
                 <button
-                  aria-label="搜索聊天"
+                  aria-label="검색채팅"
                   onClick={() => setQuery(query ? "" : " ")}
                 >
                   <Search size={21} />
                 </button>
                 {p.creator && (
-                  <button aria-label="新增内容" onClick={p.onAdd}>
+                  <button aria-label="콘텐츠 추가" onClick={p.onAdd}>
                     <Plus />
                   </button>
                 )}
-                <button aria-label="KKT设置" onClick={() => setMenu(!menu)}>
+                <button aria-label="카카오톡 설정" onClick={() => setMenu(!menu)}>
                   <Settings size={21} />
                 </button>
               </span>
             </header>
             <div className="kzkc2">
-              {["好友", "聊天"].map((t) => (
+              {["친구", "채팅"].map((t) => (
                 <button
                   key={t}
                   className={
                     "kzkpl " +
-                    (t === tab || (t === "为你推荐" && tab === "推荐")
+                    (t === tab || (t === "추천" && tab === "추천")
                       ? "on"
                       : "")
                   }
@@ -280,16 +280,16 @@ export function MymyKakao(p: SkinProps) {
             {query !== "" && (
               <input
                 className="mymy-search"
-                aria-label="搜索KKT"
+                aria-label="카카오톡 검색"
                 value={query.trimStart()}
                 onChange={(e) => setQuery(e.target.value || " ")}
-                placeholder="搜索"
+                placeholder="검색"
               />
             )}
           </div>
           <div className="kzkb">
             <div className="kzksec">
-              {tab === "好友" ? "好友" : "全部聊天"} {list.length}
+              {tab === "친구" ? "친구" : "全部채팅"} {list.length}
             </div>
             {list
               .filter((g) => g.title.includes(query.trim()))
@@ -304,7 +304,7 @@ export function MymyKakao(p: SkinProps) {
                     <Avatar name={last.sender || g.title} src={last.avatar} />
                     <span className="kzkn">
                       <b>{g.title}</b>
-                      <small>{tab === "好友" ? last.sender : last.body}</small>
+                      <small>{tab === "친구" ? last.sender : last.body}</small>
                     </span>
                     <span className="kzkmt">
                       {last.time.slice(-5)}
@@ -322,10 +322,10 @@ export function MymyKakao(p: SkinProps) {
               (Icon, i) => (
                 <button
                   key={i}
-                  aria-label={["好友", "聊天", "发现", "更多功能", "设置"][i]}
-                  className={(tab === "好友" ? 0 : 1) === i ? "on" : ""}
+                  aria-label={["친구", "채팅", "탐색", "더 보기", "설정"][i]}
+                  className={(tab === "친구" ? 0 : 1) === i ? "on" : ""}
                   onClick={() =>
-                    i < 2 ? setTab(["好友", "聊天"][i]) : setMenu(true)
+                    i < 2 ? setTab(["친구", "채팅"][i]) : setMenu(true)
                   }
                 >
                   <Icon />
@@ -336,7 +336,7 @@ export function MymyKakao(p: SkinProps) {
           {menu && (
             <div className="mymy-local-menu">
               <strong>KakaoTalk</strong>
-              <p>作品内聊天</p>
+              <p>作品内채팅</p>
               <button onClick={() => setMenu(false)}>完成</button>
             </div>
           )}
@@ -346,7 +346,7 @@ export function MymyKakao(p: SkinProps) {
   );
 }
 export function MymyInstagram(p: SkinProps) {
-  const [tab, setTab] = useSkinState<string>(p, "mymyTab", "主页"),
+  const [tab, setTab] = useSkinState<string>(p, "mymyTab", "홈"),
     [liked, setLiked] = useSkinState<string[]>(p, "mymyLiked", []),
     [saved, setSaved] = useSkinState<string[]>(p, "mymySaved", []),
     [replies, setReplies] = useSkinState<string[]>(p, "mymyReplies", []),
@@ -357,10 +357,10 @@ export function MymyInstagram(p: SkinProps) {
     [draft, setDraft] = useState(""),
     [pop, setPop] = useState("");
   const posts = p.items.filter(
-      (i) => i.folder !== "私信" && i.meta.story !== "true",
+      (i) => i.folder !== "메시지" && i.meta.story !== "true",
     ),
     stories = p.items.filter((i) => i.meta.story === "true"),
-    dms = p.items.filter((i) => i.folder === "私信"),
+    dms = p.items.filter((i) => i.folder === "메시지"),
     active = stories[story - 1];
   const toggle = (id: string, values: string[], set: (v: string[]) => void) =>
     set(values.includes(id) ? values.filter((v) => v !== id) : [...values, id]);
@@ -390,12 +390,12 @@ export function MymyInstagram(p: SkinProps) {
       <header className="igph">
         <Avatar name={i.sender} src={i.avatar} />
         <div className="igpn">
-          <button onClick={() => setTab("个人主页")}>
+          <button onClick={() => setTab("个人홈")}>
             <b>{i.sender}</b>
           </button>
           <small>{i.meta.location || i.time}</small>
         </div>
-        <button aria-label="帖子详情" onClick={() => openPost(i)}>
+        <button aria-label="게시물 상세" onClick={() => openPost(i)}>
           <MoreHorizontal />
         </button>
       </header>
@@ -420,7 +420,7 @@ export function MymyInstagram(p: SkinProps) {
       </div>
       <div className="iga">
         <button
-          aria-label={"点赞" + i.title}
+          aria-label={"좋아요" + i.title}
           aria-pressed={liked.includes(i.id)}
           onClick={() => {
             const wasLiked = liked.includes(i.id);
@@ -434,7 +434,7 @@ export function MymyInstagram(p: SkinProps) {
           />
         </button>
         <button
-          aria-label={"评论" + i.title}
+          aria-label={"댓글" + i.title}
           onClick={() => {
             read(p, i);
             setSheet(i);
@@ -442,12 +442,12 @@ export function MymyInstagram(p: SkinProps) {
         >
           <MessageCircle />
         </button>
-        <button aria-label="分享帖子" onClick={() => setTab("私信")}>
+        <button aria-label="게시물 공유" onClick={() => setTab("메시지")}>
           <Send />
         </button>
         <button
           className="mymy-save"
-          aria-label={"收藏" + i.title}
+          aria-label={"저장" + i.title}
           aria-pressed={saved.includes(i.id)}
           onClick={() => toggle(i.id, saved, setSaved)}
         >
@@ -464,7 +464,7 @@ export function MymyInstagram(p: SkinProps) {
         <b>{i.sender}</b> {i.body}
       </button>
       <button className="cmall" onClick={() => setSheet(i)}>
-        查看评论{" "}
+        查看댓글{" "}
         {i.comments.length +
           replies.filter((r) => r.startsWith(i.id + "\t")).length}
       </button>
@@ -476,21 +476,21 @@ export function MymyInstagram(p: SkinProps) {
       <div className="ig">
         <header className="igh">
           <button
-            aria-label={selected ? "返回Instagram动态" : "关闭当前App"}
+            aria-label={selected ? "뒤로Instagram动态" : "현재 앱 닫기"}
             onClick={() => (selected ? setSelected(null) : p.onBack())}
           >
             <ArrowLeft />
           </button>
           <span className="igl2">
-            {selected ? "帖子" : tab === "主页" ? "Instagram" : tab}
+            {selected ? "게시물" : tab === "홈" ? "Instagram" : tab}
           </span>
-          <button aria-label="打开私信" onClick={() => setTab("私信")}>
+          <button aria-label="打开메시지" onClick={() => setTab("메시지")}>
             <Send />
           </button>
         </header>
         <div className="igb">
           {selected && post(selected)}
-          {!selected && tab === "主页" && (
+          {!selected && tab === "홈" && (
             <>
               <div className="sts">
                 {stories.map((s, n) => (
@@ -512,14 +512,14 @@ export function MymyInstagram(p: SkinProps) {
               {!posts.length && <Blank />}
             </>
           )}
-          {!selected && tab === "个人主页" && (
+          {!selected && tab === "个人홈" && (
             <>
               <div className="pf">
-                <Avatar name={p.owner || "机主"} />
+                <Avatar name={p.owner || "휴대폰 주인"} />
                 <div className="ps">
                   <div>
                     <b>{posts.length}</b>
-                    <small>帖子</small>
+                    <small>게시물</small>
                   </div>
                   <div>
                     <b>—</b>
@@ -546,7 +546,7 @@ export function MymyInstagram(p: SkinProps) {
               </div>
             </>
           )}
-          {!selected && tab === "私信" && (
+          {!selected && tab === "메시지" && (
             <>
               {dms.map((i) => (
                 <button className="kzkr" key={i.id} onClick={() => openPost(i)}>
@@ -560,12 +560,12 @@ export function MymyInstagram(p: SkinProps) {
               {!dms.length && <Blank />}
             </>
           )}
-          {!selected && tab === "搜索" && (
+          {!selected && tab === "검색" && (
             <>
               <input
                 className="mymy-search"
-                aria-label="搜索Instagram"
-                placeholder="搜索"
+                aria-label="검색Instagram"
+                placeholder="검색"
                 value={draft}
                 onChange={(e) => setDraft(e.target.value)}
               />
@@ -579,13 +579,13 @@ export function MymyInstagram(p: SkinProps) {
           {[Home, Search, Send, User].map((Icon, n) => (
             <button
               key={n}
-              aria-label={["主页", "搜索", "私信", "个人主页"][n]}
+              aria-label={["홈", "검색", "메시지", "个人홈"][n]}
               aria-pressed={
-                !selected && tab === ["主页", "搜索", "私信", "个人主页"][n]
+                !selected && tab === ["홈", "검색", "메시지", "个人홈"][n]
               }
               onClick={() => {
                 setSelected(null);
-                setTab(["主页", "搜索", "私信", "个人主页"][n]);
+                setTab(["홈", "검색", "메시지", "个人홈"][n]);
               }}
             >
               <Icon />
@@ -597,14 +597,14 @@ export function MymyInstagram(p: SkinProps) {
         <div className="kzcs">
           <button
             className="kzbk"
-            aria-label="关闭评论"
+            aria-label="关闭댓글"
             onClick={() => setSheet(null)}
           />
-          <section className="kzsh" role="dialog" aria-label="Instagram评论">
+          <section className="kzsh" role="dialog" aria-label="Instagram댓글">
             <div className="mymy-sheet-handle" />
             <header>
-              <b>评论</b>
-              <button aria-label="关闭评论面板" onClick={() => setSheet(null)}>
+              <b>댓글</b>
+              <button aria-label="关闭댓글面板" onClick={() => setSheet(null)}>
                 <X />
               </button>
             </header>
@@ -633,10 +633,10 @@ export function MymyInstagram(p: SkinProps) {
               }}
             >
               <input
-                aria-label="添加评论"
+                aria-label="添加댓글"
                 value={draft}
                 onChange={(e) => setDraft(e.target.value)}
-                placeholder="添加评论"
+                placeholder="添加댓글"
                 maxLength={500}
               />
               <button>发布</button>
@@ -663,7 +663,7 @@ export function MymyInstagram(p: SkinProps) {
             <Avatar name={active.sender} src={active.avatar} />
             <b>{active.sender}</b>
             <button
-              aria-label="关闭快拍"
+              aria-label="스토리 닫기"
               onPointerDown={(e) => e.stopPropagation()}
               onClick={() => setStory(0)}
             >
@@ -679,7 +679,7 @@ export function MymyInstagram(p: SkinProps) {
 }
 export function MymyX(p: SkinProps) {
   const [dark, setDark] = useSkinState<boolean>(p, "x-dark", true);
-  const [tab, setTab] = useSkinState<string>(p, "mymyTab", "推荐"),
+  const [tab, setTab] = useSkinState<string>(p, "mymyTab", "추천"),
     [likes, setLikes] = useSkinState<string[]>(p, "mymyXLikes", []),
     [reposts, setReposts] = useSkinState<string[]>(p, "mymyXReposts", []),
     [marks, setMarks] = useSkinState<string[]>(p, "mymyXMarks", []),
@@ -701,16 +701,16 @@ export function MymyX(p: SkinProps) {
     >
       <div className="kzxw">
         <header className="kzxh">
-          <button aria-label="关闭当前App" onClick={p.onBack}>
+          <button aria-label="현재 앱 닫기" onClick={p.onBack}>
             <ArrowLeft />
           </button>
           <div className="kzxlg">𝕏</div>
-          <button aria-label="切换X外观" onClick={() => setDark(!dark)}>
+          <button aria-label="X 테마 전환" onClick={() => setDark(!dark)}>
             <User />
           </button>
         </header>
         <div className="kzxtb">
-          {["为你推荐", "正在关注", "添加 +", "时间"].map((t) => (
+          {["추천", "팔로잉", "추가 +", "시간"].map((t) => (
             <button
               className={t === tab ? "on" : ""}
               key={t}
@@ -720,13 +720,13 @@ export function MymyX(p: SkinProps) {
             </button>
           ))}
         </div>
-        {tab === "搜索" && (
+        {tab === "검색" && (
           <input
             className="mymy-search"
-            aria-label="搜索X"
+            aria-label="검색X"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="搜索"
+            placeholder="검색"
           />
         )}
         <div className="kzxfd">
@@ -757,7 +757,7 @@ export function MymyX(p: SkinProps) {
                   {i.media && (
                     <button
                       className="kzxv"
-                      aria-label="打开媒体"
+                      aria-label="미디어 열기"
                       onClick={() => p.onItem(i)}
                     >
                       <Media item={i} />
@@ -765,14 +765,14 @@ export function MymyX(p: SkinProps) {
                   )}
                   <div className="kzxac">
                     <button
-                      aria-label={"评论" + i.title}
+                      aria-label={"댓글" + i.title}
                       onClick={() => p.onItem(i)}
                     >
                       <MessageCircle />
                       {i.comments.length}
                     </button>
                     <button
-                      aria-label={"转发" + i.title}
+                      aria-label={"리포스트" + i.title}
                       aria-pressed={reposts.includes(i.id)}
                       onClick={() => toggle(i.id, reposts, setReposts)}
                     >
@@ -780,7 +780,7 @@ export function MymyX(p: SkinProps) {
                       {reposts.includes(i.id) ? 1 : 0}
                     </button>
                     <button
-                      aria-label={"点赞" + i.title}
+                      aria-label={"좋아요" + i.title}
                       aria-pressed={isLiked(i.id)}
                       onClick={() => {
                         toggle(i.id, likes, setLikes);
@@ -795,7 +795,7 @@ export function MymyX(p: SkinProps) {
                       {i.meta.views || "—"}
                     </span>
                     <button
-                      aria-label={"收藏" + i.title}
+                      aria-label={"저장" + i.title}
                       aria-pressed={isSaved(i.id)}
                       onClick={() => {
                         toggle(i.id, marks, setMarks);
@@ -804,7 +804,7 @@ export function MymyX(p: SkinProps) {
                     >
                       <Bookmark />
                     </button>
-                    <button aria-label="分享" onClick={() => p.onItem(i)}>
+                    <button aria-label="공유" onClick={() => p.onItem(i)}>
                       <Share />
                     </button>
                   </div>
@@ -817,8 +817,8 @@ export function MymyX(p: SkinProps) {
           {[Home, Search, Bell, MessageCircle].map((Icon, n) => (
             <button
               key={n}
-              aria-label={["时间线", "搜索", "通知", "私信"][n]}
-              onClick={() => n < 2 && setTab(n ? "搜索" : "推荐")}
+              aria-label={["시간线", "검색", "알림", "메시지"][n]}
+              onClick={() => n < 2 && setTab(n ? "검색" : "추천")}
               disabled={n > 1}
             >
               <Icon />
