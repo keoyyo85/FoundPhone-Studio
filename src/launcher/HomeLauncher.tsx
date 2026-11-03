@@ -41,10 +41,10 @@ type Props = {
 };
 const widgetLabels = {
   calendar: "日历",
-  clock: "时钟",
+  clock: "시계",
   weather: "天气",
-  notes: "备忘录",
-  battery: "电池",
+  notes: "메모",
+  battery: "배터리",
 };
 const widgetApp = {
   calendar: "calendar",
@@ -75,24 +75,24 @@ function WidgetFace({
             }).format(date)}
           </span>
           <b className="widget-day">{date.getUTCDate()}</b>
-          <small>{work.data.calendar?.[0]?.title || "今天没有日程"}</small>
+          <small>{work.data.calendar?.[0]?.title || "오늘 일정이 없습니다"}</small>
         </>
       ) : widget.type === "clock" ? (
         <>
           <Clock size={31} />
           <b>{time}</b>
-          <small>时钟</small>
+          <small>시계</small>
         </>
       ) : widget.type === "weather" ? (
         <>
-          <small>{weather?.title || "未添加城市"}</small>
+          <small>{weather?.title || "도시를 추가하지 않았습니다"}</small>
           <b>{weather?.meta.temperature || "—"}°</b>
           <CloudSun size={27} />
-          <small>{weather?.meta.condition || "暂无天气数据"}</small>
+          <small>{weather?.meta.condition || "날씨 정보 없음"}</small>
         </>
       ) : widget.type === "notes" ? (
         <>
-          <strong>备忘录</strong>
+          <strong>메모</strong>
           {(work.data.notes || [])
             .filter((i) => !i.hidden && !i.password)
             .slice(0, 3)
@@ -100,14 +100,14 @@ function WidgetFace({
               <small key={i.id}>{i.title}</small>
             ))}
           {!(work.data.notes || []).some((i) => !i.hidden && !i.password) && (
-            <small>无备忘录</small>
+            <small>无메모</small>
           )}
         </>
       ) : (
         <>
           <Battery size={44} />
           <b>{work.phone.battery}%</b>
-          <small>电池</small>
+          <small>배터리</small>
         </>
       )}
     </div>
@@ -117,7 +117,7 @@ export function HomeLauncher(p: Props) {
   const [editing, setEditing] = useState(false),
     [sheet, setSheet] = useState(p.storeOpen ? "library" : ""),
     [query, setQuery] = useState(""),
-    [filter, setFilter] = useState("全部"),
+    [filter, setFilter] = useState("전체"),
     [selected, setSelected] = useState(""),
     [uninstall, setUninstall] = useState(false),
     [keep, setKeep] = useState(true),
@@ -325,7 +325,7 @@ export function HomeLauncher(p: Props) {
       !apps.find((a) => a.id === d.entry.key)?.dock &&
       apps.filter((a) => a.dock && a.visible && a.installed).length >= 4
     ) {
-      setError("Dock最多放4个App");
+      setError("Dock에는 앱을 최대 4개까지 놓을 수 있습니다");
       return;
     }
     p.change((l) => {
@@ -391,7 +391,7 @@ export function HomeLauncher(p: Props) {
       }
       const other = l.apps.find((x) => x.id === target);
       if (a && other && Date.now() - d.hover > 650) {
-        const folder = "文件夹";
+        const folder = "폴더";
         a.folder = folder;
         other.folder = folder;
         other.dock = false;
@@ -435,10 +435,10 @@ export function HomeLauncher(p: Props) {
       data-app-id={entry.app?.id}
       aria-label={
         entry.app
-          ? "打开" + entry.app.name
+          ? "열기" + entry.app.name
           : entry.folder
-            ? "打开文件夹" + entry.folder
-            : widgetLabels[entry.widget!.type] + "小组件"
+            ? "열기폴더" + entry.folder
+            : widgetLabels[entry.widget!.type] + "위젯"
       }
       onPointerDown={(e) => start(e, entry)}
       onPointerMove={move}
@@ -482,7 +482,7 @@ export function HomeLauncher(p: Props) {
   );
   const addWidget = () => {
     if (p.layout.widgets.length >= 24) {
-      setError("最多添加24个小组件");
+      setError("最多추가24个위젯");
       return;
     }
     p.change((l) => {
@@ -544,12 +544,12 @@ export function HomeLauncher(p: Props) {
       <div className="launcher-toolbar">
         {editing ? (
           <>
-            <button aria-label="添加小组件" onClick={() => setSheet("widgets")}>
+            <button aria-label="추가위젯" onClick={() => setSheet("widgets")}>
               <Plus size={18} />
-              小组件
+              위젯
             </button>
-            <button onClick={() => setSheet("layout")}>布局</button>
-            <button onClick={() => setEditing(false)}>完成</button>
+            <button onClick={() => setSheet("layout")}>레이아웃</button>
+            <button onClick={() => setEditing(false)}>완료</button>
           </>
         ) : null}
       </div>
@@ -569,7 +569,7 @@ export function HomeLauncher(p: Props) {
             className="home-app-grid"
             data-drop-zone={"page:" + n}
             role="group"
-            aria-label={"桌面第" + (n + 1) + "页"}
+            aria-label={"홈 화면 " + (n + 1) + "페이지"}
             key={n}
           >
             {cells.map(({ entry, x, y, w, h }) => (
@@ -593,7 +593,7 @@ export function HomeLauncher(p: Props) {
             {pages.map((_, i) => (
               <button
                 key={i}
-                aria-label={"前往桌面第" + (i + 1) + "页"}
+                aria-label={"前往홈 화면 " + (i + 1) + "페이지"}
                 aria-current={page === i ? "page" : undefined}
                 onClick={() =>
                   pager.current?.scrollTo({
@@ -607,7 +607,7 @@ export function HomeLauncher(p: Props) {
         )}
         <button className="home-search" onClick={p.search}>
           <Search size={12} />
-          搜索
+          검색
         </button>
       </div>
       <div data-drop-zone="dock">
@@ -641,46 +641,46 @@ export function HomeLauncher(p: Props) {
                 setSelected("");
                 setUninstall(false);
               }}
-              aria-label="关闭App管理"
+              aria-label="앱 관리 닫기"
             >
               <ChevronLeft />
-              桌面
+              홈 화면
             </button>
             <strong>
               {sheet === "library"
                 ? "App Store"
                 : sheet === "widgets"
-                  ? "小组件"
+                  ? "위젯"
                   : sheet === "layout"
-                    ? "保存布局"
-                    : active?.name || "小组件"}
+                    ? "保存레이아웃"
+                    : active?.name || "위젯"}
             </strong>
           </header>
           <div className="launcher-sheet-scroll">
             {sheet === "library" ? (
               <>
                 <div className="storefront-title">
-                  <h1>搜索</h1>
+                  <h1>검색</h1>
                   <span>App Store</span>
                 </div>
                 <label className="launcher-search">
                   <Search size={18} />
                   <input
-                    placeholder="搜索全部App"
+                    placeholder="검색전체App"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                   />
                 </label>
                 <nav className="library-filters">
                   {[
-                    "全部",
-                    "系统",
-                    "通讯",
-                    "社交",
-                    "影音",
-                    "生活",
-                    "工具",
-                    "已安装",
+                    "전체",
+                    "시스템",
+                    "커뮤니케이션",
+                    "소셜",
+                    "미디어",
+                    "라이프",
+                    "도구",
+                    "설치됨",
                   ].map((label) => (
                     <button
                       key={label}
@@ -692,7 +692,7 @@ export function HomeLauncher(p: Props) {
                   ))}
                 </nav>
                 <p className="library-count">
-                  已安装{apps.filter((a) => a.installed).length} / 全部
+                  설치됨{apps.filter((a) => a.installed).length} / 전체
                   {apps.length}个App
                 </p>
                 {apps
@@ -701,8 +701,8 @@ export function HomeLauncher(p: Props) {
                       (a.name + a.id)
                         .toLowerCase()
                         .includes(query.toLowerCase()) &&
-                      (filter === "全部" ||
-                        (filter === "已安装" && a.installed) ||
+                      (filter === "전체" ||
+                        (filter === "설치됨" && a.installed) ||
                         category(a.id) === filter),
                   )
                   .map((a) => (
@@ -720,9 +720,9 @@ export function HomeLauncher(p: Props) {
                           {category(a.id)} ·{" "}
                           {a.installed
                             ? a.visible
-                              ? "已在桌面"
-                              : "仅App库"
-                            : "未安装"}
+                              ? "已在홈 화면"
+                              : "앱 보관함에만 있음"
+                            : "설치되지 않음"}
                         </small>
                       </button>
                       <button
@@ -746,9 +746,9 @@ export function HomeLauncher(p: Props) {
                       >
                         {a.installed
                           ? a.visible
-                            ? "打开"
-                            : "添加到桌面"
-                          : "获取"}
+                            ? "열기"
+                            : "추가到홈 화면"
+                          : "받기"}
                       </button>
                     </div>
                   ))}
@@ -780,26 +780,26 @@ export function HomeLauncher(p: Props) {
                       aria-pressed={size === s}
                       onClick={() => setSize(s)}
                     >
-                      {["小", "中", "大"][i]}
+                      {["소", "중", "대"][i]}
                     </button>
                   ))}
                 </div>
                 <button className="launcher-primary" onClick={addWidget}>
-                  添加{widgetLabels[widgetType]}小组件
+                  추가{widgetLabels[widgetType]}위젯
                 </button>
               </>
             ) : sheet === "layout" ? (
               <>
-                <p>布局、安装状态和小组件自动保存在本浏览器。</p>
+                <p>레이아웃、安装状态和위젯自动保存在本浏览器。</p>
                 <button className="launcher-action" onClick={download}>
                   <Download />
-                  导出布局JSON
+                  导出레이아웃JSON
                 </button>
                 <label className="launcher-action">
                   <Upload />
-                  导入布局JSON
+                  导入레이아웃JSON
                   <input
-                    aria-label="导入桌面布局"
+                    aria-label="导入홈 화면레이아웃"
                     type="file"
                     accept=".json"
                     onChange={async (e) => {
@@ -807,7 +807,7 @@ export function HomeLauncher(p: Props) {
                       if (!f) return;
                       try {
                         if (f.size > 4 * 1024 * 1024)
-                          throw Error("布局文件过大");
+                          throw Error("레이아웃文件过대");
                         p.importLayout(JSON.parse(await f.text()));
                         setSheet("");
                       } catch (err) {
@@ -816,7 +816,7 @@ export function HomeLauncher(p: Props) {
                     }}
                   />
                 </label>
-                <p>不改写作者故事，不清除玩家剧情存档。</p>
+                <p>원본 스토리와 플레이어 저장 데이터는 변경되지 않습니다.</p>
               </>
             ) : sheet === "widget-actions" ? (
               <>
@@ -838,7 +838,7 @@ export function HomeLauncher(p: Props) {
                         })
                       }
                     >
-                      {["小", "中", "大"][n]}
+                      {["소", "중", "대"][n]}
                     </button>
                   ))}
                 </div>
@@ -853,7 +853,7 @@ export function HomeLauncher(p: Props) {
                     setSheet("");
                   }}
                 >
-                  移除小组件
+                  移除위젯
                 </button>
               </>
             ) : active ? (
@@ -861,9 +861,9 @@ export function HomeLauncher(p: Props) {
                 {!uninstall ? (
                   <>
                     <label className="launcher-field">
-                      App名称
+                      앱 이름
                       <input
-                        aria-label="App名称"
+                        aria-label="앱 이름"
                         maxLength={100}
                         value={active.name}
                         onChange={(e) =>
@@ -874,11 +874,11 @@ export function HomeLauncher(p: Props) {
                       />
                     </label>
                     <label className="launcher-field">
-                      文件夹
+                      폴더
                       <input
-                        aria-label="文件夹名称"
+                        aria-label="폴더名称"
                         maxLength={80}
-                        placeholder="留空移出文件夹"
+                        placeholder="留空移出폴더"
                         value={active.folder}
                         onChange={(e) =>
                           patch(active.id, (a) => {
@@ -889,9 +889,9 @@ export function HomeLauncher(p: Props) {
                       />
                     </label>
                     <label className="launcher-field">
-                      自定义图标文字
+                      사용자 지정 아이콘 텍스트
                       <input
-                        aria-label="自定义图标文字"
+                        aria-label="사용자 지정 아이콘 텍스트"
                         maxLength={2}
                         value={active.icon.length < 3 ? active.icon : ""}
                         onChange={(e) =>
@@ -902,7 +902,7 @@ export function HomeLauncher(p: Props) {
                       />
                     </label>
                     <label className="launcher-action">
-                      上传图标
+                      아이콘 업로드
                       <input
                         aria-label="上传App图标"
                         type="file"
@@ -915,7 +915,7 @@ export function HomeLauncher(p: Props) {
                               file.size > 2 * 1024 * 1024 ||
                               !/^image\/(png|jpeg|webp|gif)$/.test(file.type)
                             )
-                              throw Error("请选择2MB以内的图片");
+                              throw Error("2MB 이하의 이미지를 선택하세요");
                             const url = URL.createObjectURL(file);
                             try {
                               const image = new Image();
@@ -961,7 +961,7 @@ export function HomeLauncher(p: Props) {
                           apps.filter((a) => a.installed && a.visible && a.dock)
                             .length >= 4
                         ) {
-                          setError("Dock最多放4个App");
+                          setError("Dock에는 앱을 최대 4개까지 놓을 수 있습니다");
                           return;
                         }
                         patch(active.id, (a) => {
@@ -973,7 +973,7 @@ export function HomeLauncher(p: Props) {
                         setSheet("");
                       }}
                     >
-                      {active.dock ? "移出Dock" : "放入Dock"}
+                      {active.dock ? "Dock에서 제거" : "Dock에 추가"}
                     </button>
                     <button
                       className="launcher-action"
@@ -985,7 +985,7 @@ export function HomeLauncher(p: Props) {
                         setSheet("");
                       }}
                     >
-                      从桌面移除
+                      从홈 화면移除
                     </button>
                     <button
                       className="launcher-action danger"
@@ -995,21 +995,21 @@ export function HomeLauncher(p: Props) {
                         setKeep(true);
                       }}
                     >
-                      卸载App
+                      앱 삭제
                     </button>
                   </>
                 ) : (
-                  <div role="dialog" aria-label="确认卸载App">
-                    <h2>卸载{active.name}？</h2>
+                  <div role="dialog" aria-label="确认앱 삭제">
+                    <h2>삭제{active.name}？</h2>
                     <label className="launcher-checkbox">
                       <input
                         type="checkbox"
                         checked={keep}
                         onChange={(e) => setKeep(e.target.checked)}
                       />
-                      保留此App的本机内容
+                      이 앱의 로컬 콘텐츠 유지
                     </label>
-                    <p>取消勾选会移除本机内容，原始故事脚本不受影响。</p>
+                    <p>선택을 해제하면 로컬 콘텐츠가 삭제되며 원본 스토리에는 영향을 주지 않습니다.</p>
                     <button
                       className="launcher-primary danger"
                       onClick={() => {
@@ -1026,13 +1026,13 @@ export function HomeLauncher(p: Props) {
                         setSheet("");
                       }}
                     >
-                      确认卸载
+                      确认삭제
                     </button>
                     <button
                       className="launcher-action"
                       onClick={() => setUninstall(false)}
                     >
-                      取消
+                      취소
                     </button>
                   </div>
                 )}
