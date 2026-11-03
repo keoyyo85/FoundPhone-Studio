@@ -1008,7 +1008,7 @@
         "body": "검색 기록: 너무 맵지 않고 천천히 이야기 나눌 수 있는 떡볶이집.",
         "kind": "text",
         "time": "2026-11-02 13:48",
-        "folder": "역사 기록"
+        "folder": "방문 기록"
       },
       {
         "id": "safari-nmixx-schedule",
@@ -1017,7 +1017,7 @@
         "time": "2026-11-02 13:40",
         "sender": "Safari",
         "kind": "text",
-        "folder": "역사 기록"
+        "folder": "방문 기록"
       },
       {
         "id": "safari-seoul-weather",
@@ -1026,7 +1026,7 @@
         "time": "2026-11-02 13:52",
         "sender": "Safari",
         "kind": "text",
-        "folder": "역사 기록"
+        "folder": "방문 기록"
       },
       {
         "id": "safari-seongsu-cafe",
@@ -1035,7 +1035,7 @@
         "time": "2026-11-02 14:02",
         "sender": "Safari",
         "kind": "text",
-        "folder": "역사 기록"
+        "folder": "방문 기록"
       },
       {
         "id": "safari-tteokbokki-review",
@@ -1044,7 +1044,7 @@
         "time": "2026-11-02 14:12",
         "sender": "Safari",
         "kind": "text",
-        "folder": "역사 기록"
+        "folder": "방문 기록"
       },
       {
         "id": "safari-jiwoo-interview",
@@ -1053,7 +1053,7 @@
         "time": "2026-11-02 15:26",
         "sender": "Safari",
         "kind": "text",
-        "folder": "역사 기록"
+        "folder": "방문 기록"
       },
       {
         "id": "safari-cp-search-1",
@@ -1062,7 +1062,7 @@
         "time": "2026-11-02 17:50",
         "sender": "Safari",
         "kind": "text",
-        "folder": "역사 기록",
+        "folder": "방문 기록",
         "hidden": true
       },
       {
@@ -1072,7 +1072,7 @@
         "time": "2026-11-02 17:55",
         "sender": "Safari",
         "kind": "text",
-        "folder": "역사 기록",
+        "folder": "방문 기록",
         "hidden": true
       },
       {
@@ -1081,7 +1081,7 @@
         "body": "검색 기록: 사람이 너무 붐비지 않고 가로등이 밝아 천천히 걷기 좋은 길.",
         "sender": "Safari",
         "kind": "text",
-        "folder": "역사 기록",
+        "folder": "방문 기록",
         "time": "2026-11-02 18:56"
       }
     ],
@@ -1198,7 +1198,7 @@
           "rain": "10%",
           "wind": "남풍 11 km/h",
           "hourly": "[{\"time\":\"05시\",\"temperature\":\"6\"},{\"time\":\"06시\",\"temperature\":\"5\"},{\"time\":\"07시\",\"temperature\":\"4\"},{\"time\":\"08시\",\"temperature\":\"5\"},{\"time\":\"09시\",\"temperature\":\"7\"},{\"time\":\"10시\",\"temperature\":\"10\"}]",
-          "daily": "[{\"label\":\"화 11/3\",\"low\":\"4\",\"high\":\"16\"},{\"label\":\"수 11/4\",\"low\":\"11\",\"high\":\"16\"},{\"label\":\"목 11/5\",\"low\":\"5\",\"high\":\"15\"},{\"label\":\"금 11/6\",\"low\":\"0\",\"high\":\"9\"},{\"label\":\"토 11/7\",\"low\":\"1\",\"high\":\"7\"}]",
+          "daily": "[{\"label\":\"화요일 11/3\",\"low\":\"4\",\"high\":\"16\"},{\"label\":\"수요일 11/4\",\"low\":\"11\",\"high\":\"16\"},{\"label\":\"목요일 11/5\",\"low\":\"5\",\"high\":\"15\"},{\"label\":\"금요일 11/6\",\"low\":\"0\",\"high\":\"9\"},{\"label\":\"토요일 11/7\",\"low\":\"1\",\"high\":\"7\"}]",
           "source": "Open-Meteo 예보",
           "sourceUpdated": "2026-11-03",
           "dailySource": "Open-Meteo 및 Met Office 예보"
