@@ -89,6 +89,15 @@ export function NativeSettings({
             {row("언어 및 지역", "한국어", () => nav.push("언어 및 지역"))}
           </div>
         );
+      case "언어 및 지역":
+        return (
+          <div className="settings-group">
+            {row("iPhone 언어", "한국어")}
+            {row("지역", "대한민국")}
+            {row("달력", "그레고리력")}
+            {row("온도 단위", "섭씨")}
+          </div>
+        );
       case "정보":
         return (
           <div className="settings-group">
