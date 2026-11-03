@@ -52,7 +52,7 @@ export function messageRun(items: Item[], index: number) {
 const read = (p: SkinProps, i: Item) =>
   p.creator || i.password ? p.onItem(i) : p.onRead(i.id);
 function Blank() {
-  return <p className="mymy-empty">暂无内容</p>;
+  return <p className="mymy-empty">콘텐츠가 없습니다</p>;
 }
 function Back({ onClick }: { onClick: () => void }) {
   return (
@@ -221,7 +221,7 @@ export function MymyKakao(p: SkinProps) {
             <Smile size={22} />
             <button
               className={draft.trim() ? "go" : ""}
-              aria-label="发送카카오톡 메시지"
+              aria-label="카카오톡 메시지 보내기"
               disabled={!draft.trim()}
             >
               ↑
@@ -231,9 +231,9 @@ export function MymyKakao(p: SkinProps) {
             <div className="mymy-local-menu">
               <strong>{p.thread}</strong>
               <p>
-                群成员：{[...new Set(messages.map((m) => m.sender))].join("、")}
+                그룹 멤버: {[...new Set(messages.map((m) => m.sender))].join("、")}
               </p>
-              <button onClick={() => setMenu(false)}>完成</button>
+              <button onClick={() => setMenu(false)}>완료</button>
             </div>
           )}
         </>
@@ -336,8 +336,8 @@ export function MymyKakao(p: SkinProps) {
           {menu && (
             <div className="mymy-local-menu">
               <strong>KakaoTalk</strong>
-              <p>作品内채팅</p>
-              <button onClick={() => setMenu(false)}>完成</button>
+              <p>가상 채팅</p>
+              <button onClick={() => setMenu(false)}>완료</button>
             </div>
           )}
         </div>
@@ -454,7 +454,7 @@ export function MymyInstagram(p: SkinProps) {
           <Bookmark fill={saved.includes(i.id) ? "currentColor" : "none"} />
         </button>
       </div>
-      <p className="lk2">{i.likes + (liked.includes(i.id) ? 1 : 0)} 次赞</p>
+      <p className="lk2">{i.likes + (liked.includes(i.id) ? 1 : 0)} 회 좋아요</p>
       <button
         className="igc"
         onClick={() => {
@@ -464,7 +464,7 @@ export function MymyInstagram(p: SkinProps) {
         <b>{i.sender}</b> {i.body}
       </button>
       <button className="cmall" onClick={() => setSheet(i)}>
-        查看댓글{" "}
+        댓글 보기{" "}
         {i.comments.length +
           replies.filter((r) => r.startsWith(i.id + "\t")).length}
       </button>
@@ -523,11 +523,11 @@ export function MymyInstagram(p: SkinProps) {
                   </div>
                   <div>
                     <b>—</b>
-                    <small>粉丝</small>
+                    <small>팔로워</small>
                   </div>
                   <div>
                     <b>—</b>
-                    <small>关注</small>
+                    <small>팔로잉</small>
                   </div>
                 </div>
               </div>
@@ -604,7 +604,7 @@ export function MymyInstagram(p: SkinProps) {
             <div className="mymy-sheet-handle" />
             <header>
               <b>댓글</b>
-              <button aria-label="댓글 닫기面板" onClick={() => setSheet(null)}>
+              <button aria-label="댓글 창 닫기" onClick={() => setSheet(null)}>
                 <X />
               </button>
             </header>
@@ -639,7 +639,7 @@ export function MymyInstagram(p: SkinProps) {
                 placeholder="댓글 추가"
                 maxLength={500}
               />
-              <button>发布</button>
+              <button>게시</button>
             </form>
           </section>
         </div>
