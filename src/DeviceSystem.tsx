@@ -51,7 +51,7 @@ export function NativeComposer({
   return (
     <button
       className="native-compose-field"
-      aria-label={creator ? "添加消息" : "输入消息"}
+      aria-label={creator ? "添加消息" : "메시지 입력"}
       onClick={() => (creator ? onAdd() : open(true))}
     >
       {creator ? "添加消息" : ""}
@@ -113,11 +113,11 @@ export function DeviceLock({
           <div className="lock-clock-block">
             <LockKeyhole size={18} />
             <p>
-              {new Intl.DateTimeFormat("zh-CN", {
+              {new Intl.DateTimeFormat("ko-KR", {
                 month: "long",
                 day: "numeric",
                 weekday: "long",
-                timeZone: "UTC",
+                timeZone: "Asia/Seoul",
               }).format(
                 new Date((work.phone.date || "2026-09-01") + "T12:00:00Z"),
               )}
@@ -138,7 +138,7 @@ export function DeviceLock({
           <UnlockHandle onUnlock={open} />
 
           <div className="lock-tools">
-            <button onClick={onLight} aria-label="手电筒">
+            <button onClick={onLight} aria-label="손전등">
               <Flashlight size={23} />
             </button>
             <button
@@ -146,7 +146,7 @@ export function DeviceLock({
               disabled={
                 !work.apps.some((a) => a.installed && a.id === "camera")
               }
-              aria-label="相机"
+              aria-label="카메라"
             >
               <Camera size={25} />
             </button>
@@ -155,10 +155,10 @@ export function DeviceLock({
       ) : (
         <div className="device-passcode">
           <LockKeyhole size={22} />
-          <h2>输入密码</h2>
+          <h2>암호 입력</h2>
           <div
             className={"passcode-dots " + (error ? "pin-shake" : "")}
-            aria-label={"已输入" + code.length + "位密码"}
+            aria-label={"입력한 암호 " + code.length + "자리"}
           >
             {Array.from({ length: work.phone.passcode.length }, (_, i) => (
               <i key={i} className={i < code.length ? "filled" : ""} />
@@ -170,7 +170,7 @@ export function DeviceLock({
                 ? "accessible-pin"
                 : "legacy-passcode"
             }
-            aria-label="锁屏密码"
+            aria-label="잠금 화면 암호"
             autoComplete="off"
             inputMode="numeric"
             type="password"
@@ -214,15 +214,15 @@ export function DeviceLock({
             {error}
           </span>
           {!/^[0-9]+$/.test(work.phone.passcode) && (
-            <button onClick={() => onUnlock(code)}>解锁</button>
+            <button onClick={() => onUnlock(code)}>잠금 해제</button>
           )}
           <div className="pin-footer">
-            <button onClick={() => setPinOpen(false)}>取消</button>
+            <button onClick={() => setPinOpen(false)}>취소</button>
             <button
-              aria-label="删除一位密码"
+              aria-label="삭제一자리"
               onClick={() => (code ? digit("⌫") : setPinOpen(false))}
             >
-              {code ? "删除" : "取消"}
+              {code ? "삭제" : "취소"}
             </button>
           </div>
         </div>
@@ -268,26 +268,26 @@ export function ControlCenter({
         </span>
         控制中心 <ChevronRight size={16} />
       </div>
-      <div className="cc-status" aria-label={"蜂窝网络 " + network}>
+      <div className="cc-status" aria-label={"셀룰러 " + network}>
         <div>
           <span>
             <Signal size={18} />
-            <small>主号</small> 中国移动 <Wifi size={17} />
+            <small>기본 회선</small> SKT <Wifi size={17} />
           </span>
           <span>
             <Signal size={18} />
-            <small>副号</small> 中国电信
+            <small>보조 회선</small> KT
           </span>
         </div>
         <span>
           <Lock size={13} /> {battery}% <Battery size={27} />
         </span>
       </div>
-      <nav className="cc-page-rail" aria-label="控制中心分类">
+      <nav className="cc-page-rail" aria-label="제어 센터 카테고리">
         {[Heart, Music2, House, Radio].map((Icon, i) => (
           <button
             key={i}
-            aria-label={["常用控制", "媒体控制", "家庭控制", "连接控制"][i]}
+            aria-label={["즐겨찾는 제어", "미디어 제어", "홈 제어", "연결 제어"][i]}
             onClick={() =>
               document
                 .querySelector(
@@ -310,27 +310,27 @@ export function ControlCenter({
             <Airplay size={21} />
           </div>
           <div className="cc-media-title">
-            <strong>{playing ? "测试播放" : "未在播放"}</strong>
-            <small>音乐</small>
+            <strong>{playing ? "테스트 재생" : "재생 중 아님"}</strong>
+            <small>음악</small>
           </div>
           <div>
-            <button aria-label="上一首">
+            <button aria-label="이전 곡">
               <SkipForward style={{ transform: "rotate(180deg)" }} />
             </button>
             <button
-              aria-label={playing ? "暂停" : "播放"}
+              aria-label={playing ? "일시 정지" : "재생"}
               onClick={() => setPlaying(!playing)}
             >
               <Play fill="currentColor" />
             </button>
-            <button aria-label="下一首">
+            <button aria-label="다음 곡">
               <SkipForward />
             </button>
           </div>
         </div>
         <button
           className={"cc-square " + (rotation ? "cc-white" : "")}
-          aria-label="旋转锁定"
+          aria-label="화면 회전 잠금"
           aria-pressed={rotation}
           onClick={() => setRotation(!rotation)}
         >
@@ -341,8 +341,8 @@ export function ControlCenter({
         </button>
         <button
           className="cc-square"
-          onClick={() => setTool(tool ? "" : "屏幕镜像")}
-          aria-label="屏幕镜像"
+          onClick={() => setTool(tool ? "" : "화면 미러링")}
+          aria-label="화면 미러링"
         >
           <Monitor />
         </button>
@@ -358,20 +358,20 @@ export function ControlCenter({
           onClick={() => setFocus(!focus)}
         >
           <Moon />
-          <span>专注模式</span>
+          <span>집중 모드</span>
           <ChevronDown size={14} />
         </button>
         <button className="cc-home" onClick={() => setTool("家庭")}>
           <House size={38} />
-          <span>未设置家庭</span>
+          <span>홈이 설정되지 않음</span>
         </button>
         {[Flashlight, Timer, Calculator, Camera].map((Icon, i) => (
           <button
             className={"cc-square cc-tool-" + i}
-            aria-label={["手电筒", "计时器", "计算器", "相机"][i]}
+            aria-label={["손전등", "타이머", "计算器", "카메라"][i]}
             key={i}
             onClick={() =>
-              setTool(tool ? "" : ["手电筒", "计时器", "计算器", "相机"][i])
+              setTool(tool ? "" : ["손전등", "타이머", "计算器", "카메라"][i])
             }
           >
             <Icon />
@@ -381,8 +381,8 @@ export function ControlCenter({
           <button
             key={i}
             className={"cc-square cc-bottom-tool cc-bottom-" + i}
-            aria-label={["扫码", "屏幕录制", "声音识别"][i]}
-            onClick={() => setTool(["扫码", "屏幕录制", "声音识别"][i])}
+            aria-label={["코드 스캔", "화면 녹화", "사운드 인식"][i]}
+            onClick={() => setTool(["코드 스캔", "화면 녹화", "사운드 인식"][i])}
           >
             <Icon />
           </button>
@@ -392,13 +392,13 @@ export function ControlCenter({
         <div className="cc-tool">
           <strong>{tool}</strong>
           <p>
-            {tool === "屏幕镜像" ? "正在搜索作品中的设备…" : "作品内快捷控制"}
+            {tool === "화면 미러링" ? "기기 검색 중…" : "가상 기기 빠른 제어"}
           </p>
-          <button onClick={() => setTool("")}>完成</button>
+          <button onClick={() => setTool("")}>완료</button>
         </div>
       )}
       <button className="cc-dismiss" onClick={close}>
-        轻扫以关闭
+        쓸어 올려 닫기
         <ChevronUp size={16} />
       </button>
     </motion.div>
@@ -409,21 +409,21 @@ export function DeviceKeyboard({ close }: { close: () => void }) {
     [shift, setShift] = useState(false),
     [numbers, setNumbers] = useState(false);
   return (
-    <div className="device-keyboard" role="dialog" aria-label="屏幕键盘">
+    <div className="device-keyboard" role="dialog" aria-label="화면 키보드">
       <div className="keyboard-draft">
         <input
           autoFocus
-          aria-label="消息草稿"
+          aria-label="메시지 초안"
           value={value}
           onChange={(e) => setValue(e.target.value)}
-          placeholder="输入消息"
+          placeholder="메시지 입력"
         />
         <button aria-label="收起键盘" onClick={close}>
           <ChevronDown />
         </button>
       </div>
       <div className="keyboard-candidates">
-        {(value ? [value, "好的", "知道了"] : ["我", "你", "好的"]).map(
+        {(value ? [value, "좋아요", "알겠어요"] : ["나", "너", "좋아요"]).map(
           (v, i) => (
             <button key={i} onClick={() => setValue(value + v)}>
               {v}
@@ -469,13 +469,13 @@ export function DeviceKeyboard({ close }: { close: () => void }) {
           {numbers ? "ABC" : "123"}
         </button>
         <button className="key-space" onClick={() => setValue(value + " ")}>
-          空格
+          공백
         </button>
-        <button onClick={close}>完成</button>
+        <button onClick={close}>완료</button>
       </div>
       <div className="keyboard-accessories">
         <Globe size={24} />
-        <small>草稿</small>
+        <small>초안</small>
         <Mic size={23} />
       </div>
     </div>
