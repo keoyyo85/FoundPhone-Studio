@@ -100,7 +100,7 @@ function WidgetFace({
               <small key={i.id}>{i.title}</small>
             ))}
           {!(work.data.notes || []).some((i) => !i.hidden && !i.password) && (
-            <small>无메모</small>
+            <small>메모 없음</small>
           )}
         </>
       ) : (
@@ -693,7 +693,7 @@ export function HomeLauncher(p: Props) {
                 </nav>
                 <p className="library-count">
                   설치됨{apps.filter((a) => a.installed).length} / 전체
-                  {apps.length}个App
+                  {apps.length}개 앱
                 </p>
                 {apps
                   .filter(
@@ -790,14 +790,14 @@ export function HomeLauncher(p: Props) {
               </>
             ) : sheet === "layout" ? (
               <>
-                <p>레이아웃、安装状态和위젯自动保存在本浏览器。</p>
+                <p>레이아웃, 설치 상태 및 위젯은 이 브라우저에 자동 저장됩니다.</p>
                 <button className="launcher-action" onClick={download}>
                   <Download />
-                  导出레이아웃JSON
+                  레이아웃 JSON 내보내기
                 </button>
                 <label className="launcher-action">
                   <Upload />
-                  导入레이아웃JSON
+                  레이아웃 JSON 가져오기
                   <input
                     aria-label="홈 화면 레이아웃 가져오기"
                     type="file"
@@ -853,7 +853,7 @@ export function HomeLauncher(p: Props) {
                     setSheet("");
                   }}
                 >
-                  移除위젯
+                  위젯 제거
                 </button>
               </>
             ) : active ? (
@@ -985,7 +985,7 @@ export function HomeLauncher(p: Props) {
                         setSheet("");
                       }}
                     >
-                      从홈 화면移除
+                      홈 화면에서 제거
                     </button>
                     <button
                       className="launcher-action danger"
@@ -1026,7 +1026,7 @@ export function HomeLauncher(p: Props) {
                         setSheet("");
                       }}
                     >
-                      确认삭제
+                      삭제 확인
                     </button>
                     <button
                       className="launcher-action"
