@@ -207,13 +207,13 @@ function PhoneRuntime({
           setOwn(saved.state);
         else {
           setOwn(dispatch(work, initialRuntime(work), "start"));
-          if (saved) setLoadError("作品已更新，已开始新的进度。");
+          if (saved) setLoadError("스토리가 업데이트되어 새 진행을 시작했습니다.");
         }
         setReady(true);
       })
       .catch(() => {
         setOwn(dispatch(work, initialRuntime(work), "start"));
-        setLoadError("无法读取本地存档。本次仍可游玩。");
+        setLoadError("로컬 저장 데이터를 불러올 수 없습니다. 계속 플레이할 수 있습니다.");
         setReady(true);
       });
     return () => {
@@ -224,7 +224,7 @@ function PhoneRuntime({
     if (!creator && !external && ready)
       void db.saves
         .put({ id: work.id, state: own })
-        .catch(() => setLoadError("存档失败，请检查浏览器存储权限。"));
+        .catch(() => setLoadError("저장에 실패했습니다. 브라우저 저장 권한을 확인하세요."));
   }, [own, creator, work.id, external, ready]);
   useEffect(() => {
     if (creator || !ready) return;
@@ -283,7 +283,7 @@ function PhoneRuntime({
       setPinOpen(false);
       event("password", pin);
     } else {
-      setPinError("密码不正确");
+      setPinError("암호가 올바르지 않습니다.");
       setPinOpen(true);
     }
   };
@@ -309,7 +309,7 @@ function PhoneRuntime({
         (_, i) => i !== index,
       ),
     });
-  if (!ready) return <div className="phone-loading">正在恢复进度…</div>;
+  if (!ready) return <div className="phone-loading">진행 상황을 불러오는 중…</div>;
   return (
     <div
       ref={shell}
@@ -393,7 +393,7 @@ function PhoneRuntime({
                 setPanel(panel === "notification" ? "" : "notification")
               }
               className="status-time"
-              aria-label="通知中心"
+              aria-label="알림 센터"
             >
               {displayTime}
               <StatusGlyph kind="silent" />
@@ -532,7 +532,7 @@ function PhoneRuntime({
                   ))}
               </div>
               <button className="glass-btn" onClick={() => setFolder("")}>
-                关闭文件夹
+                폴더 닫기
               </button>
             </div>
           )}
@@ -548,11 +548,11 @@ function PhoneRuntime({
               className={`system-panel ${panel === "light" ? "flash-on" : ""}`}
             >
               <button className="panel-close" onClick={() => setPanel("")}>
-                关闭 <ChevronLeft size={14} />
+                닫기 <ChevronLeft size={14} />
               </button>
               {panel === "notification" ? (
                 <>
-                  <h2>通知中心</h2>
+                  <h2>알림 센터</h2>
                   {work.phone.notifications && s.notifications.length ? (
                     <SystemNotifications
                       notices={s.notifications}
@@ -566,23 +566,23 @@ function PhoneRuntime({
                       onDismiss={dismissNotice}
                     />
                   ) : (
-                    <p>没有新通知</p>
+                    <p>새 알림이 없습니다</p>
                   )}
                 </>
               ) : panel === "search" ? (
                 <>
-                  <h2>搜索 App</h2>
+                  <h2>앱 검색</h2>
                   <AppSearch apps={installedApps} open={open} />
                 </>
               ) : (
-                <h2>手电筒已打开</h2>
+                <h2>손전등이 켜졌습니다</h2>
               )}
             </div>
           )}
           {!creator && s.choices.length > 0 && !locked && (
             <div className="story-overlay">
-              <span className="eyebrow">故事来到一个岔路口</span>
-              <h3>你会如何选择？</h3>
+              <span className="eyebrow">이야기가 갈림길에 도착했습니다</span>
+              <h3>어떤 선택을 할까요?</h3>
               {s.choices.map((c) => (
                 <button
                   key={c.target}
@@ -597,7 +597,7 @@ function PhoneRuntime({
           {!creator && s.endings.length > 0 && !locked && (
             <div className="story-overlay ending">
               <span className="eyebrow">ENDING · {s.endings.length}</span>
-              <h2>故事在这里停泊。</h2>
+              <h2>이야기가 잠시 멈췄습니다.</h2>
               <p>{s.endings[s.endings.length - 1]}</p>
               <button
                 onClick={() => {
@@ -606,15 +606,15 @@ function PhoneRuntime({
                   setLocked(true);
                 }}
               >
-                重新开始
+                처음부터 다시
               </button>
             </div>
           )}
           {!creator && s.incomingCall && (
             <div className="incoming-call-screen">
               <small>
-                {s.incomingCall.status === "ringing" ? "来电" : "通话中"} ·
-                作品内模拟
+                {s.incomingCall.status === "ringing" ? "수신 전화" : "통화 중"} ·
+                가상 시뮬레이션
               </small>
               <div className="incoming-avatar">
                 {s.incomingCall.caller.slice(0, 1)}
@@ -628,7 +628,7 @@ function PhoneRuntime({
                   return record?.kind === "audio" && safeMedia(record.media) ? (
                     <audio controls src={safeMedia(record.media)} />
                   ) : (
-                    <p>这是一通虚构来电。</p>
+                    <p>这是一通虚构수신 전화。</p>
                   );
                 })()}
               <div className="incoming-actions">
@@ -651,7 +651,7 @@ function PhoneRuntime({
                 >
                   <PhoneIcon size={25} />
                   <span>
-                    {s.incomingCall.status === "ringing" ? "拒接" : "挂断"}
+                    {s.incomingCall.status === "ringing" ? "거절" : "끊기"}
                   </span>
                 </button>
                 {s.incomingCall.status === "ringing" && (
@@ -674,7 +674,7 @@ function PhoneRuntime({
                     }}
                   >
                     <PhoneIcon size={25} />
-                    <span>接听</span>
+                    <span>받기</span>
                   </button>
                 )}
               </div>
@@ -735,7 +735,7 @@ function PhoneRuntime({
                   ))}
               </div>
               <button className="switcher-done" onClick={() => setPanel("")}>
-                完成
+                완료
               </button>
             </div>
           )}
@@ -755,7 +755,7 @@ function PhoneRuntime({
                     setContextApp("");
                   }}
                 >
-                  打开 App
+                  앱 열기
                 </button>
                 <button
                   onClick={() => {
@@ -763,9 +763,9 @@ function PhoneRuntime({
                     setPanel("search");
                   }}
                 >
-                  在 App 库中查看
+                  앱 보관함에서 보기
                 </button>
-                <button onClick={() => setContextApp("")}>取消</button>
+                <button onClick={() => setContextApp("")}>취소</button>
               </div>
             </div>
           )}
@@ -850,7 +850,7 @@ function Media({ item }: { item: Item }) {
       <strong>{item.id.includes("ticket") ? "09 · 01" : "雨 后"}</strong>
       <small>
         {item.id.includes("ticket")
-          ? "16:30 · 一张未完成的约定"
+          ? "16:30 · 一张未완료的约定"
           : "a little moment of quiet"}
       </small>
     </div>
@@ -932,10 +932,10 @@ function AppContent({
       {detail.password && !creator && !unlocks.includes(detail.id) ? (
         <div className="locked-note">
           <LockKeyhole size={36} />
-          <h3>这条内容已锁定</h3>
+          <h3>这条콘텐츠已锁定</h3>
           <input
             type="password"
-            placeholder="内容密码"
+            placeholder="콘텐츠密码"
             value={pw}
             onChange={(e) => setPw(e.target.value)}
           />
@@ -945,10 +945,10 @@ function AppContent({
                 setUnlocks([...unlocks, detail.id]);
                 onRead(detail.id);
                 setPwError("");
-              } else setPwError("密码不正确");
+              } else setPwError("암호가 올바르지 않습니다.");
             }}
           >
-            解锁内容
+            解锁콘텐츠
           </button>
           <small>{pwError}</small>
         </div>
@@ -1059,7 +1059,7 @@ function AppContent({
                     )
                     ?.focus()
           }
-          aria-label={creator ? "新增内容" : "搜索内容"}
+          aria-label={creator ? "콘텐츠 추가" : "콘텐츠 검색"}
         >
           {creator ? <Plus size={22} /> : <Search size={20} />}
         </button>
@@ -1101,7 +1101,7 @@ function AppContent({
                   ) : i.kind === "transfer" ? (
                     <span className="transfer">
                       ¥ {i.body}
-                      <small>虚构转账记录</small>
+                      <small>가상 송금 내역</small>
                     </span>
                   ) : (
                     i.body
@@ -1117,11 +1117,11 @@ function AppContent({
             ))}
           {creator ? (
             <button className="chat-compose" onClick={onAdd}>
-              ＋ 添加一条消息
+              ＋ 추가一条消息
             </button>
           ) : (
             <div className="chat-compose muted">
-              根据剧情推进，互动回复将在这里出现。
+              스토리가 진행되면 대화와 답장이 여기에 표시됩니다.
             </div>
           )}
         </div>
@@ -1167,7 +1167,7 @@ function AppContent({
             <>
               <div className="media-heading">
                 <h1>{tab}</h1>
-                <p>{filtered.length} 个故事片段</p>
+                <p>{filtered.length} 개의 스토리 항목</p>
               </div>
               <div className="media-grid">
                 {filtered.map((i) => (
@@ -1191,7 +1191,7 @@ function AppContent({
                     <strong>{i.sender}</strong>
                     <small>{i.time}</small>
                   </div>
-                  <button aria-label="查看帖子详情" onClick={() => read(i)}>
+                  <button aria-label="查看게시물详情" onClick={() => read(i)}>
                     <MoreHorizontal size={20} />
                   </button>
                 </div>
@@ -1259,25 +1259,25 @@ function AppContent({
           {!filtered.length && app.engine !== "messaging" && (
             <div className="empty-app">
               <app.icon size={36} />
-              <h3>这一页还很安静</h3>
+              <h3>아직 비어 있습니다</h3>
               <p>
                 {creator
-                  ? "添加属于这个 App 的故事内容。"
-                  : "暂时没有可浏览的内容。"}
+                  ? "이 앱에 맞는 스토리 콘텐츠를 추가하세요."
+                  : "아직 볼 수 있는 콘텐츠가 없습니다."}
               </p>
             </div>
           )}
           {creator && (
             <button className="phone-add" onClick={onAdd}>
               <Plus size={15} />
-              添加
+              추가
               {app.engine === "messaging"
-                ? "聊天"
+                ? "채팅"
                 : app.engine === "social"
-                  ? "帖子"
+                  ? "게시물"
                   : app.engine === "media"
-                    ? "素材"
-                    : "内容"}
+                    ? "자료"
+                    : "콘텐츠"}
             </button>
           )}
         </div>
