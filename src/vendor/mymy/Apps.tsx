@@ -67,30 +67,30 @@ export function kakaoCharacterReply(thread: string, message: string, turn: numbe
   if (thread === "윤아언니") {
     if (has("보고싶", "보고 싶어", "보고 싶어", "miss you", "보고 싶")) return { sender: "윤아언니", body: ["나도 지우 보고 싶었어. 오늘 조금 더 같이 있을까? 🥺", "그렇게 말하면 지금 당장 보러 가고 싶잖아 ㅎㅎ", "나도 그래. 연습 끝나면 전화해. 기다릴게."][turn % 3] };
     if (has("좋아해", "사랑", "love", "좋아해", "사랑해")) return { sender: "윤아언니", body: ["지우야… 그런 말은 만나서 해 주면 안 돼? 지금 심장이 너무 빨리 뛰어.", "나도 너 많이 좋아해. 네가 생각하는 것보다 더.", "갑자기 이렇게 솔직하면 언니 심장은 어떡해 ㅎㅎ ❤️"][turn % 3] };
-    if (has("밥", "밥 먹", "먹었", "배고", "배고")) return { sender: "윤아언니", body: ["아직 안 먹었으면 나랑 같이 먹자. 오늘은 내가 살게!", "지우要先好好밥 먹，不要又因為練習而跳過正餐。", "떡볶이 먹으러 갈까? 네가 제일 좋아하는 곳으로 가자."][turn % 3] };
+    if (has("밥", "밥 먹", "먹었", "배고", "배고")) return { sender: "윤아언니", body: ["아직 안 먹었으면 나랑 같이 먹자. 오늘은 내가 살게!", "지우야 밥부터 잘 챙겨 먹어. 연습한다고 또 끼니 거르지 말고.", "떡볶이 먹으러 갈까? 네가 제일 좋아하는 곳으로 가자."][turn % 3] };
     if (has("힘들", "피곤", "피곤", "속상", "속상", "괜찮")) return { sender: "윤아언니", body: ["오늘 많이 힘들었지? 내 앞에서는 괜찮은 척 안 해도 돼. 내가 들어 줄게.", "우리 지우 고생했어. 잠깐 쉬어. 내가 옆에 있을게.", "무슨 일 있었어? 천천히 말해. 급하게 대답하지 않아도 돼."][turn % 3] };
-    if (has("전화", "통화", "call", "전화해")) return { sender: "윤아언니", body: ["好呀，現在전화해妳？我想聽妳的聲音。", "等我一下，我去안녕靜一點的地方。지우的전화一定要接。", "嗯！結束後馬上전화해我，我會等妳。"][turn % 3] };
-    if (has("안녕", "안녕", "hi", "hello", "晚안녕")) return { sender: "윤아언니", body: ["지우야 안녕 ❤️ 오늘 하루 어땠어?", "왔어? 마침 너 생각하고 있었는데 ㅎㅎ", "우리 지우 오늘도 수고했어. 아까 뭐 하고 있었어?"][turn % 3] };
+    if (has("전화", "통화", "call", "전화해")) return { sender: "윤아언니", body: ["좋아, 지금 전화할까? 네 목소리 듣고 싶어.", "잠깐만. 조용한 곳으로 갈게. 지우 전화는 꼭 받아야지.", "응! 끝나면 바로 전화해. 기다리고 있을게."][turn % 3] };
+    if (has("안녕", "안녕", "hi", "hello", "잘 자")) return { sender: "윤아언니", body: ["지우야 안녕 ❤️ 오늘 하루 어땠어?", "왔어? 마침 너 생각하고 있었는데 ㅎㅎ", "우리 지우 오늘도 수고했어. 아까 뭐 하고 있었어?"][turn % 3] };
     return { sender: "윤아언니", body: ["응응, 조금만 더 얘기해 줘. 지금은 네 말만 듣고 있어.", "ㅋㅋㅋ 정말? 그래서 어떻게 됐어? 언니 궁금해.", "지우야, 네 사소한 일까지 다 듣고 싶어. 오늘 있었던 일 더 얘기해 줘.", "그랬구나. 나라면 무조건 먼저 지우 편이 되어 줄 거야. ❤️"][turn % 4] };
   }
-  if (thread === "해원언니") return { sender: "해원언니", body: has("윤아", "윤아", "지우", "데이트", "데이트") ? ["妳們最近是不是太明顯了？哈哈 不過也要注意別讓지우有壓力。", "我知道妳的心意，但工作期間還是低調一點，也要替지우著想。", "내가 모를 줄 알았어? 둘 다 소중하니까 천천히 해도 돼."][turn % 3] : ["리더로서 한마디 할게. 오늘은 몸부터 챙기고 연습 너무 무리하지 마.", "다들 내일 일정 확인했지? 늦지 말고 오늘은 일찍 쉬자."][turn % 2] };
+  if (thread === "해원언니") return { sender: "해원언니", body: has("윤아", "윤아", "지우", "데이트", "데이트") ? ["요즘 너희 너무 티 나는 거 아니야? ㅋㅋ 그래도 지우가 부담스럽지 않게 조심해.", "네 마음은 알겠어. 그래도 일하는 동안은 조심하고 지우 입장도 생각해 줘.", "내가 모를 줄 알았어? 둘 다 소중하니까 천천히 해도 돼."][turn % 3] : ["리더로서 한마디 할게. 오늘은 몸부터 챙기고 연습 너무 무리하지 마.", "다들 내일 일정 확인했지? 늦지 말고 오늘은 일찍 쉬자."][turn % 2] };
   if (thread === "릴리언니") return { sender: "릴리언니", body: has("윤아", "윤아", "지우", "cute", "귀여") ? ["Awww you two are so cute!! Jiwoo, Yuna talks about you ALL the time 🥹", "I knew it!! Her smile gives everything away 😂", "If you two are happy, I'm happy! But don't forget to invite me for tteokbokki!!"][turn % 3] : ["Jiwoo!! You did amazing today. I'm so proud of you 💗", "Let's all get something delicious after practice. I need food and a little gossip 😂", "You can always talk to me, okay? I'm cheering for you!!"][turn % 3] };
-  if (thread === "배언니") return { sender: "배언니", body: has("윤아", "윤아", "지우", "데이트", "데이트") ? ["윤아언니最近只要看手機就會笑哈哈 我大概知道是誰的功勞。", "떡볶이 먹으러 간다며? 나도 데려가 줘~", "지우呀，逗윤아언니變得好有趣，妳要負責哈哈"][turn % 3] : ["오늘 간식 먹었어? 연습 끝나고 같이 먹으러 가자!", "ㅋㅋㅋ 알겠어. 이 언니가 계속 응원할게!"][turn % 2] };
-  if (thread === "규진") return { sender: "규진", body: has("윤아", "윤아", "지우") ? ["언니들 뭐예요 ㅋㅋ 저 다 봤어요 👀", "윤아언니今天已經第三次提到지우언니了哈哈", "두 사람 진짜 사귀게 되면 막내한테 제일 먼저 알려 줘야 해요!!"][turn % 3] : ["지우언니在做什麼？我好無聊哈哈", "언니 내일 연습 때 봐요! 오늘 푹 쉬어요 💗"][turn % 2] };
-  if (thread === "언니") return { sender: "언니", body: has("밥", "밥 먹", "먹었", "배고", "배고") ? ["밥 먹了嗎？不要又只顧著練習，忘記吃東西。", "냉장고에 반찬 넣어 뒀어. 집에 가서 꼭 먹어."][turn % 2] : ["我們家忙內今天還好嗎？有煩惱就跟언니說。", "늦게 끝나면 꼭 연락해. 내가 데리러 갈게.", "아무리 바빠도 잠은 충분히 자야 해. 알겠지?"][turn % 3] };
-  if (thread === "엄마") return { sender: "엄마", body: has("밥", "밥 먹", "먹었", "배고", "배고") ? ["女兒밥 먹了嗎？記得吃點熱的。", "要不要엄마寄一些小菜過去？不要漏掉正餐。"][turn % 2] : ["지우呀，今天也辛苦了。엄마永遠站在妳這邊。", "不要把身體피곤壞了，好好休息，不舒服要馬上說。", "有空打전화給엄마吧，想聽聽妳的聲音。"][turn % 3] };
-  if (thread === "매니저님") return { sender: "매니저님", body: ["지우，明天行程：10:30 妝髮、12:00 錄音、16:00 拍攝。請確認移動時間。", "오늘 연습 종료 후 차량은 20:10 정문 앞에서 대기하겠습니다.", "이번 주 일정이 업데이트되었습니다. 변경 사항은 단체방에 공지하겠습니다."][turn % 3] };
+  if (thread === "배언니") return { sender: "배언니", body: has("윤아", "윤아", "지우", "데이트", "데이트") ? ["윤아 언니 요즘 폰만 보면 웃더라 ㅋㅋ 누가 원인인지 알 것 같은데?", "떡볶이 먹으러 간다며? 나도 데려가 줘~", "지우야, 윤아 언니 놀리는 거 재밌다 ㅋㅋ 네가 책임져."][turn % 3] : ["오늘 간식 먹었어? 연습 끝나고 같이 먹으러 가자!", "ㅋㅋㅋ 알겠어. 이 언니가 계속 응원할게!"][turn % 2] };
+  if (thread === "규진") return { sender: "규진", body: has("윤아", "윤아", "지우") ? ["언니들 뭐예요 ㅋㅋ 저 다 봤어요 👀", "윤아 언니 오늘 벌써 세 번째 지우 얘기했어요 ㅋㅋ", "두 사람 진짜 사귀게 되면 막내한테 제일 먼저 알려 줘야 해요!!"][turn % 3] : ["지우 언니 뭐 해요? 저 심심해요 ㅋㅋ", "언니 내일 연습 때 봐요! 오늘 푹 쉬어요 💗"][turn % 2] };
+  if (thread === "언니") return { sender: "언니", body: has("밥", "밥 먹", "먹었", "배고", "배고") ? ["밥 먹었어? 연습만 하다가 또 밥 거르지 말고.", "냉장고에 반찬 넣어 뒀어. 집에 가서 꼭 먹어."][turn % 2] : ["우리 막내 오늘 괜찮아? 고민 있으면 언니한테 말해.", "늦게 끝나면 꼭 연락해. 내가 데리러 갈게.", "아무리 바빠도 잠은 충분히 자야 해. 알겠지?"][turn % 3] };
+  if (thread === "엄마") return { sender: "엄마", body: has("밥", "밥 먹", "먹었", "배고", "배고") ? ["우리 딸 밥 먹었어? 따뜻한 거 챙겨 먹어.", "엄마가 반찬 좀 보내 줄까? 끼니 거르지 말고."][turn % 2] : ["지우야 오늘도 수고했어. 엄마는 언제나 네 편이야.", "몸 상할 만큼 무리하지 말고 푹 쉬어. 아프면 바로 말하고.", "시간 날 때 엄마한테 전화해. 네 목소리 듣고 싶어."][turn % 3] };
+  if (thread === "매니저님") return { sender: "매니저님", body: ["지우 씨, 내일 일정입니다. 10:30 헤어·메이크업, 12:00 녹음, 16:00 촬영입니다. 이동 시간 확인 부탁드립니다.", "오늘 연습 종료 후 차량은 20:10 정문 앞에서 대기하겠습니다.", "이번 주 일정이 업데이트되었습니다. 변경 사항은 단체방에 공지하겠습니다."][turn % 3] };
   if (thread === "엔믹스 단체방") {
     const replies = [
-      { sender: "규진", body: "哈哈哈ㅋ 언니們又開始了！지우언니會怎麼反應呀？" },
-      { sender: "배언니", body: "윤아언니現在的笑容，我們全都看得一清二楚～" },
+      { sender: "규진", body: "ㅋㅋㅋ 언니들 또 시작이네! 지우 언니 반응 궁금하다." },
+      { sender: "배언니", body: "윤아 언니 지금 웃는 거 우리 다 보고 있어요~" },
       { sender: "릴리언니", body: "THIS IS TOO CUTE 😂 우리 다 같이 떡볶이 먹으러 가요!" },
-      { sender: "해원언니", body: "好了，先別鬧她們了！明天大家都有行程，今晚早點休息。尤其是윤아，記得照顧好지우。" },
-      { sender: "윤아언니", body: "啊，真的別再鬧我了啦哈哈 지우呀，別在意她們。언니帶妳偷偷逃走 ❤️" },
+      { sender: "해원언니", body: "자, 이제 그만 놀려. 내일 다들 일정 있으니까 일찍 쉬자. 특히 윤아, 지우 잘 챙겨." },
+      { sender: "윤아언니", body: "아 진짜 그만 놀려 ㅋㅋ 지우야 신경 쓰지 마. 언니랑 몰래 도망가자 ❤️" },
     ];
     return replies[turn % replies.length];
   }
-  return { sender: "윤아언니", body: "我看到訊息了！지우呀，可以再跟我說詳細一點嗎？❤️" };
+  return { sender: "윤아언니", body: "메시지 봤어! 지우야, 조금만 더 자세히 말해 줄래? ❤️" };
 }
 export function MymyKakao(p: SkinProps) {
   const [tab, setTab] = useSkinState<string>(p, "mymyTab", "채팅"),
@@ -140,7 +140,7 @@ export function MymyKakao(p: SkinProps) {
             <Back onClick={() => p.onThread("")} />
             <span className="kzname">{p.thread}</span>
             <span className="kzpill">
-              <button aria-label="채팅菜单" onClick={() => setMenu(!menu)}>
+              <button aria-label="채팅 메뉴" onClick={() => setMenu(!menu)}>
                 <Menu size={21} />
               </button>
             </span>
@@ -197,7 +197,7 @@ export function MymyKakao(p: SkinProps) {
                 const avatar = p.items.find((item) => item.sender === reply.sender)?.avatar || "";
                 setSent([
                   ...sent,
-                  JSON.stringify([p.thread, body, time, p.owner || "金지우", true, ""]),
+                  JSON.stringify([p.thread, body, time, p.owner || "김지우", true, ""]),
                   JSON.stringify([p.thread, reply.body, time, reply.sender, false, avatar]),
                 ]);
                 setDraft("");
@@ -206,7 +206,7 @@ export function MymyKakao(p: SkinProps) {
           >
             <button
               type="button"
-              aria-label="添加채팅内容"
+              aria-label="채팅 내용 추가"
               onClick={() => (p.creator ? p.onAdd() : setMenu(!menu))}
             >
               <Plus size={21} />
@@ -289,7 +289,7 @@ export function MymyKakao(p: SkinProps) {
           </div>
           <div className="kzkb">
             <div className="kzksec">
-              {tab === "친구" ? "친구" : "全部채팅"} {list.length}
+              {tab === "친구" ? "친구" : "전체 채팅"} {list.length}
             </div>
             {list
               .filter((g) => g.title.includes(query.trim()))
@@ -390,7 +390,7 @@ export function MymyInstagram(p: SkinProps) {
       <header className="igph">
         <Avatar name={i.sender} src={i.avatar} />
         <div className="igpn">
-          <button onClick={() => setTab("个人홈")}>
+          <button onClick={() => setTab("프로필")}>
             <b>{i.sender}</b>
           </button>
           <small>{i.meta.location || i.time}</small>
@@ -476,7 +476,7 @@ export function MymyInstagram(p: SkinProps) {
       <div className="ig">
         <header className="igh">
           <button
-            aria-label={selected ? "뒤로Instagram动态" : "현재 앱 닫기"}
+            aria-label={selected ? "Instagram 피드로 돌아가기" : "현재 앱 닫기"}
             onClick={() => (selected ? setSelected(null) : p.onBack())}
           >
             <ArrowLeft />
@@ -484,7 +484,7 @@ export function MymyInstagram(p: SkinProps) {
           <span className="igl2">
             {selected ? "게시물" : tab === "홈" ? "Instagram" : tab}
           </span>
-          <button aria-label="打开메시지" onClick={() => setTab("메시지")}>
+          <button aria-label="메시지 열기" onClick={() => setTab("메시지")}>
             <Send />
           </button>
         </header>
@@ -512,7 +512,7 @@ export function MymyInstagram(p: SkinProps) {
               {!posts.length && <Blank />}
             </>
           )}
-          {!selected && tab === "个人홈" && (
+          {!selected && tab === "프로필" && (
             <>
               <div className="pf">
                 <Avatar name={p.owner || "휴대폰 주인"} />
@@ -579,13 +579,13 @@ export function MymyInstagram(p: SkinProps) {
           {[Home, Search, Send, User].map((Icon, n) => (
             <button
               key={n}
-              aria-label={["홈", "검색", "메시지", "个人홈"][n]}
+              aria-label={["홈", "검색", "메시지", "프로필"][n]}
               aria-pressed={
-                !selected && tab === ["홈", "검색", "메시지", "个人홈"][n]
+                !selected && tab === ["홈", "검색", "메시지", "프로필"][n]
               }
               onClick={() => {
                 setSelected(null);
-                setTab(["홈", "검색", "메시지", "个人홈"][n]);
+                setTab(["홈", "검색", "메시지", "프로필"][n]);
               }}
             >
               <Icon />
@@ -597,14 +597,14 @@ export function MymyInstagram(p: SkinProps) {
         <div className="kzcs">
           <button
             className="kzbk"
-            aria-label="关闭댓글"
+            aria-label="댓글 닫기"
             onClick={() => setSheet(null)}
           />
           <section className="kzsh" role="dialog" aria-label="Instagram댓글">
             <div className="mymy-sheet-handle" />
             <header>
               <b>댓글</b>
-              <button aria-label="关闭댓글面板" onClick={() => setSheet(null)}>
+              <button aria-label="댓글 닫기面板" onClick={() => setSheet(null)}>
                 <X />
               </button>
             </header>
@@ -633,10 +633,10 @@ export function MymyInstagram(p: SkinProps) {
               }}
             >
               <input
-                aria-label="添加댓글"
+                aria-label="댓글 추가"
                 value={draft}
                 onChange={(e) => setDraft(e.target.value)}
-                placeholder="添加댓글"
+                placeholder="댓글 추가"
                 maxLength={500}
               />
               <button>发布</button>
@@ -817,7 +817,7 @@ export function MymyX(p: SkinProps) {
           {[Home, Search, Bell, MessageCircle].map((Icon, n) => (
             <button
               key={n}
-              aria-label={["시간线", "검색", "알림", "메시지"][n]}
+              aria-label={["타임라인", "검색", "알림", "메시지"][n]}
               onClick={() => n < 2 && setTab(n ? "검색" : "추천")}
               disabled={n > 1}
             >
