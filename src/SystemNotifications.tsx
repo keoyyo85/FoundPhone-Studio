@@ -66,7 +66,7 @@ export function SystemNotifications({
               {!compact && (
                 <button
                   className="notice-remove"
-                  aria-label="清除通知"
+                  aria-label="알림 지우기"
                   onClick={() => onDismiss(index)}
                 >
                   <X size={15} />
@@ -81,7 +81,7 @@ export function SystemNotifications({
           className="notice-expand"
           onClick={() => setExpanded(!expanded)}
         >
-          {expanded ? "收起" : notices.length + " 条通知"}
+          {expanded ? "접기" : notices.length + " 개 알림"}
         </button>
       )}
     </div>
