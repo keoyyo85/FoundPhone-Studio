@@ -4918,3 +4918,23 @@ label {
   background: #e34f58;
   transform: rotate(135deg);
 }
+
+
+/* Custom pastel theme for the requested phone profile. */
+.phone-screen.wallpaper-rose {
+  background-color: #fff9fb;
+  background-image: radial-gradient(circle, #f5b9cb 0 10px, transparent 11px),
+    repeating-linear-gradient(0deg, #fff 0 10px, #fff8fa 11px 16px);
+  background-size: 76px 76px, 100% 18px;
+  background-position: 0 0, 0 0;
+}
+.phone-screen.wallpaper-rose .device-lock {
+  background:
+    radial-gradient(ellipse at 18% 18%, #f9dce7 0 10%, transparent 36%),
+    radial-gradient(ellipse at 82% 78%, #f7d6e2 0 12%, transparent 38%),
+    linear-gradient(160deg, #fff0f4, #fce2eb 52%, #fff8fa);
+}
+.phone-screen.wallpaper-rose .device-lock .lock-clock-block,
+.phone-screen.wallpaper-rose .device-lock .lock-notifications {
+  color: #5b414b;
+}

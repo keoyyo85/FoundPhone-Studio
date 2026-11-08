@@ -3,14 +3,15 @@
   "id": "ui-test-phone-v2",
   "title": "捡手机",
   "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "revision": 5,
   "phone": {
     "owner": "机主",
-    "date": "2026-10-25",
+    "date": "2026-11-07",
     "time": "09:41",
     "battery": 94,
     "network": "5G",
-    "wallpaper": "apple-wwdc26"
+    "wallpaper": "rose",
+    "passcode": "0504"
   },
   "installedApps": [
     "appstore",
@@ -93,6 +94,13 @@
       "name": "测试联系人",
       "phone": "",
       "bio": "这是一条测试内容。"
+    },
+    {
+      "id": "yyo-contact",
+      "name": "YYO₃🐏10.25",
+      "phone": "",
+      "avatar": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDACgcHiMeGSgjISMtKygwPGRBPDc3PHtYXUlkkYCZlo+AjIqgtObDoKrarYqMyP/L2u71////m8H////6/+b9//j/2wBDASstLTw1PHZBQXb4pYyl+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj4+Pj/wAARCACcAEgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAGhABAQEBAQEBAAAAAAAAAAAAAQARMSFBAv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDZoqcIqJhWBR0PIqHlYByfKPIOnsA1Paygr0gCu6SsgUVOEXE8rAouEXCsA5Gi4QdIA6e1lPy78gCvSVkCi58i4nlYFFwi4VgHpHlFw2DpsAdKyg7AHfkrIFFyLiVgUXDYuFYB6R5Fw2g6bAHSsoOwB2VkCi5FxrAouGxcrAPScIuG0HTYA6VlB2AOysgUXIuNYFFwi5XpAPScIuFB0gDpWUHYA7KyBRcihXIFFwi5XpA6ThOFB0gDpWcoO8gCMrIGUUOxQrmwM2i4Rc7XpA6ThOFOkAdK5k5Qd5AEZXMkEzYodihVB7ATYuFFDs8SC9JwngTpBB2oZyHlBHkAR5IAckBBqodlEHsFTezhImwOk4SQB0gByBkggjyVAOSD/9k=",
+      "bio": ""
     }
   ],
   "chats": [
@@ -242,6 +250,45 @@
           "id": "test-reply-kakao",
           "body": "这是一条测试回复。",
           "senderId": "owner"
+        }
+      ]
+    },
+    {
+      "id": "yyo-wechat-chat",
+      "app": "wechat",
+      "title": "YYO₃🐏10.25",
+      "participants": [
+        "owner",
+        "yyo-contact"
+      ],
+      "messages": [
+        {
+          "id": "yyo-msg-1106-in",
+          "title": "YYO₃🐏10.25",
+          "body": "农",
+          "senderId": "yyo-contact",
+          "time": "2026-11-06 12:00"
+        },
+        {
+          "id": "yyo-msg-1106-out",
+          "title": "YYO₃🐏10.25",
+          "body": "来",
+          "senderId": "owner",
+          "time": "2026-11-06 12:01"
+        },
+        {
+          "id": "yyo-msg-1107-in",
+          "title": "YYO₃🐏10.25",
+          "body": "农",
+          "senderId": "yyo-contact",
+          "time": "2026-11-07 18:00"
+        },
+        {
+          "id": "yyo-msg-1107-out",
+          "title": "YYO₃🐏10.25",
+          "body": "来",
+          "senderId": "owner",
+          "time": "2026-11-07 18:02"
         }
       ]
     }
